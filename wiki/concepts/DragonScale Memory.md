@@ -142,6 +142,8 @@ The tiling property says the same concept should live in one canonical page. Enf
 
 **Why not a fixed 0.85?** v0.1 used 0.85 with no justification. Published thresholds in the embeddings literature span a wide range (Sentence Transformers' `community_detection` defaults to 0.75; Quora-duplicate calibrations land around 0.77–0.83; sparse-model defaults differ again). Thresholds are model-, corpus-, and objective-dependent, so calibration is required.
 
+First real artifact: [[tiling-report-2026-04-24]] (0 errors, 15 review-band pairs, uncalibrated).
+
 ---
 
 ## Mechanism 4 — Boundary-First Autoresearch
