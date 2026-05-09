@@ -179,6 +179,8 @@ boundary_score(p) = (out_degree - in_degree) * recency_weight
 - No integration with folds or addresses. Pure graph analysis on the wikilink graph.
 - No automatic topic selection without user confirmation. The helper presents choices; the user picks.
 
+First real artifact: [[boundary-frontier-2026-04-24]] (top frontier candidates as of 2026-04-24).
+
 ---
 
 ## Operational Policies (required before implementation)
