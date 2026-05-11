@@ -23,6 +23,54 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Colangelo et al. 2026, Nature Energy, AI data centres as grid-interactive assets (via codex, batch 4)
+
+- Zotero: `KWNBZ8FA`
+- Analysis: [[papers/2026-NE-ai-data-centres-grid-interactive]] (address `c-000024`, 30.2KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via OneDrive Zotero backup SQLite (active /Users/henry/Zotero/zotero.sqlite was empty for this key).
+- Key insight: **first field-trial paper in the lab** — Phoenix 256-GPU production AI cluster shows software workload orchestration can cut cluster power 25% for 3 hours during grid peaks with QoS intact. Empirically settles a question that 3 of our modeling papers (Zheng 2020 J, Berrill 2022 NCC, Kikstra 2021 NE) had to assume.
+- Cross-cluster: pairs with Zheng 2020 J (UELISBYS) as the "DC as grid asset" empirical complement to Zheng's macroscale counterfactual.
+
+## [2026-05-11] ingest | Mytton & Ashtine 2022, Joule, data center energy estimates review (via codex, batch 4)
+
+- Zotero: `52W57HP5`; main PDF `Q6LYUHSZ`
+- Analysis: [[papers/2022-J-data-center-energy-estimates-review]] (address `c-000023`, 35KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
+- Key insight: 258 DC energy estimates from 46 publications 2007-2021, 676 source links audited. Reliability problems come from provenance (private market data, broken links, vague methods, future extrapolation), not from one bad number. **Methodology gate for any DC-load paper in the lab**: a paper that doesn't audit its DC load inputs will get reviewer-killed.
+- Lesson archetype: provenance-audit as primary contribution — same archetype as Liu 2015 N (emissions inventory correction) but applied to estimates rather than measurements.
+
+## [2026-05-11] ingest | Vanatta, Stewart & Craig 2025, Nature Energy, SMR policy + module learning (via codex, batch 4)
+
+- Zotero: `SYGLCEMJ`
+- Analysis: [[papers/2025-NE-smr-policy-module-learning]] (address `c-000022`, 37.5KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
+- Key insight: profit-max deployment of 4 SMR designs at 925 US industrial facilities 2030-2050. Deployment gated by delivered gas price, FOAK capex escalation, factory learning rate, carbon tax, ITC — direct early subsidies have weak effect compared to learning + carbon price.
+- Cross-cluster: **same Michigan group (Vanatta + Craig) as 2023 J SMR-industrial-heat paper** (XUGL6XPD, address c-000019). The two together form a methodologically-sequential pair (single-period MILP → multi-period deployment with endogenous learning). Critical pair for understanding SMR economics in industrial heat contexts.
+
+## [2026-05-11] ingest | Vanatta et al. 2023, Joule, SMR industrial process heat TEA (via codex, batch 4)
+
+- Zotero: `XUGL6XPD`
+- Analysis: [[papers/2023-J-smr-industrial-process-heat-tea]] (address `c-000019`, 40.1KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
+- Key insight: profit-maximizing MILP over 5 SMR designs × 421 natural-gas industrial processes in ERCOT/SPP. SMRs **not economic for heat alone** at 2021 gas prices, but serve 125 SPP processes when heat is paired with wholesale electricity revenue. This is the dual-product (heat + power) framework Henry needs for the SMR + DC + ORC paper.
+- Cross-cluster: **direct framework archetype for Henry's planned SMR-DC-waste-heat paper**. Pair with SYGLCEMJ (same group, follow-up paper) and 5CAVXPE9 (flexible geothermal, same firm-clean-flexible archetype).
+
+## [2026-05-11] ingest | Ricks et al. 2024, Nature Energy, flexible geothermal in decarbonized systems (via codex, batch 4)
+
+- Zotero: `5CAVXPE9`; main PDF `MD6GQT4Q`
+- Analysis: [[papers/2024-NE-flexible-geothermal-decarb-systems]] (address `c-000021`, 41.4KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via Zotero indexed full-text cache.
+- Key insight: GenX capacity-expansion with flexible vs inflexible EGS, 11-zone Western Interconnection 2045. **EGS flexibility changes system value far more than EGS LCOE**. The paper's strongest move: scale transition from prior plant-level (price-taker) work to system-level (capacity-expansion) deployment.
+- Cross-cluster: forms a "firm-clean-flexible baseload" cluster with Duan 2022 NE (flexible nuclear). Same archetype: "when does firm-flexible enter the least-cost system, and what does it displace?" Both answer "beyond ~80% emissions cuts; displaces storage, transmission, wind/solar."
+
+## [2026-05-11] ingest | Duan et al. 2022, Nature Energy, flexible nuclear in deep-decarb electricity (via codex, batch 4)
+
+- Zotero: `SYZJZS6F`
+- Analysis: [[papers/2022-NE-flexible-nuclear-deep-decarb]] (address `c-000020`, 35.1KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
+- Key insight: Macro Energy Model, 42 country-level regions, hourly LP. Flexible nuclear + thermal energy storage is excluded under moderate emissions cuts; enters least-cost portfolios **beyond ~80% emissions reduction**, especially where wind resources are weak and low-cost grid-flexibility substitutes are absent.
+- Cross-cluster: foundational paper for the firm-clean-flexible cluster. Pairs with Ricks 2024 NE (EGS) as the same archetype applied to a different firm clean technology. Strong global-vs-regional contrast: Duan covers 42 regions globally; Ricks does 11-zone Western US deep-dive.
+
 ## [2026-05-11] ingest | Odenweller et al. 2022, Nature Energy, probabilistic green H2 feasibility (via codex, batch 3)
 
 - Zotero: `KRT75D4W`
