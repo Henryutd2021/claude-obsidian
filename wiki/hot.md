@@ -17,25 +17,43 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: Three papers now ingested. Codex-cli delegation pattern proven (gpt-5.5 + xhigh via `_templates/codex-ingest-contract.md`): papers 2 and 3 composed by codex on first valid run, both pass all contract checks (18 sections, banned-words, em-dash, 3-label, 5+5+5+5 KB outputs). Address counter 3 -> 6. Toolchain: `scripts/codex-ingest-paper.sh` orchestrates per-paper codex calls; my session keeps single-writer address allocation + index/log/hot/manifest integration.
+**2026-05-11**: 6 papers ingested in one day. Codex-cli delegation pattern validated across 5 papers (gpt-5.5 + xhigh via `_templates/codex-ingest-contract.md`). All 5 codex outputs pass quality bar (18 sections, banned-words, em-dash, 3-label discipline, 5+5+5+5 KB outputs). Address counter 3 -> 9. Wall-clock for 3-paper parallel batch: ~13 min total (9:58 launch -> 10:11 last complete).
 
-## Most recent ingest
+## Papers ingested so far
 
-Batch of 2 via codex (2026-05-11 09:53-09:56):
-1. [[papers/2024-NE-h2-additionality-time-matching]] — Giovanniello, Cybulsky, Schittekatte, Mallapragada. *Nature Energy* (2024-01). Address `c-000004`. Archetype: **policy dispute resolved by boundary diagnosis**. DOLPHYN capacity-expansion across ERCOT + FRCC. Reconciles Ricks 2023 (hourly needed) vs Zeyen 2023 (annual fine) by exposing the hidden additionality counterfactual (compete vs non-compete). Phased US 45V PTC recommendation: annual now, hourly post-2030, eventually no time-matching.
-2. [[papers/2023-N-china-pv-wind-3844-plants]] — Wang, Wang, Tanaka, Ciais et al. (19 authors). *Nature* 619:761-767 (2023-07). Address `c-000005`. Archetype: **method-instantiation-as-object** (3,844-plant national map). Plant-by-plant geospatial LCOE optimization with UHV + storage + load flexibility + endogenous learning. 9 -> 15 PWh/yr lift; abatement cost US$97 -> US$6/tCO2. Co-benefit angle (Gini reduction in poorest regions) is the Nature-elevation move vs Joule/Applied Energy alternatives.
+| Addr | Year | Journal | Slug | Author | Composed by |
+|---|---|---|---|---|---|
+| c-000003 | 2022 | NE | china-hta-clean-hydrogen | Yang | Opus 4.7 (me) |
+| c-000004 | 2024 | NE | h2-additionality-time-matching | Giovanniello | codex gpt-5.5 xhigh |
+| c-000005 | 2023 | N | china-pv-wind-3844-plants | Wang | codex gpt-5.5 xhigh |
+| c-000006 | 2025 | J | space-based-solar-europe | Che | codex gpt-5.5 xhigh |
+| c-000007 | 2023 | NC | endogenous-learning-green-h2-europe | Zeyen | codex gpt-5.5 xhigh |
+| c-000008 | 2021 | NE | kikstra-covid-energy-demand-scenarios | Kikstra | codex gpt-5.5 xhigh |
 
-## Cross-paper anchors emerging
+Year spread: 2021-2025 (5 of 5 years). Journal spread: NE x3, N, NC, J. Method spread: TIMES-VEDA, DOLPHYN, plant-by-plant GIS optimization, PyPSA-Eur, sector-coupled with endogenous learning, IAM with demand-side shock.
 
-- **Paper 1 (Yang 2022 NE) vs Paper 3 (Wang 2023 N)** = methodological contrast: TIMES-VEDA black-box workhorse model with 780+ processes vs plant-by-plant geospatial optimization at 3,844 sites. Both win at top-tier on boundary-expansion + headline monetization, but the "method as object" visual move only works at Wang's resolution.
-- **Paper 2 (Giovanniello 2024 NE) vs paper-5-candidate (Zeyen 2023 NComm, T3YPX6LR)** = direct citation tension. Paper 2 explicitly diagnoses Zeyen's framework as "non-compete" and explains why annual matching looks safe under it. Co-ingesting T3YPX6LR would create a same-batch primary-vs-meta pair.
+## Cross-paper anchors emerging (seeds for paper-10 pattern synthesis)
+
+- **Paper 1 (Yang 2022 NE) vs Paper 3 (Wang 2023 N)** = methodological contrast inside top-tier energy modeling: TIMES-VEDA black-box workhorse with 780+ processes vs plant-by-plant geospatial optimization at 3,844 sites. Both win on boundary expansion + headline monetization. Wang's "method-as-object" visual only works at plant-level resolution.
+- **Paper 2 (Giovanniello 2024 NE) vs Paper 5 (Zeyen 2023 NC)** = direct citation tension. Paper 2 explicitly diagnoses Zeyen's framework as "non-compete" additionality (contracted H2 resources optimized *after* non-H2 grid investment), which is why Zeyen's annual matching looks safe. Co-ingest gives a same-batch primary-vs-meta pair, exactly the kind of seed needed for `patterns/methods/additionality-counterfactuals`.
+- **Paper 2 (Giovanniello, US) vs Paper 5 (Zeyen, Europe)** = same problem (electrolyser time-matching) on two grids, two model classes (DOLPHYN vs sector-coupled IAM with endogenous learning), reaching incompatible policy advice. Anchor for `patterns/regions/us-vs-europe-h2-policy`.
+- **Paper 1 (Yang, China H2) vs Paper 5 (Zeyen, Europe H2)** = same fuel, opposite case design (single-country vs continental-coupled, exogenous costs vs endogenous learning). Anchor for `patterns/methods/cost-trajectory-treatment`.
+- **Paper 4 (Che 2025 Joule SBSP) vs Paper 6 (Kikstra 2021 NE COVID)** = both use exogenous shock as the analytical lever (one technological, one demand-side). Anchor for `patterns/methods/exogenous-shock-as-scenario`.
 
 ## Codex delegation state
 
 - Contract: `_templates/codex-ingest-contract.md`
 - Wrapper: `scripts/codex-ingest-paper.sh <KEY> <ADDR> [SLUG]`
-- Sandbox: `workspace-write`. Known limitation: Zotero MCP fails in this sandbox; codex falls back to local Zotero DB or publisher HTML automatically.
-- Cost per paper: ~230k tokens at xhigh reasoning, 8-12 minutes wall-clock
+- Sandbox: `workspace-write`. Known limitation: codex's Zotero MCP fails in this sandbox; codex auto-falls-back to (a) local Zotero SQLite + storage cache, or (b) publisher HTML, depending on what is available. `fulltext_source` field in receipt records which path was taken (main-pdf | publisher-html | unknown).
+- Cost per paper: ~200-230k tokens at xhigh reasoning, 8-12 minutes wall-clock when run in parallel.
+- Reproducibility: every codex output is in `.raw/papers/{KEY}/`: 7 stub files + `codex-stdout.log` + `codex-stderr.log` + `codex-receipt.json`. The stderr is ~70-660 KB per run (codex's internal reasoning trace).
+
+## Pending followups
+
+1. **Henry**: attach a PDF to Zotero parent `M9HYZCZE` (Che 2025 Joule SBSP) so future SI / source-data analysis can run. Currently `main_pdf: false` in the frontmatter.
+2. **CLAUDE.md amendment** (deferred until after paper 5; reached at paper 6): formalize PDF-only-as-default + L2/L3 opt-in tiering for SI/data/code (per the conversation about workload vs value).
+3. **Lint pass**: run `/wiki-lint` after this batch to catch any banned-word slips codex may have justified weakly, plus cross-page contradictions between papers 1/3 (method choices) and papers 2/5 (additionality framework).
+4. **Manifest CSV quoting bug** (known): the v1 manifest does not quote string fields with internal commas; affects ~6 of 142 rows. Defer to a later cleanup pass.
 
 ## What this vault is now
 
