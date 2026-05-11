@@ -1,9 +1,0 @@
-filters:
-  and:
-    - file.ext == "md"
-views:
-  - type: table
-    name: All markdown files in vault
-    order:
-      - file.name
-    limit: 20
