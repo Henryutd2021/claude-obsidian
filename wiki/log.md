@@ -23,7 +23,49 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
-## [2026-05-11] architecture | v2 Phase 3 (L1-only subset): 8 subdomain hubs + 11 bridges + auto-stats
+## [2026-05-11] synthesis | Option B: 7 pattern pages + 3 playbook skeletons (L1-only)
+
+Promotion of 7 cross-paper anchors from `hot.md` into real pattern pages, plus the first 3 playbook pages activated. All L1 evidence only; L2 enrichment deferred until Phase 2 pilots land.
+
+**Updated `_templates/pattern-page.md`** — added v2 fields (`supporting_papers_l1` / `_l2`, `pattern_category`, `subdomain`), three-label-discipline reminder, no-pollution rule, HENRY-NOTE block.
+
+**Scaffolded** `wiki/patterns/subdomain/{8 slugs}/` so subdomain patterns have a place to land.
+
+**7 pattern pages** (each ~3-5 KB with three-label discipline, Evidence-tagged claims, transferable template, Henry's stance HENRY-NOTE block):
+
+| Category | Page | L1 papers |
+|---|---|---|
+| cross-cutting/methods-recurrent | `additionality-counterfactuals.md` | Giovanniello, Zeyen |
+| cross-cutting/methods-recurrent | `plant-vs-aggregate-resolution.md` | Yang, Wang, Zhang, Cherp |
+| cross-cutting/methods-recurrent | `option-value-scenario-pairs.md` | Wolfram, Yang, Zeyen, Giovanniello |
+| cross-cutting/archetype | `firm-clean-flexible-baseload.md` | Duan, Ricks |
+| subdomain/hydrogen-p2x | `merit-order-and-end-use-ranking.md` | Ueckerdt, Wolfram |
+| subdomain/ai-data-driven | `load-shape-and-flexibility.md` | Zheng, Colangelo, Mytton |
+| subdomain/re-tech-resources | `empirical-growth-envelope.md` | Cherp, Odenweller |
+
+**3 playbook pages activated** under `wiki/playbook/top-journal-craft/`:
+
+- `intro-template-energy-papers.md` — 5/4/6-paragraph Intro scaffold; anti-patterns from L2 (preview); transferable template; worked example for Henry's SMR-DC paper. Marked **v0.1 skeleton** — will be enriched once §5 Intro paragraph tables are mined across all 22 L1 papers.
+- `main-figure-design-rules.md` — 6 rules for main figures (one-function-per-figure, mechanism-diagram-is-Fig-1, headline-number-home-figure, single-sensitivity-figure, color-as-argument, model-schematic-placement); SMR-DC worked example. **v0.1 skeleton** — will be enriched after L2 pilot (which gives the L1-vs-L2 figure contrast).
+- `contribution-decision-tree.md` — 8 archetype contribution classes induced from the 22 L1 papers + a step-by-step decision tree from result → class; SMR-DC worked example identifies system-boundary-expansion as primary contribution. **v0.1** — L2 contrast lands in v0.2.
+
+**Status after Option B (Phase 3 extended):**
+- 22 L1 papers under `wiki/papers/L1/`.
+- 8 subdomain hubs link to their L1 papers (auto-generated, regenerable).
+- 11 bridges link to their cross-subdomain L1 evidence (auto-generated, regenerable).
+- 7 pattern pages with substantive content + transferable templates.
+- 3 playbook v0.1 pages providing the writing scaffolds Henry can use immediately.
+
+**Still deferred (require L2 pilots first):**
+- 6 remaining cross-paper anchors at lower confidence (cost-trajectory-treatment, national-vs-continental-case, demand-side-mitigation, exogenous-shock-as-scenario, multi-period-deployment-with-endogenous-learning, cost-multi-unit-reporting).
+- `patterns/comparisons/*` — top-vs-applied delta library; intrinsically needs L1+L2 pairs.
+- `wiki/banks/*` row population — by routing rules, banks are primarily L2-fed.
+- `playbook/applied-paper-craft/` and `playbook/upgrade-playbook/` — explicitly L2-fed.
+- `playbook/submission-tier-checklists/` — needs L1+L2 contrast.
+
+**Next**: Henry to stage 6 L2 pilot candidates in `.raw/zotero_manifest/l2_candidate_manifest.csv` and trigger `scripts/codex-ingest-paper-L2.sh`. After pilots land, re-run `subdomain-bridge-stats.py` + `generate-subdomain-hubs.py` + `generate-bridges.py` to refresh; promote remaining anchors; bootstrap 3 priority banks; draft 5 `patterns/comparisons/` pages.
+
+
 
 Phase 3 partial executed. Phase 3 full requires L2 pilot first (banks bootstrap and patterns/comparisons depend on L2 evidence). This commit captures everything Phase 3 can deliver from L1 alone.
 
