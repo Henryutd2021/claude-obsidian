@@ -29,9 +29,13 @@ Renewable energy integration · wind-solar-hydrogen integrated systems · green 
 
 ## Status of the Zotero side (2026-05-11)
 
-Henry confirmed 7 in-scope journals: **Nature · Nature Energy · Joule · Nature Communications · Nature Sustainability · Nature Climate Change · One Earth**. A scan via `zotero_advanced_search` against `publicationTitle is "<journal>"` returns **142 papers** (Nature 5 · Nature Energy 74 · Joule 36 · Nature Communications 20 · Nature Sustainability 2 · Nature Climate Change 4 · One Earth 1). Two papers appear as duplicate entries in Zotero (same Jakhmola 2026 NE paper indexed twice; same Jenkins 2021 Mission Net-Zero America twice).
+Henry confirmed 7 in-scope journals: **Nature · Nature Energy · Joule · Nature Communications · Nature Sustainability · Nature Climate Change · One Earth**. A scan via `zotero_advanced_search` against `publicationTitle is "<journal>"` returns **142 papers** across these 7 journals (Nature 5 · Nature Energy 74 · Joule 36 · Nature Communications 20 · Nature Sustainability 2 · Nature Climate Change 4 · One Earth 1; includes 2 Zotero-side duplicate item-key pairs).
 
-The collection `Top Paper Lab` could not be created reliably via `mcp__zotero__zotero_create_collection` (the call returned success and a key, but the collection did not appear in `zotero_get_collections` afterward — likely a bug or a Zotero-app-must-be-running constraint). Henry will create the collection manually in the Zotero UI; on the next session, re-query the collection key via `zotero_search_collections "Top Paper Lab"` and bulk-add the 142 papers using `zotero_manage_collections add_to=[KEY] item_keys=[...]`.
+**`Top Paper Lab` collection exists in Zotero (key `TKIB4DFM`)**. Henry created it manually in the Zotero UI after the MCP `zotero_create_collection` was found to return success without persisting. Henry then dragged in 142 papers, including 2 stray Nature-family items (`ZNUP7SNR` Nature Food + `GF9LAAMT` Nature Reviews Earth & Environment) that he is removing in the UI to stay strict-7-journal.
+
+**MCP write-phantom bug confirmed**: both `zotero_create_collection` and `zotero_manage_collections` (add_to / remove_from) return success messages but the changes do not persist. All Zotero-side membership edits must be done manually in the Zotero UI (or via Zotero's own scripting). MCP **reads** are reliable; only writes are phantom.
+
+The CSV manifest at `.raw/zotero_manifest/top_paper_lab_manifest.csv` mirrors my 142-paper search result. Up to ±4 rows may drift from the actual Zotero collection (Henry's removal of the 2 strays, plus my 2 same-paper duplicate keys he may have deduplicated). When ingesting, Zotero is the source of truth — the CSV is just a working manifest.
 
 ## Storage discipline (architecture-level)
 
