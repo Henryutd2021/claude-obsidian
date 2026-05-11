@@ -23,6 +23,47 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Odenweller et al. 2022, Nature Energy, probabilistic green H2 feasibility (via codex, batch 3)
+
+- Zotero: `KRT75D4W`
+- Analysis: [[papers/2022-NE-green-h2-probabilistic-feasibility]] (address `c-000018`, 40KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage fallback (Zotero MCP cancelled).
+- Key insight: Monte-Carlo feasibility envelope using Wright's-law-fit ensembles over analog technologies (wind, solar, batteries) shows green H2 stays below 1% of EU final energy until 2030 and 1% globally until 2035 with ≥75% probability under "wind-and-solar-like" growth. Headline pattern: probability + threshold + date is more useful than a single feasibility point estimate.
+- Cross-cluster: pairs with Cherp 2021 NE (growth-curve fitting), strengthens the empirical-feasibility-envelope pattern. Same first-author Ueckerdt overlap with Ueckerdt et al. 2021 NCC (same batch).
+
+## [2026-05-11] ingest | Helveston, He & Davidson 2022, Nature, solar PV supply chain cost savings (via codex, batch 3)
+
+- Zotero: `B6LNILBU`
+- Analysis: [[papers/2022-N-solar-pv-supply-chain-cost-savings]] (address `c-000017`, 39.9KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache.
+- Key insight: globalized PV module markets saved installers US$67 billion cumulatively 2008-2020 (China $36B + US $24B + Germany $7B); nationalizing supply chains would cost the deployment debt the world cannot afford. Archetype: counterfactual-cost-savings on the supply chain itself, not on the technology.
+- Cross-cluster: novel archetype in the lab — first paper centering supply-chain geography rather than technology cost. Loose link to Wang 2023 N (plant-level optimization) via PV economics; conceptual link to Liu 2015 N (data-correction archetype) via "what gets counted shapes policy".
+
+## [2026-05-11] ingest | Berrill et al. 2022, Nature Climate Change, US residential decarbonization (via codex, batch 3)
+
+- Zotero: `VMSZ42JG`; main PDF `UDF7CJ47`
+- Analysis: [[papers/2022-NCC-residential-decarbonization-us]] (address `c-000016`, 35KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via Zotero storage cache.
+- Key insight: 108-pathway national stock-level scenario frame (3 housing-stock × 4 new-housing × 3 renovation × 3 supply paths, 2020-2060) reaches 91% emissions reduction by 2050 only when renovation + new-build efficiency + electrification + sufficiency (smaller homes, multifamily growth) + clean grid combine. **First building-energy paper in the lab** (directly in Henry's scope).
+- Cross-cluster: opens patterns/buildings/ subfolder candidate; pairs with Kikstra 2021 NE on demand-side framing (residential energy can be the demand lever).
+
+## [2026-05-11] ingest | Ueckerdt et al. 2021, Nature Climate Change, H2 e-fuels potential and risks (via codex, batch 3)
+
+- Zotero: `UIWZD5EE`
+- Analysis: [[papers/2021-NCC-h2-efuels-potential-risks]] (address `c-000015`, 36KB)
+- Receipt: all checks pass except `fulltext_source: unknown` — Zotero had no PDF attachment for this key; codex fell back to the Nature article page + ResearchGate author preprint. Deviation documented. Analysis quality is intact (18 sections, 5/5/5/5, banned-word check passed, three-label discipline applied).
+- Key insight: e-fuel routes deliver 16-48% electricity-to-useful-energy efficiency (2-10x more renewable electricity than direct electrification); 2050 MACC of EUR20-270/tCO2 only after deep scale-up. The merit-order argument forces a sorting rule on policy: ration e-fuels to sectors inaccessible to direct electrification.
+- Cross-cluster: anchors the option-value-with-discipline pattern. Strong link to Wolfram 2024 OE (same batch, same H2-option-value frame but global IAM vs perspective-synthesis). Strong link to Zeyen 2023 NC (endogenous learning) and Giovanniello 2024 NE (additionality framework).
+- **Follow-up**: a PDF attachment for `UIWZD5EE` should be added to Zotero so a Pass-2 can verify the analysis against the actual main-PDF text (same situation as the original M9HYZCZE issue).
+
+## [2026-05-11] ingest | Wolfram et al. 2024, One Earth, H2 economy 22% cost reduction (via codex, batch 3)
+
+- Zotero: `73CKKQFI`; main PDF `8GFTMJCS`
+- Analysis: [[papers/2024-OE-h2-economy-22pct-cost-reduction]] (address `c-000014`, 38KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache.
+- Key insight: **first One Earth paper in the lab**. GCAM scenario pairs (with-H2 vs no-H2, full option set vs end-use exclusions) demonstrate that hydrogen at only 3-9% of 2050 final energy can yield 15-22% mitigation-cost reduction — its value is option value, not adoption share. International shipping is the highest-value end use (~6.4% cost reduction alone).
+- Cross-cluster: directly informs an option-value-scenario-pair pattern with Yang 2022 NE (China TIMES-VEDA), Zeyen 2023 NC (endogenous learning, sector-coupled), and Giovanniello 2024 NE (additionality). Strong methodological contrast: global IAM breadth (Wolfram) vs national sector detail (Yang) vs European sector-coupled optimization (Zeyen) vs grid-emissions accounting (Giovanniello).
+
 ## [2026-05-11] ingest | Cherp et al. 2021, Nature Energy, national wind/solar growth dynamics (via codex, batch 2)
 
 - Zotero: `L8UI4RX3`; main PDF `SBU9QH66` per receipt
