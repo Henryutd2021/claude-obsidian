@@ -23,6 +23,29 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Wang et al. 2023, Nature, PV+wind China 3844 plants (via codex)
+
+- Zotero: `T5W8LVA9` (parent); PDFs `DM5DMFZD` (main) + `UVK9RAXN` (SI); 19 authors
+- Paper package: `.raw/papers/T5W8LVA9/` (7 stubs + codex receipt + logs)
+- Analysis: [[papers/2023-N-china-pv-wind-3844-plants]] (address `c-000005`, 30KB, 274 lines)
+- Composed by: `codex exec` (gpt-5.5 + xhigh) per `_templates/codex-ingest-contract.md`
+- Receipt: all checks pass (18 sections, banned-words clean, em-dash clean, 3-label discipline applied, 5+5+5+5 KB outputs)
+- Deviation: Zotero MCP failed in `workspace-write` sandbox; codex fall-back was Nature publisher HTML (article + Table 1 pages). Pre-extraction attachment hint prevented Peer-Review-File trap.
+- Key insight: archetype is "method-instantiation-as-object" (3,844-plant national map = Fig 1 = signature visual). Cross-paper anchor with paper 1 (TIMES black-box vs plant-by-plant); discussed in §15 critical analysis.
+- Methodology note: codex's contract worked end-to-end on first valid call. Random samples (M9HYZCZE, T3YPX6LR, QDU6TZYF) deferred pending user authorization after this validation.
+
+## [2026-05-11] ingest | Giovanniello et al. 2024, Nature Energy, H2 additionality + time-matching (via codex)
+
+- Zotero: `8IMLJZAH` (parent journalArticle); PDF `2YD6VCF2`
+- Paper package: `.raw/papers/8IMLJZAH/` (7 stubs + codex receipt + logs)
+- Analysis: [[papers/2024-NE-h2-additionality-time-matching]] (address `c-000004`, 38KB, 292 lines)
+- Composed by: `codex exec` (gpt-5.5 + xhigh) per `_templates/codex-ingest-contract.md`
+- Receipt: all checks pass (18 sections, banned-words clean, em-dash clean, 3-label discipline applied, 5+5+5+5 KB outputs)
+- Deviation: Zotero MCP failed in sandbox; codex fall-back was local Zotero SQLite read + storage text cache (different fallback than paper 3, but `fulltext_source` was the main PDF).
+- Key insight: archetype is "policy dispute resolved by boundary diagnosis." Paper turns a conflict between Ricks 2023 (hourly needed) and Zeyen 2023 (annual fine) into a hidden-counterfactual diagnosis (compete vs non-compete additionality). Phased PTC recommendation = annual now, hourly post-2030, eventually no time-matching as grid decarbonizes.
+- Toolchain fix: `scripts/codex-ingest-paper.sh` v1 had bash 3.2 HEREDOC-in-`$()` parse bug (macOS default bash). Rewrote to use `mktemp` + stdin redirect. Test PR cycle: 1 failure, 1 success.
+- Contract design: `_templates/codex-ingest-contract.md` v1 in production. Cross-references CLAUDE.md anti-fluff list + 3-label discipline + 18-section template.
+
 ## [2026-05-11] ingest | Yang et al. 2022, Nature Energy, China HTA clean hydrogen
 
 - Zotero: `PIQKGJNB` (parent journalArticle); PDF attachment `MYQEQR3K`; notes `7I3UWH2F`, `J2BKDKY2`
