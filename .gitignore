@@ -59,8 +59,9 @@ Cosmic Brain*.png
 Untitled *.canvas
 Untitled.base
 *.base
-# Track our committed dashboard.base (Bases dashboard shipped with the vault)
+# Track our committed dashboards (Bases dashboards shipped with the vault)
 !wiki/meta/dashboard.base
+!wiki/papers.base
 
 # Scratch canvases and personal vault files
 Banana Images.canvas
@@ -107,3 +108,20 @@ _attachments/
 .vault-meta/.tiling.lock
 .vault-meta/tiling-cache.json
 .vault-meta/tiling-cache.*.tmp
+
+# Top Paper Lab — defense-in-depth.
+# Architecturally, .raw/papers/{KEY}/ holds ONLY lightweight text metadata stubs;
+# PDFs / SI / source-data live in Zotero's storage directory (~/Zotero/storage/{ITEM_ID}/),
+# not in this iCloud-synced repo. These ignores catch accidental drops.
+.raw/papers/**/*.pdf
+.raw/papers/**/*.zip
+.raw/papers/**/*.tar.gz
+.raw/papers/**/*.xlsx
+.raw/papers/**/*.docx
+.raw/papers/**/supplementary/
+.raw/papers/**/source-data/
+
+# Codex delegation run logs (large reasoning traces, ~500-900 KB each, noisy).
+# The structured JSON receipt is preserved and tracked.
+.raw/papers/**/codex-stderr.log
+.raw/papers/**/codex-stdout.log

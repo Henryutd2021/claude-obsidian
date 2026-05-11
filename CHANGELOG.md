@@ -1,6 +1,29 @@
 # Changelog
 
-All notable changes to claude-obsidian. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
+This vault was originally the `claude-obsidian` plugin. As of 2026-05-11 it forks into a personal **Top Paper Lab** for Henry. The public `claude-obsidian` plugin continues at <https://github.com/AgriciDaniel/claude-obsidian>. History before 2026-05-11 documents the plugin lineage; entries from 2026-05-11 onward document the personal lab.
+
+Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
+
+## [Unreleased] - 2026-05-11 — Top Paper Lab rebrand
+
+### Added
+
+- `wiki/_meta/` archive directory; pre-TPL `claude-obsidian` content relocated here.
+- `wiki/_meta/dropped-plugin-scaffold/.claude-plugin/` — plugin scaffold moved out of the active vault root.
+- 4-folder TPL wiki layout: `wiki/papers/`, `wiki/patterns/`, `wiki/playbook/`, `wiki/projects/` (created in Phase 2).
+- TPL constitution in `CLAUDE.md` (Phase 3).
+- `wiki/papers.base` Obsidian Bases dashboard (Phase 4).
+- `.raw/zotero_manifest/` scaffolding for Zotero-MCP-driven paper inventory.
+
+### Changed
+
+- Vault identity from "claude-obsidian plugin demo" to "Top Paper Lab — personal top-tier energy-paper reverse-engineering wiki."
+- Folder path unchanged (still `.../claude-obsidian/`) to avoid disrupting iCloud sync and Git remote. Internal docs and CLAUDE.md updated to refer to the lab by name.
+- `.gitignore` extended to exclude `.raw/papers/**/main.pdf`, `.raw/papers/**/supplementary/**`, `.raw/papers/**/source-data/**` (publisher copyright safety).
+
+### Removed (from active root)
+
+- `.claude-plugin/` directory (preserved under `wiki/_meta/dropped-plugin-scaffold/.claude-plugin/`).
 
 ## [1.6.0] - 2026-04-24
 

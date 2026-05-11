@@ -11,10 +11,14 @@
             "id": "a31de1b302cdc5cf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/hot.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hot"
             }
           }
         ]
@@ -183,9 +187,68 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-memos:Thino": false,
+      "obsidian-memos:Thino Super": false
     }
   },
   "active": "a31de1b302cdc5cf",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "wiki/_meta/concepts/Query-Time Retrieval.md",
+    "wiki/_meta/concepts/Hot Cache.md",
+    "wiki/_meta/canvases/main.canvas",
+    "wiki/_meta/canvases/welcome.canvas",
+    "wiki/_meta/canvases/claude-obsidian-presentation.canvas",
+    "wiki/papers.base",
+    "wiki/usage.md",
+    "wiki/papers/2023-J-smr-industrial-process-heat-tea.md",
+    "wiki/papers/2024-NE-flexible-geothermal-decarb-systems.md",
+    "wiki/papers/2026-NE-ai-data-centres-grid-interactive.md",
+    "wiki/papers/2022-J-data-center-energy-estimates-review.md",
+    "wiki/papers/2022-NE-flexible-nuclear-deep-decarb.md",
+    "wiki/papers/2025-NE-smr-policy-module-learning.md",
+    "wiki/_meta/meta/dragonscale-6-test-flow.png",
+    "wiki/_meta/meta/claude-obsidian-v1.4-release-session.md",
+    "wiki/_meta/meta/claude-obsidian-gif-1x1.gif",
+    "wiki/_meta/meta/claude-obsidian-cover-16x9.png",
+    "wiki/_meta/canvases/youtube-explainer.canvas",
+    "README.md",
+    "wiki/papers/2022-NE-green-h2-probabilistic-feasibility.md",
+    "wiki/papers/2023-NC-endogenous-learning-green-h2-europe.md",
+    "wiki/_meta/lint-reports/lint-2026-05-11.md",
+    "wiki/_meta/lint-reports",
+    "wiki/papers/2025-J-space-based-solar-europe.md",
+    "wiki/papers/2021-NE-kikstra-covid-energy-demand-scenarios.md",
+    "wiki/papers/2023-N-china-pv-wind-3844-plants.md",
+    "hooks/README.md",
+    "GEMINI.md",
+    "WIKI.md",
+    "AGENTS.md",
+    "wiki/papers/2024-NE-h2-additionality-time-matching.md",
+    "wiki/Wiki Map.canvas",
+    "scripts/codex-ingest-paper.sh",
+    "_templates/codex-ingest-contract.md",
+    "wiki/papers/2022-NE-china-hta-clean-hydrogen.md",
+    "wiki/_meta/rebrand-handoff-2026-05-11.md",
+    "scripts/__pycache__/boundary-score.cpython-314.pyc",
+    "_templates/project-page.md",
+    "wiki/_meta/questions",
+    "wiki/_meta/sources",
+    "wiki/_meta/meta/workflow-loop.gif",
+    "wiki/_meta/meta/wiki-graph-grow.gif",
+    "wiki/_meta/meta/welcome-canvas.gif",
+    "wiki/_meta/meta/image-example-wiki-map-view.png",
+    "wiki/_meta/meta/image-example-graph-view.png",
+    "wiki/_meta/meta/dragonscale-mechanism-overview.svg",
+    "wiki/_meta/meta/dragonscale-mechanism-overview.png",
+    "wiki/_meta/meta/dashboard.base",
+    "wiki/_meta/meta",
+    "wiki/_meta/folds",
+    "wiki/_meta/entities",
+    "wiki/canvases/welcome.canvas",
+    "wiki/canvases/main.canvas"
+  ]
 }

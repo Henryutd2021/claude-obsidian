@@ -1,385 +1,108 @@
 
-# claude-obsidian
+# Top Paper Lab
 
-<p align="center">
-  <img src="wiki/meta/claude-obsidian-gif-cover-16x9.gif" alt="claude-obsidian" width="100%" />
-</p>
+> **Personal fork from [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) v1.6.0.** This vault was the upstream plugin's reference vault until 2026-05-11. It is now Henry's personal **Top Paper Lab**, a Karpathy-style LLM Wiki specialized for reverse-engineering top-tier energy papers (Nature, Nature Energy, Joule, Nature Communications, Nature Sustainability, Nature Climate Change, One Earth) and distilling a personal high-impact-paper writing playbook. The upstream `claude-obsidian` plugin continues at the link above; this fork drops the plugin distribution role.
 
-[![GitHub stars](https://img.shields.io/github/stars/AgriciDaniel/claude-obsidian?style=flat&color=e8734a)](https://github.com/AgriciDaniel/claude-obsidian/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-8B5CF6)](https://code.claude.com/docs/en/discover-plugins)
-[![Blog Post](https://img.shields.io/badge/Deep_Dive-Blog_Post-22c55e)](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain)
+[![Upstream: claude-obsidian](https://img.shields.io/badge/Upstream-claude--obsidian_v1.6.0-8B5CF6)](https://github.com/AgriciDaniel/claude-obsidian)
 
-Claude + Obsidian knowledge companion. A running notetaker that builds and maintains a persistent, compounding wiki vault. Every source you add gets integrated. Every question you ask pulls from everything that has been read. Knowledge compounds like interest.
-
-Based on [Andrej Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). **11 skills. Zero manual filing. Multi-agent support. Optional [DragonScale Memory](docs/dragonscale-guide.md) extension** (log folds, deterministic page addresses, semantic tiling lint, boundary-first autoresearch).
+The lab ingests papers Henry has already curated in Zotero (via Zotero MCP), runs structured 18-section reverse-engineering analysis per paper, and compounds the per-paper outputs into cross-paper pattern pages and a personal writing playbook. The constitution lives in [`CLAUDE.md`](CLAUDE.md). Navigation starts at [`wiki/index.md`](wiki/index.md) and [`wiki/hot.md`](wiki/hot.md).
 
 ---
 
-## What It Does
-### [Youtube Demo](https://www.youtube.com/watch?v=a2hgayvr-H4)
-<p align="center">
-  <img src="wiki/meta/welcome-canvas.gif" alt="Welcome canvas. Visual demo board" width="96%" />
-</p>
+## What lives where
 
-You drop sources. Claude reads them, extracts entities and concepts, updates cross-references, and files everything into a structured Obsidian vault. The wiki gets richer with every ingest.
+```
+.                                 vault root
+|-- wiki/                         active wiki
+|   |-- index.md                  navigation hub
+|   |-- hot.md                    recent context (read first on session start)
+|   |-- log.md                    append-only ingest log
+|   |-- papers.base               Obsidian Bases dashboard over papers/
+|   |-- papers/                   one .md per ingested paper analysis
+|   |-- patterns/                 cross-paper synthesis (lazy subfolders)
+|   |-- playbook/                 personal writing principles
+|   |-- projects/                 Henry's own manuscripts in progress
+|   |-- _meta/                    pre-fork archive + dropped plugin scaffold
+|   |-- Wiki Map.canvas           visual layout
+|-- _templates/                   paper-analysis.md, codex-ingest-contract.md, ...
+|-- skills/                       11 wiki operation skills (wiki-ingest, wiki-query, ...)
+|-- scripts/                      DragonScale machinery + codex-ingest-paper.sh wrapper
+|-- hooks/                        SessionStart, PostToolUse auto-commit, Stop
+|-- tests/                        DragonScale test suite (run with `make test`)
+|-- .raw/papers/{KEY}/            per-paper 7-stub package (metadata.json, DA/CA, ...)
+|-- .raw/zotero_manifest/         CSV manifest of the curated Top Paper Lab collection
+`-- .vault-meta/                  DragonScale state (address counter, tiling cache)
+```
 
-You ask questions. Claude reads the hot cache (recent context), scans the index, drills into relevant pages, and synthesizes an answer. It cites specific wiki pages, not training data.
-
-You lint. Claude finds orphans, dead links, stale claims, and missing cross-references. Your wiki stays healthy without manual cleanup.
-
-At the end of every session, Claude updates a hot cache. The next session starts with full recent context, no recap needed.
-
-<p align="center">
-  <img src="wiki/meta/image-example-graph-view.png" alt="Graph view. Color-coded wiki nodes" width="48%" />
-  <img src="wiki/meta/image-example-wiki-map-view.png" alt="Wiki Map canvas" width="48%" />
-</p>
-
----
-
-## Why claude-obsidian?
-
-Most Obsidian AI plugins are chat interfaces - they answer questions about your existing notes. claude-obsidian is a knowledge engine - it creates, organizes, maintains, and evolves your notes autonomously.
-
-| Capability | claude-obsidian | Smart Connections | Copilot |
-|---|---|---|---|
-| **Auto-organize notes** | Creates entities, concepts, cross-references | No | No |
-| **Contradiction flagging** | `[!contradiction]` callouts with sources | No | No |
-| **Session memory** | Hot cache persists between conversations | No | No |
-| **Vault maintenance** | 8-category lint (orphans, dead links, gaps) | No | No |
-| **Autonomous research** | 3-round web research with gap-filling | No | No |
-| **Multi-model support** | Claude, Gemini, Codex, Cursor, Windsurf | Claude only | Multiple |
-| **Visual canvas** | Via [claude-canvas](https://github.com/AgriciDaniel/claude-canvas) companion | No | No |
-| **Query with citations** | Cites specific wiki pages | Cites similar notes | Cites notes |
-| **Batch ingestion** | Parallel agents for multiple sources | No | No |
-| **Open source** | MIT | MIT | Freemium |
-
-> **Deep dive:** [I Turned Obsidian Into a Self-Organizing AI Brain](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain) - full breakdown with data visualizations, market context, and workflow demos.
+The plugin-distribution scaffolding that used to sit at the root (`bin/`, `commands/`, `agents/`, `docs/`, `AGENTS.md`, `GEMINI.md`, `WIKI.md`, `.github/`, `.windsurf/`, `.cursor/`) is archived under [`wiki/_meta/dropped-plugin-scaffold/`](wiki/_meta/dropped-plugin-scaffold/). See its [README](wiki/_meta/dropped-plugin-scaffold/README.md) for what was moved and why.
 
 ---
 
-## Quick Start
+## How to add a paper
 
-### Option 1: Clone as vault (recommended: full setup in 2 minutes)
+Two paths, both governed by the same 18-section [paper-analysis template](_templates/paper-analysis.md) and the three-label discipline (`Evidence:` / `Inference:` / `Lesson:`) plus the anti-fluff word list in [`CLAUDE.md`](CLAUDE.md).
+
+**Path A: Claude Code composes**
+Drop a Zotero key into a Claude Code session. Claude reads the paper via Zotero MCP, scaffolds the seven `.raw/papers/{KEY}/` stub files, allocates a `c-NNNNNN` address, and writes `wiki/papers/{year}-{journal-short}-{slug}.md`. Tight cross-reference coupling, slower (about 15 minutes per paper), context-bounded after a few papers.
+
+**Path B: Delegate to codex-cli**
+Run `scripts/codex-ingest-paper.sh <ZOTERO_KEY> <ADDRESS> [SLUG_HINT]`. Codex follows the standing contract at [`_templates/codex-ingest-contract.md`](_templates/codex-ingest-contract.md), writes everything under `wiki/papers/` and `.raw/papers/{KEY}/`, and emits a JSON receipt at `.raw/papers/{KEY}/codex-receipt.json`. Parallel-friendly (3-5 jobs at once), about 200-230k tokens and 8-12 minutes wall-clock per paper. Address allocation and index/log/hot/manifest integration stay with Claude Code (single-writer policy).
+
+Hybrid is the recommended workflow: Path A for the first paper of a new archetype or journal, Path B for batches of 3-5 similar papers, then a Claude Code consolidation pass to add Cross-references and contradiction callouts.
+
+---
+
+## DragonScale machinery
+
+Active mechanisms inherited from the upstream plugin (still in regular use):
+
+- `scripts/allocate-address.sh` reserves the next `c-NNNNNN` page address under a portable lock (`flock` on Linux, `mkdir` fallback on macOS).
+- `skills/wiki-fold/` rolls up `wiki/log.md` entries into period summaries at `2^k` ingest boundaries (k=3, first synthesis at 8 papers).
+- `scripts/tiling-check.py` catches semantic duplication between pattern pages.
+- `scripts/boundary-score.py` surfaces under-researched pattern areas for `/autoresearch`.
+
+Tests:
 
 ```bash
-git clone https://github.com/AgriciDaniel/claude-obsidian
-cd claude-obsidian
-bash bin/setup-vault.sh
+make test
 ```
 
-Open the folder in Obsidian: **Manage Vaults → Open folder as vault → select `claude-obsidian/`**
-
-Open Claude Code in the same folder. Type `/wiki`.
-
-> `setup-vault.sh` configures `graph.json` (filter + colors), `app.json` (excludes plugin dirs), and `appearance.json` (enables CSS). Run it once before the first Obsidian open. You get the fully pre-configured graph view, color scheme, and wiki structure out of the box.
+(Covers `allocate-address.sh`, `tiling-check.py`, `boundary-score.py`. No ollama dependency for the default test set.)
 
 ---
 
-### Option 2: Install as Claude Code plugin
+## Cross-project consult
 
-Plugin installation is a two-step process in Claude Code. First add the marketplace catalog, then install the plugin from it.
-
-```bash
-# Step 1: add the marketplace
-claude plugin marketplace add AgriciDaniel/claude-obsidian
-
-# Step 2: install the plugin
-claude plugin install claude-obsidian@claude-obsidian-marketplace
-```
-
-In any Claude Code session: `/wiki`. Claude walks you through vault setup.
-
-To check it worked:
-```bash
-claude plugin list
-```
-
----
-
-### Option 3: Add to an existing vault
-
-Copy `WIKI.md` into your vault root. Paste into Claude:
-
-```
-Read WIKI.md in this project. Then:
-1. Check if Obsidian is installed. If not, install it.
-2. Check if the Local REST API plugin is running on port 27124.
-3. Configure the MCP server.
-4. Ask me ONE question: "What is this vault for?"
-Then scaffold the full wiki structure.
-```
-
----
-
-## Commands
-
-| You say | Claude does |
-|---------|------------|
-| `/wiki` | Setup check, scaffold, or continue where you left off |
-| `ingest [file]` | Read source, create 8-15 wiki pages, update index and log |
-| `ingest all of these` | Batch process multiple sources, then cross-reference |
-| `what do you know about X?` | Read index > relevant pages > synthesize answer |
-| `/save` | File the current conversation as a wiki note |
-| `/save [name]` | Save with a specific title (skips the naming question) |
-| `/autoresearch [topic]` | Run the autonomous research loop: search, fetch, synthesize, file |
-| `/canvas` | Open or create the visual canvas, list zones and nodes |
-| `/canvas add image [path]` | Add an image (URL or local path) to the canvas with auto-layout |
-| `/canvas add text [content]` | Add a markdown text card to the canvas |
-| `/canvas add pdf [path]` | Add a PDF document as a rendered preview node |
-| `/canvas add note [page]` | Pin a wiki page as a linked card on the canvas |
-| `/canvas zone [name]` | Add a new labeled zone to organize visual content |
-| `/canvas from banana` | Capture recently generated images onto the canvas |
-| `lint the wiki` | Health check: orphans, dead links, gaps, suggestions |
-| `update hot cache` | Refresh hot.md with latest context summary |
-
-> **Want more?** [claude-canvas](https://github.com/AgriciDaniel/claude-canvas) adds 12 templates, 6 layout algorithms, AI image generation, presentations, and full canvas orchestration. Install both — they complement each other.
-
----
-
-## Cross-Project Power Move
-
-Point any Claude Code project at this vault. Add to that project's `CLAUDE.md`:
+To consult the lab from another Claude Code project, add this to that project's `CLAUDE.md`:
 
 ```markdown
-## Wiki Knowledge Base
-Path: ~/path/to/vault
+## Top Paper Lab consult
 
-When you need context not already in this project:
-1. Read wiki/hot.md first (recent context cache)
-2. If not enough, read wiki/index.md
-3. If you need domain details, read the relevant domain sub-index
-4. Only then drill into specific wiki pages
+Path: /Users/henry/Library/Mobile Documents/iCloud~md~obsidian/Documents/claude-obsidian/
 
-Do NOT read the wiki for general coding questions or tasks unrelated to [domain].
-```
+When the question is about top-tier energy-paper writing strategy, contribution framing, or journal fit:
+1. Read wiki/hot.md (recent context).
+2. Read wiki/index.md.
+3. Search wiki/papers/ and wiki/patterns/ for relevant pages.
+4. Cite specific paper-analysis pages.
 
-Your executive assistant, coding projects, and content workflows all draw from the same knowledge base.
-
----
-
-## Six Wiki Modes
-
-| Mode | Use when |
-|------|---------|
-| A: Website | Sitemap, content audit, SEO wiki |
-| B: GitHub | Codebase map, architecture wiki |
-| C: Business | Project wiki, competitive intelligence |
-| D: Personal | Second brain, goals, journal synthesis |
-| E: Research | Papers, concepts, thesis |
-| F: Book/Course | Chapter tracker, course notes |
-
-Modes can be combined.
-
----
-
-## What Gets Created
-
-A typical scaffold creates:
-- Folder structure for your chosen mode
-- `wiki/index.md`: master catalog
-- `wiki/log.md`: append-only operation log
-- `wiki/hot.md`: recent context cache
-- `wiki/overview.md`: executive summary
-- `wiki/meta/dashboard.base`: Bases dashboard (primary, native Obsidian)
-- `wiki/meta/dashboard.md`: Legacy Dataview dashboard (optional fallback)
-- `_templates/`: Obsidian Templater templates for each note type
-- `.obsidian/snippets/vault-colors.css`: color-coded file explorer
-- Vault `CLAUDE.md`: auto-loaded project instructions
-
----
-
-## MCP Setup (Optional)
-
-MCP lets Claude read and write vault notes directly without copy-paste.
-
-Option A (REST API based):
-1. Install the Local REST API plugin in Obsidian
-2. Copy your API key
-3. Run:
-```bash
-claude mcp add-json obsidian-vault '{
-  "type": "stdio",
-  "command": "uvx",
-  "args": ["mcp-obsidian"],
-  "env": {
-    "OBSIDIAN_API_KEY": "your-key",
-    "OBSIDIAN_HOST": "127.0.0.1",
-    "OBSIDIAN_PORT": "27124",
-    "NODE_TLS_REJECT_UNAUTHORIZED": "0"
-  }
-}' --scope user
-```
-
-Option B (filesystem based, no plugin needed):
-```bash
-claude mcp add-json obsidian-vault '{
-  "type": "stdio",
-  "command": "npx",
-  "args": ["-y", "@bitbonsai/mcpvault@latest", "/path/to/your/vault"]
-}' --scope user
+Do NOT consult for anything outside renewable energy / wind-solar-hydrogen / TEA / energy-system-optimization / building decarbonization scope.
 ```
 
 ---
 
-## Plugins
+## Scope
 
-### Core Plugins (built into Obsidian: no install needed)
-
-| Plugin | Purpose |
-|--------|---------|
-| **Bases** | Powers `wiki/meta/dashboard.base`: native database views. Available since Obsidian v1.9.10 (August 2025). **Replaces Dataview for the primary dashboard.** |
-| **Properties** | Visual frontmatter editor |
-| **Backlinks**, **Outline**, **Graph view** | Standard navigation |
-
-### Pre-installed Community Plugins (ship with this vault)
-
-Enable in **Settings → Community Plugins → enable**:
-
-| Plugin | Purpose | Notes |
-|--------|---------|-------|
-| **Calendar** | Right-sidebar calendar with word count + task dots | Pre-installed |
-| **Thino** | Quick memo capture panel | Pre-installed |
-| **Excalidraw** | Freehand drawing canvas, annotate images | Pre-installed* |
-| **Banners** | Notion-style header image via `banner:` frontmatter | Pre-installed |
-
-\* Excalidraw `main.js` (8MB) is downloaded automatically by `setup-vault.sh`. It is not tracked in git.
-
-### Also install from Community Plugins (not pre-installed)
-
-| Plugin | Purpose |
-|--------|---------|
-| **Templater** | Auto-fills frontmatter from `_templates/` |
-| **Obsidian Git** | Auto-commits vault every 15 minutes |
-| **Dataview** *(optional/legacy)* | Only needed for the legacy `wiki/meta/dashboard.md` queries. The primary dashboard now uses Bases. |
-
-Also install the **[Obsidian Web Clipper](https://obsidian.md/clipper)** browser extension. Sends web pages to `.raw/` in one click.
+Renewable energy integration, wind-solar-hydrogen integrated systems, green hydrogen techno-economic analysis, energy system optimization, building energy saving and emission reduction, energy policy and cost analysis. Anything outside this scope should be answered without consulting the lab.
 
 ---
 
-## CSS Snippets (auto-enabled by setup-vault.sh)
+<details>
+<summary>Plugin lineage (pre-fork history)</summary>
 
-Three snippets ship with the vault and are enabled automatically:
+This vault was the reference vault for the public [`claude-obsidian` plugin v1.6.0](https://github.com/AgriciDaniel/claude-obsidian) up to 2026-05-11. The plugin is Claude + Obsidian knowledge companion built on Andrej Karpathy's [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), with 11 skills, multi-agent support, and the optional DragonScale Memory extension (log folds, deterministic page addresses, semantic tiling lint, boundary-first autoresearch).
 
-| Snippet | Effect |
-|---------|--------|
-| `vault-colors` | Color-codes `wiki/` folders by type in the file explorer (blue = concepts, green = sources, purple = entities) |
-| `ITS-Dataview-Cards` | Turns Dataview `TABLE` queries into visual card grids: use ` ```dataviewjs ` with `.cards` class |
-| `ITS-Image-Adjustments` | Fine-grained image sizing in notes: append `\|100` to any image embed |
+Upstream documentation, install scripts, and IDE rules are preserved at [`wiki/_meta/dropped-plugin-scaffold/`](wiki/_meta/dropped-plugin-scaffold/). For the canonical project, see the upstream repository. For change history, see [`CHANGELOG.md`](CHANGELOG.md).
 
----
-
-## Banner Plugin
-
-Add to any wiki page frontmatter:
-
-```yaml
-banner: "_attachments/images/your-image.png"
-banner_icon: "🧠"
-```
-
-The page renders a full-width header image in Obsidian. Works great for hub pages and overviews.
-
----
-
-## File Structure
-
-```
-claude-obsidian/
-├── .claude-plugin/
-│   ├── plugin.json              # manifest
-│   └── marketplace.json         # distribution
-├── skills/
-│   ├── wiki/                    # orchestrator + references (7 ref files)
-│   ├── wiki-ingest/             # INGEST operation
-│   ├── wiki-query/              # QUERY operation
-│   ├── wiki-lint/               # LINT operation
-│   ├── save/                    # /save: file conversations to wiki
-│   ├── autoresearch/            # /autoresearch: autonomous research loop
-│   │   └── references/
-│   │       └── program.md       # configurable research objectives
-│   └── canvas/                  # /canvas: visual layer (images, PDFs, notes)
-│       └── references/
-│           └── canvas-spec.md   # Obsidian canvas JSON format reference
-├── agents/
-│   ├── wiki-ingest.md           # parallel ingestion agent
-│   └── wiki-lint.md             # health check agent
-├── commands/
-│   ├── wiki.md                  # /wiki bootstrap command
-│   ├── save.md                  # /save command
-│   ├── autoresearch.md          # /autoresearch command
-│   └── canvas.md                # /canvas visual layer command
-├── hooks/
-│   └── hooks.json               # SessionStart + Stop hot cache hooks
-├── _templates/                  # Obsidian Templater templates
-├── wiki/
-│   ├── Wiki Map.canvas          # visual hub, central graph node
-│   ├── canvases/                # welcome.canvas + main.canvas (visual demos)
-│   ├── getting-started.md       # onboarding walkthrough (inside the vault)
-│   ├── concepts/                # seeded: LLM Wiki Pattern, Hot Cache, Compounding Knowledge
-│   ├── entities/                # seeded: Andrej Karpathy
-│   ├── sources/                 # populated by your first ingest
-│   └── meta/
-│       ├── dashboard.base       # Bases dashboard (primary)
-│       └── dashboard.md         # Legacy Dataview dashboard (optional)
-├── .raw/                        # source documents (hidden in Obsidian)
-├── .obsidian/snippets/          # vault-colors.css (3-color scheme)
-├── WIKI.md                      # full schema reference
-├── CLAUDE.md                    # project instructions
-└── README.md                    # this file
-```
-
----
-
-## AutoResearch: program.md
-
-The `/autoresearch` command is configurable. Edit `skills/autoresearch/references/program.md` to control:
-
-- What sources to prefer (academic, official docs, news)
-- Confidence scoring rules
-- Max rounds and max pages per session
-- Domain-specific constraints
-
-The default program works for general research. Override it for your domain. A medical researcher would add "prefer PubMed". A business analyst would add "focus on market data and filings".
-
----
-
-## Seed Vault
-
-This repo ships with a seeded vault. Open it in Obsidian and you'll see:
-
-- `wiki/concepts/`: LLM Wiki Pattern, Hot Cache, Compounding Knowledge
-- `wiki/entities/`: Andrej Karpathy
-- `wiki/sources/`: empty until your first ingest
-- `wiki/meta/dashboard.base`: Bases dashboard (works in any Obsidian v1.9.10+)
-- `wiki/meta/dashboard.md`: Legacy Dataview dashboard (optional fallback)
-
-The graph view will show a connected cluster of 5 pages. This is what the wiki looks like after one ingest. Add more sources and it grows from there.
-
-<p align="center">
-  <img src="wiki/meta/wiki-graph-grow.gif" alt="Knowledge graph growing" width="48%" />
-  <img src="wiki/meta/workflow-loop.gif" alt="Workflow loop" width="48%" />
-</p>
-
----
-
-## Companion: claude-canvas
-
-For the visual layer, [claude-canvas](https://github.com/AgriciDaniel/claude-canvas) adds AI-orchestrated canvas creation - knowledge graphs, presentations, flowcharts, mood boards with 12 templates and 6 layout algorithms. Auto-detects claude-obsidian vaults.
-
-```bash
-claude plugin install AgriciDaniel/claude-canvas
-```
-
----
-
-## Community
-
-- [Blog post](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain) - deep dive with competitor analysis, data charts, and workflow demos
-- [AI Marketing Hub](https://www.skool.com/ai-marketing-hub) - 2,800+ members, free community
-- [YouTube](https://www.youtube.com/@AgriciDaniel) - tutorials and demos
-- [All open-source tools](https://github.com/AgriciDaniel) - claude-seo, claude-ads, claude-blog, and more
-
----
-
-*Based on [Andrej Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). Built by [Agrici Daniel](https://agricidaniel.com/about).*
+</details>

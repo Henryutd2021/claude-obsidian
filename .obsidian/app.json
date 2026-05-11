@@ -1,13 +1,17 @@
 {
   "userIgnoreFilters": [
-    "agents/",
-    "commands/",
     "hooks/",
     "skills/",
+    "scripts/",
+    "tests/",
     "_templates/",
     "README.md",
     "CLAUDE.md",
-    "WIKI.md",
-    "Welcome.md"
-  ]
+    "CHANGELOG.md",
+    "ATTRIBUTION.md",
+    "LICENSE",
+    "Makefile"
+  ],
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false
 }
