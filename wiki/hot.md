@@ -97,6 +97,17 @@ We crossed the paper-10 pattern-update gate per CLAUDE.md. Patterns can now begi
 - **Meta-analysis as primary contribution**: Klaaßen & Steffen 2023 NCC. 1 paper so far — `patterns/archetypes/meta-analysis-primary` premature.
 - **Plant-level / city-level resolution**: Wang 2023 N (utility-scale 3,844 plants), Zhang 2023 NC (rooftop in 354 cities). 2 papers — `patterns/methods/plant-level-or-city-level-spatial` ready.
 
+### New batch-3 cross-paper anchors
+
+The 5 batch-3 papers significantly reinforce existing clusters and seed several new ones. Every batch-3 page auto-generated its `Related papers in this lab` section (contract V2 is now well-validated):
+
+- **`patterns/methods/option-value-scenario-pairs`** — Wolfram 2024 OE (with/without H2 + end-use exclusion) anchors. Strong supporters: Yang 2022 NE (China clean H2 vs no H2), Zeyen 2023 NC (endogenous learning on/off), Giovanniello 2024 NE (additionality on/off). **4 supporting papers** → ready for pattern stub.
+- **`patterns/hydrogen/merit-order-and-end-use-ranking`** — Ueckerdt 2021 NCC (efficiency-cost-MACC sorting rule) and Wolfram 2024 OE (end-use exclusion ranking, shipping 6.4%) share the merit-order frame. **2 supporting papers** → ready for pattern stub.
+- **`patterns/feasibility/empirical-growth-envelope`** — Cherp 2021 NE (ex-post 60-country logistic fits) and Odenweller 2022 NE (Monte-Carlo from analog-technology growth distributions) share the "growth-history as feasibility ceiling" frame. **2 supporting papers** → ready for pattern stub.
+- **`patterns/buildings/stock-level-scenario-frame`** — Berrill 2022 NCC alone for now. **1 paper, premature** — wait for at least one more building-energy ingest (e.g. another residential or commercial stock paper) before stubbing.
+- **`patterns/supply-chain/geography-counterfactual`** — Helveston 2022 N alone. **1 paper, premature.**
+- **`patterns/figures/cost-multi-unit-reporting`** — Wolfram 2024 OE's discounted/undiscounted/GDP-share triple presentation. Pairs with Klaaßen 2023 NCC (10x/9x ratios as headline). **2 supporting papers** → ready for pattern stub.
+
 ### Codex-detected anchors (batch 2, contract V2 worked)
 
 UELISBYS (Zheng 2020 J) is the first paper where codex itself emitted explicit cross-paper Cross-references during generation:
