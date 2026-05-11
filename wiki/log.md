@@ -23,7 +23,48 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
-## [2026-05-11] architecture | v2 cutover: two-layer corpus + 8 subdomains + connectivity layer
+## [2026-05-11] architecture | v2 Phase 2: L2 templates + contracts + runner script
+
+Phase 2 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied-energy-calm-moler.md`).
+
+**Renamed L1 files** (clean two-layer naming):
+- `_templates/paper-analysis.md` → `_templates/paper-analysis-L1.md`
+- `_templates/codex-ingest-contract.md` → `_templates/codex-ingest-contract-L1.md`
+- Updated L1 contract to output to `wiki/papers/L1/{year}-{js}-{slug}.md` (was `wiki/papers/`) and to require the 4 new frontmatter fields (`journal_role: top_journal_exemplar`, `ingest_depth: A_deep`, `subdomain_primary[]`, `subdomain_secondary[]`).
+- Updated `scripts/codex-ingest-paper.sh` (L1 runner) to reference the renamed contract path and the L2 sibling script.
+
+**Created L2 templates** (3 depths):
+- `_templates/paper-analysis-L2-A.md` — 10-section applied template: Positioning + 11-dim applied-strength table + Method blueprint + Parameter & assumption table + Case study design + Sensitivity/uncertainty + Results & figures (applied-typical vs top-journal-typical classification) + Top-vs-applied comparison + Direct value for Henry + KB outputs (Method Card + Parameter Card + Case Study Card + 5 applied lessons + 5 upgrade notes + 5 future questions). Target 12-18 KB.
+- `_templates/paper-analysis-L2-B.md` — 6-section one-page template: one-paragraph summary + why-in-the-lab + compressed method note + parameter highlights (3-6 rows) + 3 lessons + top-vs-applied one-liner. Target 4-6 KB.
+- `_templates/paper-analysis-L2-C.md` — 3-paragraph citation marker template. Target <500 bytes body.
+
+**Created L2 codex contracts** (3 depths):
+- `_templates/codex-ingest-contract-L2-A.md` — full contract with bank-candidates.md side-effect; explicit "do NOT ask why-Nature-Energy" philosophy section; 7-stub package; receipt schema with `pages_recommended_for_update_by_orchestrator[]` so banks/subdomains/patterns are written by the orchestrating session, not codex.
+- `_templates/codex-ingest-contract-L2-B.md` — medium contract with 5-stub package (skip article-page and repository-links); optional bank-candidates if 1-3 parameter rows extracted; explicit abort-and-promote rule if content wants to exceed 8 KB.
+- `_templates/codex-ingest-contract-L2-C.md` — minimal contract with 3-stub package (metadata + zotero-attachments + asset-status only); no DA/CA stub; explicit abort-and-promote rule if content wants to exceed 500 bytes.
+
+**Created L2 runner** (`scripts/codex-ingest-paper-L2.sh`):
+- Accepts 5 args: ZOTERO_KEY, ADDRESS, SLUG_HINT, DEPTH (A_deep|B_medium|C_light), PRIMARY_SUBDOMAIN.
+- Routes to the matching contract.
+- Whitelists subdomain slugs against the 8-vocab + `_cross`.
+- Mirrors L1 runner's JSON receipt extraction.
+- Smoke-tested all 5 validation paths (missing args / bad depth / bad subdomain / bad address / bad key) — all reject before invoking codex.
+
+**Status after Phase 2:**
+- 22 L1 papers under `wiki/papers/L1/`.
+- 0 L2 papers; ready for pilot.
+- L1 and L2 contracts both updated to v2 frontmatter requirements.
+- Both runners executable.
+
+**Important: no codex was actually invoked in Phase 2.** Phase 2 produced only file scaffolding. Pilot ingest (3 L2-A + 2 L2-B + 1 L2-C) is the next step but requires Henry to (a) confirm Zotero is running and the 6 pilot papers are in Zotero, (b) stage the 6 in `.raw/zotero_manifest/l2_candidate_manifest.csv`, (c) trigger the runner. Each L2-A costs ~$2.5, L2-B ~$1, L2-C ~$0.1 in codex tokens (~$8 total for the 6).
+
+**Next** (Phase 2 pilot, then Phase 3):
+1. Henry: stage 6 L2 candidates in `l2_candidate_manifest.csv` with primary subdomain and target depth.
+2. Henry: trigger pilot ingest. Suggested mix: 1 H2-p2x paper at A_deep, 1 power-systems paper at A_deep, 1 integrated-energy paper at A_deep, 2 B_medium across other subdomains, 1 C_light.
+3. Claude Code: verify costs, page sizes, folder placement, bank-candidates emission, routing-rules recommendations.
+4. Phase 3: subdomain hub drafting + 11 cross-paper anchor promotion + parameter/sensitivity/method banks bootstrap.
+
+
 
 Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied-energy-calm-moler.md`).
 
