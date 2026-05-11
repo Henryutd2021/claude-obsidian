@@ -1,0 +1,80 @@
+{
+  "key": "T5W8LVA9",
+  "title": "Accelerating the energy transition towards photovoltaic and wind in China",
+  "authors": [
+    "Yijing Wang",
+    "Rong Wang",
+    "Katsumasa Tanaka",
+    "Philippe Ciais",
+    "Josep Penuelas",
+    "Yves Balkanski",
+    "Jordi Sardans",
+    "Didier Hauglustaine",
+    "Wang Liu",
+    "Xiaofan Xing",
+    "Jiarong Li",
+    "Siqing Xu",
+    "Yuankang Xiong",
+    "Ruipu Yang",
+    "Junji Cao",
+    "Jianmin Chen",
+    "Lin Wang",
+    "Xu Tang",
+    "Renhe Zhang"
+  ],
+  "journal": "Nature",
+  "volume": "619",
+  "issue": "7970",
+  "pages": "761-767",
+  "year": 2023,
+  "doi": "10.1038/s41586-023-06180-8",
+  "url": "https://www.nature.com/articles/s41586-023-06180-8",
+  "item_type": "journalArticle",
+  "tags": [],
+  "collections_count": null,
+  "child_attachments": [
+    {
+      "key": "DM5DMFZD",
+      "type": "main_pdf",
+      "filename": "Wang et al. - 2023 - Accelerating the energy transition towards photovoltaic and wind in China.pdf",
+      "storage_path": "unresolved: Zotero MCP canceled and local Zotero API was sandbox-blocked"
+    },
+    {
+      "key": "UVK9RAXN",
+      "type": "supplementary_information",
+      "filename": "41586_2023_6180_MOESM2_ESM.pdf",
+      "storage_path": "unresolved: Zotero MCP canceled and local Zotero API was sandbox-blocked"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "renewable-energy-integration",
+    "china-energy-transition",
+    "pv-wind-power",
+    "energy-system-optimization",
+    "transmission-storage",
+    "carbon-neutrality"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "optimization",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "plant-by-plant-optimization",
+    "geospatial-lcoe",
+    "marginal-abatement-cost",
+    "monte-carlo-uncertainty"
+  ],
+  "main_contribution_tags": [
+    "system-boundary-expansion",
+    "policy-relevance",
+    "mechanism-clarification",
+    "sectoral-coverage"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000005",
+  "fetched_at": "2026-05-11T09:48:54-0500",
+  "metadata_source_note": "Official Nature article page plus pre-extraction attachment hint; Zotero MCP calls returned user-cancelled and local API access to 127.0.0.1:23119 was blocked by sandbox."
+}

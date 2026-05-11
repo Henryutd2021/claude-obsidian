@@ -1,0 +1,47 @@
+{
+  "key": "8IMLJZAH",
+  "title": "The influence of additionality and time-matching requirements on the emissions from grid-connected hydrogen production",
+  "authors": [
+    "Michael A. Giovanniello",
+    "Anna N. Cybulsky",
+    "Tim Schittekatte",
+    "Dharik S. Mallapragada"
+  ],
+  "journal": "Nature Energy",
+  "journal_abbreviation": "Nat Energy",
+  "volume": null,
+  "issue": null,
+  "pages": "1-11",
+  "year": 2024,
+  "date": "2024-01-08",
+  "doi": "10.1038/s41560-023-01435-0",
+  "url": "https://www.nature.com/articles/s41560-023-01435-0",
+  "item_type": "journalArticle",
+  "zotero_tags": ["algorithmic control", "⭐⭐⭐", "📊"],
+  "collections_count": 2,
+  "collections": ["Hydrogen", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "2YD6VCF2",
+      "type": "attachment",
+      "content_type": "application/pdf",
+      "title": "Full Text PDF",
+      "filename": "Giovanniello et al. - 2024 - The influence of additionality and time-matching requirements on the emissions from grid-connected h.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/2YD6VCF2/Giovanniello et al. - 2024 - The influence of additionality and time-matching requirements on the emissions from grid-connected h.pdf",
+      "indexed_pages": 12,
+      "total_pages": 12
+    }
+  ],
+  "child_notes": [
+    {"key": "TPJHPEKJ", "title": "", "note_length": 36},
+    {"key": "A7A96MIY", "title": "这篇关于氢能的研究文章主要包括以下内容：", "note_length": 994}
+  ],
+  "topic_tags": ["green-hydrogen", "time-matching", "additionality", "renewable-energy-integration", "consequential-emissions", "hydrogen-policy"],
+  "paper_type_tags": ["modeling", "scenario-analysis", "TEA", "policy-analysis"],
+  "method_type_tags": ["DOLPHYN", "capacity-expansion-model", "consequential-emissions-accounting", "LCOH", "scenario-analysis"],
+  "main_contribution_tags": ["system-boundary-expansion", "policy-relevance", "mechanism-clarification", "counterintuitive-result"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000004",
+  "fetched_at": "2026-05-11",
+  "resolution_note": "Zotero MCP calls returned cancellation in this sandbox, so metadata and children were resolved from a read-only copy of the local Zotero database and full text from the Zotero storage text cache."
+}

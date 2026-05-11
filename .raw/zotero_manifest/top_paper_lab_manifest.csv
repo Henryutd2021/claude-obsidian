@@ -1,7 +1,7 @@
 zotero_key,title,authors,journal,year,doi,zotero_pdf_attached,zotero_si_attached,da_extracted,ca_extracted,external_repo,priority,ingest_status,review_status
 E3YAM65W,Using life cycle assessment to drive innovation for sustainable cool clouds,Alissa et al.,Nature,2025,,,,false,false,,3,candidate,unreviewed
 34H9D3IR,Quantifying the global eco-footprint of wearable healthcare electronics,Yang et al.,Nature,2026,,,,false,false,,3,candidate,unreviewed
-T5W8LVA9,Accelerating the energy transition towards photovoltaic and wind in China,Wang et al.,Nature,2023,,,,false,false,,3,candidate,unreviewed
+T5W8LVA9,Accelerating the energy transition towards photovoltaic and wind in China,Wang et al.,Nature,2023,10.1038/s41586-023-06180-8,true,true,true,true,true,1,ingested,reviewed
 B6LNILBU,Quantifying the cost savings of global solar photovoltaic supply chains,Helveston et al.,Nature,2022,,,,false,false,,3,candidate,unreviewed
 H998SFTH,Reduced carbon emission estimates from fossil fuel combustion and cement production in China,Liu et al.,Nature,2015,,,,false,false,,3,candidate,unreviewed
 954UBPKS,Probabilistic projections of global wind and solar power growth based on historical national experience,Jakhmola et al.,Nature Energy,2026,,,,false,false,,3,candidate,unreviewed
