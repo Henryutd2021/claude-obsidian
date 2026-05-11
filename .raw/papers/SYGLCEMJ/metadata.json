@@ -1,0 +1,41 @@
+{
+  "key": "SYGLCEMJ",
+  "title": "The role of policy and module manufacturing learning in industrial decarbonization by small modular reactors",
+  "authors": [
+    {"first": "Max", "last": "Vanatta"},
+    {"first": "William R.", "last": "Stewart"},
+    {"first": "Michael T.", "last": "Craig"}
+  ],
+  "journal": "Nature Energy",
+  "journal_abbreviation": "Nat Energy",
+  "volume": "10",
+  "issue": "1",
+  "pages": "77-89",
+  "year": 2025,
+  "doi": "10.1038/s41560-024-01665-w",
+  "url": "https://www.nature.com/articles/s41560-024-01665-w",
+  "item_type": "journalArticle",
+  "citation_key": "Vanatta.etalRolePolicy2025",
+  "date_added": "2025-02-17 17:14:50",
+  "date_modified": "2026-02-16 18:22:01",
+  "zotero_tags": ["Economics", "Energy modelling", "Nuclear energy"],
+  "collections_count": 2,
+  "collections": ["Decarbonization", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "M8ENSSVP",
+      "type": "application/pdf",
+      "filename": "Vanatta et al. - 2025 - The role of policy and module manufacturing learning in industrial decarbonization by small modular.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/M8ENSSVP/Vanatta et al. - 2025 - The role of policy and module manufacturing learning in industrial decarbonization by small modular.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["small-modular-reactors", "industrial-decarbonization", "process-heat", "nuclear-energy", "policy-analysis", "learning-curves", "united-states"],
+  "paper_type_tags": ["modeling", "TEA", "scenario-analysis", "optimization", "policy-analysis"],
+  "method_type_tags": ["MINLP", "rolling-horizon-optimization", "endogenous-learning", "FOAK-cost-sensitivity", "policy-scenario-analysis", "industrial-process-heat-modeling"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "mechanism-clarification", "sectoral-coverage"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000022",
+  "fetched_at": "2026-05-11T12:15:52-05:00",
+  "resolution_note": "MCP metadata call was cancelled; metadata was resolved read-only from local Zotero SQLite and the main PDF text cache."
+}

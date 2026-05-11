@@ -1,0 +1,24 @@
+{
+  "zotero_key": "SYZJZS6F",
+  "address": "c-000020",
+  "wiki_page": "wiki/papers/2022-NE-flexible-nuclear-deep-decarb.md",
+  "wiki_page_size_kb": 36,
+  "stub_dir": ".raw/papers/SYZJZS6F/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP calls returned user cancelled; resolved using local Zotero SQLite and Zotero storage cache fallback documented in CLAUDE.md.",
+    "No Zotero supplementary-information child attachment found, although the article text mentions online supplementary material.",
+    "Repository link was recorded from the article DA and CA statements but not independently checked at ingest time."
+  ],
+  "deviations_from_contract": []
+}

@@ -1,0 +1,79 @@
+{
+  "key": "KWNBZ8FA",
+  "title": "AI data centres as grid-interactive assets",
+  "authors": [
+    "Philip Colangelo",
+    "Ayse K. Coskun",
+    "Jack Megrue",
+    "Ciaran Roberts",
+    "Shayan Sengupta",
+    "Varun Sivaram",
+    "Ethan Tiao",
+    "Aroon Vijaykar",
+    "Chris Williams",
+    "Daniel C. Wilson",
+    "Brandon Records",
+    "Zack MacFarland",
+    "Daniel Dreiling",
+    "Nathan Morey",
+    "Anuja Ratnayake",
+    "Baskar Vairamohan"
+  ],
+  "journal": "Nature Energy",
+  "volume": "11",
+  "issue": "2",
+  "pages": "254-261",
+  "year": 2026,
+  "doi": "10.1038/s41560-025-01927-1",
+  "url": "https://www.nature.com/articles/s41560-025-01927-1",
+  "item_type": "journalArticle",
+  "zotero_tags": [
+    "Computer science",
+    "Electrical and electronic engineering",
+    "Information technology",
+    "Software"
+  ],
+  "collections_count": 2,
+  "collections": [
+    "Data Center",
+    "Top Paper Lab"
+  ],
+  "child_attachments": [
+    {
+      "key": "9YAITN8R",
+      "title": "Full Text PDF",
+      "content_type": "application/pdf",
+      "filename": "Colangelo et al. - 2026 - AI data centres as grid-interactive assets.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/9YAITN8R/Colangelo et al. - 2026 - AI data centres as grid-interactive assets.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "data-centres",
+    "grid-flexibility",
+    "demand-response",
+    "ai-electricity-demand",
+    "flexible-loads"
+  ],
+  "paper_type_tags": [
+    "experimental",
+    "data-driven",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "field-demonstration",
+    "workload-orchestration",
+    "demand-response",
+    "simulator-calibrated-control",
+    "dvfs"
+  ],
+  "main_contribution_tags": [
+    "method-novelty",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000024",
+  "fetched_at": "2026-05-11",
+  "metadata_source": "local Zotero SQLite backup after MCP metadata call was cancelled"
+}

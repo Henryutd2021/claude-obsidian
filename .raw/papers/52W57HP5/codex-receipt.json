@@ -1,0 +1,28 @@
+{
+  "zotero_key": "52W57HP5",
+  "address": "c-000023",
+  "wiki_page": "wiki/papers/2022-J-data-center-energy-estimates-review.md",
+  "wiki_page_size_kb": 35,
+  "stub_dir": ".raw/papers/52W57HP5/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP calls were cancelled before returning data; resolved through Zotero's configured local SQLite database and indexed full-text cache for main PDF child Q6LYUHSZ.",
+    "pre-extraction.md was absent.",
+    "Publisher article-page defuddling was deferred.",
+    "Banned-word scan matches only the required exact paper title or Zotero filename containing 'comprehensive'.",
+    "The .raw/papers/52W57HP5 directory exceeds the lightweight target because pre-existing codex log files were already present; the seven required stubs are small."
+  ],
+  "deviations_from_contract": [
+    "Availability statements use short verbatim excerpts plus paraphrase and DOI pointers rather than full verbatim statements to avoid excessive source quotation."
+  ]
+}

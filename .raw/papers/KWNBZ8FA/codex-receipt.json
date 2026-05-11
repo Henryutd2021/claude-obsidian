@@ -1,0 +1,29 @@
+{
+  "zotero_key": "KWNBZ8FA",
+  "address": "c-000024",
+  "wiki_page": "wiki/papers/2026-NE-ai-data-centres-grid-interactive.md",
+  "wiki_page_size_kb": 30.2,
+  "stub_dir": ".raw/papers/KWNBZ8FA/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata call returned user cancelled; local API helper was also blocked by sandbox networking, so the ingest used local Zotero SQLite backup metadata and Zotero storage full-text cache.",
+    "Active /Users/henry/Zotero/zotero.sqlite contained no items; matching item was found in the OneDrive Zotero backup database.",
+    "No supplementary or source-data child attachment was found in Zotero.",
+    "Publisher article-page retrieval and repository verification were deferred.",
+    "Existing codex-stderr.log and codex-stdout.log remain in .raw/papers/KWNBZ8FA/ and make total directory size exceed 50 KB; the seven required stub files total about 8 KB."
+  ],
+  "deviations_from_contract": [
+    "Resolved metadata and full text through local Zotero SQLite/storage fallback after Zotero MCP was cancelled and local API access was sandbox-blocked.",
+    "Full DA and CA statements were not reproduced verbatim; short excerpts plus structured paraphrases were written for copyright compliance."
+  ]
+}

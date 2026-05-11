@@ -1,0 +1,25 @@
+{
+  "zotero_key": "XUGL6XPD",
+  "address": "c-000019",
+  "wiki_page": "wiki/papers/2023-J-smr-industrial-process-heat-tea.md",
+  "wiki_page_size_kb": 44,
+  "stub_dir": ".raw/papers/XUGL6XPD/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP calls were cancelled by the tool layer, so ingest used the vault-sanctioned local Zotero SQLite plus Zotero storage PDF fallback.",
+    "Publisher article-page snapshot was deferred because shell network access is restricted.",
+    "Zenodo code and data DOI was extracted but not independently checked at ingest time.",
+    "Existing codex stdout and stderr logs were already present in .raw/papers/XUGL6XPD/ and were left untouched; the seven required stub files are text-only and small."
+  ],
+  "deviations_from_contract": []
+}

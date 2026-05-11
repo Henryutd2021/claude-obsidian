@@ -1,0 +1,39 @@
+{
+  "key": "SYZJZS6F",
+  "title": "Stylized least-cost analysis of flexible nuclear power in deeply decarbonized electricity systems considering wind and solar resources worldwide",
+  "authors": [
+    {"first": "Lei", "last": "Duan"},
+    {"first": "Robert", "last": "Petroski"},
+    {"first": "Lowell", "last": "Wood"},
+    {"first": "Ken", "last": "Caldeira"}
+  ],
+  "journal": "Nature Energy",
+  "journal_abbreviation": "Nat Energy",
+  "volume": "7",
+  "issue": "3",
+  "pages": "260-269",
+  "year": 2022,
+  "doi": "10.1038/s41560-022-00979-x",
+  "url": "https://www.nature.com/articles/s41560-022-00979-x",
+  "item_type": "journalArticle",
+  "tags": ["Climate-change mitigation", "Energy and society"],
+  "collections_count": 2,
+  "collections": ["Decarbonization", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "3E22DMFY",
+      "title": "Full Text PDF",
+      "content_type": "application/pdf",
+      "filename": "Duan et al. - 2022 - Stylized least-cost analysis of flexible nuclear power in deeply decarbonized electricity systems co.pdf",
+      "zotero_storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/3E22DMFY/Duan et al. - 2022 - Stylized least-cost analysis of flexible nuclear power in deeply decarbonized electricity systems co.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["nuclear-flexibility", "renewable-energy-integration", "wind-solar-resources", "deep-decarbonization", "energy-system-optimization", "thermal-energy-storage", "policy-cost-analysis"],
+  "paper_type_tags": ["modeling", "TEA", "scenario-analysis", "optimization", "policy-analysis"],
+  "method_type_tags": ["Macro-Energy-Model", "linear-optimization", "capacity-expansion-dispatch", "scenario-sensitivity-analysis", "MERRA-2-resource-assessment"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "mechanism-clarification"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000020",
+  "fetched_at": "2026-05-11"
+}

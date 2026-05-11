@@ -1,0 +1,41 @@
+{
+  "key": "XUGL6XPD",
+  "title": "Technoeconomic analysis of small modular reactors decarbonizing industrial process heat",
+  "authors": [
+    {"first": "Max", "last": "Vanatta"},
+    {"first": "Deep", "last": "Patel"},
+    {"first": "Todd", "last": "Allen"},
+    {"first": "Daniel", "last": "Cooper"},
+    {"first": "Michael T.", "last": "Craig"}
+  ],
+  "journal": "Joule",
+  "journal_abbreviation": "Joule",
+  "volume": "7",
+  "issue": "4",
+  "pages": "713-737",
+  "year": 2023,
+  "doi": "10.1016/j.joule.2023.03.009",
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S2542435123001216",
+  "item_type": "journalArticle",
+  "zotero_citation_key": "Vanatta.etalTechnoeconomicAnalysis2023",
+  "tags": [],
+  "collections_count": 1,
+  "child_attachments": [
+    {
+      "key": "YJSFW7YP",
+      "type": "attachment",
+      "content_type": "application/pdf",
+      "title": "PDF",
+      "filename": "Vanatta et al. - 2023 - Technoeconomic analysis of small modular reactors decarbonizing industrial process heat.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/YJSFW7YP/Vanatta et al. - 2023 - Technoeconomic analysis of small modular reactors decarbonizing industrial process heat.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["small-modular-reactors", "industrial-process-heat", "industrial-decarbonization", "techno-economic-analysis", "wholesale-power-markets", "united-states"],
+  "paper_type_tags": ["modeling", "TEA", "scenario-analysis", "optimization", "policy-analysis"],
+  "method_type_tags": ["MILP", "Pyomo", "CPLEX", "price-taker-dispatch", "scenario-sensitivity-analysis"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "mechanism-clarification", "sectoral-coverage"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000019",
+  "fetched_at": "2026-05-11"
+}

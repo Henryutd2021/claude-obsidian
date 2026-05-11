@@ -1,0 +1,67 @@
+{
+  "key": "52W57HP5",
+  "title": "Sources of data center energy estimates: A comprehensive review",
+  "authors": [
+    {
+      "firstName": "David",
+      "lastName": "Mytton",
+      "creatorType": "author"
+    },
+    {
+      "firstName": "Masao",
+      "lastName": "Ashtine",
+      "creatorType": "author"
+    }
+  ],
+  "journal": "Joule",
+  "volume": "6",
+  "issue": "9",
+  "pages": "2032-2056",
+  "year": 2022,
+  "doi": "10.1016/j.joule.2022.07.011",
+  "url": "https://linkinghub.elsevier.com/retrieve/pii/S2542435122003580",
+  "item_type": "journalArticle",
+  "tags": [],
+  "collections_count": 2,
+  "collections": [
+    "Data Center",
+    "Top Paper Lab"
+  ],
+  "child_attachments": [
+    {
+      "key": "Q6LYUHSZ",
+      "type": "attachment",
+      "contentType": "application/pdf",
+      "filename": "Mytton and Ashtine - 2022 - Sources of data center energy estimates A comprehensive review.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/Q6LYUHSZ/Mytton and Ashtine - 2022 - Sources of data center energy estimates A comprehensive review.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "data-center-energy",
+    "electricity-demand",
+    "energy-estimates",
+    "data-provenance",
+    "reproducibility",
+    "energy-policy"
+  ],
+  "paper_type_tags": [
+    "review",
+    "data-driven",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "literature-review",
+    "source-provenance-mapping",
+    "methodological-classification",
+    "FAIR-data-audit"
+  ],
+  "main_contribution_tags": [
+    "data-novelty",
+    "policy-relevance",
+    "method-novelty"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000023",
+  "fetched_at": "2026-05-11T12:17:22-05:00"
+}

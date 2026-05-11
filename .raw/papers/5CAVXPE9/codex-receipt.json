@@ -1,0 +1,29 @@
+{
+  "zotero_key": "5CAVXPE9",
+  "address": "c-000021",
+  "wiki_page": "wiki/papers/2024-NE-flexible-geothermal-decarb-systems.md",
+  "wiki_page_size_kb": 41.4,
+  "stub_dir": ".raw/papers/5CAVXPE9/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata call returned user cancelled MCP tool call.",
+    "Local Zotero API access to 127.0.0.1:23119 was blocked by sandbox permissions, so metadata and children were resolved from local Zotero SQLite in read-only immutable mode.",
+    "No Peer Review File child was visible; the full text came from main PDF attachment MD6GQT4Q via Zotero indexed full-text cache.",
+    "Supplementary information and Zenodo assets were referenced by the paper but were not attached as Zotero children.",
+    "Publisher article-page defuddle and repository link verification were deferred because network access was restricted.",
+    "The directory .raw/papers/5CAVXPE9/ contains pre-existing codex log files; the seven required stubs total 9.2 KB."
+  ],
+  "deviations_from_contract": [
+    "MCP did not complete, so local Zotero SQLite and Zotero storage fallback were used for metadata, children, and full text."
+  ]
+}

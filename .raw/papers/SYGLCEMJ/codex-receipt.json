@@ -1,0 +1,27 @@
+{
+  "zotero_key": "SYGLCEMJ",
+  "address": "c-000022",
+  "wiki_page": "wiki/papers/2025-NE-smr-policy-module-learning.md",
+  "wiki_page_size_kb": 37.5,
+  "stub_dir": ".raw/papers/SYGLCEMJ/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata call was cancelled; used read-only local Zotero SQLite and Zotero main PDF text-cache fallback.",
+    "Network access was restricted, so article-page defuddle and Zenodo link verification were deferred.",
+    "Zotero child list contained only one main PDF and no separate supplementary, source-data or peer-review attachment.",
+    "Generated 7 stub files total about 8.2 KB; pre-existing codex log files remain in the stub directory and were not modified."
+  ],
+  "deviations_from_contract": [
+    "Resolved Zotero metadata and full text through local SQLite/storage fallback after Zotero MCP cancellation, rather than through completed MCP metadata/fulltext calls."
+  ]
+}

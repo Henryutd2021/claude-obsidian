@@ -1,0 +1,52 @@
+{
+  "key": "5CAVXPE9",
+  "title": "The role of flexible geothermal power in decarbonized electricity systems",
+  "authors": [
+    {"firstName": "Wilson", "lastName": "Ricks", "creatorType": "author"},
+    {"firstName": "Katharine", "lastName": "Voller", "creatorType": "author"},
+    {"firstName": "Gerame", "lastName": "Galban", "creatorType": "author"},
+    {"firstName": "Jack H.", "lastName": "Norbeck", "creatorType": "author"},
+    {"firstName": "Jesse D.", "lastName": "Jenkins", "creatorType": "author"}
+  ],
+  "journal": "Nature Energy",
+  "volume": null,
+  "issue": null,
+  "pages": "1-13",
+  "year": 2024,
+  "doi": "10.1038/s41560-023-01437-y",
+  "url": "https://www.nature.com/articles/s41560-023-01437-y",
+  "item_type": "journalArticle",
+  "tags": ["Data", "Done", "Geothermal energy"],
+  "collections_count": 2,
+  "collections": ["Decarbonization", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "MD6GQT4Q",
+      "title": "Full Text PDF",
+      "contentType": "application/pdf",
+      "filename": "Ricks et al. - 2024 - The role of flexible geothermal power in decarbonized electricity systems.pdf",
+      "path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/MD6GQT4Q/Ricks et al. - 2024 - The role of flexible geothermal power in decarbonized electricity systems.pdf",
+      "url": "https://www.nature.com/articles/s41560-023-01437-y.pdf"
+    }
+  ],
+  "child_notes": [
+    {
+      "key": "54RJFS2J",
+      "summary": "Chinese note on introduction paragraph structure and deployment-potential section structure."
+    }
+  ],
+  "topic_tags": ["enhanced-geothermal-systems", "flexible-generation", "long-duration-storage", "power-system-decarbonization", "western-us", "energy-system-optimization", "clean-firm-power"],
+  "paper_type_tags": ["modeling", "TEA", "scenario-analysis", "optimization", "policy-analysis"],
+  "method_type_tags": ["GenX", "ResFrac", "capacity-expansion", "reservoir-simulation", "scenario-analysis", "techno-economic-costing"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "mechanism-clarification"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000021",
+  "fetched_at": "2026-05-11",
+  "source_notes": [
+    "The Zotero MCP metadata call returned user cancelled MCP tool call.",
+    "Local Zotero API access to 127.0.0.1:23119 was blocked by sandbox permissions.",
+    "Metadata and child attachments were resolved from the local Zotero SQLite database in read-only immutable mode.",
+    "Full text was read from the Zotero indexed full-text cache for main PDF attachment MD6GQT4Q."
+  ]
+}
+
