@@ -8,6 +8,13 @@ topic: [hydrogen, e-fuels, direct-electrification, climate-mitigation, renewable
 paper_type: [perspective, review, TEA, policy-analysis]
 main_contribution: [policy-relevance, mechanism-clarification, sectoral-coverage, counterintuitive-result]
 method_type: [literature-synthesis, LCA, levelized-cost-analysis, marginal-abatement-cost-curve, merit-order]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - energy-policy-economics
+subdomain_secondary:
+  - lca-sustainability
 data_assets:
   main_pdf: false
   supplementary: false

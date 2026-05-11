@@ -8,6 +8,13 @@ topic: [rooftop-pv, distributed-pv, china, carbon-mitigation, geospatial-energy,
 paper_type: [data-driven, scenario-analysis, policy-analysis]
 main_contribution: [data-novelty, method-novelty, sectoral-coverage, policy-relevance]
 method_type: [random-forest-regression, geospatial-assessment, k-means-clustering, carbon-mitigation-factor]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - re-tech-resources
+  - building-urban
+subdomain_secondary:
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

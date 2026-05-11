@@ -8,6 +8,13 @@ topic: [energy-finance, net-zero-pathways, europe, infrastructure-investment, su
 paper_type: [data-driven, scenario-analysis, policy-analysis, review]
 main_contribution: [sectoral-coverage, policy-relevance, counterintuitive-result]
 method_type: [meta-analysis, PRISMA-screening, investment-harmonization, scenario-comparison]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - energy-policy-economics
+  - integrated-energy-systems
+subdomain_secondary:
+  - lca-sustainability
 data_assets:
   main_pdf: false
   supplementary: false

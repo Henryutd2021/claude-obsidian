@@ -8,6 +8,14 @@ topic: [green-hydrogen, time-matching, additionality, renewable-energy-integrati
 paper_type: [modeling, scenario-analysis, TEA, policy-analysis]
 main_contribution: [system-boundary-expansion, policy-relevance, mechanism-clarification, counterintuitive-result]
 method_type: [DOLPHYN, capacity-expansion-model, consequential-emissions-accounting, LCOH, scenario-analysis]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - energy-policy-economics
+subdomain_secondary:
+  - power-systems
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

@@ -8,6 +8,12 @@ topic: [solar-pv, global-supply-chains, renewable-energy-integration, learning-c
 paper_type: [modeling, scenario-analysis, data-driven, policy-analysis]
 main_contribution: [data-novelty, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [two-factor-learning-model, counterfactual-scenario-analysis, learning-curve-simulation, monte-carlo-uncertainty]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - re-tech-resources
+  - energy-policy-economics
+subdomain_secondary: []
 data_assets:
   main_pdf: true
   supplementary: false

@@ -8,6 +8,14 @@ topic: [renewable-energy-integration, china-energy-transition, pv-wind-power, en
 paper_type: [modeling, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, policy-relevance, mechanism-clarification, sectoral-coverage]
 method_type: [plant-by-plant-optimization, geospatial-lcoe, marginal-abatement-cost, monte-carlo-uncertainty]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - re-tech-resources
+  - integrated-energy-systems
+subdomain_secondary:
+  - power-systems
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: true

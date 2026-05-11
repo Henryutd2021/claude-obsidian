@@ -19,6 +19,14 @@ properties:
     displayName: Method
   topic:
     displayName: Topic
+  journal_role:
+    displayName: Role
+  ingest_depth:
+    displayName: Depth
+  subdomain_primary:
+    displayName: Subdomain (primary)
+  subdomain_secondary:
+    displayName: Subdomain (bridges)
   relevance_to_my_research:
     displayName: Relevance
   ingest_status:
@@ -32,45 +40,104 @@ views:
     name: All papers
     order:
       - file.name
-      - journal
       - year
-      - paper_type
+      - journal
+      - journal_role
+      - ingest_depth
+      - subdomain_primary
       - main_contribution
       - relevance_to_my_research
       - ingest_status
+    sort:
+      - property: year
+        direction: DESC
+      - property: journal_role
+        direction: ASC
+    limit: 300
+  - type: table
+    name: L1 top-journal exemplars
+    filters:
+      and:
+        - journal_role == "top_journal_exemplar"
+    order:
+      - file.name
+      - year
+      - journal
+      - subdomain_primary
+      - main_contribution
+      - relevance_to_my_research
+    sort:
+      - property: year
+        direction: DESC
+    limit: 200
+  - type: table
+    name: L2 applied (deep)
+    filters:
+      and:
+        - journal_role == "applied_flagship"
+        - ingest_depth == "A_deep"
+    order:
+      - file.name
+      - year
+      - journal
+      - subdomain_primary
+      - main_contribution
+    sort:
+      - property: year
+        direction: DESC
+    limit: 200
+  - type: table
+    name: L2 applied (medium)
+    filters:
+      and:
+        - journal_role == "applied_flagship"
+        - ingest_depth == "B_medium"
+    order:
+      - file.name
+      - year
+      - journal
+      - subdomain_primary
+      - main_contribution
+    sort:
+      - property: year
+        direction: DESC
     limit: 200
   - type: card
-    name: By contribution type
+    name: By subdomain (primary)
+    groupBy:
+      property: subdomain_primary
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - journal
+      - journal_role
+      - ingest_depth
+    limit: 300
+  - type: card
+    name: By archetype (L1 only)
+    filters:
+      and:
+        - journal_role == "top_journal_exemplar"
     groupBy:
       property: main_contribution
       direction: ASC
     order:
       - file.name
-      - journal
       - year
+      - journal
   - type: table
-    name: Nature Energy + Joule + NC
+    name: Bridges activity
     filters:
       and:
-        - or:
-            - journal == "Nature Energy"
-            - journal == "Joule"
-            - journal == "Nature Communications"
-    order:
-      - file.name
-      - journal
-      - year
-      - main_contribution
-      - relevance_to_my_research
-  - type: table
-    name: Applied Energy (control group)
-    filters:
-      and:
-        - journal == "Applied Energy"
+        - subdomain_secondary != null
     order:
       - file.name
       - year
-      - main_contribution
+      - subdomain_primary
+      - subdomain_secondary
+      - journal_role
+    limit: 300
   - type: list
     name: Drafts (need review)
     filters:
@@ -87,5 +154,16 @@ views:
         - ingest_status != "reviewed"
     order:
       - file.name
-      - journal
       - year
+      - journal_role
+  - type: list
+    name: Upgrade candidates (L2-A flagged for L1 re-ingest)
+    filters:
+      and:
+        - journal_role == "applied_flagship"
+        - ingest_depth == "A_deep"
+        - tags.contains("flagged-for-l1-promotion")
+    order:
+      - file.name
+      - year
+      - subdomain_primary

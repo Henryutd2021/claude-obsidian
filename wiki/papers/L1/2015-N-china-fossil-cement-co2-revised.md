@@ -8,6 +8,12 @@ topic: [china-carbon-accounting, emissions-inventory, coal-emission-factors, cem
 paper_type: [data-driven, policy-analysis]
 main_contribution: [data-novelty, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [apparent-consumption, emissions-inventory, emission-factor-measurement, monte-carlo-uncertainty]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - lca-sustainability
+  - energy-policy-economics
+subdomain_secondary: []
 data_assets:
   main_pdf: false
   supplementary: true

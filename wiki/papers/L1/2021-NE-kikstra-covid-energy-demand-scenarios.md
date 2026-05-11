@@ -8,6 +8,13 @@ topic: [energy-demand, covid-19, climate-mitigation, integrated-assessment, dema
 paper_type: [modeling, scenario-analysis, integrated-assessment, policy-analysis]
 main_contribution: [system-boundary-expansion, policy-relevance, mechanism-clarification, sectoral-coverage, counterintuitive-result]
 method_type: [MESSAGEix-GLOBIOM, IAM, bottom-up-demand-assessment, GDP-sensitivity-analysis, carbon-budget-scenario-analysis]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - energy-policy-economics
+  - integrated-energy-systems
+subdomain_secondary:
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

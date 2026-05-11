@@ -8,6 +8,13 @@ topic: [nuclear-flexibility, renewable-energy-integration, wind-solar-resources,
 paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [Macro-Energy-Model, linear-optimization, capacity-expansion-dispatch, scenario-sensitivity-analysis, MERRA-2-resource-assessment]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - power-systems
+  - integrated-energy-systems
+subdomain_secondary:
+  - energy-policy-economics
 data_assets:
   main_pdf: true
   supplementary: false

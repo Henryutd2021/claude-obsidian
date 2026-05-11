@@ -8,6 +8,13 @@ topic: [hydrogen, green-hydrogen, china, decarbonization, heavy-industry, heavy-
 paper_type: [modeling, TEA, scenario-analysis, integrated-assessment]
 main_contribution: [system-boundary-expansion, sectoral-coverage, policy-relevance]
 method_type: [least-cost-optimization, dynamic-linear-programming, TIMES-VEDA]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - integrated-energy-systems
+subdomain_secondary:
+  - energy-policy-economics
 data_assets:
   main_pdf: true
   supplementary: false

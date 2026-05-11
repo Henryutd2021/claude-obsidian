@@ -8,6 +8,13 @@ topic: [enhanced-geothermal-systems, flexible-generation, long-duration-storage,
 paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [GenX, ResFrac, capacity-expansion, reservoir-simulation, scenario-analysis, techno-economic-costing]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - power-systems
+  - integrated-energy-systems
+subdomain_secondary:
+  - re-tech-resources
 data_assets:
   main_pdf: true
   supplementary: false

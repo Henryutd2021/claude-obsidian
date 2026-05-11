@@ -8,6 +8,14 @@ topic: [clean-hydrogen, hydrogen-economy, global-mitigation, integrated-assessme
 paper_type: [modeling, scenario-analysis, integrated-assessment, policy-analysis]
 main_contribution: [system-boundary-expansion, sectoral-coverage, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [GCAM, integrated-assessment-model, scenario-analysis, policy-cost-analysis, SSP2]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - integrated-energy-systems
+subdomain_secondary:
+  - energy-policy-economics
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

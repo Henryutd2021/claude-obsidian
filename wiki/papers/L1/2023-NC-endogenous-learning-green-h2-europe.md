@@ -8,6 +8,13 @@ topic: [green-hydrogen, endogenous-learning, sector-coupling, energy-system-opti
 paper_type: [modeling, scenario-analysis, optimization, policy-analysis]
 main_contribution: [method-novelty, system-boundary-expansion, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [PyPSA-Eur-Sec, MILP, endogenous-learning, SOS2-piecewise-linearization, sector-coupled-energy-model, scenario-analysis]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - integrated-energy-systems
+subdomain_secondary:
+  - re-tech-resources
 data_assets:
   main_pdf: true
   supplementary: false

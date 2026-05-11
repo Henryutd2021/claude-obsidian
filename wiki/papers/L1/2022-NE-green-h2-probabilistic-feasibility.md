@@ -8,6 +8,13 @@ topic: [green-hydrogen, electrolysis-scale-up, technology-diffusion, policy-targ
 paper_type: [modeling, scenario-analysis, policy-analysis]
 main_contribution: [method-novelty, policy-relevance, counterintuitive-result]
 method_type: [adapted-logistic-diffusion, Monte-Carlo-uncertainty, historical-analogue-benchmarking, demand-pull-scenario]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - hydrogen-p2x
+  - energy-policy-economics
+subdomain_secondary:
+  - re-tech-resources
 data_assets:
   main_pdf: true
   supplementary: false

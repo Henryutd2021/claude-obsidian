@@ -8,6 +8,14 @@ topic: [data-center-flexibility, renewable-curtailment, load-migration, demand-r
 paper_type: [modeling, scenario-analysis, data-driven, TEA, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, sectoral-coverage]
 method_type: [counterfactual-simulation, hourly-grid-emissions, data-center-load-migration, abatement-cost-model, LCA-boundary]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - power-systems
+  - ai-data-driven
+subdomain_secondary:
+  - re-tech-resources
+  - integrated-energy-systems
 data_assets:
   main_pdf: true
   supplementary: false

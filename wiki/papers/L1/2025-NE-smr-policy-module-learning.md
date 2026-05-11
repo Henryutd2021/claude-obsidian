@@ -8,6 +8,13 @@ topic: [small-modular-reactors, industrial-decarbonization, process-heat, nuclea
 paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, mechanism-clarification, sectoral-coverage]
 method_type: [MINLP, rolling-horizon-optimization, endogenous-learning, FOAK-cost-sensitivity, policy-scenario-analysis, industrial-process-heat-modeling]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - integrated-energy-systems
+  - energy-policy-economics
+subdomain_secondary:
+  - power-systems
 data_assets:
   main_pdf: true
   supplementary: false

@@ -8,6 +8,12 @@ topic: [renewable-energy-integration, wind-solar-power, technology-diffusion, cl
 paper_type: [modeling, data-driven, scenario-analysis, empirical-econometric, policy-analysis]
 main_contribution: [method-novelty, data-novelty, counterintuitive-result, policy-relevance, mechanism-clarification]
 method_type: [logistic-growth-model, Gompertz-growth-model, event-history-analysis, IPCC-scenario-comparison, feasibility-space]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - re-tech-resources
+  - energy-policy-economics
+subdomain_secondary: []
 data_assets:
   main_pdf: true
   supplementary: false

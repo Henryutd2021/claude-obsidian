@@ -8,6 +8,13 @@ topic: [building-decarbonization, residential-energy, united-states, electrifica
 paper_type: [modeling, scenario-analysis, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, sectoral-coverage]
 method_type: [ResStock, OpenStudio-EnergyPlus, housing-stock-scenario-modeling, LCA, enviro-economic-assessment]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - building-urban
+subdomain_secondary:
+  - energy-policy-economics
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

@@ -8,6 +8,13 @@ topic: [data-centres, grid-flexibility, demand-response, ai-electricity-demand, 
 paper_type: [experimental, data-driven, policy-analysis]
 main_contribution: [method-novelty, policy-relevance, mechanism-clarification]
 method_type: [field-demonstration, workload-orchestration, demand-response, simulator-calibrated-control, dvfs]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - ai-data-driven
+  - power-systems
+subdomain_secondary:
+  - integrated-energy-systems
 data_assets:
   main_pdf: true
   supplementary: false

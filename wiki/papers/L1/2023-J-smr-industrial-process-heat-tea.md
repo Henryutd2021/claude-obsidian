@@ -8,6 +8,13 @@ topic: [small-modular-reactors, industrial-process-heat, industrial-decarbonizat
 paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, mechanism-clarification, sectoral-coverage]
 method_type: [MILP, Pyomo, CPLEX, price-taker-dispatch, scenario-sensitivity-analysis]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - integrated-energy-systems
+  - power-systems
+subdomain_secondary:
+  - energy-policy-economics
 data_assets:
   main_pdf: true
   supplementary: true

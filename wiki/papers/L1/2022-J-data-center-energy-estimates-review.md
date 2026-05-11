@@ -8,6 +8,13 @@ topic: [data-center-energy, electricity-demand, energy-estimates, data-provenanc
 paper_type: [review, data-driven, policy-analysis]
 main_contribution: [data-novelty, policy-relevance, method-novelty]
 method_type: [literature-review, source-provenance-mapping, methodological-classification, FAIR-data-audit]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - ai-data-driven
+  - energy-policy-economics
+subdomain_secondary:
+  - lca-sustainability
 data_assets:
   main_pdf: true
   supplementary: false

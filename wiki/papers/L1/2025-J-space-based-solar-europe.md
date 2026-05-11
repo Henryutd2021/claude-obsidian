@@ -8,6 +8,13 @@ topic: [space-based-solar-power, power-system-decarbonization, europe, energy-sy
 paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, method-novelty]
 method_type: [PyPSA-Eur, capacity-expansion-dispatch, scenario-sensitivity-analysis, SBSP-generation-model]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - re-tech-resources
+  - power-systems
+subdomain_secondary:
+  - integrated-energy-systems
 data_assets:
   main_pdf: true
   supplementary: false
