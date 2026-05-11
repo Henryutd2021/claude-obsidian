@@ -167,11 +167,11 @@ These are correctly waiting on at least 3 L2-A pilots to produce contrast / bank
 
 | Path | Time | Value |
 |---|---|---|
-| **A. Finish 3 SKILL.md updates** | ~70 min | Closes the v2 architecture loop at the skill layer. Prerequisite for clean L2 pilot. |
+| ~~A. Finish 3 SKILL.md updates~~ | done 2026-05-11 | v2 architecture closed at the skill layer. |
 | **B. Trigger L2 pilot (3 L2-A + 2 L2-B + 1 L2-C)** | ~30 min Henry + 1-2 h codex + verify | Unlocks `patterns/comparisons/*`, banks, applied-paper-craft. Cost ~$8. |
 | **C. Henry drafts SMR-DC in `wiki/projects/`** using existing patterns + playbook v0.1 + 8 hubs + 11 bridges as checklist | 2-4 h | The real test of whether v2 vault serves Henry's writing goal. |
 
-Recommended order: **A → C → B**. A makes the lab self-consistent. C tests it on a real manuscript. B fills the remaining content gaps based on what C surfaced.
+Recommended order with A complete: **C → B**. C tests the v2 vault on a real manuscript (and the 3 updated SKILL.md files get an end-to-end exercise via `/wiki-query` calls). B fills remaining content gaps based on what C surfaces.
 
 ## Commit SHA rollback chain (origin/main)
 
