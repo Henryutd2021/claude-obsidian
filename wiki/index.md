@@ -49,6 +49,8 @@ Subfolders inside `patterns/` and `playbook/` are created lazily as content dema
 
 ## Operations available
 
+> **First time here?** Read [[usage|How to use this vault]] for the practical user manual (7 things you can do, query patterns, project-paper workflow, troubleshooting).
+
 | Skill / command | Use |
 |---|---|
 | `/wiki-ingest <zotero-key or path>` | Orchestrates `pre-review-brief` + `research-blueprint` to produce a paper analysis under [[papers]] |
