@@ -191,13 +191,16 @@ The CSV manifest at `.raw/zotero_manifest/top_paper_lab_manifest.csv` mirrors my
 
 PDFs / SI / source-data files **stay in Zotero's storage** (`~/Zotero/storage/{ITEM_ID}/`). They are NEVER copied into this iCloud-synced repo. When a skill needs full-text, it calls `mcp__zotero__zotero_get_item_fulltext`; when it needs an attachment path, `mcp__zotero__zotero_get_item_children`. `.raw/papers/{KEY}/` only holds ~5–10 KB of text metadata stubs (DA / CA statements, repository links, defuddled landing page, asset checklist).
 
-## Next actions (in order)
+## Next actions (in order, post-Phase-1)
 
-1. **Henry** (in Zotero UI): remove `ZNUP7SNR` (Nature Food) and `GF9LAAMT` (Nature Reviews Earth & Environment) from the `Top Paper Lab` collection so it stays 7-journal-strict. MCP remove calls are phantom — must be done in the UI. (~5 seconds.)
-2. **Henry**: pick the first seed paper. Recommended: most-relevant Nature Energy or Joule paper on wind-solar-hydrogen / TEA. Note the Zotero key (8 chars).
-3. **Claude Code** (next session): scaffold `.raw/papers/{ZOTERO_KEY}/` with 7 stub files (`metadata.json`, `zotero-attachments.md`, `data-availability.md`, `code-availability.md`, `repository-links.md`, `article-page.md`, `asset-status.md`). Read metadata via `mcp__zotero__zotero_get_item_metadata`; list PDF/SI paths via `zotero_get_item_children`; defuddle the publisher landing page; extract DA/CA statements.
-4. **Claude Code**: run `/wiki-ingest .raw/papers/{ZOTERO_KEY}/` — orchestrates `pre-review-brief` + `research-blueprint <journal>` + `academic-paper-reviewer` (quick-assessment) over the Zotero PDF (pulled via `mcp__zotero__zotero_get_item_fulltext`) → emits `wiki/papers/{year}-{journal-short}-{slug}.md` per `_templates/paper-analysis.md`.
-5. **Henry**: review the output. If anything reads fluffy or unsupported, iterate on `CLAUDE.md` anti-fluff word list before paper 2. Then 4 more pilots (different journals, different archetypes; include 1 from a non-7-journal control like Applied Energy or Renewable Energy later for the quality-jump diagnosis).
+1. **Henry**: open Obsidian and verify `wiki/papers.base` renders the 10 new views correctly. If any Bases filter syntax breaks (e.g., `subdomain_secondary != null`, `tags.contains(...)`), report so the syntax can be adjusted. Same check for `wiki/dashboard.base`.
+2. **Henry**: confirm wikilinks in `wiki/index.md` resolve to the new `wiki/papers/L1/` paths. Spot-check 2-3 paper links.
+3. **Claude Code (Phase 2 session 1)**: write `_templates/paper-analysis-L2-A.md` (10-section applied template per the plan section 3). Write `_templates/codex-ingest-contract-L2-A.md`. Write `scripts/codex-ingest-paper-L2.sh` accepting `A_deep` / `B_medium` / `C_light` as third arg.
+4. **Claude Code (Phase 2 session 2)**: write the lean `_templates/paper-analysis-L2-B.md` (one-page) and `-L2-C.md` (citation marker) plus their codex contracts.
+5. **Henry**: pick 3 L2-A pilot Zotero keys (one each from hydrogen / power-systems / integrated-energy), 2 L2-B keys, 1 L2-C key. Stage them in `.raw/zotero_manifest/l2_candidate_manifest.csv`.
+6. **Claude Code (Phase 2 pilot)**: run 6 codex L2 ingests. Verify costs (~$2.5 / ~$1 / ~$0.1), page sizes (12-18 / 4-6 / <0.5 KB), folder placement (`wiki/papers/L2/{primary}/`), bank-row creation, receipt `pages_updated[]`.
+7. **Henry**: review the 6 pilot outputs. Iterate on the L2 templates if anything reads off-brand for applied papers (e.g., still asking "why Nature Energy?" — wrong question for L2).
+8. **Phase 3** (after pilots pass): subdomain hub drafting + 11 cross-paper anchor promotion + 3 bank bootstrapping. See plan section 15 Phase 3.
 
 ## Constraints (from TPL constitution)
 
