@@ -19,7 +19,7 @@ Personal Karpathy-style wiki for reverse-engineering top-tier energy papers (Nat
 
 Last reset: **2026-05-11** (rebrand from `claude-obsidian` plugin vault to personal Top Paper Lab). Pre-2026-05-11 vault content is archived under `wiki/_meta/`.
 
-Navigation: [[hot]] · [[log]] · [[Wiki Map]] · [[_meta/old-index|Pre-fork archive]]
+Navigation: [[hot]] · [[log]] · [[usage|How to use this vault]] · [[Wiki Map]] · [[_meta/old-index|Pre-fork archive]]
 
 ---
 
