@@ -17,7 +17,17 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: 16 papers ingested in one day across 3 batches (6 + 5 + 5). Codex-cli delegation pattern validated across 15 of 16 papers (1 Opus-composed). Batch 3 ran 5 parallel codex jobs in ~9 min wall-clock (fastest batch yet — local Zotero cache path is well-warmed). All 5 batch-3 receipts pass: 18 sections, 5/5/5/5 KB outputs, banned-word clean, em-dash clean, three-label discipline applied. Address counter 3 -> 19.
+**2026-05-11**: 22 papers ingested in one day across 4 batches (6 + 5 + 5 + 6). Codex-cli delegation validated across 21 of 22 papers (1 Opus-composed). Batch 4 ran 6 parallel codex jobs in ~12 min wall-clock — all 6 receipts pass. Address counter 3 -> 25.
+
+**Batch 4 was a targeted ingest** triggered by a `/wiki-query` about Henry's planned SMR + data center + ORC + absorption refrigeration + waste-heat-utilization TEA paper. Lab had no SMR / nuclear / firm-clean-baseload / data-center-methodology coverage; this batch fills exactly that gap.
+
+**Batch 4 papers (6):**
+- `c-000019` Vanatta et al. 2023 Joule — SMR industrial process heat TEA (5 SMRs × 421 processes in ERCOT/SPP; heat-only not economic, heat+power serves 125 SPP processes)
+- `c-000020` Duan et al. 2022 NE — flexible nuclear in deep-decarb (42 regions; enters >80% emissions cuts; pairs with wind-weak geographies)
+- `c-000021` Ricks et al. 2024 NE — flexible geothermal in decarbonized systems (GenX, 11-zone Western US 2045; flexibility >> LCOE for system value)
+- `c-000022` Vanatta, Stewart & Craig 2025 NE — SMR policy + module learning (925 facilities 2030-2050; gated by gas price + FOAK + learning + carbon tax, not by direct subsidies)
+- `c-000023` Mytton & Ashtine 2022 Joule — DC energy estimates provenance audit (258 estimates, 46 publications, 676 source links)
+- `c-000024` Colangelo et al. 2026 NE — AI data centres as grid-interactive assets (256-GPU Phoenix field trial; 25% power cut for 3h with QoS intact). **First field-trial paper in the lab.**
 
 **Batch 3 papers (5):**
 - `c-000014` Wolfram et al. 2024 One Earth — H2 economy 22% cost reduction (first One Earth paper)
