@@ -17,7 +17,11 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: Vault rebranded from `claude-obsidian` plugin vault to personal **Top Paper Lab**. Pre-fork content archived under `wiki/_meta/`. New 4-folder layout (`papers/ patterns/ playbook/ projects/`) created empty. `CLAUDE.md` rewritten as TPL constitution. `.gitignore` extended to exclude paper PDFs/SI/source-data. No papers ingested yet.
+**2026-05-11**: First paper ingested. [[papers/2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, *Nature Energy*]] (Zotero `PIQKGJNB`, address `c-000003`). 8 new files (1 analysis page + 7 `.raw/papers/PIQKGJNB/` stubs). Address counter 3 -> 4. `scripts/allocate-address.sh` patched for macOS (mkdir-based lock fallback when GNU `flock` is unavailable). Vault rebrand from earlier today still in effect; pre-fork content archived under `wiki/_meta/`.
+
+## Most recent ingest
+
+[[papers/2022-NE-china-hta-clean-hydrogen]] — Yang, Nielsen, Song, McElroy. *Nature Energy* 7, 955-965 (2022). Archetype: modeling-optimization + policy-relevant. Headline: integrated TIMES-class least-cost optimization, 4 scenarios, 780+ technological processes, 2020-2060; clean hydrogen reaches 65.7 Mt/yr by 2060 and avoids US$1.72T cumulative investment vs no-hydrogen net-zero. Top transferable craft: two-stage gap construction (field-level + case-level), three-unit headline number framing (USD + GDP% + Mt), break-even sensitivity reporting (+87% H2-cost to tie ZERO-NH), figures sequenced one-per-reviewer-concern.
 
 ## What this vault is now
 
