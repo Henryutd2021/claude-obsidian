@@ -1,0 +1,55 @@
+{
+  "key": "M9HYZCZE",
+  "title": "Assess space-based solar power for European-scale power system decarbonization",
+  "authors": [
+    {"firstName": "Xinyang", "lastName": "Che", "creatorType": "author"},
+    {"firstName": "Lijun", "lastName": "Liu", "creatorType": "author"},
+    {"firstName": "Wei", "lastName": "He", "creatorType": "author"}
+  ],
+  "journal": "Joule",
+  "volume": "0",
+  "issue": "0",
+  "pages": "",
+  "year": 2025,
+  "doi": "10.1016/j.joule.2025.102074",
+  "url": "https://www.cell.com/joule/abstract/S2542-4351(25)00255-7",
+  "item_type": "journalArticle",
+  "tags": [
+    "decarbonization",
+    "emerging technology",
+    "energy storage",
+    "energy system modeling",
+    "energy transitions",
+    "power systems",
+    "renewables",
+    "space-based solar power",
+    "system optimization",
+    "techno-economic analysis"
+  ],
+  "collections_count": 2,
+  "collections": ["Decarbonization", "Top Paper Lab"],
+  "child_attachments": [],
+  "child_notes": [],
+  "topic_tags": [
+    "space-based-solar-power",
+    "power-system-decarbonization",
+    "europe",
+    "energy-system-optimization",
+    "long-duration-storage",
+    "hydrogen-storage",
+    "techno-economic-analysis"
+  ],
+  "paper_type_tags": ["modeling", "TEA", "scenario-analysis", "optimization", "policy-analysis"],
+  "method_type_tags": ["PyPSA-Eur", "capacity-expansion-dispatch", "scenario-sensitivity-analysis", "SBSP-generation-model"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "method-novelty"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000006",
+  "fetched_at": "2026-05-11",
+  "source_notes": [
+    "MCP calls were cancelled by the tool layer.",
+    "Local Zotero API was blocked by sandbox network permissions.",
+    "Metadata was read from the local Zotero SQLite database in read-only immutable mode.",
+    "The local Zotero item had no child attachments visible during ingest.",
+    "Publisher and repository evidence were used to supplement the missing Zotero full text."
+  ]
+}

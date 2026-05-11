@@ -1,0 +1,29 @@
+{
+  "zotero_key": "M9HYZCZE",
+  "address": "c-000006",
+  "wiki_page": "wiki/papers/2025-J-space-based-solar-europe.md",
+  "wiki_page_size_kb": 33.4,
+  "stub_dir": ".raw/papers/M9HYZCZE/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "unknown",
+  "warnings": [
+    "Zotero MCP calls were cancelled by the tool layer; local Zotero API access to 127.0.0.1 was blocked by sandbox permissions, so Zotero metadata and children were resolved from local SQLite in read-only immutable mode.",
+    "No Zotero child attachments were visible for M9HYZCZE; main PDF and SI are marked missing in the stubs.",
+    "Publisher HTML/search excerpts and verified repository pages were used as supplemental evidence because Zotero full text was unavailable.",
+    "The directory .raw/papers/M9HYZCZE/ contains pre-existing codex log files; the seven required stubs total 9.2 KB."
+  ],
+  "deviations_from_contract": [
+    "MCP was unavailable, so local Zotero SQLite fallback was used.",
+    "No Zotero main PDF was available, so fulltext_source is unknown rather than main-pdf.",
+    "Data and code availability stubs use copyright-limited verbatim excerpts plus structural paraphrase rather than full verbatim statements."
+  ]
+}

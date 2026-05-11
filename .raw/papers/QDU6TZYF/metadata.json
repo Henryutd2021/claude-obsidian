@@ -1,0 +1,78 @@
+{
+  "key": "QDU6TZYF",
+  "title": "Climate mitigation scenarios with persistent COVID-19-related energy demand changes",
+  "authors": [
+    {"firstName": "Jarmo S.", "lastName": "Kikstra"},
+    {"firstName": "Adriano", "lastName": "Vinca"},
+    {"firstName": "Francesco", "lastName": "Lovat"},
+    {"firstName": "Benigna", "lastName": "Boza-Kiss"},
+    {"firstName": "Bas", "lastName": "van Ruijven"},
+    {"firstName": "Charlie", "lastName": "Wilson"},
+    {"firstName": "Joeri", "lastName": "Rogelj"},
+    {"firstName": "Behnam", "lastName": "Zakeri"},
+    {"firstName": "Oliver", "lastName": "Fricko"},
+    {"firstName": "Keywan", "lastName": "Riahi"}
+  ],
+  "journal": "Nature Energy",
+  "volume": "6",
+  "issue": "12",
+  "pages": "1114-1123",
+  "year": 2021,
+  "doi": "10.1038/s41560-021-00904-8",
+  "url": "https://www.nature.com/articles/s41560-021-00904-8",
+  "item_type": "journalArticle",
+  "citation_key": "Kikstra.etalClimateMitigation2021",
+  "zotero_tags": [
+    "Climate-change mitigation",
+    "Energy and behaviour",
+    "Energy supply and demand"
+  ],
+  "collections_count": 2,
+  "collections": [
+    "Hybrid system",
+    "Top Paper Lab"
+  ],
+  "child_attachments": [
+    {
+      "key": "TKRDF6P6",
+      "type": "application/pdf",
+      "title": "Kikstra et al_2021_Climate mitigation scenarios with persistent COVID-19-related energy demand.pdf",
+      "path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Zotero/Kikstra et al_2021_Climate mitigation scenarios with persistent COVID-19-related energy demand.pdf",
+      "zotero_path": "attachments:Kikstra et al_2021_Climate mitigation scenarios with persistent COVID-19-related energy demand.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "energy-demand",
+    "covid-19",
+    "climate-mitigation",
+    "integrated-assessment",
+    "demand-side-change",
+    "energy-policy",
+    "energy-system-optimization"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "integrated-assessment",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "MESSAGEix-GLOBIOM",
+    "IAM",
+    "bottom-up-demand-assessment",
+    "GDP-sensitivity-analysis",
+    "carbon-budget-scenario-analysis"
+  ],
+  "main_contribution_tags": [
+    "system-boundary-expansion",
+    "policy-relevance",
+    "mechanism-clarification",
+    "sectoral-coverage",
+    "counterintuitive-result"
+  ],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000008",
+  "fetched_at": "2026-05-11",
+  "metadata_source": "Zotero SQLite fallback after Zotero MCP calls were cancelled and local API localhost access was sandbox-blocked"
+}

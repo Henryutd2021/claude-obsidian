@@ -1,0 +1,69 @@
+{
+  "key": "T3YPX6LR",
+  "title": "Endogenous learning for green hydrogen in a sector-coupled energy model for Europe",
+  "authors": [
+    "Elisabeth Zeyen",
+    "Marta Victoria",
+    "Tom Brown"
+  ],
+  "journal": "Nature Communications",
+  "volume": "14",
+  "issue": "1",
+  "pages": "3743",
+  "year": 2023,
+  "doi": "10.1038/s41467-023-39397-2",
+  "url": "https://www.nature.com/articles/s41467-023-39397-2",
+  "item_type": "journalArticle",
+  "tags": [
+    "Future, Policy, Markets",
+    "⭐⭐⭐"
+  ],
+  "collections_count": 2,
+  "child_attachments": [
+    {
+      "key": "ZRQQRKYN",
+      "type": "attachment",
+      "content_type": "application/pdf",
+      "filename": "Zeyen et al. - 2023 - Endogenous learning for green hydrogen in a sector-coupled energy model for Europe.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/ZRQQRKYN/Zeyen et al. - 2023 - Endogenous learning for green hydrogen in a sector-coupled energy model for Europe.pdf"
+    }
+  ],
+  "child_notes": [
+    {
+      "key": "MWDYW45M",
+      "title": "以下是对该研究文章的关键内容的总结：[1]"
+    }
+  ],
+  "topic_tags": [
+    "green-hydrogen",
+    "endogenous-learning",
+    "sector-coupling",
+    "energy-system-optimization",
+    "renewable-energy-integration",
+    "hydrogen-policy"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "optimization",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "PyPSA-Eur-Sec",
+    "MILP",
+    "endogenous-learning",
+    "SOS2-piecewise-linearization",
+    "sector-coupled-energy-model",
+    "scenario-analysis"
+  ],
+  "main_contribution_tags": [
+    "method-novelty",
+    "system-boundary-expansion",
+    "counterintuitive-result",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000007",
+  "fetched_at": "2026-05-11"
+}

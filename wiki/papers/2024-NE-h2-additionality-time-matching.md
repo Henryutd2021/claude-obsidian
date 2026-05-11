@@ -22,7 +22,6 @@ created: 2026-05-11
 tags:
   - paper-analysis
 ---
-
 # The influence of additionality and time-matching requirements on the emissions from grid-connected hydrogen production
 
 > Zotero: `8IMLJZAH` · DOI: 10.1038/s41560-023-01435-0 · Journal: Nature Energy (2024)
