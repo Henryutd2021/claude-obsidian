@@ -27,22 +27,34 @@ Personal Karpathy-style LLM Wiki specialized for reverse-engineering top-tier en
 
 Renewable energy integration · wind-solar-hydrogen integrated systems · green hydrogen techno-economic analysis · energy system optimization · building energy saving & emission reduction · energy policy and cost analysis.
 
+## Status of the Zotero side (2026-05-11)
+
+Henry confirmed 7 in-scope journals: **Nature · Nature Energy · Joule · Nature Communications · Nature Sustainability · Nature Climate Change · One Earth**. A scan via `zotero_advanced_search` against `publicationTitle is "<journal>"` returns **142 papers** (Nature 5 · Nature Energy 74 · Joule 36 · Nature Communications 20 · Nature Sustainability 2 · Nature Climate Change 4 · One Earth 1). Two papers appear as duplicate entries in Zotero (same Jakhmola 2026 NE paper indexed twice; same Jenkins 2021 Mission Net-Zero America twice).
+
+The collection `Top Paper Lab` could not be created reliably via `mcp__zotero__zotero_create_collection` (the call returned success and a key, but the collection did not appear in `zotero_get_collections` afterward — likely a bug or a Zotero-app-must-be-running constraint). Henry will create the collection manually in the Zotero UI; on the next session, re-query the collection key via `zotero_search_collections "Top Paper Lab"` and bulk-add the 142 papers using `zotero_manage_collections add_to=[KEY] item_keys=[...]`.
+
+## Storage discipline (architecture-level)
+
+PDFs / SI / source-data files **stay in Zotero's storage** (`~/Zotero/storage/{ITEM_ID}/`). They are NEVER copied into this iCloud-synced repo. When a skill needs full-text, it calls `mcp__zotero__zotero_get_item_fulltext`; when it needs an attachment path, `mcp__zotero__zotero_get_item_children`. `.raw/papers/{KEY}/` only holds ~5–10 KB of text metadata stubs (DA / CA statements, repository links, defuddled landing page, asset checklist).
+
 ## Next actions (in order)
 
-1. Henry: organize Zotero — create top-level collection `Top Paper Lab` with all the top-tier energy papers he's collected. Apply minimal tags (`journal/{NatureEnergy|NatureCommunications|Joule|EES|AppliedEnergy|...}`, `topic/{green-hydrogen|renewable-integration|...}`, `status/candidate`).
-2. Claude Code via Zotero MCP: build `.raw/zotero_manifest/top_paper_lab_manifest.csv` (one row per paper, fields per `CLAUDE.md` Ingest workflow).
-3. Henry picks one seed paper (most-relevant Nature Energy or Joule).
-4. Asset completion: download SI + extract Data Availability / Code Availability into `.raw/papers/{ZOTERO_KEY}/`. PDFs and SI files stay gitignored.
-5. `/wiki-ingest .raw/papers/{ZOTERO_KEY}/` — produces `wiki/papers/{year}-{journal}-{slug}.md` with Evidence / Inference / Lesson labels + 5 permanent notes + 5 writing/research lessons + 5 future questions.
-6. Henry reviews; iterate on `CLAUDE.md` if anything weak. Then 4 more pilots.
+1. **Henry**: open Zotero desktop app → right-click `My Library` → New Collection → name it `Top Paper Lab`. (Should take ~10 seconds.)
+2. **Claude Code** (next session): re-query `zotero_search_collections "Top Paper Lab"` → get real key → bulk `zotero_manage_collections add_to=[KEY]` with the 142 known item keys (stored in `.raw/zotero_manifest/top_paper_lab_manifest.csv`).
+3. **Claude Code**: write `.raw/zotero_manifest/top_paper_lab_manifest.csv` with one row per paper (no `pdf_present` column — PDFs are always in Zotero; the relevant flag is `zotero_pdf_attached`).
+4. **Henry**: pick the first seed paper (Nature Energy or Joule, most relevant to wind-solar-hydrogen / TEA).
+5. **Claude Code**: scaffold `.raw/papers/{ZOTERO_KEY}/` with the 7 stub files; extract DA / CA from the publisher page via `defuddle` + Zotero MCP attachments; populate `asset-status.md`.
+6. **Claude Code**: run `/wiki-ingest .raw/papers/{ZOTERO_KEY}/` — orchestrates `pre-review-brief` + `research-blueprint` + `academic-paper-reviewer` (quick assessment) → emits `wiki/papers/{year}-{journal-short}-{slug}.md`.
+7. **Henry**: review the output. Iterate on `CLAUDE.md` if anything reads fluffy. Then 4 more pilots (different journals, different archetypes; include 1 from the comparison-tier later).
 
 ## Constraints (from TPL constitution)
 
 - Three required labels on every important claim: `Evidence:` (in paper/SI/DA/CA) · `Inference:` (derived) · `Lesson:` (transferable to my work).
 - Anti-fluff: no "innovative / important / rigorous / high-impact / comprehensive / well-written" without concrete justification.
 - Don't diffuse-update pattern pages until paper 10 (patterns emerge bottom-up).
-- Zotero is bibliographic source of truth; YAML frontmatter only stores TPL-specific fields.
-- `.raw/papers/{KEY}/main.pdf`, `supplementary/`, `source-data/` are gitignored.
+- Zotero is bibliographic + binary source of truth. The vault stores analysis, not the source PDFs.
+- `.raw/papers/{KEY}/` is text-only; `.gitignore` catches accidental binary drops as defense-in-depth.
+- Zotero desktop app must be running for MCP read/write to work reliably.
 
 ## Plugin lineage
 
