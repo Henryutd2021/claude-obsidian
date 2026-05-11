@@ -23,6 +23,44 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Cherp et al. 2021, Nature Energy, national wind/solar growth dynamics (via codex, batch 2)
+
+- Zotero: `L8UI4RX3`; main PDF `SBU9QH66` per receipt
+- Analysis: [[papers/2021-NE-national-wind-solar-growth-dynamics]] (address `c-000013`, 39KB)
+- Composed by `codex exec` (gpt-5.5 + xhigh) per contract V2 (which now requires `## Cross-references`).
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage fallback.
+- Key insight: ex-post growth-curve fitting on 60-country data sets empirical ceilings for renewable deployment. The "leader country" framing converts feasibility from prescriptive to historical, sidestepping the technology-vs-policy debate.
+- Codex autodetected anchor with Wang 2023 N (paper 3) on national wind/solar deployment at scale.
+
+## [2026-05-11] ingest | Zhang et al. 2023, Nature Communications, rooftop PV China (via codex, batch 2)
+
+- Zotero: `CRAKEP8V`
+- Analysis: [[papers/2023-NC-rooftop-pv-china-carbon]] (address `c-000012`, 32.8KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf`.
+- Key insight: bottom-up rooftop assessment for 354 Chinese cities converts a national policy target (PV by 2030) into a city-level deployment map with grid-parity overlay. Cross-system anchor with Wang 2023 N (utility-scale PV+wind plant placement) — rooftop vs utility-scale resolution contrast.
+- Initial wrapper-side receipt extraction failed (multi-line JSON bug); rescued from stdout manually. Wrapper fixed for future runs.
+
+## [2026-05-11] ingest | Zheng et al. 2020, Joule, data center load migration + curtailment (via codex, batch 2)
+
+- Zotero: `UELISBYS`; main PDF `2LS5AM2J`
+- Analysis: [[papers/2020-J-data-center-load-migration-curtailment]] (address `c-000011`, 36.5KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf`.
+- Key insight: spatial load migration as demand-side mitigation. Codex autodetected three cross-paper anchors in its own Cross-references: with Che 2025 J (threshold-based system TEA), Kikstra 2021 NE (demand-side load-change framing), Giovanniello 2024 NE (hourly grid-emissions + flexible H2 relevance). This is the **first batch where codex generated cross-paper anchors automatically**, validating contract V2.
+
+## [2026-05-11] ingest | Klaaßen & Steffen 2023, Nature Climate Change, net-zero investment meta-analysis (via codex, batch 2)
+
+- Zotero: `A4EZAC5U`
+- Analysis: [[papers/2023-NCC-net-zero-investment-shifts-europe]] (address `c-000010`, 33.5KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` (via ETH accepted-version PDF + Nature page fallback; Zotero MCP blocked as usual).
+- Key insight: meta-analysis as primary archetype. Harmonizing 21 European net-zero scenarios converts a fragmented literature into a citable headline (10x clean-energy investment, 9x fossil disinvestment). Method note: deals with scenario-set noise by harmonization, not by adding a 22nd scenario.
+
+## [2026-05-11] ingest | Liu et al. 2015, Nature, China CO2 emissions revised (via codex, batch 2)
+
+- Zotero: `H998SFTH`
+- Analysis: [[papers/2015-N-china-fossil-cement-co2-revised]] (address `c-000009`, 35.3KB)
+- Receipt: all checks pass. `fulltext_source: main-pdf` (via author-uploaded PDF; Zotero MCP blocked; SQLite lookup also missed). Note: DA/CA not explicit in published paper.
+- Key insight: this is the famous 2015 Liu paper that cut China's reported 2000-2013 fossil + cement CO2 by ~14%. Archetype is data-correction-as-primary-contribution — pre-tier-1-energy-literature, but landed in Nature because the magnitude was policy-relevant globally. Useful counterpoint to modeling-heavy papers in the lab.
+
 ## [2026-05-11] ingest | Kikstra et al. 2021, Nature Energy, COVID-19 demand scenarios (via codex)
 
 - Zotero: `QDU6TZYF` (parent journalArticle)
