@@ -43,6 +43,14 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 - Counterfactual cost-savings on supply chain geography (Helveston)
 - Monte-Carlo feasibility envelope from analog-technology growth distributions (Odenweller)
 
+**Batch 4 archetype gains (5 new archetypes; SMR/firm-clean-baseload/DC-methodology cluster):**
+- Profit-maximizing facility-level MILP for dual-product (heat+power) SMR economics (Vanatta 2023 J)
+- Hourly-resolution macro energy model with firm-flexible nuclear as a system asset (Duan 2022 NE)
+- Capacity-expansion model with flexibility-aware firm-clean-baseload (Ricks 2024 NE)
+- Multi-period deployment model with endogenous factory learning and policy levers (Vanatta 2025 NE)
+- Provenance-audit meta-review of estimate reliability (Mytton 2022 J)
+- Production-cluster field-trial as evidence base (Colangelo 2026 NE)
+
 ## Vault audit (this session)
 
 Pre-fork plugin scaffolding moved to [[_meta/dropped-plugin-scaffold]]: `AGENTS.md`, `GEMINI.md`, `WIKI.md`, `bin/`, `commands/`, `agents/`, `docs/`, `.github/`, `.windsurf/`, `.cursor/`. Root is now TPL-only: `_templates/`, `hooks/`, `scripts/`, `skills/`, `tests/`, `wiki/`, plus `README.md` (rewritten 392 -> 108 lines, TPL-focused), `CLAUDE.md`, `CHANGELOG.md`, `ATTRIBUTION.md`, `LICENSE`, `Makefile`. Folder name kept as `claude-obsidian` to avoid disrupting iCloud sync + git remote — accepted cosmetic mismatch with TPL branding.
