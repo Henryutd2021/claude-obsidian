@@ -14,7 +14,7 @@ _This folder is currently empty. This `_about.md` explains why and what triggers
 
 ## Purpose
 
-L2 (`applied_flagship`) papers that span 3+ subdomains as primary. Rare in practice — usually a perspective / cross-disciplinary synthesis. Most L2 papers land in a single subdomain folder.
+L2 (`applied_flagship`) papers that span 3+ subdomains as primary. Rare in practice: usually a perspective / cross-disciplinary synthesis. Most L2 papers land in a single subdomain folder.
 
 ## When it fills
 

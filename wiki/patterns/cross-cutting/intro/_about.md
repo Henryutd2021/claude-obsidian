@@ -22,7 +22,7 @@ When a recurring Intro move is identified across 3+ L1 papers AND can be formali
 
 ## Trigger
 
-Sourced from §5 Introduction paragraph tables of the L1 papers. Currently captured at higher level in [[playbook/top-journal-craft/intro-template-energy-papers]] — split into per-pattern pages here when v0.2 of that playbook refines the moves.
+Sourced from §5 Introduction paragraph tables of the L1 papers. Currently captured at higher level in [[playbook/top-journal-craft/intro-template-energy-papers]]: split into per-pattern pages here when v0.2 of that playbook refines the moves.
 
 ## Source of truth
 

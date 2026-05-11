@@ -77,16 +77,16 @@ Q1: Is the result OBSERVATIONAL (a measurement, field-trial, historical data) or
 1. Start with the *result* of the analysis Henry has actually done.
 2. Walk the tree to identify which contribution class the result fits.
 3. Use the row from the table above to determine: (a) the method signature reviewers will expect, (b) the headline construction (single number, contrast claim, envelope), (c) the L1 exemplars to cite as architectural ancestors.
-4. If the result fits no class cleanly, the manuscript is either (a) early — go back to analysis and sharpen the counterfactual / resolution / endogeneization, or (b) a different class not in the 22-paper corpus yet — promising but riskier, and the Intro must work harder to establish what *kind* of contribution it is.
+4. If the result fits no class cleanly, the manuscript is either (a) early: go back to analysis and sharpen the counterfactual / resolution / endogeneization, or (b) a different class not in the 22-paper corpus yet: promising but riskier, and the Intro must work harder to establish what *kind* of contribution it is.
 
 ## For Henry's SMR-DC paper (worked example)
 
 Walking the tree:
 
 - Q1: MODELING.
-- Q2: Does it add a technology / sector? **Yes — SMR + DC co-location with waste-heat-ORC is a system Configuration the field has not coupled. → SYSTEM-BOUNDARY EXPANSION.**
-- Q3: Does it endogenize something? **Secondarily yes — DC siting + SMR deployment as coupled decisions is endogeneization of what's typically two separate problems. → secondary METHODOLOGICAL ENDOGENEIZATION.**
-- Q4: Does it resolve at a new unit? **Yes — facility-pair (SMR ↔ DC pair) resolution. → tertiary PLANT / PROCESS RESOLUTION.**
+- Q2: Does it add a technology / sector? **Yes: SMR + DC co-location with waste-heat-ORC is a system Configuration the field has not coupled. → SYSTEM-BOUNDARY EXPANSION.**
+- Q3: Does it endogenize something? **Secondarily yes: DC siting + SMR deployment as coupled decisions is endogeneization of what's typically two separate problems. → secondary METHODOLOGICAL ENDOGENEIZATION.**
+- Q4: Does it resolve at a new unit? **Yes: facility-pair (SMR ↔ DC pair) resolution. → tertiary PLANT / PROCESS RESOLUTION.**
 
 So the SMR-DC paper has primary contribution = system-boundary expansion, secondary = endogeneization, tertiary = resolution. The Intro and abstract should lead with the system-boundary claim ("we are the first to jointly optimize SMR + DC + ORC at facility-pair resolution"), with the endogeneization and resolution as second-tier supporting claims.
 
@@ -106,7 +106,7 @@ So the SMR-DC paper has primary contribution = system-boundary expansion, second
 
 ## Related
 
-- [[../../patterns/cross-cutting/methods-recurrent/option-value-scenario-pairs]] — the standard headline construction for system-boundary expansion + counterintuitive results
-- [[../../patterns/cross-cutting/methods-recurrent/plant-vs-aggregate-resolution]] — the methodological signature for plant / city / process resolution
-- [[../../patterns/cross-cutting/archetype/firm-clean-flexible-baseload]] — a system-boundary-expansion archetype with specific structure
-- [[intro-template-energy-papers]] — companion playbook on Intro architecture
+- [[../../patterns/cross-cutting/methods-recurrent/option-value-scenario-pairs]]: the standard headline construction for system-boundary expansion + counterintuitive results
+- [[../../patterns/cross-cutting/methods-recurrent/plant-vs-aggregate-resolution]]: the methodological signature for plant / city / process resolution
+- [[../../patterns/cross-cutting/archetype/firm-clean-flexible-baseload]]: a system-boundary-expansion archetype with specific structure
+- [[intro-template-energy-papers]]: companion playbook on Intro architecture

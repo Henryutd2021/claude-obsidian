@@ -34,7 +34,7 @@ The argument becomes:
 The L1 corpus shows two complementary constructions:
 
 1. **Logistic-fit on national experience** (Cherp 2021 NE): fit logistic S-curves to wind/solar deployment in 60 countries; identify "leader country" rates as the upper bound; check climate-target-implied rates against this bound. Only a handful of countries have ever hit the rates 1.5°C requires.
-2. **Monte-Carlo from analog-tech distributions** (Odenweller 2022 NE): build a probability envelope from analog-technology growth distributions (Wright's-law-fit ensemble); even on the upper feasibility envelope, green hydrogen supply meets <1% of 2030 final energy in 1.5°C scenarios — the gap is structural.
+2. **Monte-Carlo from analog-tech distributions** (Odenweller 2022 NE): build a probability envelope from analog-technology growth distributions (Wright's-law-fit ensemble); even on the upper feasibility envelope, green hydrogen supply meets <1% of 2030 final energy in 1.5°C scenarios: the gap is structural.
 
 Both constructions deliver the same rhetorical move: pre-empt reviewer pushback on optimistic projections by anchoring to observable historical reality.
 
@@ -44,13 +44,13 @@ When projecting RE deployment, construct an empirical envelope from historical a
 
 ## Evidence (L1 papers supporting this pattern)
 
-- [[2021-NE-national-wind-solar-growth-dynamics]] — Evidence: ex-post logistic fits to wind/solar deployment in 60 countries (1990-2020); leader-country growth rates as empirical ceiling. Lesson: when fitting growth curves, the unit of fitting (country, region, technology family) matters. Country-level fitting gives policy-relevant feasibility benchmarks because policy operates at country level.
-- [[2022-NE-green-h2-probabilistic-feasibility]] — Evidence: Monte-Carlo feasibility envelope built on historical analog-technology growth distributions (Wright's-law-fit ensemble); even on upper envelope, green H2 supply meets <1% of 2030 final energy in 1.5°C scenarios. Lesson: by reporting envelopes (probability bands), not single-point projections, the paper makes its claim falsification-friendly — any future observation higher than the upper band would falsify it.
+- [[2021-NE-national-wind-solar-growth-dynamics]]: Evidence: ex-post logistic fits to wind/solar deployment in 60 countries (1990-2020); leader-country growth rates as empirical ceiling. Lesson: when fitting growth curves, the unit of fitting (country, region, technology family) matters. Country-level fitting gives policy-relevant feasibility benchmarks because policy operates at country level.
+- [[2022-NE-green-h2-probabilistic-feasibility]]: Evidence: Monte-Carlo feasibility envelope built on historical analog-technology growth distributions (Wright's-law-fit ensemble); even on upper envelope, green H2 supply meets <1% of 2030 final energy in 1.5°C scenarios. Lesson: by reporting envelopes (probability bands), not single-point projections, the paper makes its claim falsification-friendly: any future observation higher than the upper band would falsify it.
 
 ## Counter-evidence (papers that depart from the pattern)
 
-- [[2024-OE-h2-economy-22pct-cost-reduction]] — Evidence: GCAM IAM produces 2050 H2 share trajectories from cost optimization, not empirical envelopes. Lesson: in full economy-wide IAM frameworks, empirical-envelope construction is replaced by economic optimization. Different rhetorical move.
-- [[2023-N-china-pv-wind-3844-plants]] — Evidence: optimizes plant-by-plant from grid-parity geography; growth dynamics are not the contribution. Lesson: when the contribution lives elsewhere (plant resolution, grid-parity overlay), don't force in an empirical envelope.
+- [[2024-OE-h2-economy-22pct-cost-reduction]]: Evidence: GCAM IAM produces 2050 H2 share trajectories from cost optimization, not empirical envelopes. Lesson: in full economy-wide IAM frameworks, empirical-envelope construction is replaced by economic optimization. Different rhetorical move.
+- [[2023-N-china-pv-wind-3844-plants]]: Evidence: optimizes plant-by-plant from grid-parity geography; growth dynamics are not the contribution. Lesson: when the contribution lives elsewhere (plant resolution, grid-parity overlay), don't force in an empirical envelope.
 
 ## When this pattern works
 
@@ -60,7 +60,7 @@ When projecting RE deployment, construct an empirical envelope from historical a
 
 ## When this pattern fails or feels formulaic
 
-- For genuinely novel technologies with no analog (fusion, space-based solar, some long-duration storage). The Cherp / Odenweller construction requires *analog technology data* — without it, the envelope is speculative.
+- For genuinely novel technologies with no analog (fusion, space-based solar, some long-duration storage). The Cherp / Odenweller construction requires *analog technology data*: without it, the envelope is speculative.
 - For full economy-wide models where deployment is endogenous to cost trajectories (different rhetorical pattern; see option-value-scenario-pairs).
 - When the conclusion would be "feasibility is fine, no problem". The pattern's strength is its skeptical / pre-empting-criticism rhetoric; when there's no criticism to pre-empt, the pattern feels overbuilt.
 
@@ -103,8 +103,8 @@ For Henry's wind-solar-hydrogen TEA: the SMR build rate and the electrolyzer bui
 
 ## Related patterns
 
-- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]] — different rhetorical move for projecting; envelope construction PRECEDES option-value scenarios in a paper
-- [[../../cross-cutting/methods-recurrent/plant-vs-aggregate-resolution]] — the envelope-fit unit (country, plant, technology) is a resolution choice
+- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]]: different rhetorical move for projecting; envelope construction PRECEDES option-value scenarios in a paper
+- [[../../cross-cutting/methods-recurrent/plant-vs-aggregate-resolution]]: the envelope-fit unit (country, plant, technology) is a resolution choice
 - [[../../../bridges/energy-policy-economics--re-tech-resources]]
 
 ## Promoted from

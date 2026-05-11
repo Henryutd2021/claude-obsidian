@@ -12,7 +12,7 @@ related:
   - "[[routing-rules]]"
 ---
 
-# journal_role — controlled vocabulary
+# journal_role: controlled vocabulary
 
 The `journal_role` frontmatter field on every paper-analysis page takes one of these four values. **Roles are functional, not a quality hierarchy.** L1 teaches cross-domain craft (problem framing, contribution, top-journal narrative). L2 teaches subdomain-specific technical rigor (model, parameters, case studies, sensitivity). The two are read together by Henry, never substituted.
 
@@ -22,7 +22,7 @@ The `journal_role` frontmatter field on every paper-analysis page takes one of t
 |---|---|
 | `top_journal_exemplar` | Top-tier multi-disciplinary or flagship energy journals where field-level papers are published. |
 | `applied_flagship` | Applied/technical flagship journals where rigorous engineering and TEA work is published. |
-| `technical_support` | Niche / technical journals used as parameter / formula / data sources. **Manual entry only — not on the codex automated track.** |
+| `technical_support` | Niche / technical journals used as parameter / formula / data sources. **Manual entry only: not on the codex automated track.** |
 | `comparison_control` | Papers explicitly held as a baseline for top-vs-applied comparisons (rare). |
 
 ## Journal → role mapping (lock list)

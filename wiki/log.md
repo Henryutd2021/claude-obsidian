@@ -23,7 +23,7 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
-## [2026-05-11] ingest | Batch 5 — first L2 pilot (1 L1 + 6 L2 ingested; 1 self-aborted, 1 L3-skipped)
+## [2026-05-11] ingest | Batch 5: first L2 pilot (1 L1 + 6 L2 ingested; 1 self-aborted, 1 L3-skipped)
 
 First L2 production batch. Henry gave 9 paper titles, all H2 / RE / offshore wind / curtailment / mobility cluster. 8 dispatched via codex (1 L1 + 5 L2-A + 2 L2-B); 1 was IJHE skipped per L3 policy. 1 of 8 self-aborted (codex correctly refused ACSSCE since vocab lock list doesn't include it).
 
@@ -63,7 +63,7 @@ First L2 production batch. Henry gave 9 paper titles, all H2 / RE / offshore win
 - Updated `scripts/generate-subdomain-hubs.py` and `scripts/generate-bridges.py` to emit visible italics by default for new generations.
 
 **`dashboard.base` fix**:
-- Initial v2 dashboard had Obsidian rendering error `Cannot read properties of null (reading 'getViewActions')`. Root causes: (a) `.gitignore` had `!wiki/meta/dashboard.base` (wrong path; should be `!wiki/dashboard.base`) so dashboard.base was never tracked or pushed; (b) Bases syntax with nested `or` inside top-level `and`, `formula.X` as groupBy target, and `file.size` filter — Bases 1.12.7 silently rejects these and returns null view objects.
+- Initial v2 dashboard had Obsidian rendering error `Cannot read properties of null (reading 'getViewActions')`. Root causes: (a) `.gitignore` had `!wiki/meta/dashboard.base` (wrong path; should be `!wiki/dashboard.base`) so dashboard.base was never tracked or pushed; (b) Bases syntax with nested `or` inside top-level `and`, `formula.X` as groupBy target, and `file.size` filter: Bases 1.12.7 silently rejects these and returns null view objects.
 - Fixed `.gitignore`. Simplified dashboard.base to: single-level `and` filter with just `file.ext == "md"`, 6 table views each with simple `file.inFolder("wiki/{folder}")` filter, no `formulas:` or `properties:` blocks. Verified all 6 views render with correct row counts. Then enriched back with title/status/type/updated/age_days columns.
 
 **Status page**:
@@ -79,7 +79,7 @@ First L2 production batch. Henry gave 9 paper titles, all H2 / RE / offshore win
 
 Promotion of 7 cross-paper anchors from `hot.md` into real pattern pages, plus the first 3 playbook pages activated. All L1 evidence only; L2 enrichment deferred until Phase 2 pilots land.
 
-**Updated `_templates/pattern-page.md`** — added v2 fields (`supporting_papers_l1` / `_l2`, `pattern_category`, `subdomain`), three-label-discipline reminder, no-pollution rule, HENRY-NOTE block.
+**Updated `_templates/pattern-page.md`**: added v2 fields (`supporting_papers_l1` / `_l2`, `pattern_category`, `subdomain`), three-label-discipline reminder, no-pollution rule, HENRY-NOTE block.
 
 **Scaffolded** `wiki/patterns/subdomain/{8 slugs}/` so subdomain patterns have a place to land.
 
@@ -97,9 +97,9 @@ Promotion of 7 cross-paper anchors from `hot.md` into real pattern pages, plus t
 
 **3 playbook pages activated** under `wiki/playbook/top-journal-craft/`:
 
-- `intro-template-energy-papers.md` — 5/4/6-paragraph Intro scaffold; anti-patterns from L2 (preview); transferable template; worked example for Henry's SMR-DC paper. Marked **v0.1 skeleton** — will be enriched once §5 Intro paragraph tables are mined across all 22 L1 papers.
-- `main-figure-design-rules.md` — 6 rules for main figures (one-function-per-figure, mechanism-diagram-is-Fig-1, headline-number-home-figure, single-sensitivity-figure, color-as-argument, model-schematic-placement); SMR-DC worked example. **v0.1 skeleton** — will be enriched after L2 pilot (which gives the L1-vs-L2 figure contrast).
-- `contribution-decision-tree.md` — 8 archetype contribution classes induced from the 22 L1 papers + a step-by-step decision tree from result → class; SMR-DC worked example identifies system-boundary-expansion as primary contribution. **v0.1** — L2 contrast lands in v0.2.
+- `intro-template-energy-papers.md`: 5/4/6-paragraph Intro scaffold; anti-patterns from L2 (preview); transferable template; worked example for Henry's SMR-DC paper. Marked **v0.1 skeleton**: will be enriched once §5 Intro paragraph tables are mined across all 22 L1 papers.
+- `main-figure-design-rules.md`: 6 rules for main figures (one-function-per-figure, mechanism-diagram-is-Fig-1, headline-number-home-figure, single-sensitivity-figure, color-as-argument, model-schematic-placement); SMR-DC worked example. **v0.1 skeleton**: will be enriched after L2 pilot (which gives the L1-vs-L2 figure contrast).
+- `contribution-decision-tree.md`: 8 archetype contribution classes induced from the 22 L1 papers + a step-by-step decision tree from result → class; SMR-DC worked example identifies system-boundary-expansion as primary contribution. **v0.1**: L2 contrast lands in v0.2.
 
 **Status after Option B (Phase 3 extended):**
 - 22 L1 papers under `wiki/papers/L1/`.
@@ -110,10 +110,10 @@ Promotion of 7 cross-paper anchors from `hot.md` into real pattern pages, plus t
 
 **Still deferred (require L2 pilots first):**
 - 6 remaining cross-paper anchors at lower confidence (cost-trajectory-treatment, national-vs-continental-case, demand-side-mitigation, exogenous-shock-as-scenario, multi-period-deployment-with-endogenous-learning, cost-multi-unit-reporting).
-- `patterns/comparisons/*` — top-vs-applied delta library; intrinsically needs L1+L2 pairs.
-- `wiki/banks/*` row population — by routing rules, banks are primarily L2-fed.
-- `playbook/applied-paper-craft/` and `playbook/upgrade-playbook/` — explicitly L2-fed.
-- `playbook/submission-tier-checklists/` — needs L1+L2 contrast.
+- `patterns/comparisons/*`: top-vs-applied delta library; intrinsically needs L1+L2 pairs.
+- `wiki/banks/*` row population: by routing rules, banks are primarily L2-fed.
+- `playbook/applied-paper-craft/` and `playbook/upgrade-playbook/`: explicitly L2-fed.
+- `playbook/submission-tier-checklists/`: needs L1+L2 contrast.
 
 **Next**: Henry to stage 6 L2 pilot candidates in `.raw/zotero_manifest/l2_candidate_manifest.csv` and trigger `scripts/codex-ingest-paper-L2.sh`. After pilots land, re-run `subdomain-bridge-stats.py` + `generate-subdomain-hubs.py` + `generate-bridges.py` to refresh; promote remaining anchors; bootstrap 3 priority banks; draft 5 `patterns/comparisons/` pages.
 
@@ -130,7 +130,7 @@ Phase 3 partial executed. Phase 3 full requires L2 pilot first (banks bootstrap 
   - `re-tech-resources`: 5 | 9
   - `hydrogen-p2x`: 6 | 6
   - `ai-data-driven`: 3 | 3
-  - `building-urban`: 2 | 2 (smallest — explicit L2 expansion target)
+  - `building-urban`: 2 | 2 (smallest: explicit L2 expansion target)
 - 11 bridge pairs ready for stub at ≥3 papers. Top pairs: `energy-policy-economics--lca-sustainability` (8), `integrated-energy-systems--power-systems` (8), `energy-policy-economics--integrated-energy-systems` (7).
 - Counts written to `wiki/_meta/subdomain-bridge-stats.md`.
 
@@ -140,7 +140,7 @@ Phase 3 partial executed. Phase 3 full requires L2 pilot first (banks bootstrap 
 - L2 section is a placeholder ("Phase 2 pilot will land here").
 
 **11 bridge stubs** (`scripts/generate-bridges.py`, written to `wiki/bridges/{A--B}.md`):
-- Per-pair: count of papers, role-A and role-B for each supporting paper (primary / secondary / —), L1 / L2 split.
+- Per-pair: count of papers, role-A and role-B for each supporting paper (primary / secondary /:), L1 / L2 split.
 - HENRY-NOTE block placeholder for the "why this interface matters" paragraph.
 - Phase 3+ work (shared methods, exemplars at the interface) marked as placeholders.
 
@@ -153,13 +153,13 @@ Phase 3 partial executed. Phase 3 full requires L2 pilot first (banks bootstrap 
 **Deferred** (require L2 pilots first):
 - Promotion of 11 cross-paper anchors from `hot.md` into `patterns/cross-cutting/*` and `patterns/subdomain/*` stubs.
 - Parameter / sensitivity / method banks bootstrap (banks are primarily L2-fed; L1 alone produces sparse rows).
-- `patterns/comparisons/*` — top-vs-applied delta library, by definition requires both L1 and L2 papers on the same topic.
-- Playbook activation (`playbook/top-journal-craft/` — can be done from L1 alone but parked here to batch with Phase 4).
+- `patterns/comparisons/*`: top-vs-applied delta library, by definition requires both L1 and L2 papers on the same topic.
+- Playbook activation (`playbook/top-journal-craft/`: can be done from L1 alone but parked here to batch with Phase 4).
 
 **Next**:
 1. Henry: stage 6 L2 pilot candidates in `l2_candidate_manifest.csv` and trigger `scripts/codex-ingest-paper-L2.sh`.
 2. After L2 pilots land: re-run `subdomain-bridge-stats.py` (will update stats), `generate-subdomain-hubs.py` (will populate L2 tables in hubs), `generate-bridges.py` (will update bridge tables with L2 papers).
-3. Then: Phase 3 full — promote anchors to patterns, bootstrap banks, draft 3-5 comparisons pages.
+3. Then: Phase 3 full: promote anchors to patterns, bootstrap banks, draft 3-5 comparisons pages.
 
 
 
@@ -172,21 +172,21 @@ Phase 2 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Updated `scripts/codex-ingest-paper.sh` (L1 runner) to reference the renamed contract path and the L2 sibling script.
 
 **Created L2 templates** (3 depths):
-- `_templates/paper-analysis-L2-A.md` — 10-section applied template: Positioning + 11-dim applied-strength table + Method blueprint + Parameter & assumption table + Case study design + Sensitivity/uncertainty + Results & figures (applied-typical vs top-journal-typical classification) + Top-vs-applied comparison + Direct value for Henry + KB outputs (Method Card + Parameter Card + Case Study Card + 5 applied lessons + 5 upgrade notes + 5 future questions). Target 12-18 KB.
-- `_templates/paper-analysis-L2-B.md` — 6-section one-page template: one-paragraph summary + why-in-the-lab + compressed method note + parameter highlights (3-6 rows) + 3 lessons + top-vs-applied one-liner. Target 4-6 KB.
-- `_templates/paper-analysis-L2-C.md` — 3-paragraph citation marker template. Target <500 bytes body.
+- `_templates/paper-analysis-L2-A.md`: 10-section applied template: Positioning + 11-dim applied-strength table + Method blueprint + Parameter & assumption table + Case study design + Sensitivity/uncertainty + Results & figures (applied-typical vs top-journal-typical classification) + Top-vs-applied comparison + Direct value for Henry + KB outputs (Method Card + Parameter Card + Case Study Card + 5 applied lessons + 5 upgrade notes + 5 future questions). Target 12-18 KB.
+- `_templates/paper-analysis-L2-B.md`: 6-section one-page template: one-paragraph summary + why-in-the-lab + compressed method note + parameter highlights (3-6 rows) + 3 lessons + top-vs-applied one-liner. Target 4-6 KB.
+- `_templates/paper-analysis-L2-C.md`: 3-paragraph citation marker template. Target <500 bytes body.
 
 **Created L2 codex contracts** (3 depths):
-- `_templates/codex-ingest-contract-L2-A.md` — full contract with bank-candidates.md side-effect; explicit "do NOT ask why-Nature-Energy" philosophy section; 7-stub package; receipt schema with `pages_recommended_for_update_by_orchestrator[]` so banks/subdomains/patterns are written by the orchestrating session, not codex.
-- `_templates/codex-ingest-contract-L2-B.md` — medium contract with 5-stub package (skip article-page and repository-links); optional bank-candidates if 1-3 parameter rows extracted; explicit abort-and-promote rule if content wants to exceed 8 KB.
-- `_templates/codex-ingest-contract-L2-C.md` — minimal contract with 3-stub package (metadata + zotero-attachments + asset-status only); no DA/CA stub; explicit abort-and-promote rule if content wants to exceed 500 bytes.
+- `_templates/codex-ingest-contract-L2-A.md`: full contract with bank-candidates.md side-effect; explicit "do NOT ask why-Nature-Energy" philosophy section; 7-stub package; receipt schema with `pages_recommended_for_update_by_orchestrator[]` so banks/subdomains/patterns are written by the orchestrating session, not codex.
+- `_templates/codex-ingest-contract-L2-B.md`: medium contract with 5-stub package (skip article-page and repository-links); optional bank-candidates if 1-3 parameter rows extracted; explicit abort-and-promote rule if content wants to exceed 8 KB.
+- `_templates/codex-ingest-contract-L2-C.md`: minimal contract with 3-stub package (metadata + zotero-attachments + asset-status only); no DA/CA stub; explicit abort-and-promote rule if content wants to exceed 500 bytes.
 
 **Created L2 runner** (`scripts/codex-ingest-paper-L2.sh`):
 - Accepts 5 args: ZOTERO_KEY, ADDRESS, SLUG_HINT, DEPTH (A_deep|B_medium|C_light), PRIMARY_SUBDOMAIN.
 - Routes to the matching contract.
 - Whitelists subdomain slugs against the 8-vocab + `_cross`.
 - Mirrors L1 runner's JSON receipt extraction.
-- Smoke-tested all 5 validation paths (missing args / bad depth / bad subdomain / bad address / bad key) — all reject before invoking codex.
+- Smoke-tested all 5 validation paths (missing args / bad depth / bad subdomain / bad address / bad key): all reject before invoking codex.
 
 **Status after Phase 2:**
 - 22 L1 papers under `wiki/papers/L1/`.
@@ -233,7 +233,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Address counter unchanged at `c-000025` (next allocation).
 - All 22 wikilinks in `index.md` updated. `git status` shows the 22 RM (rename + modify) entries.
 
-**Next**: Phase 2 — write `_templates/paper-analysis-L2-{A,B,C}.md`, `_templates/codex-ingest-contract-L2-{A,B,C}.md`, `scripts/codex-ingest-paper-L2.sh`. Pilot 3 L2-A + 2 L2-B + 1 L2-C papers. Verify costs and routing receipts.
+**Next**: Phase 2: write `_templates/paper-analysis-L2-{A,B,C}.md`, `_templates/codex-ingest-contract-L2-{A,B,C}.md`, `scripts/codex-ingest-paper-L2.sh`. Pilot 3 L2-A + 2 L2-B + 1 L2-C papers. Verify costs and routing receipts.
 
 
 
@@ -242,7 +242,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Zotero: `KWNBZ8FA`
 - Analysis: [[papers/2026-NE-ai-data-centres-grid-interactive]] (address `c-000024`, 30.2KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` via OneDrive Zotero backup SQLite (active /Users/henry/Zotero/zotero.sqlite was empty for this key).
-- Key insight: **first field-trial paper in the lab** — Phoenix 256-GPU production AI cluster shows software workload orchestration can cut cluster power 25% for 3 hours during grid peaks with QoS intact. Empirically settles a question that 3 of our modeling papers (Zheng 2020 J, Berrill 2022 NCC, Kikstra 2021 NE) had to assume.
+- Key insight: **first field-trial paper in the lab**: Phoenix 256-GPU production AI cluster shows software workload orchestration can cut cluster power 25% for 3 hours during grid peaks with QoS intact. Empirically settles a question that 3 of our modeling papers (Zheng 2020 J, Berrill 2022 NCC, Kikstra 2021 NE) had to assume.
 - Cross-cluster: pairs with Zheng 2020 J (UELISBYS) as the "DC as grid asset" empirical complement to Zheng's macroscale counterfactual.
 
 ## [2026-05-11] ingest | Mytton & Ashtine 2022, Joule, data center energy estimates review (via codex, batch 4)
@@ -251,14 +251,14 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Analysis: [[papers/2022-J-data-center-energy-estimates-review]] (address `c-000023`, 35KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
 - Key insight: 258 DC energy estimates from 46 publications 2007-2021, 676 source links audited. Reliability problems come from provenance (private market data, broken links, vague methods, future extrapolation), not from one bad number. **Methodology gate for any DC-load paper in the lab**: a paper that doesn't audit its DC load inputs will get reviewer-killed.
-- Lesson archetype: provenance-audit as primary contribution — same archetype as Liu 2015 N (emissions inventory correction) but applied to estimates rather than measurements.
+- Lesson archetype: provenance-audit as primary contribution: same archetype as Liu 2015 N (emissions inventory correction) but applied to estimates rather than measurements.
 
 ## [2026-05-11] ingest | Vanatta, Stewart & Craig 2025, Nature Energy, SMR policy + module learning (via codex, batch 4)
 
 - Zotero: `SYGLCEMJ`
 - Analysis: [[papers/2025-NE-smr-policy-module-learning]] (address `c-000022`, 37.5KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache fallback.
-- Key insight: profit-max deployment of 4 SMR designs at 925 US industrial facilities 2030-2050. Deployment gated by delivered gas price, FOAK capex escalation, factory learning rate, carbon tax, ITC — direct early subsidies have weak effect compared to learning + carbon price.
+- Key insight: profit-max deployment of 4 SMR designs at 925 US industrial facilities 2030-2050. Deployment gated by delivered gas price, FOAK capex escalation, factory learning rate, carbon tax, ITC: direct early subsidies have weak effect compared to learning + carbon price.
 - Cross-cluster: **same Michigan group (Vanatta + Craig) as 2023 J SMR-industrial-heat paper** (XUGL6XPD, address c-000019). The two together form a methodologically-sequential pair (single-period MILP → multi-period deployment with endogenous learning). Critical pair for understanding SMR economics in industrial heat contexts.
 
 ## [2026-05-11] ingest | Vanatta et al. 2023, Joule, SMR industrial process heat TEA (via codex, batch 4)
@@ -299,7 +299,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Analysis: [[papers/2022-N-solar-pv-supply-chain-cost-savings]] (address `c-000017`, 39.9KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache.
 - Key insight: globalized PV module markets saved installers US$67 billion cumulatively 2008-2020 (China $36B + US $24B + Germany $7B); nationalizing supply chains would cost the deployment debt the world cannot afford. Archetype: counterfactual-cost-savings on the supply chain itself, not on the technology.
-- Cross-cluster: novel archetype in the lab — first paper centering supply-chain geography rather than technology cost. Loose link to Wang 2023 N (plant-level optimization) via PV economics; conceptual link to Liu 2015 N (data-correction archetype) via "what gets counted shapes policy".
+- Cross-cluster: novel archetype in the lab: first paper centering supply-chain geography rather than technology cost. Loose link to Wang 2023 N (plant-level optimization) via PV economics; conceptual link to Liu 2015 N (data-correction archetype) via "what gets counted shapes policy".
 
 ## [2026-05-11] ingest | Berrill et al. 2022, Nature Climate Change, US residential decarbonization (via codex, batch 3)
 
@@ -313,7 +313,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 
 - Zotero: `UIWZD5EE`
 - Analysis: [[papers/2021-NCC-h2-efuels-potential-risks]] (address `c-000015`, 36KB)
-- Receipt: all checks pass except `fulltext_source: unknown` — Zotero had no PDF attachment for this key; codex fell back to the Nature article page + ResearchGate author preprint. Deviation documented. Analysis quality is intact (18 sections, 5/5/5/5, banned-word check passed, three-label discipline applied).
+- Receipt: all checks pass except `fulltext_source: unknown`: Zotero had no PDF attachment for this key; codex fell back to the Nature article page + ResearchGate author preprint. Deviation documented. Analysis quality is intact (18 sections, 5/5/5/5, banned-word check passed, three-label discipline applied).
 - Key insight: e-fuel routes deliver 16-48% electricity-to-useful-energy efficiency (2-10x more renewable electricity than direct electrification); 2050 MACC of EUR20-270/tCO2 only after deep scale-up. The merit-order argument forces a sorting rule on policy: ration e-fuels to sectors inaccessible to direct electrification.
 - Cross-cluster: anchors the option-value-with-discipline pattern. Strong link to Wolfram 2024 OE (same batch, same H2-option-value frame but global IAM vs perspective-synthesis). Strong link to Zeyen 2023 NC (endogenous learning) and Giovanniello 2024 NE (additionality framework).
 - **Follow-up**: a PDF attachment for `UIWZD5EE` should be added to Zotero so a Pass-2 can verify the analysis against the actual main-PDF text (same situation as the original M9HYZCZE issue).
@@ -323,7 +323,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Zotero: `73CKKQFI`; main PDF `8GFTMJCS`
 - Analysis: [[papers/2024-OE-h2-economy-22pct-cost-reduction]] (address `c-000014`, 38KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache.
-- Key insight: **first One Earth paper in the lab**. GCAM scenario pairs (with-H2 vs no-H2, full option set vs end-use exclusions) demonstrate that hydrogen at only 3-9% of 2050 final energy can yield 15-22% mitigation-cost reduction — its value is option value, not adoption share. International shipping is the highest-value end use (~6.4% cost reduction alone).
+- Key insight: **first One Earth paper in the lab**. GCAM scenario pairs (with-H2 vs no-H2, full option set vs end-use exclusions) demonstrate that hydrogen at only 3-9% of 2050 final energy can yield 15-22% mitigation-cost reduction: its value is option value, not adoption share. International shipping is the highest-value end use (~6.4% cost reduction alone).
 - Cross-cluster: directly informs an option-value-scenario-pair pattern with Yang 2022 NE (China TIMES-VEDA), Zeyen 2023 NC (endogenous learning, sector-coupled), and Giovanniello 2024 NE (additionality). Strong methodological contrast: global IAM breadth (Wolfram) vs national sector detail (Yang) vs European sector-coupled optimization (Zeyen) vs grid-emissions accounting (Giovanniello).
 
 ## [2026-05-11] ingest | Cherp et al. 2021, Nature Energy, national wind/solar growth dynamics (via codex, batch 2)
@@ -340,7 +340,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Zotero: `CRAKEP8V`
 - Analysis: [[papers/2023-NC-rooftop-pv-china-carbon]] (address `c-000012`, 32.8KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf`.
-- Key insight: bottom-up rooftop assessment for 354 Chinese cities converts a national policy target (PV by 2030) into a city-level deployment map with grid-parity overlay. Cross-system anchor with Wang 2023 N (utility-scale PV+wind plant placement) — rooftop vs utility-scale resolution contrast.
+- Key insight: bottom-up rooftop assessment for 354 Chinese cities converts a national policy target (PV by 2030) into a city-level deployment map with grid-parity overlay. Cross-system anchor with Wang 2023 N (utility-scale PV+wind plant placement): rooftop vs utility-scale resolution contrast.
 - Initial wrapper-side receipt extraction failed (multi-line JSON bug); rescued from stdout manually. Wrapper fixed for future runs.
 
 ## [2026-05-11] ingest | Zheng et al. 2020, Joule, data center load migration + curtailment (via codex, batch 2)
@@ -362,7 +362,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Zotero: `H998SFTH`
 - Analysis: [[papers/2015-N-china-fossil-cement-co2-revised]] (address `c-000009`, 35.3KB)
 - Receipt: all checks pass. `fulltext_source: main-pdf` (via author-uploaded PDF; Zotero MCP blocked; SQLite lookup also missed). Note: DA/CA not explicit in published paper.
-- Key insight: this is the famous 2015 Liu paper that cut China's reported 2000-2013 fossil + cement CO2 by ~14%. Archetype is data-correction-as-primary-contribution — pre-tier-1-energy-literature, but landed in Nature because the magnitude was policy-relevant globally. Useful counterpoint to modeling-heavy papers in the lab.
+- Key insight: this is the famous 2015 Liu paper that cut China's reported 2000-2013 fossil + cement CO2 by ~14%. Archetype is data-correction-as-primary-contribution: pre-tier-1-energy-literature, but landed in Nature because the magnitude was policy-relevant globally. Useful counterpoint to modeling-heavy papers in the lab.
 
 ## [2026-05-11] ingest | Kikstra et al. 2021, Nature Energy, COVID-19 demand scenarios (via codex)
 
@@ -492,7 +492,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Deliberately NOT done: no real M1 fold committed; no M3 end-to-end run (needs `ollama pull nomic-embed-text`); pre-existing em-dashes in install-guide.md and README.md left untouched (clean-room boundary, not in write scope this slice); CLAUDE.md pre-existing uncommitted change left untouched.
 - Next recommended slice: either (E) push to origin/main and create annotated tags v1.5.0, v1.5.1, v1.6.0 in landing order, or (F) dedicated style pass to scrub pre-existing em-dashes across install-guide.md, README.md, and any other wiki files flagged by a grep scan.
 
-## [2026-04-24] save | DragonScale Phase 4 — boundary-first autoresearch shipped (v1.6.0)
+## [2026-04-24] save | DragonScale Phase 4: boundary-first autoresearch shipped (v1.6.0)
 - Type: feature release
 - Locations (new): scripts/boundary-score.py (with --top, --page, --json, stdout-only CLI), tests/test_boundary_score.py (40+ assertions)
 - Locations (modified): skills/autoresearch/SKILL.md (new Topic Selection section A/B/C with helper-failure fallback), commands/autoresearch.md (no-topic candidate flow with agenda-control label), wiki/concepts/DragonScale Memory.md (v0.4: M4 flipped from NOT IMPLEMENTED to shipped; exact formula without recency floor; filename-stem disclosure; fence-handling qualifiers), CHANGELOG.md, .claude-plugin/{plugin,marketplace}.json (1.5.0 -> 1.6.0), Makefile (test-boundary target), wiki/hot.md, wiki/index.md, wiki/concepts/_index.md (status drift resolved).
@@ -503,7 +503,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Phase 3.6 (pre-Phase-4 hardening) already landed as v1.5.1: tiling --report VAULT_ROOT confinement, rollout baseline, AGENTS.md consistency, wiki-ingest .raw/ contradiction, install-guide version.
 - All four DragonScale mechanisms now shipped and opt-in. 44 commits ahead of origin/main, no push.
 
-## [2026-04-24] save | DragonScale Phase 3.5 — cross-phase hardening to v1.5.0
+## [2026-04-24] save | DragonScale Phase 3.5: cross-phase hardening to v1.5.0
 - Type: release hardening
 - Locations (new): bin/setup-dragonscale.sh (opt-in installer), tests/test_allocate_address.sh, tests/test_tiling_check.py, Makefile, CHANGELOG.md
 - Locations (modified): hooks/hooks.json (+.vault-meta/ staging), agents/wiki-ingest.md (single-writer rule for addresses), agents/wiki-lint.md (Mechanism 2+3 checks), skills/wiki-ingest/SKILL.md (aligned non-DragonScale wording), wiki/concepts/DragonScale Memory.md (M2 severity matches lint, M4 marked NOT IMPLEMENTED, seed page gets address c-000001), .claude-plugin/{plugin.json,marketplace.json} (1.4.2/1.4.3 → 1.5.0), README.md (11 skills + DragonScale callout), wiki/hot.md (refreshed for v1.5.0), .raw/.manifest.json (address_map now has DragonScale Memory.md → c-000001), .gitignore (.vault-meta/.tiling.lock + cache), .vault-meta/address-counter.txt (advanced to 2).
@@ -512,7 +512,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Tests: `make test` runs 12 shell assertions (allocator) + 18 python assertions (tiling-check). All pass; no ollama dependency.
 - Phase 3.5 complete. Repo state: 6 developer commits added this pass (f2e73c1, 2b49a0c, 8b28e48, 19ad7e4, 365f557, 2e7dd16). Total 39 commits ahead of origin/main. No push.
 
-## [2026-04-24] save | DragonScale Phase 3 — semantic tiling MVP
+## [2026-04-24] save | DragonScale Phase 3: semantic tiling MVP
 - Type: skill update + new script + threshold state
 - Locations: scripts/tiling-check.py (485 lines), .vault-meta/tiling-thresholds.json (seed defaults), skills/wiki-lint/SKILL.md (109-line Semantic Tiling section + item #10 in checks), wiki/concepts/DragonScale Memory.md (Mechanism 3 cost framing clarified)
 - Scope: opt-in embedding-based duplicate detection via ollama nomic-embed-text. Default bands error>=0.90, review>=0.80, explicitly documented as conservative seeds (not literature-backed interpolation). Calibration procedure documented, not automated.
@@ -529,7 +529,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Final verdict: 10/10 accept.
 - Phase 3 complete. All three DragonScale mechanisms that were in-scope for the initial spec are now shipped as opt-in features. Mechanism 4 (boundary-first autoresearch) was flagged as agenda-control out-of-scope per the v0.2 scope boundary; may or may not ship as a future phase.
 
-## [2026-04-23] save | DragonScale Phase 2 — deterministic page addresses MVP
+## [2026-04-23] save | DragonScale Phase 2: deterministic page addresses MVP
 - Type: skill update + new script
 - Locations: scripts/allocate-address.sh, skills/wiki-ingest/SKILL.md (Address Assignment section), skills/wiki-lint/SKILL.md (Address Validation section), wiki/concepts/DragonScale Memory.md (Mechanism 2 rewritten v0.2→v0.3), .vault-meta/address-counter.txt, .raw/.manifest.json (new)
 - Scope: MVP address format `c-NNNNNN` (creation-order counter, zero-padded 6 digits). Rollout baseline 2026-04-23. Legacy pages exempt until deliberate backfill (future `l-` prefix). No content hash, no fold-ancestry encoding in the MVP (both deferred).
@@ -541,7 +541,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Final verdict: 8/8 accept.
 - Phase 2 complete. Phase 3 (semantic tiling lint) gated on human approval.
 
-## [2026-04-23] save | DragonScale Phase 1 — wiki-fold skill shipped
+## [2026-04-23] save | DragonScale Phase 1: wiki-fold skill shipped
 - Type: skill
 - Location: skills/wiki-fold/SKILL.md, skills/wiki-fold/references/fold-template.md
 - Scope: flat extractive fold over raw wiki/log.md entries. Dry-run default via Bash stdout (no Write tool, avoids PostToolUse hook residue). Structural idempotency via deterministic fold_id. Duplicate-range detection. Fold-of-folds explicitly out of scope.
@@ -550,7 +550,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Dry-run artifact: /tmp/wiki-fold-dry-run-v2.md (not committed). fold_id: fold-k3-from-2026-04-10-to-2026-04-23-n8.
 - Phase 1 complete. Phase 2 (content-addressable paths) gated on human approval.
 
-## [2026-04-23] save | DragonScale Memory v0.2 — post-adversarial-review
+## [2026-04-23] save | DragonScale Memory v0.2: post-adversarial-review
 - Type: concept revision
 - Location: wiki/concepts/DragonScale Memory.md
 - Review: codex exec adversarial review rejected all 7 load-bearing claims in v0.1
@@ -558,7 +558,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Re-review result: 7/7 accepted (after one surgical fix on tagging-scope language)
 - Phase 0 complete. Phase 1 (wiki-fold skill) gated on human approval.
 
-## [2026-04-23] save | DragonScale Memory — Phase 0 design doc (proposed)
+## [2026-04-23] save | DragonScale Memory: Phase 0 design doc (proposed)
 - Type: concept
 - Location: wiki/concepts/DragonScale Memory.md
 - From: brainstorming session on applying Heighway dragon curve properties to LLM wiki memory architecture
@@ -574,7 +574,7 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Key lessons: Path.home() not hardcoded paths, git pull --rebase before big pushes, Chrome blocks file:// cross-origin images, .claude/ always in .gitignore
 - Release: https://github.com/AgriciDaniel/claude-seo/releases/tag/v1.9.0
 
-## [2026-04-15] save | Claude SEO v1.9.0 Release Report — PDF Complete
+## [2026-04-15] save | Claude SEO v1.9.0 Release Report: PDF Complete
 - Type: session
 - Location: wiki/meta/2026-04-15-release-report-session.md
 - From: full session completing the v1.9.0 PDF release report. Dark theme, 13 pages, 1.53 MB. Fixed logo (double-space filename), empty spaces, page-break orphans, file:// URL encoding.
@@ -582,10 +582,10 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 - Challenge v2 added: keyword LEADS, $600 prize pool, deadline April 28
 - Output: `~/Desktop/Claude-SEO-v1.9.0-Release-Report.pdf`
 
-## [2026-04-14] save | Claude SEO v1.9.0 — Pro Hub Challenge Integration Session
+## [2026-04-14] save | Claude SEO v1.9.0: Pro Hub Challenge Integration Session
 - Type: session + 4 concept pages + 1 entity page
 - Location: wiki/meta/2026-04-14-claude-seo-v190-session.md
-- From: full v1.9.0 implementation session — reviewed 5 community submissions, integrated 4 new skills (seo-cluster, seo-sxo, seo-drift, seo-ecommerce), enhanced seo-hreflang, added DataForSEO cost guardrails
+- From: full v1.9.0 implementation session: reviewed 5 community submissions, integrated 4 new skills (seo-cluster, seo-sxo, seo-drift, seo-ecommerce), enhanced seo-hreflang, added DataForSEO cost guardrails
 - Pages created: [[2026-04-14-claude-seo-v190-session]], [[Claude SEO]], [[Pro Hub Challenge]], [[Semantic Topic Clustering]], [[Search Experience Optimization]], [[SEO Drift Monitoring]]
 - Review rounds: 4 (code review x3 + cybersecurity audit). Score: 87 → 93 → 97 → 85 security
 - Key learnings: always verify subagent output (40-line count error caught), insertion-point bugs caught by max-effort plan review, pre-existing security debt identified (10 of 15 findings)
@@ -631,12 +631,12 @@ Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied
 ## [2026-04-07] session | claude-obsidian v1.2.0 Release Session
 - Type: session
 - Location: wiki/meta/claude-obsidian-v1.2.0-release-session.md
-- From: full build session — v1.2.0 plan execution, cosmic-brain→claude-obsidian rename, legal/security audit, branded GIFs, PDF install guide, dual GitHub repos
+- From: full build session: v1.2.0 plan execution, cosmic-brain→claude-obsidian rename, legal/security audit, branded GIFs, PDF install guide, dual GitHub repos
 
 
 - Source: `.raw/` (first ingest)
 - Pages updated: [[index]], [[log]], [[hot]], [[overview]]
-- Key insight: The wiki pattern turns ephemeral AI chat into compounding knowledge — one user dropped token usage by 95%.
+- Key insight: The wiki pattern turns ephemeral AI chat into compounding knowledge: one user dropped token usage by 95%.
 
 ## [2026-04-07] setup | Vault initialized
 

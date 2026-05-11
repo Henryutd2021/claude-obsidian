@@ -20,7 +20,7 @@ Navigation: [[index]] · [[log]] · [[usage|How to use this vault]] · [[Wiki Ma
 
 **2026-05-11, late-evening session (batch 5: first L2 production)**
 
-Henry handed 9 paper titles, all H2 / offshore wind / curtailment / mobility cluster. 8 dispatched in parallel via codex (1 L1 + 5 L2-A + 2 L2-B); 1 IJHE paper skipped per L3 policy. 1 of 8 self-aborted (ACSSCE not in vocab — codex correctly refused). 7 ingested clean.
+Henry handed 9 paper titles, all H2 / offshore wind / curtailment / mobility cluster. 8 dispatched in parallel via codex (1 L1 + 5 L2-A + 2 L2-B); 1 IJHE paper skipped per L3 policy. 1 of 8 self-aborted (ACSSCE not in vocab: codex correctly refused). 7 ingested clean.
 
 ## Snapshot
 
@@ -28,7 +28,7 @@ Henry handed 9 paper titles, all H2 / offshore wind / curtailment / mobility clu
 - **Address counter**: 33 (c-000003 through c-000032 in use; c-000031 reserved-unused for Shi).
 - **Subdomain hubs**: 8, regenerated this session.
 - **Bridges**: **14** (11 → 14; 3 new emerged at 3+ gate this batch).
-- **Pattern pages**: 7 (no change this batch — L1-only patterns; awaits curation).
+- **Pattern pages**: 7 (no change this batch: L1-only patterns; awaits curation).
 - **Playbook v0.1**: 3 pages (no change).
 - **Banks**: ~110 candidate rows pending dedup curation. Staging page: [[banks/_batch-2026-05-11-staging]].
 - **All 3 SKILL.md files updated for v2 routing** (uncommitted; staged in working tree).
@@ -63,7 +63,7 @@ Promising new pattern stubs (require Henry decision):
 ## Open decisions (Henry)
 
 1. **Shi 2020 ACSSCE** (c-000031 reserved-unused): add ACS Sustainable Chemistry & Engineering to `applied_flagship` vocab list and re-dispatch? Or treat as L3 manual bank? Quick call: it's energy-system-focused not chemistry-focused. Recommendation: add to vocab.
-2. **Scolaro 2022 IJHE**: codex policy currently skips IJHE (L3 technical_support). Paper looks solid (3+ stars, "Done", offshore wind H2 Germany ancillary services). Override and treat as L2? Recommendation: yes — promote IJHE for paper-by-paper override only.
+2. **Scolaro 2022 IJHE**: codex policy currently skips IJHE (L3 technical_support). Paper looks solid (3+ stars, "Done", offshore wind H2 Germany ancillary services). Override and treat as L2? Recommendation: yes: promote IJHE for paper-by-paper override only.
 3. **Bank curation**: ~110 candidate rows in staging. Define merge keys + materialize into bank pages? Half day of work, big jump in usefulness.
 
 ## Active machinery state (unchanged from earlier)

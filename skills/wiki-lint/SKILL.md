@@ -348,6 +348,159 @@ See [[tiling-report-YYYY-MM-DD]] for the full pair listing.
 
 ---
 
+## TPL v2 Lint Checks
+
+**Opt-in feature.** TPL v2 lint runs only when the vault has adopted the two-layer corpus (detected by presence of `wiki/_meta/journal-role-vocab.md` AND `wiki/papers/L1/` AND `wiki/papers/L2/`). Otherwise skip this section.
+
+```bash
+if [ -f wiki/_meta/journal-role-vocab.md ] && [ -d wiki/papers/L1 ] && [ -d wiki/papers/L2 ]; then
+  TPL_V2=1
+else
+  TPL_V2=0
+fi
+```
+
+Run TPL v2 checks **in addition to** the generic checks above, not in place of them.
+
+### TPL-1. Frontmatter v2 vocab check
+
+For every paper-analysis page under `wiki/papers/L1/**/*.md` and `wiki/papers/L2/**/*.md`:
+
+| Required field | Allowed values | Severity |
+|---|---|---|
+| `journal_role` | `top_journal_exemplar` · `applied_flagship` · `technical_support` · `comparison_control` | error if missing or out-of-vocab |
+| `ingest_depth` | `A_deep` · `B_medium` · `C_light` | error if missing or out-of-vocab |
+| `subdomain_primary` | array of 1-2 entries from the 8 subdomain slugs | error if missing, empty, or contains out-of-vocab slug |
+| `subdomain_secondary` | array of 0-3 entries from the 8 subdomain slugs (may be empty) | error only if a listed entry is out-of-vocab |
+| `address` | `c-NNNNNN` (post-rollout) or `l-NNNNNN` (legacy) | error if missing on post-rollout page |
+
+8 subdomain slugs (locked, `wiki/_meta/subdomain-vocab.md`): `integrated-energy-systems` · `power-systems` · `hydrogen-p2x` · `re-tech-resources` · `building-urban` · `energy-policy-economics` · `lca-sustainability` · `ai-data-driven`. Special slug `_cross` is allowed only as a folder name under `wiki/papers/L2/_cross/`, not as a `subdomain_primary` entry.
+
+### TPL-2. Folder-placement audit
+
+| Rule | Severity |
+|---|---|
+| `journal_role: top_journal_exemplar` page lives under `wiki/papers/L1/` (flat) | error if elsewhere |
+| `journal_role: applied_flagship` page lives under `wiki/papers/L2/{subdomain_primary[0]}/` | error if elsewhere |
+| Paper under `wiki/papers/L2/{slug}/` has `subdomain_primary[0] == {slug}` | error on mismatch |
+| Paper under `wiki/papers/L2/_cross/` has `>= 3` entries in `subdomain_primary` | error if fewer |
+| `journal_role: technical_support` page exists under `wiki/papers/**` at all | error (technical-support is manual bank-row only; no paper-analysis page) |
+
+### TPL-3. No-pollution rule
+
+Pages under the following paths must NOT cite L2 papers as **primary** evidence:
+
+- `wiki/patterns/cross-cutting/intro/**`
+- `wiki/patterns/cross-cutting/figure/**`
+- `wiki/patterns/cross-cutting/discussion/**`
+- `wiki/patterns/cross-cutting/archetype/**`
+- `wiki/patterns/cross-cutting/contribution/**`
+- `wiki/playbook/top-journal-craft/**`
+
+Detection: for each pattern/playbook page in the above paths, scan wikilinks. Resolve each link to a paper-analysis page if possible. If the linked page has `journal_role: applied_flagship` AND the link appears in a section labeled "Primary evidence", "Supporting papers", or similar (not "Contrast", "Counterexample", "Supplementary"), flag as error.
+
+L2 papers may appear in `patterns/comparisons/*` (by design), `patterns/cross-cutting/methods-recurrent/*` (as supplementary, must be labeled), `patterns/subdomain/*`, `patterns/bridges/*`, and `playbook/applied-paper-craft/*` · `playbook/upgrade-playbook/*` · `playbook/submission-tier-checklists/*`.
+
+### TPL-4. Routing-matrix audit
+
+For every L1 and L2-A paper-analysis page with a corresponding `.raw/papers/{KEY}/codex-receipt.json`, cross-check the receipt's `pages_updated[]` against the routing matrix in `wiki/_meta/routing-rules.md`.
+
+| Source | Always-updates pages (must be in receipt) |
+|---|---|
+| L1-A | `papers/L1/{slug}.md`, `subdomains/{primary[0]}.md`, `subdomains/{primary[1]}.md` (if present), `log.md`, `hot.md`, `index.md` |
+| L2-A | `papers/L2/{primary[0]}/{slug}.md`, `subdomains/{primary[0]}.md`, `subdomains/{primary[1]}.md` (if present), bank rows in `banks/{parameter,sensitivity,method}-bank/*`, `log.md`, `hot.md`, `index.md` |
+| L2-B | `papers/L2/{primary[0]}/{slug}.md`, `log.md` |
+| L2-C | `papers/L2/{primary[0]}/{slug}.md` (small card), `log.md` |
+
+Missing always-updates entry → error. Missing conditional entry → informational.
+
+### TPL-5. Page-size band check
+
+Read each paper-analysis page's body size in bytes (excluding frontmatter):
+
+| Page class | Body band | Action outside band |
+|---|---|---|
+| L1 A_deep | 18-35 KB | error if < 12 KB (likely template-only); warn if > 40 KB |
+| L2-A | 12-18 KB | error if < 8 KB or > 22 KB |
+| L2-B | 4-6 KB | error if < 2 KB (scope creep into C_light) or > 8 KB (scope creep into A_deep) |
+| L2-C | < 500 B | error if > 1 KB (over-analyzed) |
+
+### TPL-6. Orphan / under-fed bridges
+
+Scan `wiki/bridges/*.md`. For each bridge page `{A}--{B}.md`:
+
+1. Count papers across `wiki/papers/L1/**` and `wiki/papers/L2/**` whose `subdomain_primary ∪ subdomain_secondary` contains both `A` and `B`.
+2. If count < 3 → error: orphan bridge (gate is 3 papers).
+3. If count >= 3 but the bridge page's "Supporting papers" section lists fewer than `count`, warn: stale bridge content. Suggest re-running `scripts/generate-bridges.py`.
+
+### TPL-7. Banned-word scan (anti-fluff)
+
+For every page under `wiki/papers/**`, `wiki/patterns/**`, `wiki/playbook/**`:
+
+Words requiring same-sentence concrete justification: `innovative · important · rigorous · comprehensive · novel · significant · high-impact · seminal · well-written · clear · elegant · groundbreaking`.
+
+Detection: word appears AND the same sentence does not contain a concrete qualifier (one of: "in [aspect]", "for [audience/outcome]", "across [axis]", a parenthetical, or a colon-introduced specification). False-positive rate will be non-zero; lint posture is **warning**, not error.
+
+### TPL-8. Three-label discipline
+
+For every page under `wiki/papers/**`, `wiki/patterns/**`, `wiki/playbook/**`:
+
+1. Each substantive claim paragraph SHOULD start with one of `Evidence:`, `Inference:`, or `Lesson:` (warning if many paragraphs in body have none).
+2. Every line containing `Lesson:` MUST link to at least one `wiki/papers/L1/**` or `wiki/papers/L2/**` page (error if absent).
+3. `Inference:` claims SHOULD declare confidence (high/medium/low). Warning if absent.
+
+### TPL-9. Style: em dashes and double-hyphen punctuation
+
+For every page under `wiki/**`:
+- Em dash (Unicode U+2014) anywhere outside fenced code blocks: error.
+- ` -- ` (double-hyphen as punctuation) outside fenced code blocks → error.
+- Inside fenced code blocks: ignored.
+
+### TPL-10. Stale bank rows
+
+For every row in `wiki/banks/{parameter,sensitivity,method,case-study,figure,results}-bank/*.md`:
+
+- Row should cite at least one wiki paper page or a Zotero key with the `tpl:role/technical_support` tag.
+- Row missing both citations → error.
+- Row cites a paper page that no longer exists → error (dead link).
+
+### TPL-11. Over-analyzed L2 (promotion signal, not error)
+
+If an L2-A paper page is cited 3+ times across `wiki/patterns/cross-cutting/**` pages: surface as **informational** under "Promotion candidates". Henry may want to re-ingest under the L1 contract per `depth-policy.md` rule "L2-A to L1 promotion".
+
+### TPL-12. Crowded research-gap entries
+
+For every `wiki/patterns/research-gap-map/*` entry: if it has >= 10 supporting papers, surface as **informational** (the gap is no longer a gap; consider retiring the entry or splitting it).
+
+### TPL output section in the lint report
+
+```markdown
+## TPL v2
+
+### Errors
+- [[2024-AE-h2-balancing]]: missing `subdomain_primary`.
+- [[2024-Joule-electrolyzer-merit-order]]: page lives at `papers/L1/...` but `journal_role: applied_flagship`. Move to `papers/L2/hydrogen-p2x/` or fix the role.
+- [[patterns/cross-cutting/intro/empirical-anchor]]: cites L2 paper [[2023-AE-pv-cf-china]] as primary evidence. Move to `patterns/comparisons/` or `patterns/cross-cutting/methods-recurrent/`.
+- [[banks/parameter-bank/electrolyzer-capex]]: row "ALK 600 EUR/kW" missing paper citation.
+
+### Warnings
+- [[2024-NE-flexibility-options]]: uses "rigorous" without same-sentence concrete justification.
+- [[bridges/hydrogen-p2x--power-systems]]: 5 papers detected, but "Supporting papers" section lists 3. Re-run scripts/generate-bridges.py.
+
+### Informational
+- Promotion candidate: [[2023-AE-hub-design]] cited 4× across patterns/cross-cutting. Eligible for L2-A → L1 promotion.
+- Crowded gap: [[patterns/research-gap-map/cost-trajectory-treatment]] has 12 supporting papers. Consider retirement.
+
+### Stats
+- L1 papers checked: 22 (22 pass, 0 errors)
+- L2 papers checked: 0 (pilot pending)
+- Orphan bridges: 0
+- Banned-word warnings: N
+- No-pollution violations: M
+```
+
+---
+
 ## Before Auto-Fixing
 
 Always show the lint report first. Ask: "Should I fix these automatically, or do you want to review each one?"
@@ -361,3 +514,6 @@ Needs review before fixing:
 - Deleting orphan pages (they might be intentionally isolated)
 - Resolving contradictions (requires human judgment)
 - Merging duplicate pages
+- TPL-2 folder-placement errors (a move can break wikilinks; ask first)
+- TPL-3 no-pollution violations (the link is real evidence; the question is *where it should live*)
+- TPL-11 promotion candidates (only Henry decides whether to re-ingest)

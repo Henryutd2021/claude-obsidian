@@ -6,7 +6,7 @@ what triggers it filling, and where the source-of-truth lives.
 Idempotent: skips folders that already have an `_about.md`.
 
 Filename choice: `_about.md` (not README.md) because the vault's
-`.obsidian/app.json` has `README.md` in `userIgnoreFilters` — those
+`.obsidian/app.json` has `README.md` in `userIgnoreFilters`: those
 files would be invisible to Obsidian. Underscore prefix also sorts the
 nav stub to the top of the folder listing.
 """
@@ -45,7 +45,7 @@ SPECS = {
     # ── papers/L2 ────────────────────────────────────────────────────
     "papers/L2/_cross": (
         "L2 _cross folder",
-        "L2 (`applied_flagship`) papers that span 3+ subdomains as primary. Rare in practice — usually a perspective / cross-disciplinary synthesis. Most L2 papers land in a single subdomain folder.",
+        "L2 (`applied_flagship`) papers that span 3+ subdomains as primary. Rare in practice: usually a perspective / cross-disciplinary synthesis. Most L2 papers land in a single subdomain folder.",
         "When a Phase 2+ L2 ingest produces a paper with `len(subdomain_primary) >= 3` AND no subdomain is a clear dominant.",
         "`scripts/codex-ingest-paper-L2.sh <KEY> <ADDR> <SLUG> A_deep _cross`.",
         "[[_meta/subdomain-vocab]] (rules for cross-subdomain papers).",
@@ -112,7 +112,7 @@ SPECS = {
         "patterns / cross-cutting / intro",
         "Patterns about Introduction architecture in top-tier energy papers (paragraph roles, gap-construction moves, headline-number placement).",
         "When a recurring Intro move is identified across 3+ L1 papers AND can be formalized as a transferable template.",
-        "Sourced from §5 Introduction paragraph tables of the L1 papers. Currently captured at higher level in [[playbook/top-journal-craft/intro-template-energy-papers]] — split into per-pattern pages here when v0.2 of that playbook refines the moves.",
+        "Sourced from §5 Introduction paragraph tables of the L1 papers. Currently captured at higher level in [[playbook/top-journal-craft/intro-template-energy-papers]]: split into per-pattern pages here when v0.2 of that playbook refines the moves.",
         "[[playbook/top-journal-craft/intro-template-energy-papers]].",
     ),
     "patterns/cross-cutting/figure": (
@@ -126,7 +126,7 @@ SPECS = {
         "patterns / cross-cutting / discussion",
         "Patterns about Discussion elevation in top-tier energy papers (how a result is lifted from engineering implication to system / policy implication).",
         "When a recurring Discussion move is identified across 3+ L1 papers. Pure L1 evidence (no L2) per the no-pollution rule.",
-        "Sourced from §11 Discussion sections of L1 papers. Not yet drafted — will fill when a /wiki-query or fold synthesis surfaces a recurring move.",
+        "Sourced from §11 Discussion sections of L1 papers. Not yet drafted: will fill when a /wiki-query or fold synthesis surfaces a recurring move.",
         "[[../../../_meta/routing-rules]] no-pollution rule.",
     ),
     "patterns/cross-cutting/contribution": (

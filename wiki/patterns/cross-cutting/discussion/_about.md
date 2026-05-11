@@ -22,7 +22,7 @@ When a recurring Discussion move is identified across 3+ L1 papers. Pure L1 evid
 
 ## Trigger
 
-Sourced from §11 Discussion sections of L1 papers. Not yet drafted — will fill when a /wiki-query or fold synthesis surfaces a recurring move.
+Sourced from §11 Discussion sections of L1 papers. Not yet drafted: will fill when a /wiki-query or fold synthesis surfaces a recurring move.
 
 ## Source of truth
 

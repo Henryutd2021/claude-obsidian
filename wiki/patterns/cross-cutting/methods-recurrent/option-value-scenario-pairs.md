@@ -37,15 +37,15 @@ When you have an optimization model, do not report a single optimal scenario; re
 
 ## Evidence (L1 papers supporting this pattern)
 
-- [[2024-OE-h2-economy-22pct-cost-reduction]] — Evidence: GCAM with-H2 vs without-H2 paired runs across 3-9% H2 share scenarios; headline is "15-22% mitigation cost reduction". Also runs end-use exclusion paired scenarios (shipping in/out, etc.) to rank end uses by option value. Lesson: a *family* of paired scenarios produces both a headline number and a ranking.
-- [[2022-NE-china-hta-clean-hydrogen]] — Evidence: ZERO-H (H2 available) vs ZERO-NH (H2 disabled) scenarios in TIMES-VEDA; headline is "US$1.72T avoided cumulative investment, 0.13% of GDP". Lesson: pick a single dollar (or percent) number as the headline; reviewers and journalists will use that one.
-- [[2023-NC-endogenous-learning-green-h2-europe]] — Evidence: endogenous-learning-on vs endogenous-learning-off paired runs in PyPSA-Eur-Sec. Lesson: option value can be a *methodological* choice (learning treatment), not just a technology — and still produce a headline delta.
-- [[2024-NE-h2-additionality-time-matching]] — Evidence: additionality-on vs additionality-off, plus annual-matching vs hourly-matching, in DOLPHYN. Lesson: stacking paired scenarios across a *policy design grid* converts a policy debate into a quantified trade-off curve.
+- [[2024-OE-h2-economy-22pct-cost-reduction]]: Evidence: GCAM with-H2 vs without-H2 paired runs across 3-9% H2 share scenarios; headline is "15-22% mitigation cost reduction". Also runs end-use exclusion paired scenarios (shipping in/out, etc.) to rank end uses by option value. Lesson: a *family* of paired scenarios produces both a headline number and a ranking.
+- [[2022-NE-china-hta-clean-hydrogen]]: Evidence: ZERO-H (H2 available) vs ZERO-NH (H2 disabled) scenarios in TIMES-VEDA; headline is "US$1.72T avoided cumulative investment, 0.13% of GDP". Lesson: pick a single dollar (or percent) number as the headline; reviewers and journalists will use that one.
+- [[2023-NC-endogenous-learning-green-h2-europe]]: Evidence: endogenous-learning-on vs endogenous-learning-off paired runs in PyPSA-Eur-Sec. Lesson: option value can be a *methodological* choice (learning treatment), not just a technology: and still produce a headline delta.
+- [[2024-NE-h2-additionality-time-matching]]: Evidence: additionality-on vs additionality-off, plus annual-matching vs hourly-matching, in DOLPHYN. Lesson: stacking paired scenarios across a *policy design grid* converts a policy debate into a quantified trade-off curve.
 
 ## Counter-evidence (papers that depart from the pattern)
 
-- [[2021-NE-national-wind-solar-growth-dynamics]] — Evidence: empirical fit, not a scenario-pair paper. The contribution is "this is the historical envelope"; there's no counterfactual to run. Lesson: when the data is observational, the option-value pattern doesn't apply — find a different headline construction.
-- [[2015-N-china-fossil-cement-co2-revised]] — Evidence: data-correction, not modeling. The contribution is "estimates are 14% lower than IPCC default"; the counterfactual is "what the world believed before".
+- [[2021-NE-national-wind-solar-growth-dynamics]]: Evidence: empirical fit, not a scenario-pair paper. The contribution is "this is the historical envelope"; there's no counterfactual to run. Lesson: when the data is observational, the option-value pattern doesn't apply: find a different headline construction.
+- [[2015-N-china-fossil-cement-co2-revised]]: Evidence: data-correction, not modeling. The contribution is "estimates are 14% lower than IPCC default"; the counterfactual is "what the world believed before".
 
 These counter-examples show option-value pairs need *a decision the analyst can flip in code*. Observational and data-correction papers use different headline-construction patterns.
 
@@ -83,18 +83,18 @@ For Henry's wind-solar-hydrogen TEA: run with-co-located-electrolyzer vs without
 
 ## Confidence
 
-**High.** 4 L1 papers across 4 different journals (NE, OE, NC) — option-value pairing is widely transferable across modeling traditions (IAM, TIMES, PyPSA-Eur-Sec, capacity-expansion).
+**High.** 4 L1 papers across 4 different journals (NE, OE, NC): option-value pairing is widely transferable across modeling traditions (IAM, TIMES, PyPSA-Eur-Sec, capacity-expansion).
 
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-*For SMR-DC: the obvious option-value pair is "with-SMR-co-located vs grid-supplied-DC". The non-obvious option-value pair is "with-waste-heat-ORC vs heat-discarded" — that one is probably the real headline number.*
+*For SMR-DC: the obvious option-value pair is "with-SMR-co-located vs grid-supplied-DC". The non-obvious option-value pair is "with-waste-heat-ORC vs heat-discarded": that one is probably the real headline number.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns
 
-- [[additionality-counterfactuals]] — additionality framings are a specific class of option-value pair
-- [[plant-vs-aggregate-resolution]] — resolution choices interact with option-value framing
+- [[additionality-counterfactuals]]: additionality framings are a specific class of option-value pair
+- [[plant-vs-aggregate-resolution]]: resolution choices interact with option-value framing
 - [[cost-multi-unit-reporting]] (figure pattern, see [[../figure/cost-multi-unit-reporting]] once promoted)
 
 ## Promoted from

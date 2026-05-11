@@ -17,7 +17,7 @@ tags:
 
 # Data-center load: shape, flexibility, and provenance
 
-> Subdomain pattern (`ai-data-driven`): a complete data-center energy paper needs three pillars — macroscale counterfactual on load shape, microscale field-trial on flexibility, and provenance audit of the input numbers being used.
+> Subdomain pattern (`ai-data-driven`): a complete data-center energy paper needs three pillars: macroscale counterfactual on load shape, microscale field-trial on flexibility, and provenance audit of the input numbers being used.
 
 ## Pattern claim
 
@@ -25,21 +25,21 @@ The DC-load literature is fractured. Single-pillar papers get attacked on the mi
 
 The three pillars and their L1 exemplars:
 
-1. **Macroscale counterfactual / load-shape**: Zheng 2020 J — spatial load migration between US data centers absorbs wind/solar curtailment at near-zero marginal cost; counterfactual is "without migration, what happens to curtailment and emissions?"
-2. **Microscale field-trial / flexibility**: Colangelo 2026 NE — 256-GPU Phoenix field trial, software workload orchestration cuts cluster power 25% for 3h while keeping QoS thresholds intact. The contribution is operational evidence, not modeling.
-3. **Provenance audit / input quality**: Mytton & Ashtine 2022 J — review of 258 DC energy estimates across 46 publications and 676 source links; reliability is driven by provenance (private market data, broken links, vague methods, future extrapolation).
+1. **Macroscale counterfactual / load-shape**: Zheng 2020 J: spatial load migration between US data centers absorbs wind/solar curtailment at near-zero marginal cost; counterfactual is "without migration, what happens to curtailment and emissions?"
+2. **Microscale field-trial / flexibility**: Colangelo 2026 NE: 256-GPU Phoenix field trial, software workload orchestration cuts cluster power 25% for 3h while keeping QoS thresholds intact. The contribution is operational evidence, not modeling.
+3. **Provenance audit / input quality**: Mytton & Ashtine 2022 J: review of 258 DC energy estimates across 46 publications and 676 source links; reliability is driven by provenance (private market data, broken links, vague methods, future extrapolation).
 
 The three pillars stand in a specific argumentative order: provenance → counterfactual → field-trial. Provenance establishes which input numbers are trustworthy; counterfactual uses trustworthy inputs to claim a system-level outcome; field-trial provides operational evidence that the assumed flexibility is real.
 
 ## The recurring move (one-line)
 
-A complete DC-load paper either does all three pillars itself, OR cites the work for the two pillars it doesn't do — never silently assumes them.
+A complete DC-load paper either does all three pillars itself, OR cites the work for the two pillars it doesn't do: never silently assumes them.
 
 ## Evidence (L1 papers supporting this pattern)
 
-- [[2020-J-data-center-load-migration-curtailment]] — Evidence: spatial load migration between US DC sites absorbs curtailed renewables. Pillar: macroscale counterfactual. Lesson: counterfactual claims need an explicit "without migration" model, not just "we observed migration could happen".
-- [[2026-NE-ai-data-centres-grid-interactive]] — Evidence: 256-GPU production cluster in Phoenix, 25% power cut for 3h with QoS intact. Pillar: field-trial flexibility. Lesson: field-trial evidence is the rarest currency in the DC-load literature; one well-documented field trial unlocks NE-grade venues.
-- [[2022-J-data-center-energy-estimates-review]] — Evidence: provenance-audit meta-review tracing 676 source links. Pillar: provenance audit. Lesson: when the input estimates in your literature have unknown provenance, an audit is itself a primary contribution — and a paper without an audit but using poor-provenance inputs is at high reviewer risk.
+- [[2020-J-data-center-load-migration-curtailment]]: Evidence: spatial load migration between US DC sites absorbs curtailed renewables. Pillar: macroscale counterfactual. Lesson: counterfactual claims need an explicit "without migration" model, not just "we observed migration could happen".
+- [[2026-NE-ai-data-centres-grid-interactive]]: Evidence: 256-GPU production cluster in Phoenix, 25% power cut for 3h with QoS intact. Pillar: field-trial flexibility. Lesson: field-trial evidence is the rarest currency in the DC-load literature; one well-documented field trial unlocks NE-grade venues.
+- [[2022-J-data-center-energy-estimates-review]]: Evidence: provenance-audit meta-review tracing 676 source links. Pillar: provenance audit. Lesson: when the input estimates in your literature have unknown provenance, an audit is itself a primary contribution: and a paper without an audit but using poor-provenance inputs is at high reviewer risk.
 
 ## Counter-evidence (papers that depart from the pattern)
 
@@ -88,8 +88,8 @@ For an SMR-DC paper that makes DC-load claims:
 
 ## Related patterns
 
-- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]] — Zheng's with-migration / without-migration is an option-value pair
-- [[../../cross-cutting/archetype/firm-clean-flexible-baseload]] — DC + SMR is a firm-clean + flexible-load combination
+- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]]: Zheng's with-migration / without-migration is an option-value pair
+- [[../../cross-cutting/archetype/firm-clean-flexible-baseload]]: DC + SMR is a firm-clean + flexible-load combination
 - [[../../../bridges/energy-policy-economics--integrated-energy-systems]]
 
 ## Promoted from

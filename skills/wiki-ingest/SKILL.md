@@ -184,6 +184,143 @@ Do not silently overwrite old claims. Flag and let the user decide.
 
 ---
 
+## TPL Mode: Top Paper Lab v2 paper-package ingest
+
+**Trigger**: source path is `.raw/papers/{ZOTERO_KEY}/`, or the user passes a Zotero key (8 uppercase alphanumeric chars) with the word "ingest", or `wiki/_meta/journal-role-vocab.md` exists. When triggered, this mode REPLACES "Single Source Ingest" above; do not run the generic source flow on a TPL paper.
+
+### Vault detection
+
+```bash
+if [ -f wiki/_meta/journal-role-vocab.md ] && [ -d wiki/papers/L1 ] && [ -d wiki/papers/L2 ]; then
+  TPL_V2=1
+else
+  TPL_V2=0
+fi
+```
+
+If `TPL_V2=0`, fall back to generic single-source ingest. Everything below assumes `TPL_V2=1`.
+
+### Step 1. Classify the paper
+
+Before touching any wiki file, determine `(journal_role, ingest_depth, subdomain_primary[], subdomain_secondary[])`.
+
+1. **Read `.raw/papers/{KEY}/metadata.json`** for journal + title + DOI.
+2. **Read `wiki/_meta/journal-role-vocab.md`** journal lock list to assign `journal_role`. Defaults:
+   - Nature / NE / Joule / NC / NCC / Nature Sustainability / One Earth / EES / Science / Sci Adv / PNAS → `top_journal_exemplar`
+   - Applied Energy / AiAE / ECM / RSER / RE / Energy & Buildings / Energy / Energy Policy / ERSS / ESR → `applied_flagship`
+   - IJHE / J. Energy Storage / Solar Energy / Wind Energy / J. Power Sources / IEEE Trans → `technical_support` (manual-only, abort here)
+3. **Read `wiki/_meta/subdomain-vocab.md`** to assign 1-2 `subdomain_primary` and 0-3 `subdomain_secondary` from the 8 locked slugs.
+4. **If `journal_role == applied_flagship`, choose `ingest_depth`** per `wiki/_meta/depth-policy.md`:
+   - 2+ "yes" on (direct method reuse / parameter or case anchor / subdomain coverage need) → `A_deep`
+   - 1 "yes" → `B_medium`
+   - 0 "yes" → `C_light`
+   - Default if uncertain → `B_medium`.
+5. **If `journal_role == top_journal_exemplar`** → `ingest_depth` is always `A_deep` (locked by depth-policy).
+6. **If `journal_role == technical_support`** → do NOT generate a paper-analysis page. Instead, append a row to the relevant `wiki/banks/*` page with the Zotero citation and stop. Document in `log.md`.
+
+Stop and ask Henry only if the classification is genuinely ambiguous (e.g., Cell Reports Physical Science borderline cases). Otherwise proceed with the default.
+
+### Step 2. Allocate the address
+
+```bash
+ADDR=$(./scripts/allocate-address.sh)   # e.g. c-000026
+```
+
+Single-writer policy: only this session calls the allocator. Codex never allocates.
+
+### Step 3. Dispatch to the correct codex runner
+
+| `(journal_role, ingest_depth)` | Runner | Args |
+|---|---|---|
+| `top_journal_exemplar, A_deep` | `scripts/codex-ingest-paper.sh` | `<KEY> <ADDR> [SLUG_HINT]` |
+| `applied_flagship, A_deep` | `scripts/codex-ingest-paper-L2.sh` | `<KEY> <ADDR> <SLUG_HINT> A_deep <PRIMARY_SUBDOMAIN>` |
+| `applied_flagship, B_medium` | `scripts/codex-ingest-paper-L2.sh` | `<KEY> <ADDR> <SLUG_HINT> B_medium <PRIMARY_SUBDOMAIN>` |
+| `applied_flagship, C_light` | `scripts/codex-ingest-paper-L2.sh` | `<KEY> <ADDR> <SLUG_HINT> C_light <PRIMARY_SUBDOMAIN>` |
+
+`PRIMARY_SUBDOMAIN` is `subdomain_primary[0]` (the first entry). For L1 papers, the runner does not need it; the page lands flat in `wiki/papers/L1/`.
+
+The runner does its own arg validation; it will reject malformed addresses or non-vocab subdomain slugs.
+
+### Step 4. Verify the codex receipt
+
+After the runner completes, read `.raw/papers/{KEY}/codex-receipt.json`. Required fields:
+
+- `zotero_key`, `address`, `wiki_page`, `journal_role`, `ingest_depth`, `subdomain_primary`, `pages_updated[]`, `fulltext_source`.
+
+Checks:
+
+1. **Page exists at the expected path**:
+   - L1 → `wiki/papers/L1/{year}-{journal-short}-{slug}.md`
+   - L2 → `wiki/papers/L2/{subdomain_primary[0]}/{year}-{journal-short}-{slug}.md`
+2. **Frontmatter v2 complete**: `journal_role`, `ingest_depth`, `subdomain_primary`, `address` all set and matching the dispatched values.
+3. **Page size within band**:
+   - L1 A_deep: 18-35 KB
+   - L2-A: 12-18 KB
+   - L2-B: 4-6 KB
+   - L2-C: < 500 B body (excluding frontmatter)
+4. **Three-label discipline**: substantive claims tagged with `Evidence:`, `Inference:`, or `Lesson:` (banned-word + label discipline in CLAUDE.md).
+5. **`bank-candidates.md` present for L2-A** (parameter / sensitivity / method rows the orchestrating session merges into `wiki/banks/*`).
+
+If any check fails, do NOT integrate. Write `.raw/papers/{KEY}/integration-blocked.md` describing the failure and stop.
+
+### Step 5. Integrate (orchestrator responsibilities only; codex never touches these)
+
+1. **Update manifest CSV** `.raw/zotero_manifest/top_paper_lab_manifest.csv`: set `ingest_status=ingested`, `review_status=unreviewed`, backfill `journal_role`, `ingest_depth`, `subdomain_primary` (semicolon-joined), `subdomain_secondary` (semicolon-joined), `use_tags`, `notes` for this row.
+2. **Update `wiki/index.md`** with one bullet under "Papers ingested": `- [[year-journal-slug]] : one-line hook (L1 | L2-A | L2-B | L2-C)`.
+3. **Update `wiki/hot.md`** with the most-recent-ingest pointer (paper title, slug, address, archetype tag, two-sentence takeaway).
+4. **Append `wiki/log.md`** at the TOP (new entries top): `## [YYYY-MM-DD] ingest | {paper short title} ({journal_role} {ingest_depth})` with the same fields as the generic log entry plus `journal_role`, `ingest_depth`, `subdomain_primary`.
+5. **Merge bank rows from `.raw/papers/{KEY}/bank-candidates.md`** (L2-A only) into the relevant `wiki/banks/parameter-bank/*.md`, `wiki/banks/sensitivity-bank/*.md`, `wiki/banks/method-bank/*.md` pages. Cite the new paper page as supporting evidence; cite the Zotero key.
+6. **Regenerate hub and bridge pages** (preserves Henry-note blocks):
+   ```bash
+   python3 scripts/subdomain-bridge-stats.py
+   python3 scripts/generate-subdomain-hubs.py
+   python3 scripts/generate-bridges.py
+   ```
+7. **Bridge emergence check**: after regeneration, any new bridge page that just crossed the 3-paper gate gets a one-line log mention.
+
+### Step 6. Cross-page synthesis gate (paper count threshold)
+
+Until the lab has 10 L1 paper-analysis pages, the wiki only contains singletons. **Do not diffuse-update pattern pages on each ingest before paper 10.** Pattern pages emerge bottom-up from the first `/wiki-fold` auto-synthesis (triggered at log size = 8 ingest entries, k=3).
+
+After paper 10, on each ingest, additionally update **only the pattern pages this paper genuinely informs** (not all). Each lesson added to a pattern page must back-link to the originating `wiki/papers/L1/*.md` or `wiki/papers/L2/*/*.md` page. Routing matrix is `wiki/_meta/routing-rules.md`.
+
+### Step 7. No-pollution rule (orchestrator-enforced at integration time)
+
+When adding a new entry to a pattern or playbook page, refuse the add if the rule below is violated:
+
+| Target page | Allowed primary evidence | Allowed supplementary evidence |
+|---|---|---|
+| `patterns/cross-cutting/{intro,figure,discussion,archetype,contribution}/*` | L1 only | none |
+| `playbook/top-journal-craft/*` | L1 only | none |
+| `patterns/cross-cutting/methods-recurrent/*` | L1 + L2 | (n/a) |
+| `patterns/comparisons/*` | L1 + L2 (by design) | (n/a) |
+| `patterns/subdomain/{slug}/*` | L1 + L2 | (n/a) |
+| `patterns/bridges/{A}--{B}/*` | L1 + L2 | (n/a) |
+| `playbook/applied-paper-craft/*`, `playbook/upgrade-playbook/*`, `playbook/submission-tier-checklists/*` | L2 (primary) + L1 (contrast) | (n/a) |
+
+If an integration step would violate this rule, write the new evidence under `patterns/comparisons/*` or `patterns/cross-cutting/methods-recurrent/*` instead, and note in the log why the proposed location was redirected.
+
+### Step 8. Style and discipline (re-stated, lint-enforced)
+
+- **Banned-word scan**: `innovative · important · rigorous · comprehensive · novel · significant · high-impact · seminal · well-written · clear · elegant · groundbreaking` may appear only with a same-sentence concrete justification. See CLAUDE.md "Anti-fluff rule".
+- **No em dashes (U+2014)** and no `--` as punctuation.
+- **Verify before quoting**: any LLM-generated claim about a paper must be checked against the actual paper text before promotion from `papers/` to `patterns/` or `playbook/`.
+- **Zotero is source of truth**: do not duplicate full Zotero fields into wiki YAML beyond the cached subset (`zotero_key`, `title`, `journal`, `year`, `doi`, `topic`, `paper_type`, `main_contribution`, `method_type`, `data_assets`, `relevance_to_my_research`, `ingest_status`, `address`).
+
+### TPL mode: what the orchestrator never delegates
+
+| Delegated to codex runner | Kept in the orchestrating session |
+|---|---|
+| Reading the paper + composing `wiki/papers/L1/*.md` or `wiki/papers/L2/*/*.md` | Address allocation |
+| Writing stub files in `.raw/papers/{KEY}/` | `manifest.csv` row update |
+| Writing `bank-candidates.md` (L2-A) | Merging `bank-candidates.md` rows into `wiki/banks/*` |
+| Self-checking page size / banned words / section count | `index.md`, `hot.md`, `log.md` integration |
+| Emitting the JSON receipt | Hub + bridge regeneration |
+| | Routing-matrix enforcement and no-pollution rule |
+| | Pattern + playbook updates (post-paper-10 gate) |
+
+---
+
 ## Address Assignment (DragonScale Mechanism 2 MVP)
 
 **Opt-in feature**. DragonScale address assignment runs only if `scripts/allocate-address.sh` is present AND `.vault-meta/` exists. Otherwise, skip this entire section and proceed with ingest normally.

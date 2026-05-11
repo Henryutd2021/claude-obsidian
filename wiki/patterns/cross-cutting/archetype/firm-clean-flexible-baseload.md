@@ -36,13 +36,13 @@ When the technology you're advocating struggles on LCOE-vs-VRE, do not argue cos
 
 ## Evidence (L1 papers supporting this pattern)
 
-- [[2022-NE-flexible-nuclear-deep-decarb]] — Evidence: Macro Energy Model, 42 country-level regions, hourly linear optimization; flexible nuclear + TES enters least-cost portfolios beyond ~80% emissions reduction, especially in wind-weak regions. Lesson: the system-value argument requires both hourly resolution AND a flexibility parameter on the technology in question.
-- [[2024-NE-flexible-geothermal-decarb-systems]] — Evidence: GenX capacity-expansion + ResFrac-informed reservoir behavior for EGS; 11-zone Western Interconnection in 2045 shows EGS flexibility changes deployment far more than EGS LCOE. Lesson: pair the energy model with a domain-specific physical model for the flexibility parameter — generic flexibility curves get pushback.
+- [[2022-NE-flexible-nuclear-deep-decarb]]: Evidence: Macro Energy Model, 42 country-level regions, hourly linear optimization; flexible nuclear + TES enters least-cost portfolios beyond ~80% emissions reduction, especially in wind-weak regions. Lesson: the system-value argument requires both hourly resolution AND a flexibility parameter on the technology in question.
+- [[2024-NE-flexible-geothermal-decarb-systems]]: Evidence: GenX capacity-expansion + ResFrac-informed reservoir behavior for EGS; 11-zone Western Interconnection in 2045 shows EGS flexibility changes deployment far more than EGS LCOE. Lesson: pair the energy model with a domain-specific physical model for the flexibility parameter: generic flexibility curves get pushback.
 
 ## Counter-evidence (papers that depart from the pattern)
 
-- [[2023-J-smr-industrial-process-heat-tea]] — Evidence: profit-maximizing MILP for SMR, but the contribution lives in the dual-product (heat + power) framing, not in flexibility-versus-cost. Lesson: when the technology has a *different second product* (here: process heat), that becomes the contribution axis, displacing flexibility-as-headline.
-- [[2025-NE-smr-policy-module-learning]] — Evidence: SMR deployment under policy levers + factory learning; the contribution lives in the policy-and-learning sensitivity space, not in flexibility-vs-cost. Lesson: in mature deployment-modeling work, the contribution shifts to upstream economics (FOAK cost, learning rate, gas price) rather than downstream system value.
+- [[2023-J-smr-industrial-process-heat-tea]]: Evidence: profit-maximizing MILP for SMR, but the contribution lives in the dual-product (heat + power) framing, not in flexibility-versus-cost. Lesson: when the technology has a *different second product* (here: process heat), that becomes the contribution axis, displacing flexibility-as-headline.
+- [[2025-NE-smr-policy-module-learning]]: Evidence: SMR deployment under policy levers + factory learning; the contribution lives in the policy-and-learning sensitivity space, not in flexibility-vs-cost. Lesson: in mature deployment-modeling work, the contribution shifts to upstream economics (FOAK cost, learning rate, gas price) rather than downstream system value.
 
 These counter-examples show that even within "firm clean baseload" research, the firm-flexible-vs-firm-inflexible framing is one option among several. Authors pick the framing that best lifts their contribution.
 
@@ -96,8 +96,8 @@ For Henry's SMR-DC paper: the SMR is the firm-flexible asset; the data center is
 
 ## Related patterns
 
-- [[../methods-recurrent/plant-vs-aggregate-resolution]] — both Duan and Ricks make resolution choices, but the archetype-contribution is the flexibility framing
-- [[../methods-recurrent/option-value-scenario-pairs]] — Ricks runs flexible-vs-inflexible paired scenarios
+- [[../methods-recurrent/plant-vs-aggregate-resolution]]: both Duan and Ricks make resolution choices, but the archetype-contribution is the flexibility framing
+- [[../methods-recurrent/option-value-scenario-pairs]]: Ricks runs flexible-vs-inflexible paired scenarios
 - [[../../bridges/integrated-energy-systems--power-systems]]
 
 ## Promoted from

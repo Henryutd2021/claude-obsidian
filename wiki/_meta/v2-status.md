@@ -1,6 +1,6 @@
 ---
 type: meta
-title: "Top Paper Lab v2 — Implementation Status"
+title: "Top Paper Lab v2: Implementation Status"
 updated: 2026-05-11
 tags:
   - meta
@@ -14,7 +14,7 @@ related:
   - "[[routing-rules]]"
 ---
 
-# Top Paper Lab v2 — Implementation Status (2026-05-11)
+# Top Paper Lab v2: Implementation Status (2026-05-11)
 
 This page is a session-handoff snapshot. **Read this first when continuing work after context clear.** Plan source-of-truth: `/Users/henry/.claude/plans/advanced-in-applied-energy-calm-moler.md`.
 
@@ -26,9 +26,9 @@ TPL was rearchitected on 2026-05-11 from a single-track 22-paper top-journal lab
 
 Three skill SKILL.md files now v2-aware (single-session pass):
 
-- `skills/wiki-ingest/SKILL.md` — appended "TPL Mode: Top Paper Lab v2 paper-package ingest" section. Covers vault detection, paper classification (journal_role + ingest_depth + subdomain), address allocation, runner dispatch (L1 vs L2 with depth + primary-subdomain args), receipt verification, manifest CSV update, index/hot/log integration, hub+bridge regeneration, paper-10 synthesis gate, no-pollution rule, orchestrator/codex division of labor.
-- `skills/wiki-lint/SKILL.md` — appended "TPL v2 Lint Checks" section. 12 new checks: frontmatter vocab, folder placement, no-pollution rule, routing-matrix audit, page-size band, orphan bridges <3 papers, banned-word scan, three-label discipline, em-dash style, stale bank rows, over-analyzed L2 (promotion candidates), crowded research-gap entries. Lint report has a new TPL v2 section with errors / warnings / informational / stats.
-- `skills/wiki-query/SKILL.md` — appended "TPL Mode: Top Paper Lab v2 layer-aware routing" section. Out-of-scope guard, 5-intent question classification (writing craft / methods+parameters / comparison / subdomain / bridge), layer-routed read order, `papers.base` view mapping, frontmatter-aware filtering, citation discipline (Evidence/Inference/Lesson), anti-fluff re-statement, where-to-file answers per shape, post-paper-10 pattern-materialization gate, cross-project consult instructions.
+- `skills/wiki-ingest/SKILL.md`: appended "TPL Mode: Top Paper Lab v2 paper-package ingest" section. Covers vault detection, paper classification (journal_role + ingest_depth + subdomain), address allocation, runner dispatch (L1 vs L2 with depth + primary-subdomain args), receipt verification, manifest CSV update, index/hot/log integration, hub+bridge regeneration, paper-10 synthesis gate, no-pollution rule, orchestrator/codex division of labor.
+- `skills/wiki-lint/SKILL.md`: appended "TPL v2 Lint Checks" section. 12 new checks: frontmatter vocab, folder placement, no-pollution rule, routing-matrix audit, page-size band, orphan bridges <3 papers, banned-word scan, three-label discipline, em-dash style, stale bank rows, over-analyzed L2 (promotion candidates), crowded research-gap entries. Lint report has a new TPL v2 section with errors / warnings / informational / stats.
+- `skills/wiki-query/SKILL.md`: appended "TPL Mode: Top Paper Lab v2 layer-aware routing" section. Out-of-scope guard, 5-intent question classification (writing craft / methods+parameters / comparison / subdomain / bridge), layer-routed read order, `papers.base` view mapping, frontmatter-aware filtering, citation discipline (Evidence/Inference/Lesson), anti-fluff re-statement, where-to-file answers per shape, post-paper-10 pattern-materialization gate, cross-project consult instructions.
 
 ## What's working
 
@@ -100,8 +100,8 @@ Matching codex contracts at `_templates/codex-ingest-contract-L{1,2-A,2-B,2-C}.m
 
 ### Runners (executable, smoke-tested)
 
-- `scripts/codex-ingest-paper.sh <KEY> <ADDR> [SLUG]` — L1 runner (renamed paths, validated)
-- `scripts/codex-ingest-paper-L2.sh <KEY> <ADDR> <SLUG> <DEPTH> <PRIMARY_SUBDOMAIN>` — L2 runner; all 5 arg-validation paths tested
+- `scripts/codex-ingest-paper.sh <KEY> <ADDR> [SLUG]`: L1 runner (renamed paths, validated)
+- `scripts/codex-ingest-paper-L2.sh <KEY> <ADDR> <SLUG> <DEPTH> <PRIMARY_SUBDOMAIN>`: L2 runner; all 5 arg-validation paths tested
 
 ### Generators (re-runnable, idempotent)
 
@@ -116,19 +116,19 @@ Hub and bridge generators preserve `<!-- HENRY-NOTE-START --> ... <!-- HENRY-NOT
 
 ### One-shot migration scripts (already run, kept for reference)
 
-- `scripts/migrate-v2-frontmatter.py` — added v2 fields to 22 L1 papers
-- `scripts/migrate-v2-manifest.py` — extended manifest CSV schema + L2 staging file
-- `scripts/visibility-fix-henry-notes.py` — converted HENRY-NOTE HTML comments to italics
+- `scripts/migrate-v2-frontmatter.py`: added v2 fields to 22 L1 papers
+- `scripts/migrate-v2-manifest.py`: extended manifest CSV schema + L2 staging file
+- `scripts/visibility-fix-henry-notes.py`: converted HENRY-NOTE HTML comments to italics
 
 ### Manifest
 
-- `.raw/zotero_manifest/top_paper_lab_manifest.csv` — 142 rows, schema extended to 20 cols (journal_role, ingest_depth, subdomain_primary, subdomain_secondary, use_tags, notes added). 22 ingested rows backfilled.
-- `.raw/zotero_manifest/l2_candidate_manifest.csv` — header-only staging file for L2 picks.
+- `.raw/zotero_manifest/top_paper_lab_manifest.csv`: 142 rows, schema extended to 20 cols (journal_role, ingest_depth, subdomain_primary, subdomain_secondary, use_tags, notes added). 22 ingested rows backfilled.
+- `.raw/zotero_manifest/l2_candidate_manifest.csv`: header-only staging file for L2 picks.
 
 ### Obsidian Bases dashboards (1.12.7, both rendering)
 
-- `wiki/papers.base` — 10 views: All / L1 / L2-deep / L2-medium / By subdomain / By archetype / Bridges / Drafts / High-relevance / Upgrade candidates
-- `wiki/dashboard.base` — 6 views: Subdomain hubs / Pattern pages / Bank pages / Bridge pages / Playbook pages / Folder-about navigation
+- `wiki/papers.base`: 10 views: All / L1 / L2-deep / L2-medium / By subdomain / By archetype / Bridges / Drafts / High-relevance / Upgrade candidates
+- `wiki/dashboard.base`: 6 views: Subdomain hubs / Pattern pages / Bank pages / Bridge pages / Playbook pages / Folder-about navigation
 
 Bases footguns discovered: avoid nested `or` inside top-level `and` filter; avoid `formula.X` as groupBy target; avoid `file.size` comparison.
 
@@ -136,7 +136,7 @@ Bases footguns discovered: avoid nested `or` inside top-level `and` filter; avoi
 
 ### HIGH PRIORITY (do next session)
 
-(Previously: 3 SKILL.md updates. **Done 2026-05-11 late session** — see "Just completed" above. No remaining HIGH-PRIORITY items; the v2 architecture loop is closed at the skill layer. Next priorities are MEDIUM, plus Henry's strategic picks A/B/C below.)
+(Previously: 3 SKILL.md updates. **Done 2026-05-11 late session**: see "Just completed" above. No remaining HIGH-PRIORITY items; the v2 architecture loop is closed at the skill layer. Next priorities are MEDIUM, plus Henry's strategic picks A/B/C below.)
 
 ### MEDIUM PRIORITY (when convenient)
 
@@ -151,15 +151,15 @@ Bases footguns discovered: avoid nested `or` inside top-level `and` filter; avoi
 
 These are correctly waiting on at least 3 L2-A pilots to produce contrast / bank rows / examples:
 
-- `patterns/comparisons/*` — top-vs-applied delta library (intrinsically L1+L2)
-- `banks/parameter-bank/`, `sensitivity-bank/`, `method-bank/` row data — primarily L2-A fed
-- `playbook/applied-paper-craft/` — needs L2 evidence
-- `playbook/upgrade-playbook/` — needs `patterns/comparisons/*` accumulated
-- `playbook/submission-tier-checklists/` — Phase 5 (~month 6), needs full corpus
+- `patterns/comparisons/*`: top-vs-applied delta library (intrinsically L1+L2)
+- `banks/parameter-bank/`, `sensitivity-bank/`, `method-bank/` row data: primarily L2-A fed
+- `playbook/applied-paper-craft/`: needs L2 evidence
+- `playbook/upgrade-playbook/`: needs `patterns/comparisons/*` accumulated
+- `playbook/submission-tier-checklists/`: Phase 5 (~month 6), needs full corpus
 
 ### NOT YET DUE (Phase 4-5)
 
-- `scripts/quota-check.sh` — triggers when L2 count > 30
+- `scripts/quota-check.sh`: triggers when L2 count > 30
 - Quarterly `scripts/tiling-check.py` + `scripts/boundary-score.py`
 - End-to-end `/wiki-query` verification on a Henry manuscript draft
 
@@ -177,7 +177,7 @@ Recommended order with A complete: **C → B**. C tests the v2 vault on a real m
 
 | SHA | Stage | What it captured |
 |---|---|---|
-| `c2a19e5` | Phase 0 snapshot | Pre-v2 state — 22 papers, original 6-view papers.base, no v2 anything |
+| `c2a19e5` | Phase 0 snapshot | Pre-v2 state: 22 papers, original 6-view papers.base, no v2 anything |
 | `0a67fde` | Phase 1 end | Taxonomy plumbing: vocab files + 22 frontmatters + git mv to L1/ + manifest schema + papers.base 10 views + dashboard.base + scaffold |
 | `27c73cb` | Phase 2 end | L2 templates + 3 codex contracts + L2 runner |
 | `de9106c` | Phase 3 partial | 8 subdomain hubs + 11 bridges + auto-stats |

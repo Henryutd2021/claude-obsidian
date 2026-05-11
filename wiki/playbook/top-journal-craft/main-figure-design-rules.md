@@ -47,7 +47,7 @@ For a top-tier energy paper, if Fig. 1 is *not* a mechanism diagram (instead bei
 
 ## Rule 3: Pick the headline number's home figure
 
-One main figure in every L1 paper carries the **headline number** — the number quoted in the abstract. Examples (likely placement):
+One main figure in every L1 paper carries the **headline number**: the number quoted in the abstract. Examples (likely placement):
 
 - Yang 2022 NE: US$1.72T headline → Fig. 4 or Fig. 5 (cost decomposition)
 - Wang 2023 N: 9 → 15 PWh/yr → Fig. 1 or Fig. 4 (geographic + temporal)
@@ -125,6 +125,6 @@ For Henry's SMR-DC paper: Fig. 1 mechanism (SMR ↔ DC ↔ grid). Fig. 2 geograp
 
 ## Related
 
-- [[../../patterns/cross-cutting/archetype/firm-clean-flexible-baseload]] — system-asset-displacement figures (Rule 1) are the archetype signature
-- [[../../patterns/subdomain/re-tech-resources/empirical-growth-envelope]] — envelope figures (Rule 1) are the signature for that pattern
-- [[../../patterns/subdomain/ai-data-driven/load-shape-and-flexibility]] — Colangelo's time-series with overlay is a clean example of the headline-figure move
+- [[../../patterns/cross-cutting/archetype/firm-clean-flexible-baseload]]: system-asset-displacement figures (Rule 1) are the archetype signature
+- [[../../patterns/subdomain/re-tech-resources/empirical-growth-envelope]]: envelope figures (Rule 1) are the signature for that pattern
+- [[../../patterns/subdomain/ai-data-driven/load-shape-and-flexibility]]: Colangelo's time-series with overlay is a clean example of the headline-figure move

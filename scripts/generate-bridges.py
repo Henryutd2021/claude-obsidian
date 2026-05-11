@@ -161,8 +161,8 @@ def render_bridge(a: str, b: str, supporting: list, all_papers: list) -> str:
     lines.append(f"| Year | Journal | Paper | Address | Role: {a} | Role: {b} |")
     lines.append("|---|---|---|---|---|---|")
     for p in supporting_sorted:
-        role_a = "primary" if a in p["primary"] else ("secondary" if a in p["secondary"] else "—")
-        role_b = "primary" if b in p["primary"] else ("secondary" if b in p["secondary"] else "—")
+        role_a = "primary" if a in p["primary"] else ("secondary" if a in p["secondary"] else "-")
+        role_b = "primary" if b in p["primary"] else ("secondary" if b in p["secondary"] else "-")
         lines.append(f"| {p['year']} | {p['journal']} | [[{p['slug']}|{p['slug']}]] | `{p['address']}` | {role_a} | {role_b} |")
     lines.append("")
 

@@ -12,7 +12,7 @@ related:
   - "[[subdomain-vocab]]"
 ---
 
-# ingest_depth — A_deep / B_medium / C_light
+# ingest_depth: A_deep / B_medium / C_light
 
 The `ingest_depth` frontmatter field is **orthogonal** to `journal_role`. It controls *how thoroughly* a paper is analyzed, independent of which corpus it belongs to.
 
@@ -42,7 +42,7 @@ Choose depth at ingest time based on three signals. If 2+ "yes" → `A_deep`. If
 **Default if uncertain**: `B_medium`. Easy to promote later via re-ingest; hard to justify a $2.5 deep dive that lands on a B-grade paper.
 
 ### L3 (technical_support)
-**Manual entry only — no automated depth tier.** Technical-support papers contribute as rows in `wiki/banks/*` pages with the Zotero citation. No paper-analysis page is created. If a technical-support paper becomes important enough to warrant a full page, promote it to L2 by changing its `journal_role` and re-ingesting at B_medium or A_deep.
+**Manual entry only: no automated depth tier.** Technical-support papers contribute as rows in `wiki/banks/*` pages with the Zotero citation. No paper-analysis page is created. If a technical-support paper becomes important enough to warrant a full page, promote it to L2 by changing its `journal_role` and re-ingesting at B_medium or A_deep.
 
 ## Promotion / demotion
 
@@ -59,7 +59,7 @@ Choose depth at ingest time based on three signals. If 2+ "yes" → `A_deep`. If
 | `applied_flagship, A_deep` | `_templates/codex-ingest-contract-L2-A.md` | `scripts/codex-ingest-paper-L2.sh A_deep` |
 | `applied_flagship, B_medium` | `_templates/codex-ingest-contract-L2-B.md` | `scripts/codex-ingest-paper-L2.sh B_medium` |
 | `applied_flagship, C_light` | `_templates/codex-ingest-contract-L2-C.md` | `scripts/codex-ingest-paper-L2.sh C_light` |
-| `technical_support, *` | (no contract — manual bank row only) | n/a |
+| `technical_support, *` | (no contract: manual bank row only) | n/a |
 | `comparison_control, *` | reserved | n/a |
 
 ## Routing of downstream updates

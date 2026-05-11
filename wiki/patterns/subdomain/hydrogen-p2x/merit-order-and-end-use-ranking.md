@@ -32,17 +32,17 @@ Both rules deliver actionable hierarchies; both treat H2 as a finite resource to
 
 ## The recurring move (one-line)
 
-For a H2 / e-fuels paper, do not advocate H2 in general — produce a defensible ranking of end uses against an explicit scoring rule, and let the ranking carry the argument.
+For a H2 / e-fuels paper, do not advocate H2 in general: produce a defensible ranking of end uses against an explicit scoring rule, and let the ranking carry the argument.
 
 ## Evidence (L1 papers supporting this pattern)
 
-- [[2021-NCC-h2-efuels-potential-risks]] — Evidence: §Methods classifies end uses by efficiency-cost-MACC; explicit table of 16-48% electricity-to-useful efficiency for e-fuel routes vs 60-90% for direct electrification. Lesson: when you have a multi-dimensional scoring rule, present the dimensions in a single table, then let the reader see which end uses lose on every dimension.
-- [[2024-OE-h2-economy-22pct-cost-reduction]] — Evidence: GCAM end-use exclusion paired scenarios with shipping at 6.4% final-energy share. Lesson: end-use exclusion scenarios produce a much more readable contribution than "what's the H2 share in 2050?" alone.
+- [[2021-NCC-h2-efuels-potential-risks]]: Evidence: §Methods classifies end uses by efficiency-cost-MACC; explicit table of 16-48% electricity-to-useful efficiency for e-fuel routes vs 60-90% for direct electrification. Lesson: when you have a multi-dimensional scoring rule, present the dimensions in a single table, then let the reader see which end uses lose on every dimension.
+- [[2024-OE-h2-economy-22pct-cost-reduction]]: Evidence: GCAM end-use exclusion paired scenarios with shipping at 6.4% final-energy share. Lesson: end-use exclusion scenarios produce a much more readable contribution than "what's the H2 share in 2050?" alone.
 
 ## Counter-evidence (papers that depart from the pattern)
 
-- [[2022-NE-china-hta-clean-hydrogen]] — Evidence: TIMES-VEDA at process level; H2 is one option among many. The contribution lives in system-boundary expansion (cross-sectoral H2 modeling for China-2060), not in end-use ranking per se. Lesson: in a system-wide TEA, end-use ranking emerges implicitly through optimization but is not lifted into the headline.
-- [[2024-NE-h2-additionality-time-matching]] — Evidence: the contribution is the additionality framework, not end-use ranking. Lesson: a paper can address a different H2 framing question entirely.
+- [[2022-NE-china-hta-clean-hydrogen]]: Evidence: TIMES-VEDA at process level; H2 is one option among many. The contribution lives in system-boundary expansion (cross-sectoral H2 modeling for China-2060), not in end-use ranking per se. Lesson: in a system-wide TEA, end-use ranking emerges implicitly through optimization but is not lifted into the headline.
+- [[2024-NE-h2-additionality-time-matching]]: Evidence: the contribution is the additionality framework, not end-use ranking. Lesson: a paper can address a different H2 framing question entirely.
 
 ## When this pattern works
 
@@ -84,8 +84,8 @@ For Henry's wind-solar-hydrogen system: the end-use question is critical when ju
 
 ## Related patterns
 
-- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]] — exclusion-rankings are option-value pairs at the end-use level
-- [[../../cross-cutting/archetype/firm-clean-flexible-baseload]] — both archetypes ration scarce clean energy in different ways
+- [[../../cross-cutting/methods-recurrent/option-value-scenario-pairs]]: exclusion-rankings are option-value pairs at the end-use level
+- [[../../cross-cutting/archetype/firm-clean-flexible-baseload]]: both archetypes ration scarce clean energy in different ways
 - [[../../../bridges/energy-policy-economics--hydrogen-p2x]]
 
 ## Promoted from

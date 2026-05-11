@@ -11,13 +11,13 @@ related:
   - "[[depth-policy]]"
 ---
 
-# subdomain — controlled vocabulary (8 slugs, locked)
+# subdomain: controlled vocabulary (8 slugs, locked)
 
 Frontmatter fields:
-- `subdomain_primary` — 1-2 entries, ordered. For L2 papers, `subdomain_primary[0]` decides the file location under `wiki/papers/L2/{slug}/`.
-- `subdomain_secondary` — 0-3 entries. Papers participating in bridges only.
+- `subdomain_primary`: 1-2 entries, ordered. For L2 papers, `subdomain_primary[0]` decides the file location under `wiki/papers/L2/{slug}/`.
+- `subdomain_secondary`: 0-3 entries. Papers participating in bridges only.
 
-A paper with 3+ primary subdomains files under `wiki/papers/L2/_cross/` (rare — usually only perspectives / cross-disciplinary syntheses).
+A paper with 3+ primary subdomains files under `wiki/papers/L2/_cross/` (rare: usually only perspectives / cross-disciplinary syntheses).
 
 ## The 8 slugs
 

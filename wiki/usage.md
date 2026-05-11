@@ -146,7 +146,7 @@ If a pattern page or project page needs more, opt in:
 | L2 | + SI methods / SI tables | When a pattern page needs SI-only equations or sensitivity-table density |
 | L3 | + data / code repository inspection | When you are about to reuse the modeling technique in your own `projects/` |
 
-L2/L3 are opt-in, named-by-paper, and produce extra stubs (`si-methods-notes.md`, `code-walkthrough.md`) alongside the 7 default stubs. They never copy binaries into the vault — Zotero storage stays source of truth.
+L2/L3 are opt-in, named-by-paper, and produce extra stubs (`si-methods-notes.md`, `code-walkthrough.md`) alongside the 7 default stubs. They never copy binaries into the vault: Zotero storage stays source of truth.
 
 ---
 

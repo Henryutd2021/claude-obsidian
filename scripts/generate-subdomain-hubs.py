@@ -48,7 +48,7 @@ SUBDOMAIN_INTROS = {
     "building-urban": (
         "Building energy efficiency, building decarbonization (residential and commercial), "
         "urban energy systems and district energy, heat pumps. Smallest subdomain in the "
-        "current lab — only 2 L1 papers; deliberate L2 expansion target."
+        "current lab: only 2 L1 papers; deliberate L2 expansion target."
     ),
     "energy-policy-economics": (
         "Energy economics, policy, market design, socio-technical transitions, investment "
@@ -285,21 +285,21 @@ def render_hub(slug: str, papers: list, counts: Counter, pair_papers: dict) -> s
     lines.append("")
     lines.append(f"Patterns under `wiki/patterns/subdomain/{slug}/`. Emerge once 3+ papers in this subdomain genuinely inform a pattern.")
     lines.append("")
-    lines.append("- *No patterns drafted yet — Phase 3 onward.*")
+    lines.append("- *No patterns drafted yet: Phase 3 onward.*")
     lines.append("")
 
     lines.append("## Subdomain-specific banks")
     lines.append("")
     lines.append(f"Bank rows scoped to this subdomain across [[banks/parameter-bank]], [[banks/sensitivity-bank]], [[banks/method-bank]]. Filled primarily by L2-A ingests.")
     lines.append("")
-    lines.append("- *No bank rows yet — Phase 3 bootstrap.*")
+    lines.append("- *No bank rows yet: Phase 3 bootstrap.*")
     lines.append("")
 
     lines.append("## Comparisons (top-vs-applied delta library)")
     lines.append("")
     lines.append(f"Once L2 papers in this subdomain are ingested, the comparison library at [[patterns/comparisons]] will host the L1-vs-L2 delta analyses that touch `{slug}`.")
     lines.append("")
-    lines.append("- *No comparisons yet — Phase 3 onward.*")
+    lines.append("- *No comparisons yet: Phase 3 onward.*")
     lines.append("")
 
     return "\n".join(lines) + "\n"

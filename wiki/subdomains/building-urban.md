@@ -18,7 +18,7 @@ related:
 
 ## What this subdomain covers
 
-Building energy efficiency, building decarbonization (residential and commercial), urban energy systems and district energy, heat pumps. Smallest subdomain in the current lab — only 2 L1 papers; deliberate L2 expansion target.
+Building energy efficiency, building decarbonization (residential and commercial), urban energy systems and district energy, heat pumps. Smallest subdomain in the current lab: only 2 L1 papers; deliberate L2 expansion target.
 
 ## Henry's stance and key questions
 
@@ -55,17 +55,17 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 Patterns under `wiki/patterns/subdomain/building-urban/`. Emerge once 3+ papers in this subdomain genuinely inform a pattern.
 
-- *No patterns drafted yet — Phase 3 onward.*
+- *No patterns drafted yet: Phase 3 onward.*
 
 ## Subdomain-specific banks
 
 Bank rows scoped to this subdomain across [[banks/parameter-bank]], [[banks/sensitivity-bank]], [[banks/method-bank]]. Filled primarily by L2-A ingests.
 
-- *No bank rows yet — Phase 3 bootstrap.*
+- *No bank rows yet: Phase 3 bootstrap.*
 
 ## Comparisons (top-vs-applied delta library)
 
 Once L2 papers in this subdomain are ingested, the comparison library at [[patterns/comparisons]] will host the L1-vs-L2 delta analyses that touch `building-urban`.
 
-- *No comparisons yet — Phase 3 onward.*
+- *No comparisons yet: Phase 3 onward.*
 

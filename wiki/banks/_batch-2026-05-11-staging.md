@@ -1,6 +1,6 @@
 ---
 type: meta
-title: "Bank staging — Batch 5 (2026-05-11)"
+title: "Bank staging: Batch 5 (2026-05-11)"
 created: 2026-05-11
 updated: 2026-05-11
 tags:
@@ -15,7 +15,7 @@ related:
   - "[[log]]"
 ---
 
-# Bank staging — Batch 5 (2026-05-11)
+# Bank staging: Batch 5 (2026-05-11)
 
 First L2 ingest batch produced 5 `bank-candidates.md` files. **Rows are not yet materialized into individual bank pages** because TPL has no dedup-key schema defined yet for cross-paper merge (this is an open issue called out in the systems review).
 
