@@ -17,9 +17,24 @@ Navigation: [[index]] · [[log]] · [[usage|How to use this vault]] · [[Wiki Ma
 
 ## Last Updated
 
-**2026-05-11 (v2 cutover, Phase 1 complete)**: TPL architecture migrated to two-layer corpus + 8-subdomain + connectivity layer. See [[_meta/journal-role-vocab]], [[_meta/subdomain-vocab]], [[_meta/depth-policy]], [[_meta/routing-rules]] for the locked vocab. All 22 papers now under `wiki/papers/L1/` with new frontmatter (`journal_role: top_journal_exemplar`, `ingest_depth: A_deep`, `subdomain_primary[]`, `subdomain_secondary[]`). 8 subdomain folders pre-scaffolded under `wiki/papers/L2/`. Empty hub/bridge/banks/playbook directories scaffolded. Phase 2 (L2 templates + codex contracts + pilot ingest) is next.
+**2026-05-11 (v2 architecture, Phases 1-3 partial complete)**: TPL migrated to two-layer corpus + 8-subdomain + connectivity layer. **For full handoff and next-session continuation: see [[_meta/v2-status]]** (single canonical status page).
 
-Pre-v2 snapshot SHA for rollback: `c2a19e5` (pushed to `origin/main` 2026-05-11).
+Snapshot summary:
+- 22 L1 papers under `wiki/papers/L1/` (frontmatter v2 complete). 0 L2 papers ingested yet.
+- 8 subdomain hubs + 11 cross-subdomain bridge pages (auto-regenerable).
+- 7 pattern pages + 3 playbook v0.1 pages from L1 evidence alone.
+- 27 `_about.md` navigation stubs in every currently-empty folder.
+- `papers.base` (10 views) and `dashboard.base` (6 views) both working in Obsidian 1.12.7.
+- All L2 templates + 3 codex contracts + L2 runner script ready (no L2 pilots run yet).
+- Vocab anchors: [[_meta/journal-role-vocab]], [[_meta/subdomain-vocab]], [[_meta/depth-policy]], [[_meta/routing-rules]].
+
+Rollback SHAs (origin/main):
+- `c2a19e5` pre-v2 · `0a67fde` Phase 1 · `27c73cb` Phase 2 · `de9106c` Phase 3 partial · `fbc5d97` Option B · `bb2366e` visibility · `1848286` dashboard enriched (current HEAD)
+
+Highest-priority unfinished items (for next session, see [[_meta/v2-status]]):
+1. `skills/wiki-ingest/SKILL.md` v2 routing update (~30 min)
+2. `skills/wiki-lint/SKILL.md` v2 lint rules (~20 min)
+3. `skills/wiki-query/SKILL.md` layer-aware routing (~20 min)
 
 **2026-05-11 (pre-v2)**: 22 papers ingested in one day across 4 batches (6 + 5 + 5 + 6). Codex-cli delegation validated across 21 of 22 papers (1 Opus-composed). Batch 4 ran 6 parallel codex jobs in ~12 min wall-clock — all 6 receipts pass. Address counter 3 -> 25.
 
