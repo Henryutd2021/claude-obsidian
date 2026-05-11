@@ -1,0 +1,52 @@
+{
+  "key": "A4EZAC5U",
+  "title": "Meta-analysis on necessary investment shifts to reach net zero pathways in Europe",
+  "authors": [
+    "Lena Klaassen",
+    "Bjarne Steffen"
+  ],
+  "journal": "Nature Climate Change",
+  "volume": "13",
+  "issue": "1",
+  "pages": "58-66",
+  "year": 2023,
+  "doi": "10.1038/s41558-022-01549-5",
+  "url": "https://www.nature.com/articles/s41558-022-01549-5",
+  "item_type": "journalArticle",
+  "tags": [],
+  "collections_count": null,
+  "child_attachments": [],
+  "child_notes": [],
+  "topic_tags": [
+    "energy-finance",
+    "net-zero-pathways",
+    "europe",
+    "infrastructure-investment",
+    "sustainable-finance"
+  ],
+  "paper_type_tags": [
+    "data-driven",
+    "scenario-analysis",
+    "policy-analysis",
+    "review"
+  ],
+  "method_type_tags": [
+    "meta-analysis",
+    "PRISMA-screening",
+    "investment-harmonization",
+    "scenario-comparison"
+  ],
+  "main_contribution_tags": [
+    "sectoral-coverage",
+    "policy-relevance",
+    "counterintuitive-result"
+  ],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000010",
+  "fetched_at": "2026-05-11",
+  "source_notes": [
+    "Zotero MCP metadata calls returned user-cancelled responses during ingest.",
+    "Local TPL manifest row identified the Zotero key, title, authors, journal and year.",
+    "Nature landing page and ETH accepted-version PDF supplied DOI, volume, issue, pages, DA and CA statements."
+  ]
+}
