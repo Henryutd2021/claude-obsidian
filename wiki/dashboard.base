@@ -1,6 +1,21 @@
 filters:
   and:
     - file.ext == "md"
+formulas:
+  age_days: (now() - file.mtime).days
+properties:
+  type:
+    displayName: Type
+  title:
+    displayName: Title
+  status:
+    displayName: Status
+  updated:
+    displayName: Updated
+  tags:
+    displayName: Tags
+  formula.age_days:
+    displayName: Days Since Edit
 views:
   - type: table
     name: Subdomain hubs
@@ -9,6 +24,10 @@ views:
         - file.inFolder("wiki/subdomains")
     order:
       - file.name
+      - title
+      - status
+      - updated
+      - formula.age_days
     limit: 50
   - type: table
     name: Pattern pages
@@ -17,6 +36,10 @@ views:
         - file.inFolder("wiki/patterns")
     order:
       - file.name
+      - type
+      - title
+      - status
+      - formula.age_days
     limit: 200
   - type: table
     name: Bank pages
@@ -25,6 +48,10 @@ views:
         - file.inFolder("wiki/banks")
     order:
       - file.name
+      - type
+      - title
+      - status
+      - formula.age_days
     limit: 100
   - type: table
     name: Bridge pages
@@ -33,6 +60,9 @@ views:
         - file.inFolder("wiki/bridges")
     order:
       - file.name
+      - title
+      - status
+      - formula.age_days
     limit: 100
   - type: table
     name: Playbook pages
@@ -41,6 +71,10 @@ views:
         - file.inFolder("wiki/playbook")
     order:
       - file.name
+      - type
+      - title
+      - status
+      - formula.age_days
     limit: 100
   - type: table
     name: Folder-about navigation
@@ -49,4 +83,6 @@ views:
         - file.name == "_about"
     order:
       - file.name
+      - title
+      - status
     limit: 50
