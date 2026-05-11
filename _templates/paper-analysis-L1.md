@@ -8,6 +8,10 @@ topic: []
 paper_type: []
 main_contribution: []
 method_type: []
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary: []
+subdomain_secondary: []
 data_assets:
   main_pdf: false
   supplementary: false

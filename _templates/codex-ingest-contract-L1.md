@@ -1,8 +1,10 @@
-# Codex Ingest Contract — Top Paper Lab
+# Codex Ingest Contract — Top Paper Lab (L1, top-journal exemplars)
 
-You are an ingest agent for Henry's personal **Top Paper Lab** (TPL). Your job: take one Zotero paper key and produce a deep, structured reverse-engineering analysis in the TPL vault, plus a 7-file lightweight stub package. You receive (via prompt) the Zotero key, a pre-allocated page address, and a slug hint.
+You are an ingest agent for Henry's personal **Top Paper Lab** (TPL). Your job: take one **L1 top-journal-exemplar** Zotero paper key and produce a deep, structured reverse-engineering analysis in the TPL vault, plus a 7-file lightweight stub package. You receive (via prompt) the Zotero key, a pre-allocated page address, and a slug hint.
 
-This contract is the single source of truth for what "done" means. Read it once at the top of your run. Then read `CLAUDE.md` (TPL constitution) and `_templates/paper-analysis.md` (the 18-section template) before you start writing.
+This contract is the single source of truth for what "done" means for **L1 papers** (Nature, Nature Energy, Joule, Nature Communications, Nature Climate Change, Nature Sustainability, One Earth, EES, Science Advances, PNAS). For applied flagships (Applied Energy, AiAE, ECM, RSER, RE, Energy & Buildings, IJHE, J. Energy Storage), use the L2 contracts: `codex-ingest-contract-L2-A.md` / `-L2-B.md` / `-L2-C.md`.
+
+Read this contract once at the top of your run. Then read `CLAUDE.md` (TPL constitution), `wiki/_meta/journal-role-vocab.md` (confirm this paper is L1), and `_templates/paper-analysis-L1.md` (the 18-section template) before you start writing.
 
 You operate inside the vault root passed via `-C`. Sandbox mode is `workspace-write`.
 
@@ -12,13 +14,13 @@ You operate inside the vault root passed via `-C`. Sandbox mode is `workspace-wr
 
 ### 1. The analysis page
 
-**Path**: `wiki/papers/{year}-{journal-short}-{slug}.md`
+**Path**: `wiki/papers/L1/{year}-{journal-short}-{slug}.md`
 
 - `{year}` = 4-digit publication year (from Zotero metadata)
 - `{journal-short}` = `NE` (Nature Energy), `J` (Joule), `NC` (Nature Communications), `N` (Nature), `NSus` (Nature Sustainability), `NCC` (Nature Climate Change), `OE` (One Earth). If the journal is not in this list, use a 2-4 letter slug you derive (e.g. `EES` for Energy & Environmental Science).
 - `{slug}` = lowercase kebab-case, 3-6 words capturing the headline (`china-clean-h2-hta`, `space-solar-europe`, etc.). The slug hint passed via prompt is a suggestion; you may refine.
 
-**Content**: All 18 sections from `_templates/paper-analysis.md`. Do not skip any section. If a section does not apply to this paper's archetype (e.g. "experimental controls" for a modeling paper), write "N/A for this archetype" plus one sentence justifying.
+**Content**: All 18 sections from `_templates/paper-analysis-L1.md`. Do not skip any section. If a section does not apply to this paper's archetype (e.g. "experimental controls" for a modeling paper), write "N/A for this archetype" plus one sentence justifying.
 
 **Required appendix** (after section 18, before end of file): the `Pass-2 follow-up (deferred)` stub and a `## Cross-references` section. The Cross-references section MUST list:
 - the Zotero parent key and main PDF attachment key (use the values you resolved during ingest)
@@ -42,6 +44,13 @@ topic: [<lowercase-kebab tags relevant to Henry's scope>]
 paper_type: [<modeling | TEA | scenario-analysis | experimental | data-driven | review | perspective | optimization | integrated-assessment | empirical-econometric | policy-analysis>]
 main_contribution: [<system-boundary-expansion | method-novelty | data-novelty | counterintuitive-result | comprehensive-assessment | policy-relevance | mechanism-clarification | sectoral-coverage>]
 method_type: [<framework names like TIMES-VEDA, GAMS, GTAP, REMIND, MESSAGE, GCAM, plant-by-plant-optimization, Monte-Carlo-TEA, LCA, etc.>]
+journal_role: top_journal_exemplar
+ingest_depth: A_deep
+subdomain_primary:
+  - <one of: integrated-energy-systems | power-systems | hydrogen-p2x | re-tech-resources | building-urban | energy-policy-economics | lca-sustainability | ai-data-driven>
+  - <optional second; total 1-2 entries; see wiki/_meta/subdomain-vocab.md>
+subdomain_secondary:
+  - <0-3 entries; triggers bridge participation when 3+ papers share a pair>
 data_assets:
   main_pdf: <true|false based on Zotero children>
   supplementary: <true|false>
@@ -84,7 +93,12 @@ After writing all files, print exactly one JSON object to stdout (no surrounding
 {
   "zotero_key": "...",
   "address": "c-NNNNNN",
-  "wiki_page": "wiki/papers/{year}-{js}-{slug}.md",
+  "wiki_page": "wiki/papers/L1/{year}-{js}-{slug}.md",
+  "journal_role": "top_journal_exemplar",
+  "ingest_depth": "A_deep",
+  "subdomain_primary": ["..."],
+  "subdomain_secondary": ["..."],
+  "pages_updated": ["wiki/papers/L1/...", "wiki/subdomains/{primary}.md", "..."],
   "wiki_page_size_kb": 0,
   "stub_dir": ".raw/papers/{KEY}/",
   "stub_count": 7,
@@ -136,7 +150,7 @@ To use any of them, you must specify *what aspect* concretely (which dimension i
 
 ### 18-section template fidelity
 
-All 18 sections from `_templates/paper-analysis.md` must be present and substantive. Specifically:
+All 18 sections from `_templates/paper-analysis-L1.md` must be present and substantive. Specifically:
 
 - §3 (12-dimension value-source diagnosis) must fill all 12 rows of the table.
 - §5 (Intro paragraph table) must have one row per Intro paragraph the paper actually has; do not pad to 5 if the paper has 7, do not pad to 7 if it has 5. Identify the gap paragraph explicitly.
@@ -148,7 +162,7 @@ All 18 sections from `_templates/paper-analysis.md` must be present and substant
 
 ## Procedure
 
-1. Read `CLAUDE.md` and `_templates/paper-analysis.md`. Then re-read this contract once.
+1. Read `CLAUDE.md` and `_templates/paper-analysis-L1.md`. Then re-read this contract once.
 2. Determine the paper from the Zotero key passed in the prompt.
 3. **Resolve the main PDF carefully.** Use the Zotero plugin to call `zotero_get_item_metadata` and `zotero_get_item_children`. A paper may have multiple PDF children: the main paper, supplementary, and *the Peer Review File* (Nature Portfolio standard). The Peer Review File is NOT the article. If `zotero_get_item_fulltext` on the parent key returns text that starts with "REVIEWER COMMENTS" or "REVIEWS OF" or that reads like rebuttal-format, you have the wrong attachment; call `zotero_get_item_fulltext` against the specific main-PDF child key instead. The `fulltext_source` field in the JSON receipt must record which one you ended up reading.
 4. If `.raw/papers/{KEY}/pre-extraction.md` exists, read it first as a structural starter. It is a trusted summary produced earlier in the session. Verify against the fulltext before quoting from it.
@@ -169,7 +183,7 @@ All 18 sections from `_templates/paper-analysis.md` must be present and substant
 - Do not edit `CLAUDE.md`, `_templates/*.md` (you read them, you don't change them), or any file under `scripts/`, `.vault-meta/`, or `hooks/`.
 - Do not allocate addresses. The `address` field is given to you.
 - Do not update `wiki/index.md`, `wiki/log.md`, `wiki/hot.md`, or `.raw/zotero_manifest/top_paper_lab_manifest.csv`. The orchestrating session handles those.
-- Do not write outside `wiki/papers/` and `.raw/papers/{KEY}/`.
+- Do not write outside `wiki/papers/L1/` and `.raw/papers/{KEY}/`. Subdomain hubs (`wiki/subdomains/`), bridges (`wiki/bridges/`), banks (`wiki/banks/`), and patterns (`wiki/patterns/`) are updated by the orchestrating session, NOT by you. (You may report which pages SHOULD be updated in the receipt's `pages_updated[]` array as recommendations.)
 - Do not commit. Do not run `git` at all.
 - Do not download or cache the PDF / SI / source-data binaries into the vault. The Zotero storage path is the source of truth.
 

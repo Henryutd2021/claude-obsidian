@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
-# codex-ingest-paper.sh — delegate a single TPL paper ingest to codex-cli.
+# codex-ingest-paper.sh — delegate a single L1 (top-journal) paper ingest to codex-cli.
 #
 # Usage:
 #   scripts/codex-ingest-paper.sh <ZOTERO_KEY> <ADDRESS> [SLUG_HINT]
 #
 # Example:
 #   scripts/codex-ingest-paper.sh 8IMLJZAH c-000004 nature-energy-h2-additionality
+#
+# For L2 papers (Applied Energy / AiAE / ECM / RSER / RE / Energy & Buildings /
+# IJHE / J. Energy Storage etc.), use scripts/codex-ingest-paper-L2.sh instead.
 #
 # Notes:
 #   - macOS ships bash 3.2, which does not parse $(cat <<EOF ... EOF) reliably.
@@ -62,9 +65,9 @@ Inputs:
 - Today's date: $TODAY
 
 Read in this order before writing anything:
-1. _templates/codex-ingest-contract.md  (the rules)
+1. _templates/codex-ingest-contract-L1.md  (the rules)
 2. CLAUDE.md                            (TPL constitution + scope + style)
-3. _templates/paper-analysis.md         (the 18-section template you fill in)
+3. _templates/paper-analysis-L1.md         (the 18-section template you fill in)
 4. .raw/papers/$KEY/pre-extraction.md   (optional; if present, use as a starter but verify)
 
 Then:
