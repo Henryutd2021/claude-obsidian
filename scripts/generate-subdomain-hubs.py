@@ -222,7 +222,12 @@ def render_hub(slug: str, papers: list, counts: Counter, pair_papers: dict) -> s
 
     # Henry-note section
     existing = (SUBDOMAINS_DIR / f"{slug}.md").read_text() if (SUBDOMAINS_DIR / f"{slug}.md").exists() else ""
-    henry_block = preserve_henry_note(existing) or "<!-- HENRY-NOTE-START -->\n<!-- Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here. -->\n<!-- HENRY-NOTE-END -->"
+    henry_block = preserve_henry_note(existing) or (
+        "<!-- HENRY-NOTE-START -->\n"
+        "*This block is for Henry's hand-edits. The auto-generator preserves whatever is between the START and END markers. "
+        "Use it to record stance, key questions for this subdomain, watchlist papers, or \"how does this map to my current project?\" notes.*\n"
+        "<!-- HENRY-NOTE-END -->"
+    )
     lines.append("## Henry's stance and key questions")
     lines.append("")
     lines.append(henry_block)

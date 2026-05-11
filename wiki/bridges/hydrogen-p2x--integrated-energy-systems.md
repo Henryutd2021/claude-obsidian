@@ -20,7 +20,7 @@ related:
 ## Why this interface matters
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits in this block survive regeneration. Write one short paragraph on why papers at the hydrogen-p2x × integrated-energy-systems interface tend to produce strong contributions, what kinds of claims live here, and what reviewer pushback this interface attracts. -->
+*Hand-edits in this block survive regeneration. Write one short paragraph on why papers at the hydrogen-p2x × integrated-energy-systems interface tend to produce strong contributions, what kinds of claims live here, and what reviewer pushback this interface attracts.*
 <!-- HENRY-NOTE-END -->
 
 ## Papers spanning this pair

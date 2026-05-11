@@ -146,9 +146,9 @@ def render_bridge(a: str, b: str, supporting: list, all_papers: list) -> str:
     existing = out_path.read_text() if out_path.exists() else ""
     henry_block = preserve_henry_note(existing) or (
         "<!-- HENRY-NOTE-START -->\n"
-        "<!-- Hand-edits in this block survive regeneration. Write one short paragraph on why "
-        f"papers at the {a} × {b} interface tend to produce strong contributions, what kinds of "
-        "claims live here, and what reviewer pushback this interface attracts. -->\n"
+        f"*This block is for Henry's hand-edits. The auto-generator preserves whatever is between the START and END markers. "
+        f"Write one short paragraph on why papers at the {a} × {b} interface tend to produce strong contributions, "
+        f"what kinds of claims live here, and what reviewer pushback this interface attracts.*\n"
         "<!-- HENRY-NOTE-END -->"
     )
     lines.append(henry_block)

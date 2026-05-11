@@ -23,7 +23,7 @@ Energy economics, policy, market design, socio-technical transitions, investment
 ## Henry's stance and key questions
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here. -->
+*Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here.*
 <!-- HENRY-NOTE-END -->
 
 ## Papers in this subdomain

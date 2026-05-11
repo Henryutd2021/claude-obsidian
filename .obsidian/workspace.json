@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/hot.md",
+                "file": "wiki/bridges/integrated-energy-systems--power-systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hot"
+              "title": "integrated-energy-systems--power-systems"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 511.5
   },
   "right": {
     "id": "7092b65be1e76349",
@@ -197,12 +197,18 @@
   },
   "active": "a31de1b302cdc5cf",
   "lastOpenFiles": [
-    "wiki/playbook/top-journal-craft/contribution-decision-tree.md",
-    "wiki/playbook/top-journal-craft/main-figure-design-rules.md",
+    "wiki/papers.base",
+    "wiki/dashboard.base",
     "wiki/playbook/top-journal-craft/intro-template-energy-papers.md",
-    "wiki/patterns/subdomain/re-tech-resources/empirical-growth-envelope.md",
     "wiki/patterns/subdomain/ai-data-driven/load-shape-and-flexibility.md",
     "wiki/patterns/subdomain/hydrogen-p2x/merit-order-and-end-use-ranking.md",
+    "wiki/bridges/energy-policy-economics--power-systems.md",
+    "wiki/papers/L1/2022-NE-flexible-nuclear-deep-decarb.md",
+    "wiki/Wiki Map.canvas",
+    "wiki/hot.md",
+    "wiki/playbook/top-journal-craft/contribution-decision-tree.md",
+    "wiki/playbook/top-journal-craft/main-figure-design-rules.md",
+    "wiki/patterns/subdomain/re-tech-resources/empirical-growth-envelope.md",
     "wiki/patterns/cross-cutting/archetype/firm-clean-flexible-baseload.md",
     "wiki/patterns/cross-cutting/methods-recurrent/option-value-scenario-pairs.md",
     "wiki/patterns/cross-cutting/methods-recurrent/plant-vs-aggregate-resolution.md",
@@ -218,7 +224,6 @@
     "wiki/bridges/hydrogen-p2x--integrated-energy-systems.md",
     "wiki/bridges/energy-policy-economics--re-tech-resources.md",
     "wiki/bridges/hydrogen-p2x--lca-sustainability.md",
-    "wiki/bridges/energy-policy-economics--power-systems.md",
     "wiki/bridges/integrated-energy-systems--lca-sustainability.md",
     "wiki/bridges/power-systems--re-tech-resources.md",
     "wiki/bridges/energy-policy-economics--hydrogen-p2x.md",
@@ -226,13 +231,8 @@
     "wiki/bridges/energy-policy-economics--integrated-energy-systems.md",
     "wiki/bridges/integrated-energy-systems--power-systems.md",
     "wiki/bridges/energy-policy-economics--lca-sustainability.md",
-    "scripts/generate-bridges.py",
     "wiki/subdomains/ai-data-driven.md",
     "wiki/subdomains/lca-sustainability.md",
-    "wiki/subdomains/energy-policy-economics.md",
-    "wiki/subdomains/building-urban.md",
-    "wiki/subdomains/re-tech-resources.md",
-    "scripts/generate-subdomain-hubs.py",
     "wiki/_meta/canvases/main.canvas",
     "wiki/_meta/canvases/welcome.canvas",
     "wiki/_meta/canvases/claude-obsidian-presentation.canvas",
@@ -240,7 +240,6 @@
     "wiki/_meta/meta/claude-obsidian-gif-1x1.gif",
     "wiki/_meta/meta/claude-obsidian-cover-16x9.png",
     "wiki/_meta/canvases/youtube-explainer.canvas",
-    "wiki/Wiki Map.canvas",
     "wiki/_meta/meta/workflow-loop.gif",
     "wiki/_meta/meta/wiki-graph-grow.gif",
     "wiki/_meta/meta/welcome-canvas.gif",

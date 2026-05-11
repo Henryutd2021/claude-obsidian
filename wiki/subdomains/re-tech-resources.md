@@ -23,7 +23,7 @@ Solar, wind, and other RE technology and resource assessment. Capacity factor mo
 ## Henry's stance and key questions
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here. -->
+*Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here.*
 <!-- HENRY-NOTE-END -->
 
 ## Papers in this subdomain

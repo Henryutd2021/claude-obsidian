@@ -23,7 +23,7 @@ Life-cycle assessment, carbon emissions inventory and accounting, environmental 
 ## Henry's stance and key questions
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here. -->
+*Hand-edits in this block survive regeneration. Add stance, key questions, watchlist papers here.*
 <!-- HENRY-NOTE-END -->
 
 ## Papers in this subdomain
