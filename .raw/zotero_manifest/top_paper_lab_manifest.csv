@@ -7,7 +7,7 @@ H998SFTH,Reduced carbon emission estimates from fossil fuel combustion and cemen
 954UBPKS,Probabilistic projections of global wind and solar power growth based on historical national experience,Jakhmola et al.,Nature Energy,2026,,,,false,false,,3,candidate,unreviewed
 TRTZSIT4,Implications of the solar rebound effect for the European energy transition,Delic & Bucksteeg,Nature Energy,2026,,,,false,false,,3,candidate,unreviewed
 SY7VWU9R,Probabilistic projections of global wind and solar power growth based on historical national experience (dup),Jakhmola et al.,Nature Energy,2026,,,,false,false,,3,candidate,unreviewed
-KWNBZ8FA,AI data centres as grid-interactive assets,Colangelo et al.,Nature Energy,2026,,,,false,false,,3,candidate,unreviewed
+KWNBZ8FA,AI data centres as grid-interactive assets,Colangelo et al.,Nature Energy,2026,,,,false,false,,3,reviewed,unreviewed
 NHVW42A8,Techno-economic analysis of renewable fuels for ships carrying bulk cargo in Europe,Stolz et al.,Nature Energy,2022,,,,false,false,,3,candidate,unreviewed
 LRWK3V6Z,Impact of declining renewable energy costs on electrification in low-emission scenarios,Luderer et al.,Nature Energy,2022,,,,false,false,,3,candidate,unreviewed
 MPRPQ8ST,Nuclear power and renewable energy are both associated with national decarbonization,Fell et al.,Nature Energy,2022,,,,false,false,,3,candidate,unreviewed
@@ -47,10 +47,10 @@ Y56DW4KX,A global model of hourly space heating and cooling demand at multiple s
 LXNW3ZJM,Quantifying the impacts of climate change and extreme climate events on energy systems,Perera et al.,Nature Energy,2020,,,,false,false,,3,candidate,unreviewed
 8IMLJZAH,The influence of additionality and time-matching requirements on the emissions from grid-connected hydrogen production,Giovanniello et al.,Nature Energy,2024,10.1038/s41560-023-01435-0,true,false,true,true,true,1,reviewed,reviewed
 BZZEB62R,Assessing the emissions impact of grid-connected hydrogen production,(editorial),Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
-5CAVXPE9,The role of flexible geothermal power in decarbonized electricity systems,Ricks et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
+5CAVXPE9,The role of flexible geothermal power in decarbonized electricity systems,Ricks et al.,Nature Energy,2024,,,,false,false,,3,reviewed,unreviewed
 HERTUTXY,Increasing the resilience of the Texas power grid against extreme storms by hardening critical lines,Sturmer et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
 VYQCQT7H,Exploring the potential of non-residential solar to tackle energy injustice,Wussow et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
-SYZJZS6F,Stylized least-cost analysis of flexible nuclear power in deeply decarbonized electricity systems considering wind and solar resources worldwide,Duan et al.,Nature Energy,2022,,,,false,false,,3,candidate,unreviewed
+SYZJZS6F,Stylized least-cost analysis of flexible nuclear power in deeply decarbonized electricity systems considering wind and solar resources worldwide,Duan et al.,Nature Energy,2022,,,,false,false,,3,reviewed,unreviewed
 3NB2TYWP,High-resolution meteorology with climate change impacts from global climate model data using generative machine learning,Buster et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
 U9JGP7LF,Cost and competitiveness of green hydrogen and the effects of the European Union regulatory framework,Brandt et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
 V5VRS3KJ,A geographically disaggregated approach to integrate low-carbon technologies across local electricity networks,Few et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
@@ -67,7 +67,7 @@ KSUJCP2T,Accelerating green shipping with spatially optimized offshore charging 
 FXVVR5CX,Demand-side strategies enable rapid and deep cuts in buildings and transport emissions to 2050,Van Heerden et al.,Nature Energy,2025,,,,false,false,,3,candidate,unreviewed
 ZT6CXN78,Power price stability and the insurance value of renewable technologies,Navia Simon & Diaz Anadon,Nature Energy,2025,,,,false,false,,3,candidate,unreviewed
 R7K3BYQT,Diversity of biomass usage pathways to achieve emissions targets in the European energy system,Millinger et al.,Nature Energy,2025,,,,false,false,,3,candidate,unreviewed
-SYGLCEMJ,The role of policy and module manufacturing learning in industrial decarbonization by small modular reactors,Vanatta et al.,Nature Energy,2025,,,,false,false,,3,candidate,unreviewed
+SYGLCEMJ,The role of policy and module manufacturing learning in industrial decarbonization by small modular reactors,Vanatta et al.,Nature Energy,2025,,,,false,false,,3,reviewed,unreviewed
 CZDZB3TW,Impacts of renewable energy resources on the weather vulnerability of power systems,Zhao et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
 DUK2LKYI,Economic potential of wind and solar in American Indian communities,Parker et al.,Nature Energy,2024,,,,false,false,,3,candidate,unreviewed
 I4QDRCBT,Faster deployment of renewables stabilizes electricity prices in Europe,Navia Simon & Diaz Anadon,Nature Energy,2025,,,,false,false,,3,candidate,unreviewed
@@ -111,9 +111,9 @@ XT7LCEP8,"Mission net-zero America: The nation-building path to a prosperous, ne
 3IHUA7E5,Energy transition will require substantially less mining than the current fossil system,Nijnens et al.,Joule,2023,,,,false,false,,3,candidate,unreviewed
 KDNVJA6U,Sustainability regulations for PtX projects: Scope and impact analysis,Bube et al.,Joule,2025,,,,false,false,,3,candidate,unreviewed
 43PKIBZ3,Pathways to national-scale adoption of enhanced geothermal power through experience-driven cost reductions,Ricks & Jenkins,Joule,2025,,,,false,false,,3,candidate,unreviewed
-XUGL6XPD,Technoeconomic analysis of small modular reactors decarbonizing industrial process heat,Vanatta et al.,Joule,2023,,,,false,false,,3,candidate,unreviewed
+XUGL6XPD,Technoeconomic analysis of small modular reactors decarbonizing industrial process heat,Vanatta et al.,Joule,2023,,,,false,false,,3,reviewed,unreviewed
 M9HYZCZE,Assess space-based solar power for European-scale power system decarbonization,Che et al.,Joule,2025,10.1016/j.joule.2025.102074,true,false,true,true,true,2,reviewed,reviewed
-52W57HP5,Sources of data center energy estimates: A comprehensive review,Mytton & Ashtine,Joule,2022,,,,false,false,,3,candidate,unreviewed
+52W57HP5,Sources of data center energy estimates: A comprehensive review,Mytton & Ashtine,Joule,2022,,,,false,false,,3,reviewed,unreviewed
 HZPT75PJ,Technological evolution of large-scale blue hydrogen production toward the U.S. Hydrogen Energy Earthshot,Wu et al.,Nature Communications,2024,,,,false,false,,3,candidate,unreviewed
 L82XBW8G,Production of hydrogen from offshore wind in China and cost-competitive supply to Japan,Song et al.,Nature Communications,2021,,,,false,false,,3,candidate,unreviewed
 4X3U63F6,Hydrogen production from the air,Guo et al.,Nature Communications,2022,,,,false,false,,3,candidate,unreviewed
