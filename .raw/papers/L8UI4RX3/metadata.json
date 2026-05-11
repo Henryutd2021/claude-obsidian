@@ -1,0 +1,77 @@
+{
+  "key": "L8UI4RX3",
+  "title": "National growth dynamics of wind and solar power compared to the growth required for global climate targets",
+  "authors": [
+    "Aleh Cherp",
+    "Vadim Vinichenko",
+    "Jale Tosun",
+    "Joel A. Gordon",
+    "Jessica Jewell"
+  ],
+  "journal": "Nature Energy",
+  "journal_abbreviation": "Nat Energy",
+  "volume": "6",
+  "issue": "7",
+  "pages": "742-754",
+  "year": 2021,
+  "date": "2021-07",
+  "doi": "10.1038/s41560-021-00863-0",
+  "url": "https://www.nature.com/articles/s41560-021-00863-0",
+  "item_type": "journalArticle",
+  "zotero_tags": [
+    "Climate-change mitigation",
+    "Energy supply and demand",
+    "Political economy of energy"
+  ],
+  "collections_count": 2,
+  "collections": [
+    "Decarbonization",
+    "Top Paper Lab"
+  ],
+  "child_attachments": [
+    {
+      "key": "SBU9QH66",
+      "type": "attachment",
+      "content_type": "application/pdf",
+      "title": "Full Text PDF",
+      "filename": "Cherp et al. - 2021 - National growth dynamics of wind and solar power compared to the growth required for global climate.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/SBU9QH66/Cherp et al. - 2021 - National growth dynamics of wind and solar power compared to the growth required for global climate.pdf",
+      "indexed_pages": 20,
+      "total_pages": 20
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "renewable-energy-integration",
+    "wind-solar-power",
+    "technology-diffusion",
+    "climate-scenarios",
+    "energy-transition-feasibility",
+    "growth-rates"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "data-driven",
+    "scenario-analysis",
+    "empirical-econometric",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "logistic-growth-model",
+    "Gompertz-growth-model",
+    "event-history-analysis",
+    "IPCC-scenario-comparison",
+    "feasibility-space"
+  ],
+  "main_contribution_tags": [
+    "method-novelty",
+    "data-novelty",
+    "counterintuitive-result",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000013",
+  "fetched_at": "2026-05-11",
+  "resolution_note": "Direct Zotero MCP metadata call was cancelled and the local API helper was blocked by sandbox networking. Metadata and children were resolved from the read-only local Zotero SQLite backup; full text came from the Zotero storage text cache for child attachment SBU9QH66."
+}

@@ -59,7 +59,7 @@ Evidence: This is a meta-analysis, scenario-analysis and policy-analysis paper. 
 
 **What it does NOT win on**: Evidence: It does not introduce a new energy-system optimization model. The Methods emphasize data extraction, harmonization and aggregation from existing studies.
 
-**Most likely reason it cleared the top-tier bar**: Inference: Confidence high. It made a policy-relevant claim that was both quantified and institutionally specific: the largest investment shifts sit in sectors whose normal financing structures are not the main target of some flagship EU sustainable-finance tools.
+**Most likely reason it passed the top-tier bar**: Inference: Confidence high. It made a policy-relevant claim that was both quantified and institutionally specific: the largest investment shifts sit in sectors whose normal financing structures are not the main target of some flagship EU sustainable-finance tools.
 
 ## 4. Research question & framing
 
@@ -195,7 +195,7 @@ Evidence: The paper makes "investment shift" a measurable output. Lesson: For bu
 
 ### 5 Permanent Notes (atomic, evergreen, with `Evidence:` from this paper)
 
-1. Investment-shift papers need a historical baseline, not just future scenario totals. Evidence: Klaassen and Steffen compare future investment needs for 2021-25 with historical investments in 2016-20 and report an EUR 87 bn/yr uptick. Lesson: In Henry's scenario papers, define the recent baseline period and report the delta.
+1. Investment-shift papers need a historical baseline, not just future scenario totals. Evidence: Klaaßen and Steffen compare future investment needs for 2021-25 with historical investments in 2016-20 and report an EUR 87 bn/yr uptick. Lesson: In Henry's scenario papers, define the recent baseline period and report the delta.
 2. A finance-policy diagnosis must map technologies to normal financing structures. Evidence: The Discussion distinguishes project-financed renewables, regulated grids and publicly financed rail from traded securities targeted by some EU sustainable-finance tools. Lesson: Add a financing-channel column to policy implication tables.
 3. Evidence density and investment magnitude are different outputs. Evidence: The paper reports 405 time series for power generation but only five for rail infrastructure and ten for hydrogen infrastructure. Lesson: Pair every sector ranking with a data-count or confidence column.
 4. Cross-study heterogeneity can be used as a result rather than hidden as noise. Evidence: Figs. 3 and 4 show all data points, IQRs, standard deviations and time-series counts. Lesson: Plot dispersion when synthesizing model outputs from multiple sources.
@@ -242,7 +242,7 @@ Evidence: The paper makes "investment shift" a measurable output. Lesson: For bu
 2. Lesson: Do not treat sparse sectors, especially rail or hydrogen infrastructure here, as equally settled as power generation.
 3. Lesson: Do not imply that a regional scope covers all climate capital needs when the boundary excludes vehicles and several transport infrastructures.
 
-**One-line takeaway** (the most important research skill this paper teaches):
+**One-line takeaway** (the central research skill this paper teaches):
 
 Lesson: Turn model-heavy transition literature into policy action by harmonizing outputs to the unit that capital allocators and public finance institutions actually use.
 

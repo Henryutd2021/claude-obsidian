@@ -4,7 +4,7 @@
 
 - URL: https://www.nature.com/articles/s41558-022-01549-5
 - Title: Meta-analysis on necessary investment shifts to reach net zero pathways in Europe
-- Authors: Lena Klaassen and Bjarne Steffen
+- Authors: Lena Klaaßen and Bjarne Steffen
 - Journal: Nature Climate Change
 - Volume and pages: 13, 58-66
 - Published: 2023-01-05

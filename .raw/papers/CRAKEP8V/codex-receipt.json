@@ -1,0 +1,27 @@
+{
+  "zotero_key": "CRAKEP8V",
+  "address": "c-000012",
+  "wiki_page": "wiki/papers/2023-NC-rooftop-pv-china-carbon.md",
+  "wiki_page_size_kb": 32.8,
+  "stub_dir": ".raw/papers/CRAKEP8V/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP calls returned user cancelled; local API access was also blocked by Operation not permitted.",
+    "Resolved metadata and full text through local Zotero SQLite plus Zotero storage cache fallback.",
+    "Publisher landing page was not defuddled during this pass.",
+    "Supplementary files and Supplementary Data 1 are referenced by the paper but are not attached as Zotero children."
+  ],
+  "deviations_from_contract": [
+    "Zotero MCP resolution was blocked, so the documented TPL fallback path was used."
+  ]
+}

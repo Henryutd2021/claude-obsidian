@@ -1,0 +1,26 @@
+{
+  "zotero_key": "L8UI4RX3",
+  "address": "c-000013",
+  "wiki_page": "wiki/papers/2021-NE-national-wind-solar-growth-dynamics.md",
+  "wiki_page_size_kb": 39,
+  "stub_dir": ".raw/papers/L8UI4RX3/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Direct Zotero MCP metadata call was cancelled and the Zotero local API helper was sandbox-blocked; metadata and children were resolved from the read-only local Zotero SQLite backup, and full text came from the main-PDF Zotero storage cache for attachment SBU9QH66.",
+    "Publisher landing page was not defuddled; article-page.md contains a deferred placeholder.",
+    "Preexisting codex-stdout.log and codex-stderr.log in .raw/papers/L8UI4RX3/ are outside the seven required stubs and make the directory exceed 50 KB; the seven required stubs total about 10.1 KB."
+  ],
+  "deviations_from_contract": [
+    "Zotero MCP was unavailable in this run, so metadata, children and full text were resolved through the documented local Zotero database and storage fallback."
+  ]
+}

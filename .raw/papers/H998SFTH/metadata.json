@@ -1,0 +1,73 @@
+{
+  "key": "H998SFTH",
+  "title": "Reduced carbon emission estimates from fossil fuel combustion and cement production in China",
+  "authors": [
+    "Zhu Liu",
+    "Dabo Guan",
+    "Wei Wei",
+    "Steven J. Davis",
+    "Philippe Ciais",
+    "Jin Bai",
+    "Shushi Peng",
+    "Qiang Zhang",
+    "Klaus Hubacek",
+    "Gregg Marland",
+    "Robert J. Andres",
+    "Douglas Crawford-Brown",
+    "Jintai Lin",
+    "Hongyan Zhao",
+    "Chaopeng Hong",
+    "Thomas A. Boden",
+    "Kuishuang Feng",
+    "Glen P. Peters",
+    "Fengming Xi",
+    "Junguo Liu",
+    "Yuan Li",
+    "Yu Zhao",
+    "Ning Zeng",
+    "Kebin He"
+  ],
+  "journal": "Nature",
+  "volume": "524",
+  "issue": "7565",
+  "pages": "335-338",
+  "year": 2015,
+  "doi": "10.1038/nature14677",
+  "url": "https://www.nature.com/articles/nature14677",
+  "item_type": "journalArticle",
+  "tags": [],
+  "collections_count": null,
+  "child_attachments": [],
+  "child_notes": [],
+  "topic_tags": [
+    "china-carbon-accounting",
+    "emissions-inventory",
+    "coal-emission-factors",
+    "cement-emissions",
+    "policy-cost-analysis"
+  ],
+  "paper_type_tags": [
+    "data-driven",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "apparent-consumption",
+    "emissions-inventory",
+    "emission-factor-measurement",
+    "monte-carlo-uncertainty"
+  ],
+  "main_contribution_tags": [
+    "data-novelty",
+    "counterintuitive-result",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000009",
+  "fetched_at": "2026-05-11",
+  "resolution_notes": [
+    "Zotero MCP metadata and children calls returned user cancelled MCP tool call.",
+    "Local Zotero SQLite lookup did not find item key H998SFTH.",
+    "Metadata was reconstructed from the TPL manifest, Nature landing page, and author-uploaded main PDF."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "key": "CRAKEP8V",
+  "title": "Carbon mitigation potential afforded by rooftop photovoltaic in China",
+  "authors": [
+    "Zhixin Zhang",
+    "Min Chen",
+    "Teng Zhong",
+    "Rui Zhu",
+    "Zhen Qian",
+    "Fan Zhang",
+    "Yue Yang",
+    "Kai Zhang",
+    "Paolo Santi",
+    "Kaicun Wang",
+    "Yingxia Pu",
+    "Lixin Tian",
+    "Guonian Lü",
+    "Jinyue Yan"
+  ],
+  "journal": "Nature Communications",
+  "volume": "14",
+  "issue": "1",
+  "pages": "2347",
+  "year": 2023,
+  "doi": "10.1038/s41467-023-38079-3",
+  "url": "https://www.nature.com/articles/s41467-023-38079-3",
+  "item_type": "journalArticle",
+  "tags": ["⭐⭐⭐", "📊"],
+  "collections_count": 2,
+  "collections": ["Decarbonization", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "RV2YFDSR",
+      "title": "Full Text PDF",
+      "content_type": "application/pdf",
+      "filename": "Zhang et al. - 2023 - Carbon mitigation potential afforded by rooftop photovoltaic in China.pdf",
+      "zotero_storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/RV2YFDSR/Zhang et al. - 2023 - Carbon mitigation potential afforded by rooftop photovoltaic in China.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["rooftop-pv", "distributed-pv", "china", "carbon-mitigation", "geospatial-energy", "urban-energy"],
+  "paper_type_tags": ["data-driven", "scenario-analysis", "policy-analysis"],
+  "method_type_tags": ["random-forest-regression", "geospatial-assessment", "k-means-clustering", "carbon-mitigation-factor"],
+  "main_contribution_tags": ["data-novelty", "method-novelty", "sectoral-coverage", "policy-relevance"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000012",
+  "fetched_at": "2026-05-11",
+  "zotero_resolution": "MCP blocked, local SQLite and Zotero storage fallback used"
+}

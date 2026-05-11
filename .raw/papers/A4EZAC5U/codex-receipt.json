@@ -1,0 +1,26 @@
+{
+  "zotero_key": "A4EZAC5U",
+  "address": "c-000010",
+  "wiki_page": "wiki/papers/2023-NCC-net-zero-investment-shifts-europe.md",
+  "wiki_page_size_kb": 33.5,
+  "stub_dir": ".raw/papers/A4EZAC5U/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP calls returned user-cancelled responses; local Zotero HTTP API was blocked by sandbox.",
+    "No Zotero child attachment key was resolved; local manifest listed pdf_present=false. Full text came from ETH accepted-version PDF and Nature page.",
+    "The stub directory contains runner log files codex-stderr.log and codex-stdout.log not counted as stubs; the seven required stub files total 8121 bytes."
+  ],
+  "deviations_from_contract": [
+    "Main PDF attachment key could not be resolved from Zotero because Zotero MCP did not return item metadata or children; the analysis used the CLAUDE.md fallback path."
+  ]
+}

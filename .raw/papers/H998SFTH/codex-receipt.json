@@ -1,0 +1,29 @@
+{
+  "zotero_key": "H998SFTH",
+  "address": "c-000009",
+  "wiki_page": "wiki/papers/2015-N-china-fossil-cement-co2-revised.md",
+  "wiki_page_size_kb": 35.3,
+  "stub_dir": ".raw/papers/H998SFTH/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata and children calls returned user cancelled MCP tool call.",
+    "Local Zotero SQLite lookup did not resolve H998SFTH.",
+    "Main PDF attachment key is unresolved; full text was read from an author-uploaded main PDF plus the Nature landing page.",
+    "No named Data Availability or Code Availability statement was found.",
+    "The seven new stub files total about 8.8 KB, but the paper directory exceeds 50 KB because a pre-existing codex-stderr.log is about 599 KB."
+  ],
+  "deviations_from_contract": [
+    "Zotero metadata and children could not be resolved through MCP, so metadata was reconstructed from the TPL manifest, Nature landing page, and author-uploaded main PDF fallback.",
+    "Main PDF attachment key could not be listed in Cross-references because Zotero children were unavailable."
+  ]
+}
