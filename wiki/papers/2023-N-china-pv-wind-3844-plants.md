@@ -272,3 +272,24 @@ Lesson: For building energy and decarbonization work, the equivalent of UHV and 
 **One-line takeaway**:
 
 Lesson: A top-tier energy-systems paper can win by turning a target gap into a physically located, costed, mechanism-attributed buildout pathway.
+
+---
+
+## Pass-2 follow-up (deferred)
+
+> Run after Pass-1 has been reviewed. Implicit, easy-to-miss lessons for a PhD researcher: research-design temperament, writing-craft micro-moves, result-curation logic, figure-curation logic. Should not duplicate Pass-1.
+
+To trigger: `/wiki-query "Pass-2 follow-up on [[2023-N-china-pv-wind-3844-plants]]: implicit lessons not yet captured."`
+
+## Cross-references
+
+- Zotero: `T5W8LVA9` (main PDF attachment `DM5DMFZD`; SI attachment `UVK9RAXN`)
+- Paper package: [[../../.raw/papers/T5W8LVA9/asset-status]]
+- Data availability stub: [[../../.raw/papers/T5W8LVA9/data-availability]]
+- Code availability stub: [[../../.raw/papers/T5W8LVA9/code-availability]]
+- Related papers in this lab: [[2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]] (China energy-system optimization; methodological contrast pair, see note below).
+- Pattern pages it will inform after paper 10: `patterns/methods/plant-vs-aggregate-resolution`, `patterns/figures/method-as-object`, `patterns/journals/nature-vs-nature-energy`, `patterns/co-benefits/equity-elevation-move`.
+- Playbook pages it will inform after paper 20: `playbook/case-justification-template`, `playbook/co-benefit-elevation-move`.
+
+> [!note] Method-resolution contrast with [[2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]]
+> Both are China-energy-system optimization papers in top-tier venues, but the resolution differs: Yang uses a TIMES-class aggregated technology library with 780+ processes across sectors; Wang optimizes 3,844 individual plant sites geospatially. Yang's "system boundary" wins on cross-sector breadth; Wang's "method-as-object" visual move only works at plant-level resolution. This is not a contradiction. It is a same-question, two-resolutions pair that can later support `patterns/methods/plant-vs-aggregate-resolution`.
