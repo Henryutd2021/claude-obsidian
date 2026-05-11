@@ -252,3 +252,24 @@ Evidence: The paper uses a staged strategy: demonstrate higher-TRL RD2-like syst
 3. Evidence: SBSP costs depend on NASA projections and unresolved orbital assembly. Lesson: Do not present 2050 costs without uncertainty and technology-readiness caveats.
 
 **One-line takeaway**: Evidence: The paper teaches that an emerging energy technology becomes decision-relevant when its cost and availability are mapped into least-cost system regimes. Lesson: For Henry's work, turn uncertain technology assumptions into threshold maps tied to storage and system cost.
+
+---
+
+## Pass-2 follow-up (deferred)
+
+> The Zotero parent received a Submitted Version PDF (`5UKTL4KK`) AFTER this analysis was composed. The original codex run used publisher HTML excerpts as the fulltext source. A Pass-2 should re-derive any quantitative claim against the now-available PDF when wording precision matters in a pattern page.
+
+To trigger: `/wiki-query "Pass-2 follow-up on [[2025-J-space-based-solar-europe]] using the Submitted Version PDF in Zotero (5UKTL4KK): verify numbers and capture missed lessons."`
+
+## Cross-references
+
+- Zotero: `M9HYZCZE` (main PDF attachment `5UKTL4KK`, Submitted Version added 2026-05-11)
+- Paper package: [[../../.raw/papers/M9HYZCZE/asset-status]]
+- Data availability stub: [[../../.raw/papers/M9HYZCZE/data-availability]]
+- Code availability stub: [[../../.raw/papers/M9HYZCZE/code-availability]]
+- Related papers in this lab: [[2021-NE-kikstra-covid-energy-demand-scenarios|Kikstra et al. 2021, Nature Energy]] (both use exogenous shocks as scenario levers; see note below).
+- Pattern pages it will inform after paper 10: `patterns/methods/exogenous-shock-as-scenario`, `patterns/methods/cost-threshold-framing`, `patterns/journals/joule-profile`, `patterns/figures/regime-map-figures`.
+- Playbook pages it will inform after paper 20: `playbook/emerging-tech-tea-framing`, `playbook/threshold-map-presentation`.
+
+> [!note] Shared lever with [[2021-NE-kikstra-covid-energy-demand-scenarios|Kikstra et al. 2021, Nature Energy]]
+> Che (2025) and Kikstra (2021) both treat an exogenous perturbation as the analytical hinge: Che varies SBSP cost and availability to find the regime threshold where the optimizer chooses it; Kikstra varies persistent COVID-19-induced demand changes to find scenarios where the mitigation pathway eases. Different domains, same research-design move. Co-anchor for `patterns/methods/exogenous-shock-as-scenario`.
