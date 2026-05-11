@@ -101,7 +101,7 @@ ARS plugin skills wired in:
 ## Current state
 
 - Pre-fork content under [[_meta/old-index|wiki/_meta/]]: 46 pages, mostly LLM-Wiki / DragonScale / SEO ecosystem research, kept for self-reference, not active material.
-- Address counter at `c-000025` (22 TPL paper addresses in use: `c-000003` through `c-000024`).
+- Address counter at `c-000033` (29 TPL paper addresses in use: `c-000003` through `c-000032`; `c-000031` reserved-unused for Shi 2020 ACSSCE pending vocab decision).
 
 ## Papers ingested
 
