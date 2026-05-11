@@ -9,7 +9,7 @@ paper_type: [modeling, TEA, scenario-analysis, optimization, policy-analysis]
 main_contribution: [system-boundary-expansion, counterintuitive-result, policy-relevance, method-novelty]
 method_type: [PyPSA-Eur, capacity-expansion-dispatch, scenario-sensitivity-analysis, SBSP-generation-model]
 data_assets:
-  main_pdf: false
+  main_pdf: true
   supplementary: false
   source_data: true
   data_statement: true
