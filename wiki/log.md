@@ -23,6 +23,41 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] architecture | v2 cutover: two-layer corpus + 8 subdomains + connectivity layer
+
+Phase 1 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied-energy-calm-moler.md`).
+
+**Taxonomy plumbing:**
+- Locked vocab files in `wiki/_meta/`: [[_meta/journal-role-vocab]], [[_meta/subdomain-vocab]], [[_meta/depth-policy]], [[_meta/routing-rules]].
+- Added 4 new frontmatter fields to all 22 existing paper analyses via `scripts/migrate-v2-frontmatter.py`: `journal_role: top_journal_exemplar`, `ingest_depth: A_deep`, `subdomain_primary[]` (1-2 per paper), `subdomain_secondary[]` (0-3 per paper).
+- Subdomain mapping derived from each paper's title, archetype, and existing `topic[]` tags. See script for the full 22-row map.
+
+**Folder migration:**
+- `git mv` all 22 paper analyses from `wiki/papers/*.md` → `wiki/papers/L1/*.md`. Obsidian wikilinks resolve unchanged (filename-based). `wiki/index.md` wikilinks updated from `[[papers/X|...]]` → `[[papers/L1/X|...]]` for explicit path consistency.
+- Scaffolded empty directories: `wiki/papers/L2/{8 subdomain slugs, _cross}/`, `wiki/subdomains/`, `wiki/bridges/`, `wiki/patterns/{cross-cutting,subdomain,bridges,comparisons}/` plus 6 cross-cutting subfolders, `wiki/banks/{parameter,sensitivity,method}-bank/` (Phase 3 priority), `wiki/playbook/{top-journal-craft,applied-paper-craft,upgrade-playbook,submission-tier-checklists}/`.
+
+**Dashboards:**
+- Rewrote `wiki/papers.base` with 10 views (All / L1 / L2-deep / L2-medium / By subdomain / By archetype / Bridges activity / Drafts / High-relevance backlog / Upgrade candidates) replacing the prior 6.
+- Created `wiki/dashboard.base` spanning subdomains/patterns/banks/bridges/playbook with 7 health/navigation views.
+
+**Manifest:**
+- Extended `.raw/zotero_manifest/top_paper_lab_manifest.csv` schema by 6 columns (`journal_role`, `ingest_depth`, `subdomain_primary`, `subdomain_secondary`, `use_tags`, `notes`) via `scripts/migrate-v2-manifest.py`. All 142 rows backfilled with `journal_role=top_journal_exemplar`. The 22 ingested rows additionally have `ingest_depth=A_deep` and `subdomain_primary`/`secondary`.
+- Created `.raw/zotero_manifest/l2_candidate_manifest.csv` staging file (20-column schema, header-only).
+
+**Docs:**
+- `wiki/index.md` rewritten to reflect v2: two-layer corpus, 8-subdomain table with hub links, dashboard pointers, _meta architecture refs.
+- `CLAUDE.md` (root) updated: vault-layout section, two-layer corpus policy, 8-subdomain section, no-pollution rule, refs to _meta vocab files.
+
+**Status after Phase 1:**
+- 22 L1 papers (`journal_role: top_journal_exemplar`, `ingest_depth: A_deep`) under `wiki/papers/L1/`.
+- 0 L2 papers (Phase 2 will pilot 3 L2-A + 2 L2-B + 1 L2-C).
+- Address counter unchanged at `c-000025` (next allocation).
+- All 22 wikilinks in `index.md` updated. `git status` shows the 22 RM (rename + modify) entries.
+
+**Next**: Phase 2 — write `_templates/paper-analysis-L2-{A,B,C}.md`, `_templates/codex-ingest-contract-L2-{A,B,C}.md`, `scripts/codex-ingest-paper-L2.sh`. Pilot 3 L2-A + 2 L2-B + 1 L2-C papers. Verify costs and routing receipts.
+
+
+
 ## [2026-05-11] ingest | Colangelo et al. 2026, Nature Energy, AI data centres as grid-interactive assets (via codex, batch 4)
 
 - Zotero: `KWNBZ8FA`
