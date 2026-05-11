@@ -17,7 +17,21 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: 11 papers ingested in one day (2 batches: 6 + 5). Codex-cli delegation pattern validated across 10 papers. Contract V2 (now requires `## Cross-references` per paper) caused batch-2 codex pages to auto-generate cross-paper anchors — first 3-anchor auto-detection appeared in UELISBYS (Zheng 2020 J). Address counter 3 -> 14. Total codex wall-clock: 13 min for batch 1 + 16 min for batch 2 (3-5 jobs parallel each).
+**2026-05-11**: 16 papers ingested in one day across 3 batches (6 + 5 + 5). Codex-cli delegation pattern validated across 15 of 16 papers (1 Opus-composed). Batch 3 ran 5 parallel codex jobs in ~9 min wall-clock (fastest batch yet — local Zotero cache path is well-warmed). All 5 batch-3 receipts pass: 18 sections, 5/5/5/5 KB outputs, banned-word clean, em-dash clean, three-label discipline applied. Address counter 3 -> 19.
+
+**Batch 3 papers (5):**
+- `c-000014` Wolfram et al. 2024 One Earth — H2 economy 22% cost reduction (first One Earth paper)
+- `c-000015` Ueckerdt et al. 2021 NCC — H2 e-fuels potential and risks (deviation: no Zotero PDF; used publisher + preprint fallback)
+- `c-000016` Berrill et al. 2022 NCC — US residential decarbonization (first building-energy paper)
+- `c-000017` Helveston, He & Davidson 2022 Nature — solar PV supply chain cost savings (US$67B globalization dividend 2008-2020)
+- `c-000018` Odenweller et al. 2022 NE — green H2 probabilistic feasibility envelope
+
+**Batch 3 archetype gains (5 new archetypes added on top of 11):**
+- Global IAM option-value scenario pairs (Wolfram)
+- Perspective-synthesis with quantified merit-order (Ueckerdt)
+- National stock-level building-decarbonization scenario frame (Berrill)
+- Counterfactual cost-savings on supply chain geography (Helveston)
+- Monte-Carlo feasibility envelope from analog-technology growth distributions (Odenweller)
 
 ## Vault audit (this session)
 
