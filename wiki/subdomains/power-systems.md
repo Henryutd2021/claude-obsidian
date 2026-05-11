@@ -28,7 +28,7 @@ Electricity systems, smart grid, RE-grid integration, microgrid, dispatch and ma
 
 ## Papers in this subdomain
 
-Total: **9** (6 primary, 3 secondary-only).
+Total: **15** (8 primary, 7 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -42,11 +42,18 @@ Total: **9** (6 primary, 3 secondary-only).
 | 2023 | Joule | [[2023-J-smr-industrial-process-heat-tea|2023-J-smr-industrial-process-heat-tea]] | `c-000019` | primary |
 | 2023 | Nature | [[2023-N-china-pv-wind-3844-plants|2023-N-china-pv-wind-3844-plants]] | `c-000005` | bridge |
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | primary |
 | 2020 | Joule | [[2020-J-data-center-load-migration-curtailment|2020-J-data-center-load-migration-curtailment]] | `c-000011` | primary |
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2024 | Renewable and Sustainable Energy Reviews | A_deep | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | bridge |
+| 2021 | Advances in Applied Energy | A_deep | [[2021-AiAE-flexible-loads-h2-curtailment|2021-AiAE-flexible-loads-h2-curtailment]] | `c-000029` | primary |
+| 2020 | Applied Energy | A_deep | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | bridge |
+| 2019 | Applied Energy | A_deep | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | bridge |
+| 2017 | Applied Energy | B_medium | [[2017-AE-ml-wind-forecasting-deep-feature|2017-AE-ml-wind-forecasting-deep-feature]] | `c-000030` | bridge |
 
 ## Outward connections (bridges)
 
@@ -54,12 +61,12 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
-| `integrated-energy-systems` | 8 | [[bridges/integrated-energy-systems--power-systems]] |
-| `re-tech-resources` | 4 | [[bridges/power-systems--re-tech-resources]] |
-| `energy-policy-economics` | 4 | [[bridges/energy-policy-economics--power-systems]] |
-| `ai-data-driven` | 2 | `bridges/ai-data-driven--power-systems` (premature) |
+| `integrated-energy-systems` | 10 | [[bridges/integrated-energy-systems--power-systems]] |
+| `re-tech-resources` | 8 | [[bridges/power-systems--re-tech-resources]] |
+| `energy-policy-economics` | 8 | [[bridges/energy-policy-economics--power-systems]] |
+| `hydrogen-p2x` | 5 | [[bridges/hydrogen-p2x--power-systems]] |
+| `ai-data-driven` | 3 | [[bridges/ai-data-driven--power-systems]] |
 | `lca-sustainability` | 2 | `bridges/lca-sustainability--power-systems` (premature) |
-| `hydrogen-p2x` | 1 | `bridges/hydrogen-p2x--power-systems` (premature) |
 
 ## Subdomain-specific patterns
 

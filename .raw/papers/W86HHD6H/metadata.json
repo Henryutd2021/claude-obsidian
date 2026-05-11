@@ -1,0 +1,32 @@
+{
+  "zotero_key": "W86HHD6H",
+  "item_id": 2049,
+  "item_type": "journalArticle",
+  "title": "A data-driven multi-model methodology with deep feature selection for short-term wind forecasting",
+  "creators": [
+    {"creator_type": "author", "first_name": "Cong", "last_name": "Feng"},
+    {"creator_type": "author", "first_name": "Mingjian", "last_name": "Cui"},
+    {"creator_type": "author", "first_name": "Bri-Mathias", "last_name": "Hodge"},
+    {"creator_type": "author", "first_name": "Jie", "last_name": "Zhang"}
+  ],
+  "publication_title": "Applied Energy",
+  "journal_abbreviation": "Applied Energy",
+  "year": 2017,
+  "date": "2017-03-15",
+  "volume": "190",
+  "pages": "1245-1257",
+  "doi": "10.1016/j.apenergy.2017.01.043",
+  "issn": "0306-2619",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0306261917300508",
+  "library_catalog": "ScienceDirect",
+  "language": "en",
+  "citation_key": "Feng.etalDatadrivenMultimodel2017",
+  "abstract_note": "A two-layer ensemble machine-learning methodology with deep feature selection for 1-hour-ahead wind forecasting at seven SURFRAD locations, reporting up to 30% accuracy improvement against single-algorithm models.",
+  "manifest_role": "applied_flagship",
+  "manifest_depth": "B_medium",
+  "manifest_subdomain_primary": "ai-data-driven",
+  "manifest_subdomain_secondary": ["re-tech-resources", "power-systems"],
+  "sqlite_source": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/zotero.sqlite",
+  "resolved_via": "zotero-sqlite-storage-fallback",
+  "local_api_note": "Local Zotero API was enabled but blocked by sandbox networking: Operation not permitted."
+}

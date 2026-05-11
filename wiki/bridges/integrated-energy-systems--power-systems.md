@@ -25,7 +25,7 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 8
+**Count**: 10
 
 | Year | Journal | Paper | Address | Role: integrated-energy-systems | Role: power-systems |
 |---|---|---|---|---|---|
@@ -36,9 +36,11 @@ related:
 | 2023 | Joule | [[2023-J-smr-industrial-process-heat-tea|2023-J-smr-industrial-process-heat-tea]] | `c-000019` | primary | primary |
 | 2023 | Nature | [[2023-N-china-pv-wind-3844-plants|2023-N-china-pv-wind-3844-plants]] | `c-000005` | primary | secondary |
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | primary | primary |
+| 2021 | Advances in Applied Energy | [[2021-AiAE-flexible-loads-h2-curtailment|2021-AiAE-flexible-loads-h2-curtailment]] | `c-000029` | secondary | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | secondary | primary |
 | 2020 | Joule | [[2020-J-data-center-load-migration-curtailment|2020-J-data-center-load-migration-curtailment]] | `c-000011` | secondary | primary |
 
-L1: 8 · L2: 0
+L1: 9 · L2: 1
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -51,5 +53,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+1 L2 papers participate. See the table above.
 

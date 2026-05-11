@@ -25,17 +25,18 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 5
+**Count**: 6
 
 | Year | Journal | Paper | Address | Role: integrated-energy-systems | Role: re-tech-resources |
 |---|---|---|---|---|---|
 | 2025 | Joule | [[2025-J-space-based-solar-europe|2025-J-space-based-solar-europe]] | `c-000006` | secondary | primary |
+| 2024 | Energy Conversion and Management | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | secondary | secondary |
 | 2024 | Nature Energy | [[2024-NE-flexible-geothermal-decarb-systems|2024-NE-flexible-geothermal-decarb-systems]] | `c-000021` | primary | secondary |
 | 2023 | Nature | [[2023-N-china-pv-wind-3844-plants|2023-N-china-pv-wind-3844-plants]] | `c-000005` | primary | primary |
 | 2023 | Nature Communications | [[2023-NC-endogenous-learning-green-h2-europe|2023-NC-endogenous-learning-green-h2-europe]] | `c-000007` | primary | secondary |
 | 2020 | Joule | [[2020-J-data-center-load-migration-curtailment|2020-J-data-center-load-migration-curtailment]] | `c-000011` | secondary | secondary |
 
-L1: 5 · L2: 0
+L1: 5 · L2: 1
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -48,5 +49,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+1 L2 papers participate. See the table above.
 

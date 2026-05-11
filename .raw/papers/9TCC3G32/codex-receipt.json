@@ -1,0 +1,39 @@
+{
+  "zotero_key": "9TCC3G32",
+  "address": "c-000032",
+  "wiki_page": "wiki/papers/L1/2021-NE-hd-truck-depot-charging.md",
+  "journal_role": "top_journal_exemplar",
+  "ingest_depth": "A_deep",
+  "subdomain_primary": [
+    "power-systems",
+    "energy-policy-economics"
+  ],
+  "subdomain_secondary": [
+    "integrated-energy-systems"
+  ],
+  "pages_updated": [
+    "wiki/papers/L1/2021-NE-hd-truck-depot-charging.md"
+  ],
+  "wiki_page_size_kb": 37.0,
+  "stub_dir": ".raw/papers/9TCC3G32/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Direct Zotero MCP metadata and children calls were cancelled by the tool layer; item was resolved from local Zotero SQLite and the Zotero full-text cache.",
+    "Supplementary information exists online per article text but is not present as a Zotero child attachment.",
+    "Repository and data links were extracted from the article text but not independently checked at ingest time.",
+    "The .raw/papers/9TCC3G32/ directory contains pre-existing codex log files; the seven generated stub files total under 10 KB."
+  ],
+  "deviations_from_contract": [
+    "Used the local Zotero SQLite and storage-cache fallback instead of successful live Zotero MCP calls because MCP calls were cancelled and the local API was blocked by sandbox permissions."
+  ]
+}

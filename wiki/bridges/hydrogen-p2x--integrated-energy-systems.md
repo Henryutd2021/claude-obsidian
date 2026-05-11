@@ -25,15 +25,17 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 3
+**Count**: 5
 
 | Year | Journal | Paper | Address | Role: hydrogen-p2x | Role: integrated-energy-systems |
 |---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | primary | secondary |
 | 2024 | One Earth | [[2024-OE-h2-economy-22pct-cost-reduction|2024-OE-h2-economy-22pct-cost-reduction]] | `c-000014` | primary | primary |
 | 2023 | Nature Communications | [[2023-NC-endogenous-learning-green-h2-europe|2023-NC-endogenous-learning-green-h2-europe]] | `c-000007` | primary | primary |
 | 2022 | Nature Energy | [[2022-NE-china-hta-clean-hydrogen|2022-NE-china-hta-clean-hydrogen]] | `c-000003` | primary | primary |
+| 2021 | Advances in Applied Energy | [[2021-AiAE-flexible-loads-h2-curtailment|2021-AiAE-flexible-loads-h2-curtailment]] | `c-000029` | secondary | secondary |
 
-L1: 3 · L2: 0
+L1: 3 · L2: 2
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -46,5 +48,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+2 L2 papers participate. See the table above.
 

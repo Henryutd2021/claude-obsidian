@@ -23,6 +23,38 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Batch 5 — first L2 pilot (1 L1 + 6 L2 ingested; 1 self-aborted, 1 L3-skipped)
+
+First L2 production batch. Henry gave 9 paper titles, all H2 / RE / offshore wind / curtailment / mobility cluster. 8 dispatched via codex (1 L1 + 5 L2-A + 2 L2-B); 1 was IJHE skipped per L3 policy. 1 of 8 self-aborted (codex correctly refused ACSSCE since vocab lock list doesn't include it).
+
+**Ingested (7)**:
+- `c-000025` Pettinau et al. 2024 ECM : H2 mobility TEA Sardinia (L2-A, hydrogen-p2x). PV+electrolyzer+FCEV bus comparison; LCOH €4.09/kg, €2.97/kg with O2+excess-e revenue. 22 bank-candidate rows.
+- `c-000026` McDonagh et al. 2020 AE : Offshore wind H2 hybrid investor (L2-A, hydrogen-p2x). 504 MW OWF; hybrid PtG = €4.2/kgH2 NPV threshold. 19 bank-candidate rows.
+- `c-000027` Calado et al. 2024 RSER : Offshore wind H2 Iberian (L2-A, hydrogen-p2x). Onshore vs offshore electrolyzer LCOH 2020/2030/2050 trajectories. ~20 bank-candidate rows.
+- `c-000028` Nagasawa et al. 2019 AE : Wind to H2 LDV ERCOT (L2-A, hydrogen-p2x). LP marginal-price + county-level demand model. 23 bank-candidate rows.
+- `c-000029` Ruggles et al. 2021 AiAE : Flexible loads + H2 curtailment (L2-A, power-systems). Caldeira group; MEM CONUS; ~25% additional flexible load with ~10% capacity expansion + 10-20% cost reduction. 23 bank-candidate rows (champion).
+- `c-000030` Feng et al. 2017 AE : Multi-model wind forecasting (L2-B, ai-data-driven). Two-layer ensemble; 30% RMSE improvement. 4 bank-candidate rows.
+- `c-000032` Borlaug et al. 2021 NE : HD-truck depot charging (L1, power-systems + energy-policy-economics). Codex added 2nd primary; depth-policy allows 1-2.
+
+**Self-aborted (1)**:
+- `c-000031` Shi et al. 2020 ACSSCE : codex refused. ACSSCE not in `applied_flagship` vocab. Decision needed: add ACSSCE to vocab (re-dispatch reusing c-000031) OR treat as L3 manual bank.
+
+**Skipped per policy (1)**:
+- Scolaro 2022 IJHE : L3 technical_support; manual bank rows required.
+
+**Cross-paper impact**:
+- L2 count 0 to 6, L1 count 22 to 23, total 22 to 29 papers.
+- 3 new bridge pages crossed the 3-paper gate: `hydrogen-p2x--power-systems` (5 papers), `hydrogen-p2x--re-tech-resources` (6 papers), `ai-data-driven--power-systems` (3 papers). Total bridges 11 to 14.
+- 3 bank folders (parameter / sensitivity / method) seeded: ~100 candidate rows pending dedup curation. Staging page at [[banks/_batch-2026-05-11-staging]].
+
+**Verified clean (all 7)**: 0 em dash, 0 banned-word violations, frontmatter v2 complete, address bound. Page sizes 6.6 / 18.7 / 19.1 / 19.4 / 19.6 / 19.2 / 37.9 KB (L1 Borlaug ~3 KB over band but acceptable).
+
+**Counter**: 25 to 33 (8 allocated; c-000031 reserved-unused pending Shi decision).
+**Cost actual**: ~$15 (5 L2-A + 2 L2-B + 1 L1).
+**Wall-clock**: ~10 min for the slowest job (Borlaug).
+
+---
+
 ## [2026-05-11] ops | session-handoff: v2 visibility fixes + dashboard.base + status page
 
 **Visibility round** (resolved "looks empty in Obsidian" perception):

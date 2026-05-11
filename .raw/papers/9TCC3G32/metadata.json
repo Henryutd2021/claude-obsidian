@@ -1,0 +1,75 @@
+{
+  "key": "9TCC3G32",
+  "title": "Heavy-duty truck electrification and the impacts of depot charging on electricity distribution systems",
+  "authors": [
+    "Brennan Borlaug",
+    "Matteo Muratori",
+    "Madeline Gilleran",
+    "David Woody",
+    "William Muston",
+    "Thomas Canada",
+    "Andrew Ingram",
+    "Hal Gresham",
+    "Charlie McQueen"
+  ],
+  "journal": "Nature Energy",
+  "volume": "6",
+  "issue": "6",
+  "pages": "673-682",
+  "year": 2021,
+  "doi": "10.1038/s41560-021-00855-0",
+  "url": "http://www.nature.com/articles/s41560-021-00855-0",
+  "item_type": "journalArticle",
+  "abstract": "Major technological advancements and recent policy support are improving the outlook for heavy-duty truck electrification in the United States. In particular, short-haul operations are prevalent and early candidates for plug-in electric vehicles given their short, predictable routes and return-to-base applications, which allows vehicles to recharge when off shift at their depots. The paper summarizes distribution-system upgrades, develops synthetic depot charging load profiles from real-world operating schedules, and applies those profiles to 36 real-world substations.",
+  "tags": [
+    "Done",
+    "Hydrogen vehicle",
+    "⭐⭐⭐",
+    "📊"
+  ],
+  "collections_count": 3,
+  "child_attachments": [
+    {
+      "key": "KMMP6QXB",
+      "type": "application/pdf",
+      "filename": "Borlaug et al. - 2021 - Heavy-duty truck electrification and the impacts o.pdf",
+      "zotero_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/KMMP6QXB/Borlaug et al. - 2021 - Heavy-duty truck electrification and the impacts o.pdf"
+    }
+  ],
+  "child_notes": [
+    {
+      "key": "A3N6YGG5"
+    }
+  ],
+  "topic_tags": [
+    "heavy-duty-truck-electrification",
+    "depot-charging",
+    "distribution-system",
+    "managed-charging",
+    "ev-infrastructure",
+    "transport-decarbonization"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "data-driven",
+    "scenario-analysis",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "Fleet-DNA-duty-cycle-analysis",
+    "bootstrap-load-profile-simulation",
+    "managed-charging-scenarios",
+    "substation-load-integration",
+    "distribution-upgrade-cost-screen"
+  ],
+  "main_contribution_tags": [
+    "data-novelty",
+    "mechanism-clarification",
+    "policy-relevance",
+    "sectoral-coverage"
+  ],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000032",
+  "fetched_at": "2026-05-11",
+  "source_note": "MCP calls were cancelled by the tool layer; metadata and full text were resolved from the local Zotero SQLite database and Zotero text cache."
+}

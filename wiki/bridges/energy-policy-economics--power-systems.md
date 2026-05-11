@@ -25,16 +25,20 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 4
+**Count**: 8
 
 | Year | Journal | Paper | Address | Role: energy-policy-economics | Role: power-systems |
 |---|---|---|---|---|---|
 | 2025 | Nature Energy | [[2025-NE-smr-policy-module-learning|2025-NE-smr-policy-module-learning]] | `c-000022` | primary | secondary |
 | 2024 | Nature Energy | [[2024-NE-h2-additionality-time-matching|2024-NE-h2-additionality-time-matching]] | `c-000004` | primary | secondary |
+| 2024 | Renewable and Sustainable Energy Reviews | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | secondary | secondary |
 | 2023 | Joule | [[2023-J-smr-industrial-process-heat-tea|2023-J-smr-industrial-process-heat-tea]] | `c-000019` | secondary | primary |
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | secondary | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | primary | primary |
+| 2020 | Applied Energy | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | secondary | secondary |
+| 2019 | Applied Energy | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | secondary | secondary |
 
-L1: 4 · L2: 0
+L1: 5 · L2: 3
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -47,5 +51,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+3 L2 papers participate. See the table above.
 

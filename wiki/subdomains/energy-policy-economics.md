@@ -28,7 +28,7 @@ Energy economics, policy, market design, socio-technical transitions, investment
 
 ## Papers in this subdomain
 
-Total: **15** (10 primary, 5 secondary-only).
+Total: **20** (11 primary, 9 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -46,13 +46,19 @@ Total: **15** (10 primary, 5 secondary-only).
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | bridge |
 | 2022 | Nature Energy | [[2022-NE-green-h2-probabilistic-feasibility|2022-NE-green-h2-probabilistic-feasibility]] | `c-000018` | primary |
 | 2021 | Nature Climate Change | [[2021-NCC-h2-efuels-potential-risks|2021-NCC-h2-efuels-potential-risks]] | `c-000015` | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | primary |
 | 2021 | Nature Energy | [[2021-NE-kikstra-covid-energy-demand-scenarios|2021-NE-kikstra-covid-energy-demand-scenarios]] | `c-000008` | primary |
 | 2021 | Nature Energy | [[2021-NE-national-wind-solar-growth-dynamics|2021-NE-national-wind-solar-growth-dynamics]] | `c-000013` | primary |
 | 2015 | Nature | [[2015-N-china-fossil-cement-co2-revised|2015-N-china-fossil-cement-co2-revised]] | `c-000009` | primary |
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | A_deep | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | bridge |
+| 2024 | Renewable and Sustainable Energy Reviews | A_deep | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | bridge |
+| 2020 | Applied Energy | A_deep | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | bridge |
+| 2019 | Applied Energy | A_deep | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | bridge |
 
 ## Outward connections (bridges)
 
@@ -60,11 +66,11 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
+| `hydrogen-p2x` | 9 | [[bridges/energy-policy-economics--hydrogen-p2x]] |
+| `integrated-energy-systems` | 9 | [[bridges/energy-policy-economics--integrated-energy-systems]] |
 | `lca-sustainability` | 8 | [[bridges/energy-policy-economics--lca-sustainability]] |
-| `integrated-energy-systems` | 7 | [[bridges/energy-policy-economics--integrated-energy-systems]] |
-| `hydrogen-p2x` | 5 | [[bridges/energy-policy-economics--hydrogen-p2x]] |
-| `power-systems` | 4 | [[bridges/energy-policy-economics--power-systems]] |
-| `re-tech-resources` | 3 | [[bridges/energy-policy-economics--re-tech-resources]] |
+| `power-systems` | 8 | [[bridges/energy-policy-economics--power-systems]] |
+| `re-tech-resources` | 7 | [[bridges/energy-policy-economics--re-tech-resources]] |
 | `ai-data-driven` | 1 | `bridges/ai-data-driven--energy-policy-economics` (premature) |
 | `building-urban` | 1 | `bridges/building-urban--energy-policy-economics` (premature) |
 

@@ -1,0 +1,29 @@
+{
+  "zotero_key": "DBULMZ89",
+  "citation_key": "Nagasawa.etalImpactsRenewable2019",
+  "title": "Impacts of renewable hydrogen production from wind energy in electricity markets on potential hydrogen demand for light-duty vehicles",
+  "creators": [
+    {"creator_type": "author", "first_name": "Kazunori", "last_name": "Nagasawa"},
+    {"creator_type": "author", "first_name": "F. Todd", "last_name": "Davidson"},
+    {"creator_type": "author", "first_name": "Alan C.", "last_name": "Lloyd"},
+    {"creator_type": "author", "first_name": "Michael E.", "last_name": "Webber"}
+  ],
+  "journal": "Applied Energy",
+  "journal_abbreviation": "Applied Energy",
+  "volume": "235",
+  "pages": "1001-1016",
+  "year": 2019,
+  "date": "2019-02-01",
+  "doi": "10.1016/j.apenergy.2018.10.067",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0306261918316350",
+  "library_catalog": "ScienceDirect",
+  "date_added": "2023-01-02T23:52:54Z",
+  "date_modified": "2024-04-27T17:41:33Z",
+  "tags": ["Done", "Case study", "five-star", "heart"],
+  "zotero_parent_item_id": 12529,
+  "zotero_uri": "http://zotero.org/users/8502620/items/DBULMZ89",
+  "fulltext_source": "main PDF extracted locally from Zotero attachment path",
+  "journal_role_confirmed": "applied_flagship",
+  "ingest_depth": "A_deep",
+  "address": "c-000028"
+}

@@ -1,0 +1,33 @@
+{
+  "zotero_key": "4UG5EFDW",
+  "title": "Hydrogen from offshore wind: Investor perspective on the profitability of a hybrid system including for curtailment",
+  "authors": [
+    "Shane McDonagh",
+    "Shorif Ahmed",
+    "Cian Desmond",
+    "Jerry D. Murphy"
+  ],
+  "journal": "Applied Energy",
+  "year": 2020,
+  "volume": "265",
+  "article_number": "114732",
+  "doi": "10.1016/j.apenergy.2020.114732",
+  "journal_role": "applied_flagship",
+  "ingest_depth": "A_deep",
+  "subdomain_primary": [
+    "hydrogen-p2x"
+  ],
+  "subdomain_secondary": [
+    "power-systems",
+    "energy-policy-economics",
+    "re-tech-resources"
+  ],
+  "manifest_status": "scheduled",
+  "zotero_resolution_status": "mcp_cancelled_local_sqlite_key_not_found",
+  "fallback_sources": [
+    "https://www.sciencedirect.com/science/article/pii/S0306261920302440",
+    "https://cora.ucc.ie/handle/10468/9874",
+    "https://www.researchgate.net/publication/340076282_Hydrogen_from_offshore_wind_Investor_perspective_on_the_profitability_of_a_hybrid_system_including_for_curtailment"
+  ],
+  "created": "2026-05-11"
+}

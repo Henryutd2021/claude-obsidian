@@ -28,7 +28,7 @@ Hydrogen and Power-to-X systems, fuel cells, electrolyzers, hydrogen-based long-
 
 ## Papers in this subdomain
 
-Total: **6** (6 primary, 0 secondary-only).
+Total: **11** (10 primary, 1 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -43,7 +43,13 @@ Total: **6** (6 primary, 0 secondary-only).
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | A_deep | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | primary |
+| 2024 | Renewable and Sustainable Energy Reviews | A_deep | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | primary |
+| 2021 | Advances in Applied Energy | A_deep | [[2021-AiAE-flexible-loads-h2-curtailment|2021-AiAE-flexible-loads-h2-curtailment]] | `c-000029` | bridge |
+| 2020 | Applied Energy | A_deep | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | primary |
+| 2019 | Applied Energy | A_deep | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | primary |
 
 ## Outward connections (bridges)
 
@@ -51,11 +57,11 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
-| `energy-policy-economics` | 5 | [[bridges/energy-policy-economics--hydrogen-p2x]] |
+| `energy-policy-economics` | 9 | [[bridges/energy-policy-economics--hydrogen-p2x]] |
+| `re-tech-resources` | 6 | [[bridges/hydrogen-p2x--re-tech-resources]] |
+| `integrated-energy-systems` | 5 | [[bridges/hydrogen-p2x--integrated-energy-systems]] |
+| `power-systems` | 5 | [[bridges/hydrogen-p2x--power-systems]] |
 | `lca-sustainability` | 3 | [[bridges/hydrogen-p2x--lca-sustainability]] |
-| `integrated-energy-systems` | 3 | [[bridges/hydrogen-p2x--integrated-energy-systems]] |
-| `re-tech-resources` | 2 | `bridges/hydrogen-p2x--re-tech-resources` (premature) |
-| `power-systems` | 1 | `bridges/hydrogen-p2x--power-systems` (premature) |
 
 ## Subdomain-specific patterns
 

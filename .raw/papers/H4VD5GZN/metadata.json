@@ -1,0 +1,28 @@
+{
+  "zotero_key": "H4VD5GZN",
+  "item_id": 133,
+  "item_type_id": 21,
+  "citation_key": "Ruggles.etalOpportunitiesFlexible2021",
+  "title": "Opportunities for flexible electricity loads such as hydrogen production from curtailed generation",
+  "authors": [
+    "Tyler H. Ruggles",
+    "Jacqueline A. Dowling",
+    "Nathan S. Lewis",
+    "Ken Caldeira"
+  ],
+  "journal": "Advances in Applied Energy",
+  "journal_abbreviation": "Advances in Applied Energy",
+  "year": 2021,
+  "date": "2021-08-25",
+  "volume": "3",
+  "pages": "100051",
+  "doi": "10.1016/j.adapen.2021.100051",
+  "issn": "2666-7924",
+  "url": "https://www.sciencedirect.com/science/article/pii/S2666792421000433",
+  "library_catalog": "ScienceDirect",
+  "date_added": "2021-09-24 21:16:04",
+  "date_modified": "2026-02-16 18:22:01",
+  "abstract_note": "Variable, low-cost, low-carbon electricity that would otherwise be curtailed may provide a substantial economic opportunity for entities that can flexibly adapt their electricity consumption. The paper models least-cost electricity systems over CONUS with firm and flexible loads, using electrolysis as the prototypical flexible load.",
+  "resolved_via": "local Zotero SQLite fallback because the local API was unreachable from the sandbox",
+  "journal_role_confirmed": "applied_flagship"
+}

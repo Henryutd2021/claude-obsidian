@@ -1,0 +1,27 @@
+{
+  "zotero_key": "EHNWITKT",
+  "citation_key": "Calado.etalAssessmentHydrogenbased2024a",
+  "title": "Assessment of hydrogen-based solutions associated to offshore wind farms: The case of the Iberian Peninsula",
+  "short_title": "Assessment of hydrogen-based solutions associated to offshore wind farms",
+  "creators": [
+    {"creator_type": "author", "first_name": "Goncalo", "last_name": "Calado"},
+    {"creator_type": "author", "first_name": "Rui", "last_name": "Castro"},
+    {"creator_type": "author", "first_name": "A. J.", "last_name": "Pires"},
+    {"creator_type": "author", "first_name": "Miguel J.", "last_name": "Marques"}
+  ],
+  "journal": "Renewable and Sustainable Energy Reviews",
+  "journal_abbreviation": "Renewable and Sustainable Energy Reviews",
+  "volume": "192",
+  "pages": "114268",
+  "year": 2024,
+  "date": "2024-03-01",
+  "doi": "10.1016/j.rser.2023.114268",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1364032123011267",
+  "library_catalog": "ScienceDirect",
+  "date_added": "2024-02-23 15:22:30",
+  "date_modified": "2026-02-16 18:22:01",
+  "collections": ["Hydrogen"],
+  "tags": ["Case study", "Done", "Offshore"],
+  "zotero_parent_item_id": 48657,
+  "fulltext_source": "Zotero main-PDF full-text cache"
+}

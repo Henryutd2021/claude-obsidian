@@ -1,0 +1,32 @@
+{
+  "zotero_key": "83CEHMNG",
+  "item_type": "journalArticle",
+  "title": "Techno-economic assessment of renewable hydrogen production for mobility: A case study",
+  "short_title": "Techno-economic assessment of renewable hydrogen production for mobility",
+  "creators": [
+    {"creator_type": "author", "first_name": "Alberto", "last_name": "Pettinau"},
+    {"creator_type": "author", "first_name": "Davide", "last_name": "Marotto"},
+    {"creator_type": "author", "first_name": "Federica", "last_name": "Dessi"},
+    {"creator_type": "author", "first_name": "Francesca", "last_name": "Ferrara"}
+  ],
+  "publication_title": "Energy Conversion and Management",
+  "journal_abbreviation": "Energy Conversion and Management",
+  "year": 2024,
+  "date": "2024-07-01",
+  "volume": "311",
+  "pages": "118513",
+  "doi": "10.1016/j.enconman.2024.118513",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0196890424004540",
+  "issn": "0196-8904",
+  "language": "en-US",
+  "library_catalog": "ScienceDirect",
+  "citation_key": "Pettinau.etalTechnoeconomicAssessment2024",
+  "date_added": "2024-06-02 18:49:06",
+  "date_modified": "2026-02-16 18:22:01",
+  "tags": ["Case study", "Done", "Techno-economic analysis", "four-star"],
+  "journal_role_confirmed": "applied_flagship",
+  "journal_role_basis": "Energy Conversion and Management is listed under applied_flagship in wiki/_meta/journal-role-vocab.md.",
+  "fulltext_source": "main-pdf fulltext cache from Zotero storage; Zotero MCP metadata call was cancelled by tool layer.",
+  "peer_review_file_trap": "Not applicable: Energy Conversion and Management is not a Nature Portfolio journal.",
+  "abstract": "Renewable hydrogen produced by water electrolysis from intermittent energy sources is assessed through an integrated Sardinia case linking PV generation, a 5 MW PEM electrolyzer, compression/storage, and urban bus use. The paper reports 20.3 M EUR CAPEX, LCoH of 4.09 EUR/kg or 2.97 EUR/kg after oxygen and electricity revenues, and H2 bus STC of 1.45 EUR/km versus 1.04 EUR/km for diesel buses."
+}

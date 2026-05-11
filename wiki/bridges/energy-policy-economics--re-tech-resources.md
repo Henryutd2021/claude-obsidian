@@ -25,15 +25,19 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 3
+**Count**: 7
 
 | Year | Journal | Paper | Address | Role: energy-policy-economics | Role: re-tech-resources |
 |---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | secondary | secondary |
+| 2024 | Renewable and Sustainable Energy Reviews | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | secondary | secondary |
 | 2022 | Nature | [[2022-N-solar-pv-supply-chain-cost-savings|2022-N-solar-pv-supply-chain-cost-savings]] | `c-000017` | primary | primary |
 | 2022 | Nature Energy | [[2022-NE-green-h2-probabilistic-feasibility|2022-NE-green-h2-probabilistic-feasibility]] | `c-000018` | primary | secondary |
 | 2021 | Nature Energy | [[2021-NE-national-wind-solar-growth-dynamics|2021-NE-national-wind-solar-growth-dynamics]] | `c-000013` | primary | primary |
+| 2020 | Applied Energy | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | secondary | secondary |
+| 2019 | Applied Energy | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | secondary | secondary |
 
-L1: 3 · L2: 0
+L1: 3 · L2: 4
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -46,5 +50,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+4 L2 papers participate. See the table above.
 

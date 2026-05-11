@@ -28,7 +28,7 @@ Multi-vector energy system modeling (electricity + heat + gas + transport), tech
 
 ## Papers in this subdomain
 
-Total: **13** (10 primary, 3 secondary-only).
+Total: **16** (10 primary, 6 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -45,12 +45,16 @@ Total: **13** (10 primary, 3 secondary-only).
 | 2023 | Nature Communications | [[2023-NC-endogenous-learning-green-h2-europe|2023-NC-endogenous-learning-green-h2-europe]] | `c-000007` | primary |
 | 2022 | Nature Energy | [[2022-NE-china-hta-clean-hydrogen|2022-NE-china-hta-clean-hydrogen]] | `c-000003` | primary |
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | bridge |
 | 2021 | Nature Energy | [[2021-NE-kikstra-covid-energy-demand-scenarios|2021-NE-kikstra-covid-energy-demand-scenarios]] | `c-000008` | primary |
 | 2020 | Joule | [[2020-J-data-center-load-migration-curtailment|2020-J-data-center-load-migration-curtailment]] | `c-000011` | bridge |
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | A_deep | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | bridge |
+| 2021 | Advances in Applied Energy | A_deep | [[2021-AiAE-flexible-loads-h2-curtailment|2021-AiAE-flexible-loads-h2-curtailment]] | `c-000029` | bridge |
 
 ## Outward connections (bridges)
 
@@ -58,11 +62,11 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
-| `power-systems` | 8 | [[bridges/integrated-energy-systems--power-systems]] |
-| `energy-policy-economics` | 7 | [[bridges/energy-policy-economics--integrated-energy-systems]] |
-| `re-tech-resources` | 5 | [[bridges/integrated-energy-systems--re-tech-resources]] |
+| `power-systems` | 10 | [[bridges/integrated-energy-systems--power-systems]] |
+| `energy-policy-economics` | 9 | [[bridges/energy-policy-economics--integrated-energy-systems]] |
+| `re-tech-resources` | 6 | [[bridges/integrated-energy-systems--re-tech-resources]] |
+| `hydrogen-p2x` | 5 | [[bridges/hydrogen-p2x--integrated-energy-systems]] |
 | `lca-sustainability` | 4 | [[bridges/integrated-energy-systems--lca-sustainability]] |
-| `hydrogen-p2x` | 3 | [[bridges/hydrogen-p2x--integrated-energy-systems]] |
 | `ai-data-driven` | 2 | `bridges/ai-data-driven--integrated-energy-systems` (premature) |
 
 ## Subdomain-specific patterns

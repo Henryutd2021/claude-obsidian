@@ -25,16 +25,20 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 4
+**Count**: 8
 
 | Year | Journal | Paper | Address | Role: power-systems | Role: re-tech-resources |
 |---|---|---|---|---|---|
 | 2025 | Joule | [[2025-J-space-based-solar-europe|2025-J-space-based-solar-europe]] | `c-000006` | primary | primary |
 | 2024 | Nature Energy | [[2024-NE-flexible-geothermal-decarb-systems|2024-NE-flexible-geothermal-decarb-systems]] | `c-000021` | primary | secondary |
+| 2024 | Renewable and Sustainable Energy Reviews | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | secondary | secondary |
 | 2023 | Nature | [[2023-N-china-pv-wind-3844-plants|2023-N-china-pv-wind-3844-plants]] | `c-000005` | secondary | primary |
+| 2020 | Applied Energy | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | secondary | secondary |
 | 2020 | Joule | [[2020-J-data-center-load-migration-curtailment|2020-J-data-center-load-migration-curtailment]] | `c-000011` | primary | secondary |
+| 2019 | Applied Energy | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | secondary | secondary |
+| 2017 | Applied Energy | [[2017-AE-ml-wind-forecasting-deep-feature|2017-AE-ml-wind-forecasting-deep-feature]] | `c-000030` | secondary | secondary |
 
-L1: 4 · L2: 0
+L1: 4 · L2: 4
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -47,5 +51,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+4 L2 papers participate. See the table above.
 

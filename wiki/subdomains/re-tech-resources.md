@@ -28,7 +28,7 @@ Solar, wind, and other RE technology and resource assessment. Capacity factor mo
 
 ## Papers in this subdomain
 
-Total: **9** (5 primary, 4 secondary-only).
+Total: **14** (5 primary, 9 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -46,7 +46,13 @@ Total: **9** (5 primary, 4 secondary-only).
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | A_deep | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | bridge |
+| 2024 | Renewable and Sustainable Energy Reviews | A_deep | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | bridge |
+| 2020 | Applied Energy | A_deep | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | bridge |
+| 2019 | Applied Energy | A_deep | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | bridge |
+| 2017 | Applied Energy | B_medium | [[2017-AE-ml-wind-forecasting-deep-feature|2017-AE-ml-wind-forecasting-deep-feature]] | `c-000030` | bridge |
 
 ## Outward connections (bridges)
 
@@ -54,12 +60,12 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
-| `integrated-energy-systems` | 5 | [[bridges/integrated-energy-systems--re-tech-resources]] |
-| `power-systems` | 4 | [[bridges/power-systems--re-tech-resources]] |
-| `energy-policy-economics` | 3 | [[bridges/energy-policy-economics--re-tech-resources]] |
-| `hydrogen-p2x` | 2 | `bridges/hydrogen-p2x--re-tech-resources` (premature) |
+| `power-systems` | 8 | [[bridges/power-systems--re-tech-resources]] |
+| `energy-policy-economics` | 7 | [[bridges/energy-policy-economics--re-tech-resources]] |
+| `integrated-energy-systems` | 6 | [[bridges/integrated-energy-systems--re-tech-resources]] |
+| `hydrogen-p2x` | 6 | [[bridges/hydrogen-p2x--re-tech-resources]] |
+| `ai-data-driven` | 2 | `bridges/ai-data-driven--re-tech-resources` (premature) |
 | `lca-sustainability` | 2 | `bridges/lca-sustainability--re-tech-resources` (premature) |
-| `ai-data-driven` | 1 | `bridges/ai-data-driven--re-tech-resources` (premature) |
 | `building-urban` | 1 | `bridges/building-urban--re-tech-resources` (premature) |
 
 ## Subdomain-specific patterns

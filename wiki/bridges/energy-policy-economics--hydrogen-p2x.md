@@ -25,17 +25,21 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 5
+**Count**: 9
 
 | Year | Journal | Paper | Address | Role: energy-policy-economics | Role: hydrogen-p2x |
 |---|---|---|---|---|---|
+| 2024 | Energy Conversion and Management | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | secondary | primary |
 | 2024 | Nature Energy | [[2024-NE-h2-additionality-time-matching|2024-NE-h2-additionality-time-matching]] | `c-000004` | primary | primary |
 | 2024 | One Earth | [[2024-OE-h2-economy-22pct-cost-reduction|2024-OE-h2-economy-22pct-cost-reduction]] | `c-000014` | secondary | primary |
+| 2024 | Renewable and Sustainable Energy Reviews | [[2024-RSER-offshore-wind-h2-iberian|2024-RSER-offshore-wind-h2-iberian]] | `c-000027` | secondary | primary |
 | 2022 | Nature Energy | [[2022-NE-china-hta-clean-hydrogen|2022-NE-china-hta-clean-hydrogen]] | `c-000003` | secondary | primary |
 | 2022 | Nature Energy | [[2022-NE-green-h2-probabilistic-feasibility|2022-NE-green-h2-probabilistic-feasibility]] | `c-000018` | primary | primary |
 | 2021 | Nature Climate Change | [[2021-NCC-h2-efuels-potential-risks|2021-NCC-h2-efuels-potential-risks]] | `c-000015` | primary | primary |
+| 2020 | Applied Energy | [[2020-AE-offshore-wind-h2-hybrid-investor|2020-AE-offshore-wind-h2-hybrid-investor]] | `c-000026` | secondary | primary |
+| 2019 | Applied Energy | [[2019-AE-wind-h2-ldv-ercot|2019-AE-wind-h2-ldv-ercot]] | `c-000028` | secondary | primary |
 
-L1: 5 · L2: 0
+L1: 5 · L2: 4
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -48,5 +52,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+4 L2 papers participate. See the table above.
 

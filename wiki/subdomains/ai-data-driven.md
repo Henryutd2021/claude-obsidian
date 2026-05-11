@@ -28,7 +28,7 @@ Papers whose subject matter is AI / ML / data-driven methods *for* energy system
 
 ## Papers in this subdomain
 
-Total: **3** (3 primary, 0 secondary-only).
+Total: **4** (4 primary, 0 secondary-only).
 
 ### L1 (top-journal exemplars)
 
@@ -40,7 +40,9 @@ Total: **3** (3 primary, 0 secondary-only).
 
 ### L2 (applied flagships)
 
-None yet. Phase 2 pilot will land here once Henry triggers the L2 ingest.
+| Year | Journal | Depth | Paper | Address | Role here |
+|---|---|---|---|---|---|
+| 2017 | Applied Energy | B_medium | [[2017-AE-ml-wind-forecasting-deep-feature|2017-AE-ml-wind-forecasting-deep-feature]] | `c-000030` | primary |
 
 ## Outward connections (bridges)
 
@@ -48,9 +50,9 @@ Ranked by number of papers spanning the pair (`subdomain_primary ∪ subdomain_s
 
 | Bridge to | Papers | Bridge page |
 |---|---|---|
+| `power-systems` | 3 | [[bridges/ai-data-driven--power-systems]] |
 | `integrated-energy-systems` | 2 | `bridges/ai-data-driven--integrated-energy-systems` (premature) |
-| `power-systems` | 2 | `bridges/ai-data-driven--power-systems` (premature) |
-| `re-tech-resources` | 1 | `bridges/ai-data-driven--re-tech-resources` (premature) |
+| `re-tech-resources` | 2 | `bridges/ai-data-driven--re-tech-resources` (premature) |
 | `energy-policy-economics` | 1 | `bridges/ai-data-driven--energy-policy-economics` (premature) |
 | `lca-sustainability` | 1 | `bridges/ai-data-driven--lca-sustainability` (premature) |
 

@@ -25,19 +25,21 @@ related:
 
 ## Papers spanning this pair
 
-**Count**: 7
+**Count**: 9
 
 | Year | Journal | Paper | Address | Role: energy-policy-economics | Role: integrated-energy-systems |
 |---|---|---|---|---|---|
 | 2025 | Nature Energy | [[2025-NE-smr-policy-module-learning|2025-NE-smr-policy-module-learning]] | `c-000022` | primary | primary |
+| 2024 | Energy Conversion and Management | [[2024-ECM-h2-mobility-sardinia-tea|2024-ECM-h2-mobility-sardinia-tea]] | `c-000025` | secondary | secondary |
 | 2024 | One Earth | [[2024-OE-h2-economy-22pct-cost-reduction|2024-OE-h2-economy-22pct-cost-reduction]] | `c-000014` | secondary | primary |
 | 2023 | Joule | [[2023-J-smr-industrial-process-heat-tea|2023-J-smr-industrial-process-heat-tea]] | `c-000019` | secondary | primary |
 | 2023 | Nature Climate Change | [[2023-NCC-net-zero-investment-shifts-europe|2023-NCC-net-zero-investment-shifts-europe]] | `c-000010` | primary | primary |
 | 2022 | Nature Energy | [[2022-NE-china-hta-clean-hydrogen|2022-NE-china-hta-clean-hydrogen]] | `c-000003` | secondary | primary |
 | 2022 | Nature Energy | [[2022-NE-flexible-nuclear-deep-decarb|2022-NE-flexible-nuclear-deep-decarb]] | `c-000020` | secondary | primary |
+| 2021 | Nature Energy | [[2021-NE-hd-truck-depot-charging|2021-NE-hd-truck-depot-charging]] | `c-000032` | primary | secondary |
 | 2021 | Nature Energy | [[2021-NE-kikstra-covid-energy-demand-scenarios|2021-NE-kikstra-covid-energy-demand-scenarios]] | `c-000008` | primary | primary |
 
-L1: 7 · L2: 0
+L1: 8 · L2: 1
 
 ## Shared methods / problems / claims (placeholder)
 
@@ -50,5 +52,5 @@ Phase 3 onward. Extract from supporting papers:
 
 ## L2 evidence
 
-None yet. Will populate once L2 pilots (Phase 2 next step) and beyond fill `wiki/papers/L2/`.
+1 L2 papers participate. See the table above.
 
