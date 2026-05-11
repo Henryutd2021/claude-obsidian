@@ -23,6 +23,39 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Kikstra et al. 2021, Nature Energy, COVID-19 demand scenarios (via codex)
+
+- Zotero: `QDU6TZYF` (parent journalArticle)
+- Paper package: `.raw/papers/QDU6TZYF/` (7 stubs + codex receipt + logs)
+- Analysis: [[papers/2021-NE-kikstra-covid-energy-demand-scenarios]] (address `c-000008`, 35KB)
+- Composed by: `codex exec` (gpt-5.5 + xhigh) per `_templates/codex-ingest-contract.md`
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero PDF (SI not in Zotero per DA).
+- Key insight: demand-side perturbation can act as a scenario lever in IAMs without changing supply assumptions. The paper anchors the IAM-side "what counts as a credible exogenous shock" debate.
+- Random sample (codex pick #3 of 3).
+
+## [2026-05-11] ingest | Zeyen et al. 2023, Nature Communications, endogenous learning green H2 (via codex)
+
+- Zotero: `T3YPX6LR` (parent journalArticle); one PDF child
+- Paper package: `.raw/papers/T3YPX6LR/` (7 stubs + codex receipt + logs)
+- Analysis: [[papers/2023-NC-endogenous-learning-green-h2-europe]] (address `c-000007`, 40KB / largest of the codex batch)
+- Composed by: `codex exec` (gpt-5.5 + xhigh) per `_templates/codex-ingest-contract.md`
+- Receipt: all checks pass. `fulltext_source: main-pdf` via local Zotero SQLite + storage cache.
+- **Critical cross-paper anchor**: paper 2 (Giovanniello 2024 NE) explicitly diagnoses Zeyen's framework as "non-compete" additionality (annual matching looks safer because contracted H2 resources are optimized *after* non-H2 grid investments). Co-ingesting both in this batch is the seed for a future `patterns/methods/additionality-counterfactuals` page once paper count hits 10.
+- Key insight: endogenous learning in sector-coupled models removes the exogenous-cost-trajectory degree of freedom that critics of Yang 2022 (paper 1) and Wang 2023 (paper 3) would otherwise exploit.
+- Random sample (codex pick #2 of 3).
+
+## [2026-05-11] ingest | Che et al. 2025, Joule, space-based solar Europe (via codex)
+
+- Zotero: `M9HYZCZE` (parent journalArticle); NO PDF attachment in Zotero (Henry to add)
+- Paper package: `.raw/papers/M9HYZCZE/` (7 stubs + codex receipt + logs)
+- Analysis: [[papers/2025-J-space-based-solar-europe]] (address `c-000006`, 34KB)
+- Composed by: `codex exec` (gpt-5.5 + xhigh) per `_templates/codex-ingest-contract.md`
+- Receipt: all checks pass. `fulltext_source: unknown` (Zotero had no PDF child; codex used publisher HTML + PyPSA-Eur repo pages as supplemental).
+- Method note: PyPSA-Eur (well-known European open-source power-system model). Code repository linked in CA.
+- Key insight: emerging energy technologies become decision-relevant when their cost-availability pair crosses a system-cost threshold. Frames the SBSP question as "at what cost-availability point does the optimizer choose it" rather than "is SBSP cheap enough today."
+- Action item: attach PDF to Zotero parent item M9HYZCZE to enable future SI / source-data analysis.
+- Random sample (codex pick #1 of 3).
+
 ## [2026-05-11] ingest | Wang et al. 2023, Nature, PV+wind China 3844 plants (via codex)
 
 - Zotero: `T5W8LVA9` (parent); PDFs `DM5DMFZD` (main) + `UVK9RAXN` (SI); 19 authors
