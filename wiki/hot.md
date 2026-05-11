@@ -75,8 +75,14 @@ Pre-fork plugin scaffolding moved to [[_meta/dropped-plugin-scaffold]]: `AGENTS.
 | c-000016 | 2022 | NCC | residential-decarbonization-us | Berrill | codex |
 | c-000017 | 2022 | N | solar-pv-supply-chain-cost-savings | Helveston | codex |
 | c-000018 | 2022 | NE | green-h2-probabilistic-feasibility | Odenweller | codex |
+| c-000019 | 2023 | J | smr-industrial-process-heat-tea | Vanatta | codex |
+| c-000020 | 2022 | NE | flexible-nuclear-deep-decarb | Duan | codex |
+| c-000021 | 2024 | NE | flexible-geothermal-decarb-systems | Ricks | codex |
+| c-000022 | 2025 | NE | smr-policy-module-learning | Vanatta + Craig | codex |
+| c-000023 | 2022 | J | data-center-energy-estimates-review | Mytton | codex |
+| c-000024 | 2026 | NE | ai-data-centres-grid-interactive | Colangelo | codex |
 
-Year spread: 2015, 2020, 2021 (x3), 2022 (x4), 2023 (x4), 2024 (x2), 2025 — covers 2015-2025. Journal spread: NE x5, NCC x3, N x3, NC x2, J x2, OE x1. 15 of 16 by codex; 1 by Opus 4.7. **First One Earth paper and first building-energy paper landed in batch 3.**
+Year spread: 2015, 2020, 2021 (x3), 2022 (x7), 2023 (x5), 2024 (x3), 2025 (x2), 2026 — covers 2015-2026. Journal spread: NE x8, J x4, NCC x3, N x3, NC x2, OE x1. 21 of 22 by codex; 1 by Opus 4.7. **First One Earth, first building-energy, first SMR cluster (3 papers), first firm-clean-flexible cluster (2 papers), first DC-methodology paper, first field-trial paper all landed in batches 3-4.**
 
 Archetype spread (15 archetypes across 16 papers):
 - Modeling-optimization + policy-relevant (Yang, Giovanniello, Zeyen, Wang, Kikstra)
