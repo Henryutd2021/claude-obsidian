@@ -71,8 +71,12 @@ ARS plugin skills wired in:
 
 ## Current state
 
-- Pre-fork content under [[_meta/old-index|wiki/_meta/]]: 46 pages, mostly LLM-Wiki / DragonScale / SEO ecosystem research — kept for self-reference, not active material.
-- No papers ingested yet. First step: build the Zotero manifest, then ingest the first seed paper (see [[hot]]).
+- Pre-fork content under [[_meta/old-index|wiki/_meta/]]: 46 pages, mostly LLM-Wiki / DragonScale / SEO ecosystem research, kept for self-reference, not active material.
+- Address counter at `c-000004` (3 addresses allocated so far).
+
+## Papers ingested
+
+1. [[papers/2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]] — *Breaking the hard-to-abate bottleneck in China's path to carbon neutrality with clean hydrogen*. Zotero `PIQKGJNB`. Address `c-000003`. Archetype: modeling-optimization + policy-relevant. Headline: US$1.72T avoided cumulative investment under ZERO-H vs ZERO-NH, 65.7 Mt H2/yr by 2060.
 
 ---
 
