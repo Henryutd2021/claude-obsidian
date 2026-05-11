@@ -52,8 +52,13 @@ Pre-fork plugin scaffolding moved to [[_meta/dropped-plugin-scaffold]]: `AGENTS.
 | c-000011 | 2020 | J | data-center-load-migration-curtailment | Zheng | codex |
 | c-000012 | 2023 | NC | rooftop-pv-china-carbon | Zhang | codex |
 | c-000013 | 2021 | NE | national-wind-solar-growth-dynamics | Cherp | codex |
+| c-000014 | 2024 | OE | h2-economy-22pct-cost-reduction | Wolfram | codex |
+| c-000015 | 2021 | NCC | h2-efuels-potential-risks | Ueckerdt | codex |
+| c-000016 | 2022 | NCC | residential-decarbonization-us | Berrill | codex |
+| c-000017 | 2022 | N | solar-pv-supply-chain-cost-savings | Helveston | codex |
+| c-000018 | 2022 | NE | green-h2-probabilistic-feasibility | Odenweller | codex |
 
-Year spread: 2015, 2020, 2021 (x2), 2022, 2023 (x4), 2024, 2025 — covers a decade of top-tier energy modeling. Journal spread: NE x4, N x2, NC x2, J x2, NCC x1. 10 of 11 by codex; 1 by Opus 4.7.
+Year spread: 2015, 2020, 2021 (x3), 2022 (x4), 2023 (x4), 2024 (x2), 2025 — covers 2015-2025. Journal spread: NE x5, NCC x3, N x3, NC x2, J x2, OE x1. 15 of 16 by codex; 1 by Opus 4.7. **First One Earth paper and first building-energy paper landed in batch 3.**
 
 Archetype spread (10 archetypes across 11 papers):
 - Modeling-optimization + policy-relevant (Yang, Giovanniello, Zeyen, Wang, Kikstra)
