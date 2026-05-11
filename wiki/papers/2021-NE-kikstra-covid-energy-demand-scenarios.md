@@ -286,3 +286,24 @@ Lesson: In policy-cost analysis, report "transition challenge" indicators such a
 
 **One-line takeaway**:
 Lesson: Turn a disruption into a structured persistence experiment, then show how that persistence changes transition effort under the same climate target.
+
+---
+
+## Pass-2 follow-up (deferred)
+
+> Run after Pass-1 has been reviewed. Implicit, easy-to-miss lessons for a PhD researcher: research-design temperament, writing-craft micro-moves, result-curation logic, figure-curation logic. Should not duplicate Pass-1.
+
+To trigger: `/wiki-query "Pass-2 follow-up on [[2021-NE-kikstra-covid-energy-demand-scenarios]]: implicit lessons not yet captured."`
+
+## Cross-references
+
+- Zotero: `QDU6TZYF` (main PDF attachment per Zotero children list)
+- Paper package: [[../../.raw/papers/QDU6TZYF/asset-status]]
+- Data availability stub: [[../../.raw/papers/QDU6TZYF/data-availability]]
+- Code availability stub: [[../../.raw/papers/QDU6TZYF/code-availability]]
+- Related papers in this lab: [[2025-J-space-based-solar-europe|Che et al. 2025, Joule]] (both use exogenous shocks as scenario levers; see note below).
+- Pattern pages it will inform after paper 10: `patterns/methods/exogenous-shock-as-scenario`, `patterns/methods/demand-side-perturbation`, `patterns/journals/nature-energy-iam-papers`, `patterns/figures/scenario-spaghetti-diagrams`.
+- Playbook pages it will inform after paper 20: `playbook/scenario-lever-design`, `playbook/demand-side-modeling-options`.
+
+> [!note] Shared lever with [[2025-J-space-based-solar-europe|Che et al. 2025, Joule]]
+> Kikstra (2021) and Che (2025) both treat an exogenous perturbation as the analytical hinge: Kikstra varies persistent COVID-19-induced energy demand changes; Che varies SBSP cost and availability. Different domains (demand-side vs technology-side), same research-design move. Co-anchor for `patterns/methods/exogenous-shock-as-scenario`.
