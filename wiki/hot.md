@@ -60,7 +60,7 @@ Pre-fork plugin scaffolding moved to [[_meta/dropped-plugin-scaffold]]: `AGENTS.
 
 Year spread: 2015, 2020, 2021 (x3), 2022 (x4), 2023 (x4), 2024 (x2), 2025 — covers 2015-2025. Journal spread: NE x5, NCC x3, N x3, NC x2, J x2, OE x1. 15 of 16 by codex; 1 by Opus 4.7. **First One Earth paper and first building-energy paper landed in batch 3.**
 
-Archetype spread (10 archetypes across 11 papers):
+Archetype spread (15 archetypes across 16 papers):
 - Modeling-optimization + policy-relevant (Yang, Giovanniello, Zeyen, Wang, Kikstra)
 - Method-instantiation-as-object (Wang plant-by-plant)
 - Policy dispute resolved by boundary diagnosis (Giovanniello)
@@ -72,6 +72,11 @@ Archetype spread (10 archetypes across 11 papers):
 - Cross-system load-flexibility / demand-mitigation (Zheng)
 - Bottom-up resource assessment + grid-parity overlay (Zhang)
 - Empirical growth-curve fitting / feasibility benchmark (Cherp)
+- Global IAM option-value scenario pairs (Wolfram)
+- Perspective-synthesis with merit-order policy product (Ueckerdt)
+- National stock-level building-decarbonization scenario frame (Berrill)
+- Counterfactual cost-savings on supply chain geography (Helveston)
+- Monte-Carlo feasibility envelope from analog-technology growth distributions (Odenweller)
 
 ## Cross-paper anchors emerging (seeds for paper-10 pattern synthesis)
 
