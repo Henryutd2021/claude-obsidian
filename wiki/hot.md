@@ -13,7 +13,7 @@ related:
 
 # Recent Context
 
-Navigation: [[index]] · [[log]] · [[Wiki Map]]
+Navigation: [[index]] · [[log]] · [[usage|How to use this vault]] · [[Wiki Map]]
 
 ## Last Updated
 
