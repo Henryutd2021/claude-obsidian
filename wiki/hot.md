@@ -53,7 +53,7 @@ Year spread: 2021-2025 (5 of 5 years). Journal spread: NE x3, N, NC, J. Method s
 1. ~~**Henry**: attach a PDF to Zotero parent `M9HYZCZE`~~ — **done 2026-05-11**. Attachment `5UKTL4KK` ("Submitted Version" / author manuscript) now in Zotero. Page frontmatter updated to `main_pdf: true`. Note: the analysis page itself was composed before this PDF was attached, so the original `fulltext_source` was publisher HTML; a Pass-2 trigger on [[papers/2025-J-space-based-solar-europe]] would re-derive from the now-available PDF if wording precision matters in a pattern page.
 2. **CLAUDE.md amendment** (deferred until after paper 5; reached at paper 6): formalize PDF-only-as-default + L2/L3 opt-in tiering for SI/data/code (per the conversation about workload vs value).
 3. **Lint pass**: run `/wiki-lint` after this batch to catch any banned-word slips codex may have justified weakly, plus cross-page contradictions between papers 1/3 (method choices) and papers 2/5 (additionality framework).
-4. **Manifest CSV quoting bug** (known): the v1 manifest does not quote string fields with internal commas; affects ~6 of 142 rows. Defer to a later cleanup pass.
+4. ~~**Manifest CSV quoting bug**~~ — **false alarm, no fix needed**. Original diagnosis was based on an `awk -F','` count (which doesn't honor CSV quoting); a proper `csv.reader` pass returns 14 fields per row across all 142 rows. The CSV is RFC-4180 compliant.
 
 ## What this vault is now
 
