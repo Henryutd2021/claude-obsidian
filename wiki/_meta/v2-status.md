@@ -136,13 +136,7 @@ Bases footguns discovered: avoid nested `or` inside top-level `and` filter; avoi
 
 ### HIGH PRIORITY (do next session)
 
-**Three skill SKILL.md updates** to make `/wiki-*` commands fully v2-aware. Without these, the slash commands still operate on v1 routing.
-
-| File | What to add | Effort |
-|---|---|---|
-| `skills/wiki-ingest/SKILL.md` | Route by `journal_role` to L1 contract vs L2 runner. Take depth + primary-subdomain args. | ~30 min |
-| `skills/wiki-lint/SKILL.md` | New lint rules: flag missing `journal_role`/`ingest_depth`/`subdomain_primary`; no-pollution rule (L1-only patterns can't cite L2 primary); bank-row routing audit; L2-A page-size ceiling; orphan bridges <3 papers; over-analyzed L2 pages. | ~20 min |
-| `skills/wiki-query/SKILL.md` | Layer-aware routing: Intro/figure/discussion questions → L1 evidence only; Methods/parameters → banks + L2; comparison questions → patterns/comparisons. | ~20 min |
+(Previously: 3 SKILL.md updates. **Done 2026-05-11 late session** — see "Just completed" above. No remaining HIGH-PRIORITY items; the v2 architecture loop is closed at the skill layer. Next priorities are MEDIUM, plus Henry's strategic picks A/B/C below.)
 
 ### MEDIUM PRIORITY (when convenient)
 
