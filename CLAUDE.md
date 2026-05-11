@@ -46,28 +46,94 @@ wiki/projects/**     ──► Henry's own manuscripts (consults all the above)
 
 **Zotero must be running** for the MCP server to read items, attachments, or full-text. If a `/wiki-ingest` fails on PDF resolution, check whether Zotero is open.
 
-## Vault layout
+## Vault layout (v2, 2026-05-11)
 
 ```
 .raw/
-  papers/{ZOTERO_KEY}/         # paper package — see "Paper Package" below
-  zotero_manifest/             # CSV manifest of all curated papers
+  papers/{ZOTERO_KEY}/                       # paper package — see "Paper Package" below
+  zotero_manifest/
+    top_paper_lab_manifest.csv               # master manifest (L1 + L2 once merged)
+    l2_candidate_manifest.csv                # L2 staging file
 wiki/
-  index.md                     # navigation
-  hot.md                       # ~500-word session context, updated each ingest/session
-  log.md                       # append-only chronological log (new entries at TOP)
-  papers.base                  # Obsidian Bases dashboard over papers/
-  papers/                      # one .md per paper analyzed
-  patterns/                    # cross-paper synthesis pages (lazy subfolders)
-  playbook/                    # personal writing principles
-  projects/                    # Henry's own manuscripts in progress
-  _meta/                       # archive of pre-fork claude-obsidian content
-_templates/                    # Templater templates (paper-analysis, pattern-page, project-page, …)
-skills/                        # 11 Claude Code skills (unchanged)
-scripts/                       # DragonScale machinery (allocate-address, tiling-check, boundary-score)
-.vault-meta/                   # DragonScale state (counter, thresholds, tiling cache)
-hooks/                         # SessionStart, PostCompact, PostToolUse, Stop
+  index.md                                   # navigation
+  hot.md                                     # ~500-word session context
+  log.md                                     # append-only chronological log (new entries at TOP)
+  papers.base                                # 10 views over all paper analyses
+  dashboard.base                             # cross-folder health dashboard
+  papers/
+    L1/                                      # L1 (top_journal_exemplar) analyses, flat
+    L2/                                      # L2 (applied_flagship) analyses, organized by subdomain
+      integrated-energy-systems/
+      power-systems/
+      hydrogen-p2x/
+      re-tech-resources/
+      building-urban/
+      energy-policy-economics/
+      lca-sustainability/
+      ai-data-driven/
+      _cross/                                # papers spanning 3+ subdomains (rare)
+  subdomains/                                # 8 subdomain hub pages
+  bridges/                                   # cross-subdomain bridge pages (emerge at 3+ papers)
+  patterns/
+    cross-cutting/                           # intro/figure/discussion/contribution/archetype/methods-recurrent
+    subdomain/{slug}/                        # subdomain-specific patterns
+    bridges/{A--B}/                          # interface patterns
+    comparisons/                             # top-vs-applied delta library
+  banks/
+    parameter-bank/                          # Phase 3 priority (parameters with citations)
+    sensitivity-bank/                        # Phase 3 priority
+    method-bank/                             # Phase 3 priority
+    case-study-bank/                         # Phase 4 (emerges from L2-A ingests)
+    figure-bank/                             # Phase 4
+    results-bank/                            # Phase 4
+  playbook/
+    top-journal-craft/                       # Intro template, figure logic, contribution framing (L1 evidence)
+    applied-paper-craft/                     # how to write Applied-Energy-grade (L2 evidence)
+    upgrade-playbook/                        # how to upgrade L2 -> L1
+    submission-tier-checklists/              # readiness checklist per target journal
+  projects/                                  # Henry's own manuscripts
+  _meta/
+    journal-role-vocab.md                    # what counts as L1 vs L2 vs L3
+    subdomain-vocab.md                       # 8 subdomain slugs and assignment rules
+    depth-policy.md                          # A_deep / B_medium / C_light selection rules
+    routing-rules.md                         # downstream-update routing per (role, depth)
+    old-index.md                             # archive of pre-fork claude-obsidian content
+_templates/                                  # Templater templates (paper-analysis-L1, -L2-A, -L2-B, -L2-C, …)
+skills/                                      # Claude Code skills
+scripts/                                     # DragonScale machinery + migration scripts
+.vault-meta/                                 # DragonScale state (counter, thresholds, tiling cache)
+hooks/                                       # SessionStart, PostCompact, PostToolUse, Stop
 ```
+
+## Two-layer corpus policy
+
+Every paper-analysis page carries a `journal_role` frontmatter value. The lab is split into two automated tracks:
+
+- **L1 `top_journal_exemplar`** — Nature, NE, Joule, NC, NCC, NS, OE, EES, Science Advances, PNAS. Always `ingest_depth: A_deep`. Lives under `wiki/papers/L1/` (flat). Teaches: problem framing, top-journal narrative, Discussion elevation, contribution architecture.
+- **L2 `applied_flagship`** — Applied Energy, AiAE, ECM, RSER, RE, Energy & Buildings, IJHE, J. Energy Storage, etc. Depth tiered as `A_deep` / `B_medium` / `C_light`. Lives under `wiki/papers/L2/{primary-subdomain}/`. Teaches: model rigor, system boundary, parameter values, case-study justification, sensitivity design.
+
+A third role `technical_support` exists but is **manual-entry only** — niche/technical papers contribute as rows in `wiki/banks/*` pages with Zotero citation, no paper-analysis page generated.
+
+**No-pollution rule (lint-enforced)**: pattern pages under `patterns/cross-cutting/{intro,figure,discussion,archetype,contribution}/` and `playbook/top-journal-craft/` must NOT cite L2 as **primary** evidence. L2 evidence appears in `patterns/comparisons/` and `patterns/cross-cutting/methods-recurrent/` as contrast or supplement.
+
+See [[wiki/_meta/journal-role-vocab]] for the full journal → role mapping and [[wiki/_meta/depth-policy]] for depth selection rules.
+
+## 8 subdomains (controlled vocab)
+
+Frontmatter fields `subdomain_primary` (1-2, ordered; `[0]` decides L2 folder location) and `subdomain_secondary` (0-3, triggers bridge participation):
+
+1. `integrated-energy-systems` — 综合能源 / multi-energy / TEA / system-level optimization
+2. `power-systems` — 电力系统 / smart grid / RE integration / microgrid / dispatch / markets
+3. `hydrogen-p2x` — 氢能 / P2X / fuel cell / long-duration storage
+4. `re-tech-resources` — 太阳能 / 风能 / RE tech & resource assessment
+5. `building-urban` — 建筑节能 / building decarb / urban energy systems
+6. `energy-policy-economics` — energy economics / policy / markets / socio-technical transitions
+7. `lca-sustainability` — LCA / carbon emissions / sustainability assessment
+8. `ai-data-driven` — papers *about* AI/ML/data-driven energy methods
+
+Each subdomain has a hub page at `wiki/subdomains/{slug}.md` (focused retrieval). Bridge pages at `wiki/bridges/{A}--{B}.md` auto-emerge when 3+ papers list both A and B in `subdomain_primary ∪ subdomain_secondary` (connectivity).
+
+See [[wiki/_meta/subdomain-vocab]] for definitions and [[wiki/_meta/routing-rules]] for which pages get updated on each ingest.
 
 ## Three required labels (mandatory on every important claim)
 
