@@ -17,20 +17,42 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: 6 papers ingested in one day. Codex-cli delegation pattern validated across 5 papers (gpt-5.5 + xhigh via `_templates/codex-ingest-contract.md`). All 5 codex outputs pass quality bar (18 sections, banned-words, em-dash, 3-label discipline, 5+5+5+5 KB outputs). Address counter 3 -> 9. Wall-clock for 3-paper parallel batch: ~13 min total (9:58 launch -> 10:11 last complete).
+**2026-05-11**: 11 papers ingested in one day (2 batches: 6 + 5). Codex-cli delegation pattern validated across 10 papers. Contract V2 (now requires `## Cross-references` per paper) caused batch-2 codex pages to auto-generate cross-paper anchors — first 3-anchor auto-detection appeared in UELISBYS (Zheng 2020 J). Address counter 3 -> 14. Total codex wall-clock: 13 min for batch 1 + 16 min for batch 2 (3-5 jobs parallel each).
+
+## Vault audit (this session)
+
+Pre-fork plugin scaffolding moved to [[_meta/dropped-plugin-scaffold]]: `AGENTS.md`, `GEMINI.md`, `WIKI.md`, `bin/`, `commands/`, `agents/`, `docs/`, `.github/`, `.windsurf/`, `.cursor/`. Root is now TPL-only: `_templates/`, `hooks/`, `scripts/`, `skills/`, `tests/`, `wiki/`, plus `README.md` (rewritten 392 -> 108 lines, TPL-focused), `CLAUDE.md`, `CHANGELOG.md`, `ATTRIBUTION.md`, `LICENSE`, `Makefile`. Folder name kept as `claude-obsidian` to avoid disrupting iCloud sync + git remote — accepted cosmetic mismatch with TPL branding.
 
 ## Papers ingested so far
 
 | Addr | Year | Journal | Slug | Author | Composed by |
 |---|---|---|---|---|---|
 | c-000003 | 2022 | NE | china-hta-clean-hydrogen | Yang | Opus 4.7 (me) |
-| c-000004 | 2024 | NE | h2-additionality-time-matching | Giovanniello | codex gpt-5.5 xhigh |
-| c-000005 | 2023 | N | china-pv-wind-3844-plants | Wang | codex gpt-5.5 xhigh |
-| c-000006 | 2025 | J | space-based-solar-europe | Che | codex gpt-5.5 xhigh |
-| c-000007 | 2023 | NC | endogenous-learning-green-h2-europe | Zeyen | codex gpt-5.5 xhigh |
-| c-000008 | 2021 | NE | kikstra-covid-energy-demand-scenarios | Kikstra | codex gpt-5.5 xhigh |
+| c-000004 | 2024 | NE | h2-additionality-time-matching | Giovanniello | codex |
+| c-000005 | 2023 | N | china-pv-wind-3844-plants | Wang | codex |
+| c-000006 | 2025 | J | space-based-solar-europe | Che | codex |
+| c-000007 | 2023 | NC | endogenous-learning-green-h2-europe | Zeyen | codex |
+| c-000008 | 2021 | NE | kikstra-covid-energy-demand-scenarios | Kikstra | codex |
+| c-000009 | 2015 | N | china-fossil-cement-co2-revised | Liu | codex |
+| c-000010 | 2023 | NCC | net-zero-investment-shifts-europe | Klaaßen & Steffen | codex |
+| c-000011 | 2020 | J | data-center-load-migration-curtailment | Zheng | codex |
+| c-000012 | 2023 | NC | rooftop-pv-china-carbon | Zhang | codex |
+| c-000013 | 2021 | NE | national-wind-solar-growth-dynamics | Cherp | codex |
 
-Year spread: 2021-2025 (5 of 5 years). Journal spread: NE x3, N, NC, J. Method spread: TIMES-VEDA, DOLPHYN, plant-by-plant GIS optimization, PyPSA-Eur, sector-coupled with endogenous learning, IAM with demand-side shock.
+Year spread: 2015, 2020, 2021 (x2), 2022, 2023 (x4), 2024, 2025 — covers a decade of top-tier energy modeling. Journal spread: NE x4, N x2, NC x2, J x2, NCC x1. 10 of 11 by codex; 1 by Opus 4.7.
+
+Archetype spread (10 archetypes across 11 papers):
+- Modeling-optimization + policy-relevant (Yang, Giovanniello, Zeyen, Wang, Kikstra)
+- Method-instantiation-as-object (Wang plant-by-plant)
+- Policy dispute resolved by boundary diagnosis (Giovanniello)
+- Emerging-tech TEA with cost-threshold framing (Che)
+- Endogenous-learning integration (Zeyen)
+- Demand-side shock as scenario lever (Kikstra, Zheng partially)
+- Data-correction as primary contribution (Liu — counterpoint to modeling papers)
+- Meta-analysis as primary contribution (Klaaßen)
+- Cross-system load-flexibility / demand-mitigation (Zheng)
+- Bottom-up resource assessment + grid-parity overlay (Zhang)
+- Empirical growth-curve fitting / feasibility benchmark (Cherp)
 
 ## Cross-paper anchors emerging (seeds for paper-10 pattern synthesis)
 
