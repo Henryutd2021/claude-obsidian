@@ -19,6 +19,8 @@ relevance_to_my_research: high
 ingest_status: reviewed
 address: c-000004
 created: 2026-05-11
+updated: 2026-05-11
+status: living
 tags:
   - paper-analysis
 ---
