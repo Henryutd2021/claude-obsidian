@@ -1,0 +1,37 @@
+{
+  "zotero_key": "PIQKGJNB",
+  "title": "Breaking the hard-to-abate bottleneck in China's path to carbon neutrality with clean hydrogen",
+  "authors": ["Yang, Xi", "Nielsen, Chris P.", "Song, Shaojie", "McElroy, Michael B."],
+  "first_author_short": "Yang et al.",
+  "journal": "Nature Energy",
+  "journal_short": "NE",
+  "volume": 7,
+  "issue": 10,
+  "pages": "955-965",
+  "year": 2022,
+  "publication_date": "2022-09-29",
+  "doi": "10.1038/s41560-022-01114-6",
+  "url": "https://www.nature.com/articles/s41560-022-01114-6",
+  "item_type": "journalArticle",
+  "tags": ["⭐⭐⭐", "Done", "📊"],
+  "collections": 2,
+  "child_attachments": [
+    {
+      "key": "MYQEQR3K",
+      "type": "application/pdf",
+      "filename": "Yang et al. - 2022 - Breaking the hard-to-abate bottleneck in China's p.pdf"
+    }
+  ],
+  "child_notes": ["7I3UWH2F", "J2BKDKY2"],
+  "topic_tags": [
+    "hydrogen", "green-hydrogen", "china", "decarbonization",
+    "heavy-industry", "heavy-duty-transport", "hta-sectors",
+    "integrated-energy-system", "carbon-neutrality"
+  ],
+  "paper_type": ["modeling", "TEA", "scenario-analysis", "integrated-assessment"],
+  "method_type": ["least-cost-optimization", "dynamic-linear-programming", "TIMES-VEDA"],
+  "main_contribution": ["system-boundary-expansion", "sectoral-coverage", "policy-relevance"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000003",
+  "fetched_at": "2026-05-11"
+}
