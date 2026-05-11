@@ -15,24 +15,51 @@ related:
 
 # Top Paper Lab — Index
 
-Personal Karpathy-style wiki for reverse-engineering top-tier energy papers (Nature Energy / Joule / Nature Communications / EES / Science Advances / PNAS), with Applied Energy / Renewable Energy as a control group. The lab compounds per-paper analyses into cross-paper patterns and a personal high-impact-paper writing playbook.
+Personal Karpathy-style wiki for reverse-engineering energy papers across two functional corpora:
 
-Last reset: **2026-05-11** (rebrand from `claude-obsidian` plugin vault to personal Top Paper Lab). Pre-2026-05-11 vault content is archived under `wiki/_meta/`.
+- **L1 (top-journal exemplars)**: Nature, Nature Energy, Joule, Nature Communications, Nature Climate Change, One Earth, EES, Science Advances, PNAS — *teaches problem framing, contribution architecture, Discussion elevation, top-journal narrative*.
+- **L2 (applied flagships, by subdomain)**: Applied Energy, Advances in Applied Energy, ECM, RSER, Renewable Energy, Energy & Buildings, IJHE, Joule of Energy Storage — *teaches model rigor, system boundary, parameter values, case-study justification, sensitivity design, engineering feasibility*.
+
+The lab compounds analyses into subdomain hubs, bridges, patterns, knowledge banks, and a personal writing playbook. **L3 (technical-support journals) is manual-entry-only** — parameters flow into `wiki/banks/*` rows without standalone analysis pages.
+
+Last reset: **2026-05-11** v2 architecture (two-layer corpus + 8 subdomains + connectivity layer).
 
 Navigation: [[hot]] · [[log]] · [[usage|How to use this vault]] · [[Wiki Map]] · [[_meta/old-index|Pre-fork archive]]
 
 ---
 
-## Wiki layout (4 folders)
+## Wiki layout v2
 
-| Folder | Holds | Grows when |
+| Top-level | Holds | Grows when |
 |---|---|---|
-| [[papers]] | One Markdown file per paper analyzed (deep 16-section reverse-engineering report) | Each `/wiki-ingest` adds one |
-| [[patterns]] | Cross-paper synthesis pages (contribution archetypes, Intro / Methods / Figures / Discussion patterns, journal profiles, reviewer perspectives, research gaps) | Auto-synthesis runs at paper 10, then each ingest may update a pattern page |
-| [[playbook]] | Henry's transferable writing principles (Intro template, main-figure design, case-study justification, contribution decision tree, pre-submission checklist) | Distillation pass every ~20 ingests |
-| [[projects]] | Henry's own paper drafts; per-paper working files | Henry starts a new manuscript |
+| `wiki/papers/L1/` | L1 deep analyses (18-section, top-journal craft) — flat | Each L1 `/wiki-ingest` adds one |
+| `wiki/papers/L2/{subdomain}/` | L2 analyses (10-section / 1-page / citation card), organized by primary subdomain | Each L2 `/wiki-ingest` adds one |
+| [[subdomains]] | 8 subdomain hub pages — focused retrieval per subdomain | Phase 3 onward |
+| [[bridges]] | Cross-subdomain bridge pages — interface patterns | Auto-emerge when 3+ papers span a pair |
+| [[patterns]] | Cross-paper synthesis: `cross-cutting/` (intro/figure/discussion/archetype/contribution/methods-recurrent) + `subdomain/` + `bridges/` + `comparisons/` (top-vs-applied delta) | Phase 3 onward, then each ingest may update |
+| [[banks]] | Knowledge banks: `parameter-bank/`, `sensitivity-bank/`, `method-bank/` (Phase 3); `case-study-bank/`, `figure-bank/`, `results-bank/` (Phase 4) | Each L2-A ingest contributes rows |
+| [[playbook]] | Henry's writing principles: `top-journal-craft/`, `applied-paper-craft/`, `upgrade-playbook/`, `submission-tier-checklists/` | Distillation pass every ~20 ingests |
+| [[projects]] | Henry's own manuscripts | Henry starts a new draft |
+| [[_meta]] | Vocab + policy: `journal-role-vocab.md`, `subdomain-vocab.md`, `depth-policy.md`, `routing-rules.md` | Architecture changes |
 
-Subfolders inside `patterns/` and `playbook/` are created lazily as content demands. Do not pre-scaffold empty taxonomy.
+Subfolders inside `patterns/`, `playbook/`, and `banks/` are created lazily as content demands. The 8-subdomain folders under `papers/L2/` are pre-scaffolded.
+
+---
+
+## 8 subdomains (controlled vocab)
+
+| Slug | Hub | Covers |
+|---|---|---|
+| `integrated-energy-systems` | [[subdomains/integrated-energy-systems]] | 综合能源 · multi-energy · TEA · system optimization |
+| `power-systems` | [[subdomains/power-systems]] | 电力系统 · smart grid · RE integration · microgrid · dispatch · markets |
+| `hydrogen-p2x` | [[subdomains/hydrogen-p2x]] | 氢能 · P2X · fuel cell · long-duration storage |
+| `re-tech-resources` | [[subdomains/re-tech-resources]] | 太阳能 · 风能 · RE tech & resource assessment |
+| `building-urban` | [[subdomains/building-urban]] | 建筑节能 · building decarb · urban energy systems |
+| `energy-policy-economics` | [[subdomains/energy-policy-economics]] | energy economics · policy · markets · socio-technical transitions |
+| `lca-sustainability` | [[subdomains/lca-sustainability]] | LCA · carbon emissions · sustainability assessment |
+| `ai-data-driven` | [[subdomains/ai-data-driven]] | AI / ML / data-driven energy methods · intelligent systems |
+
+See [[_meta/subdomain-vocab|subdomain-vocab]] for full definitions and assignment rules. Bridge pages emerge under [[bridges]] when 3+ papers span a pair.
 
 ---
 
