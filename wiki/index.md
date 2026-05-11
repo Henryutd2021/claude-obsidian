@@ -77,6 +77,8 @@ ARS plugin skills wired in:
 ## Papers ingested
 
 1. [[papers/2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]] — *Breaking the hard-to-abate bottleneck in China's path to carbon neutrality with clean hydrogen*. Zotero `PIQKGJNB`. Address `c-000003`. Archetype: modeling-optimization + policy-relevant. Headline: US$1.72T avoided cumulative investment under ZERO-H vs ZERO-NH, 65.7 Mt H2/yr by 2060.
+2. [[papers/2024-NE-h2-additionality-time-matching|Giovanniello et al. 2024, Nature Energy]] — *The influence of additionality and time-matching requirements on the emissions from grid-connected hydrogen production*. Zotero `8IMLJZAH`. Address `c-000004`. Archetype: policy dispute resolved by boundary diagnosis (DOLPHYN capacity-expansion). Headline: compete vs non-compete additionality framework reconciles Ricks 2023 vs Zeyen 2023 conflict; phased policy = annual matching now, hourly phase-in post-2030.
+3. [[papers/2023-N-china-pv-wind-3844-plants|Wang et al. 2023, Nature]] — *Accelerating the energy transition towards photovoltaic and wind in China*. Zotero `T5W8LVA9`. Address `c-000005`. Archetype: plant-by-plant geospatial optimization at national scale. Headline: 9 -> 15 PWh/yr by 2060; mean abatement cost US$97 -> US$6/tCO2 across 3,844 utility-scale plants.
 
 ---
 
