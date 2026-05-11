@@ -23,6 +23,26 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ops | session-handoff: v2 visibility fixes + dashboard.base + status page
+
+**Visibility round** (resolved "looks empty in Obsidian" perception):
+- Added 27 `_about.md` navigation stubs to all currently-empty `wiki/` folders via `scripts/generate-empty-folder-about.py`. Filename is `_about.md` (not `README.md`) because `.obsidian/app.json` `userIgnoreFilters` hides README.md vault-wide.
+- Converted 29 `<!-- HENRY-NOTE -->` blocks (in 8 hubs + 11 bridges + 7 patterns + 3 playbook) from HTML-comment-only to visible italics text, wrapped by START/END comment markers. HTML comments don't render in Obsidian reading mode.
+- Updated `scripts/generate-subdomain-hubs.py` and `scripts/generate-bridges.py` to emit visible italics by default for new generations.
+
+**`dashboard.base` fix**:
+- Initial v2 dashboard had Obsidian rendering error `Cannot read properties of null (reading 'getViewActions')`. Root causes: (a) `.gitignore` had `!wiki/meta/dashboard.base` (wrong path; should be `!wiki/dashboard.base`) so dashboard.base was never tracked or pushed; (b) Bases syntax with nested `or` inside top-level `and`, `formula.X` as groupBy target, and `file.size` filter — Bases 1.12.7 silently rejects these and returns null view objects.
+- Fixed `.gitignore`. Simplified dashboard.base to: single-level `and` filter with just `file.ext == "md"`, 6 table views each with simple `file.inFolder("wiki/{folder}")` filter, no `formulas:` or `properties:` blocks. Verified all 6 views render with correct row counts. Then enriched back with title/status/type/updated/age_days columns.
+
+**Status page**:
+- Created [[_meta/v2-status]] as the canonical handoff document. New session reads this first to continue work.
+
+**Highest-priority unfinished**: 3 SKILL.md updates (wiki-ingest, wiki-lint, wiki-query) for full v2 architecture loop. ~70 min total. See [[_meta/v2-status]] section "What's not yet done > HIGH PRIORITY".
+
+**Current HEAD**: `1848286`.
+
+---
+
 ## [2026-05-11] synthesis | Option B: 7 pattern pages + 3 playbook skeletons (L1-only)
 
 Promotion of 7 cross-paper anchors from `hot.md` into real pattern pages, plus the first 3 playbook pages activated. All L1 evidence only; L2 enrichment deferred until Phase 2 pilots land.
