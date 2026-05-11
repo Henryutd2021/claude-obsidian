@@ -23,7 +23,51 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
-## [2026-05-11] architecture | v2 Phase 2: L2 templates + contracts + runner script
+## [2026-05-11] architecture | v2 Phase 3 (L1-only subset): 8 subdomain hubs + 11 bridges + auto-stats
+
+Phase 3 partial executed. Phase 3 full requires L2 pilot first (banks bootstrap and patterns/comparisons depend on L2 evidence). This commit captures everything Phase 3 can deliver from L1 alone.
+
+**Auto-stats from frontmatter** (`scripts/subdomain-bridge-stats.py`):
+- 22 papers scanned. Per-subdomain counts (primary | any):
+  - `energy-policy-economics`: 10 | 15 (largest)
+  - `integrated-energy-systems`: 10 | 13
+  - `lca-sustainability`: 1 | 10
+  - `power-systems`: 6 | 9
+  - `re-tech-resources`: 5 | 9
+  - `hydrogen-p2x`: 6 | 6
+  - `ai-data-driven`: 3 | 3
+  - `building-urban`: 2 | 2 (smallest — explicit L2 expansion target)
+- 11 bridge pairs ready for stub at ≥3 papers. Top pairs: `energy-policy-economics--lca-sustainability` (8), `integrated-energy-systems--power-systems` (8), `energy-policy-economics--integrated-energy-systems` (7).
+- Counts written to `wiki/_meta/subdomain-bridge-stats.md`.
+
+**8 subdomain hubs** (`scripts/generate-subdomain-hubs.py`, written to `wiki/subdomains/{slug}.md`):
+- Each hub has hardcoded subdomain intro paragraph + auto-generated L1 paper table (sorted year DESC) + auto-generated outward-bridges table sorted by strength + placeholders for patterns / banks / comparisons.
+- `HENRY-NOTE` blocks preserve hand edits on re-generation.
+- L2 section is a placeholder ("Phase 2 pilot will land here").
+
+**11 bridge stubs** (`scripts/generate-bridges.py`, written to `wiki/bridges/{A--B}.md`):
+- Per-pair: count of papers, role-A and role-B for each supporting paper (primary / secondary / —), L1 / L2 split.
+- HENRY-NOTE block placeholder for the "why this interface matters" paragraph.
+- Phase 3+ work (shared methods, exemplars at the interface) marked as placeholders.
+
+**Files added:**
+- 3 generation scripts: `scripts/subdomain-bridge-stats.py`, `generate-subdomain-hubs.py`, `generate-bridges.py`
+- 1 auto-stats page: `wiki/_meta/subdomain-bridge-stats.md`
+- 8 subdomain hubs: `wiki/subdomains/{8 slugs}.md`
+- 11 bridge stubs: `wiki/bridges/{11 pairs}.md`
+
+**Deferred** (require L2 pilots first):
+- Promotion of 11 cross-paper anchors from `hot.md` into `patterns/cross-cutting/*` and `patterns/subdomain/*` stubs.
+- Parameter / sensitivity / method banks bootstrap (banks are primarily L2-fed; L1 alone produces sparse rows).
+- `patterns/comparisons/*` — top-vs-applied delta library, by definition requires both L1 and L2 papers on the same topic.
+- Playbook activation (`playbook/top-journal-craft/` — can be done from L1 alone but parked here to batch with Phase 4).
+
+**Next**:
+1. Henry: stage 6 L2 pilot candidates in `l2_candidate_manifest.csv` and trigger `scripts/codex-ingest-paper-L2.sh`.
+2. After L2 pilots land: re-run `subdomain-bridge-stats.py` (will update stats), `generate-subdomain-hubs.py` (will populate L2 tables in hubs), `generate-bridges.py` (will update bridge tables with L2 papers).
+3. Then: Phase 3 full — promote anchors to patterns, bootstrap banks, draft 3-5 comparisons pages.
+
+
 
 Phase 2 of the v2 plan executed (`/Users/henry/.claude/plans/advanced-in-applied-energy-calm-moler.md`).
 
