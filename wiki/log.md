@@ -23,6 +23,20 @@ Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
 
+## [2026-05-11] ingest | Yang et al. 2022, Nature Energy, China HTA clean hydrogen
+
+- Zotero: `PIQKGJNB` (parent journalArticle); PDF attachment `MYQEQR3K`; notes `7I3UWH2F`, `J2BKDKY2`
+- Paper package: `.raw/papers/PIQKGJNB/` (7 stubs: `metadata.json`, `zotero-attachments.md`, `data-availability.md`, `code-availability.md`, `repository-links.md`, `article-page.md`, `asset-status.md`)
+- Analysis: [[papers/2022-NE-china-hta-clean-hydrogen]] (address `c-000003`)
+- Pages created: 8 (1 wiki paper-analysis page + 7 paper-package stubs)
+- Pages updated: 3 ([[index]], [[hot]], [[log]])
+- Key insight: A Nature Energy paper can win on richer boundaries + headline monetization + a workhorse TIMES model, with figures sequenced one-per-reviewer-concern (existence -> screening -> deployment -> headline economics -> granularity -> robustness).
+- Method note: pre-review-brief and research-blueprint applied inline rather than via separate skill subagents. N=1 means cosine-sim against the library is degenerate; the Nature Energy structural fingerprint was applied from existing knowledge.
+- Discrepancy flagged in critical analysis §15: paper text says fleet bus 61% HFC market share by 2060, Fig 5a panel reports 56% for fleet buses; either edit-time drift or differing definitions, paper does not reconcile.
+- Toolchain fix: `scripts/allocate-address.sh` patched to fall back to atomic `mkdir`-based locking when GNU `flock` is unavailable (macOS does not ship `flock` by default). Existing `flock` path preserved on Linux; tests/test_allocate_address.sh should still pass under Linux.
+- Address-allocator state: counter 3 -> 4 after reserving `c-000003` for this paper.
+
+
 ## [2026-05-11] retheme | Vault forked to Top Paper Lab
 
 - Type: structural rebrand + new constitution
