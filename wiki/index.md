@@ -132,6 +132,16 @@ Ordered by ingest sequence (address order):
 
 ---
 
-## Dashboard
+## Dashboards
 
-[[papers.base]] — Obsidian Bases view of all ingested papers (journal, year, paper_type, main_contribution, status).
+- [[papers.base]] — 10 views over all paper analyses (L1 + L2): All papers · L1 exemplars · L2 deep · L2 medium · By subdomain · By archetype · Bridges activity · Drafts · High-relevance backlog · Upgrade candidates.
+- [[dashboard.base]] — Cross-folder health: subdomain hubs · pattern pages · bank pages · bridge pages · playbook pages · stale pages · empty placeholders.
+
+---
+
+## Architecture references (v2)
+
+- [[_meta/journal-role-vocab|journal-role-vocab]] — what counts as L1 vs L2 vs L3
+- [[_meta/subdomain-vocab|subdomain-vocab]] — 8 subdomain slugs and assignment rules
+- [[_meta/depth-policy|depth-policy]] — A_deep / B_medium / C_light selection rules
+- [[_meta/routing-rules|routing-rules]] — which pages get updated when paper of role X / depth Y is ingested
