@@ -81,7 +81,7 @@ NEYRD43A,Strategies to accelerate US coal power phase-out using contextual retir
 TYESARET,"Energy use of AI inference, efficiency pathways, and test-time scaling",Oviedo et al.,Joule,2026,,,,false,false,,3,candidate,unreviewed
 CPG6ZP6P,Capturing the distribution of costs and benefits in electricity system planning and operations,Levin et al.,Joule,2026,,,,false,false,,3,candidate,unreviewed
 ZBX2L8KT,Techno-economic analysis and life cycle assessment for the catalytic hydrogenolysis and hydrocracking of polyethylene,Yadav et al.,Joule,2026,,,,false,false,,3,candidate,unreviewed
-UELISBYS,Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers,Zheng et al.,Joule,2020,,,,false,false,,3,candidate,unreviewed
+UELISBYS,Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers,Zheng et al.,Joule,2020,10.1016/j.joule.2020.08.001,true,false,true,true,true,1,ingested,reviewed
 MXM6F3MB,Wind power production from very large offshore wind farms,Pryor et al.,Joule,2021,,,,false,false,,3,candidate,unreviewed
 5KPPXRHH,Techno-economic analysis of long-duration energy storage and flexible power generation technologies to support high-variable renewable energy grids,Hunter et al.,Joule,2021,,,,false,false,,3,candidate,unreviewed
 4C8MJEHX,"Solar and wind grid system value in the United States: The effect of transmission congestion, generation profiles, and curtailment",Millstein et al.,Joule,2021,,,,false,false,,3,candidate,unreviewed
