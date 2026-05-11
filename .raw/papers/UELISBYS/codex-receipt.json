@@ -1,0 +1,28 @@
+{
+  "zotero_key": "UELISBYS",
+  "address": "c-000011",
+  "wiki_page": "wiki/papers/2020-J-data-center-load-migration-curtailment.md",
+  "wiki_page_size_kb": 36.5,
+  "stub_dir": ".raw/papers/UELISBYS/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata and children calls returned user cancelled MCP tool call.",
+    "Zotero local API fallback was blocked by sandbox network permissions: Operation not permitted to 127.0.0.1:23119.",
+    "Metadata was resolved from a local literature snapshot and manifest row; main PDF was resolved from local Zotero storage attachment key 2LS5AM2J.",
+    "Publisher supplementary Document S1 exists online, but no separate Zotero SI child attachment was found in the local snapshot.",
+    "Article-page defuddle was deferred because shell network access to the publisher landing page was unavailable."
+  ],
+  "deviations_from_contract": [
+    "Could not complete live Zotero MCP resolution because MCP calls were cancelled; used the TPL constitution's Codex fallback path with local snapshot metadata plus local Zotero-stored main PDF."
+  ]
+}

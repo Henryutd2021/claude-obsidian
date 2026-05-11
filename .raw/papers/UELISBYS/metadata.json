@@ -1,0 +1,37 @@
+{
+  "key": "UELISBYS",
+  "title": "Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers",
+  "authors": [
+    {"firstName": "Jiajia", "lastName": "Zheng"},
+    {"firstName": "Andrew A.", "lastName": "Chien"},
+    {"firstName": "Sangwon", "lastName": "Suh"}
+  ],
+  "journal": "Joule",
+  "volume": "4",
+  "issue": "10",
+  "pages": "2208-2222",
+  "year": 2020,
+  "doi": "10.1016/j.joule.2020.08.001",
+  "url": "https://www.cell.com/joule/abstract/S2542-4351(20)30347-0",
+  "item_type": "journalArticle",
+  "tags": ["curtailment", "data center", "greenhouse gas emissions mitigation", "load migration", "variable renewable energy"],
+  "collections_count": 1,
+  "child_attachments": [
+    {
+      "key": "2LS5AM2J",
+      "title": "Zheng et al. - 2020 - Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers.pdf",
+      "itemType": "attachment",
+      "mimeType": "application/pdf",
+      "path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/2LS5AM2J/Zheng et al. - 2020 - Mitigating Curtailment and Carbon Emissions through Load Migration between Data Centers.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["data-center-flexibility", "renewable-curtailment", "load-migration", "demand-response", "hourly-grid-emissions", "abatement-cost", "caiso", "pjm"],
+  "paper_type_tags": ["modeling", "scenario-analysis", "data-driven", "TEA", "policy-analysis"],
+  "method_type_tags": ["counterfactual-simulation", "hourly-grid-emissions", "data-center-load-migration", "abatement-cost-model", "LCA-boundary"],
+  "main_contribution_tags": ["system-boundary-expansion", "counterintuitive-result", "policy-relevance", "sectoral-coverage"],
+  "relevance_to_my_research": "medium",
+  "tpl_address": "c-000011",
+  "fetched_at": "2026-05-11",
+  "source_notes": ["Zotero MCP calls returned user cancelled MCP tool call; metadata was resolved from local literature snapshot and main PDF path from local Zotero storage."]
+}
