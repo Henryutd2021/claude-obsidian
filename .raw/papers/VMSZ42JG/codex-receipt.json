@@ -1,0 +1,28 @@
+{
+  "zotero_key": "VMSZ42JG",
+  "address": "c-000016",
+  "wiki_page": "wiki/papers/2022-NCC-residential-decarbonization-us.md",
+  "wiki_page_size_kb": 35,
+  "stub_dir": ".raw/papers/VMSZ42JG/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero local API helper was sandbox-blocked with Operation not permitted; metadata and children were resolved from immutable read-only Zotero SQLite, and full text came from the Zotero storage cache for attachment UDF7CJ47.",
+    "Publisher landing page was not defuddled; article-page.md contains a deferred placeholder.",
+    "Preexisting codex-stdout.log and codex-stderr.log in .raw/papers/VMSZ42JG/ are outside the seven required stubs and make the directory exceed 50 KB; the seven required stubs total about 9.7 KB.",
+    "Code availability was written as a copyright-limited verbatim excerpt with the remaining repository links captured structurally."
+  ],
+  "deviations_from_contract": [
+    "Zotero MCP was unavailable in this run, so metadata, children and full text were resolved through the documented local Zotero database and storage fallback.",
+    "Full code-availability statement was not quoted verbatim because it exceeds the copyright-safe quote limit; repository links were captured in code-availability.md and repository-links.md."
+  ]
+}

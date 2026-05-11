@@ -1,0 +1,24 @@
+{
+  "zotero_key": "KRT75D4W",
+  "address": "c-000018",
+  "wiki_page": "wiki/papers/2022-NE-green-h2-probabilistic-feasibility.md",
+  "wiki_page_size_kb": 40,
+  "stub_dir": ".raw/papers/KRT75D4W/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "main-pdf",
+  "warnings": [
+    "Zotero MCP metadata call returned user cancelled MCP tool call; used local Zotero SQLite plus Zotero main PDF full-text cache fallback.",
+    "Publisher article page and repository links were not independently checked over network.",
+    "Non-stub codex stdout/stderr log files were present in .raw/papers/KRT75D4W/ and were not counted as required stubs."
+  ],
+  "deviations_from_contract": []
+}

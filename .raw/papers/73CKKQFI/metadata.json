@@ -1,0 +1,76 @@
+{
+  "key": "73CKKQFI",
+  "title": "The hydrogen economy can reduce costs of climate change mitigation by up to 22%",
+  "authors": [
+    "Paul Wolfram",
+    "Page Kyle",
+    "Jay Fuhrman",
+    "Patrick O'Rourke",
+    "Haewon McJeon"
+  ],
+  "journal": "One Earth",
+  "volume": "7",
+  "issue": "5",
+  "pages": "885-895",
+  "year": 2024,
+  "doi": "10.1016/j.oneear.2024.04.012",
+  "url": "https://www.cell.com/one-earth/abstract/S2590-3322(24)00202-1",
+  "item_type": "journalArticle",
+  "tags": [
+    "blue hydrogen",
+    "climate change mitigation",
+    "decarbonization",
+    "global assessment",
+    "green hydrogen",
+    "hydrogen",
+    "industry",
+    "integrated assessment model",
+    "mitigation cost",
+    "transport"
+  ],
+  "collections_count": 2,
+  "child_attachments": [
+    {
+      "key": "8GFTMJCS",
+      "title": "Full Text PDF",
+      "type": "attachment",
+      "content_type": "application/pdf",
+      "filename": "Wolfram et al. - 2024 - The hydrogen economy can reduce costs of climate change mitigation by up to 22%.pdf",
+      "zotero_storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/8GFTMJCS/Wolfram et al. - 2024 - The hydrogen economy can reduce costs of climate change mitigation by up to 22%.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "clean-hydrogen",
+    "hydrogen-economy",
+    "global-mitigation",
+    "integrated-assessment",
+    "hard-to-electrify-sectors",
+    "policy-cost",
+    "gcam",
+    "net-zero"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "integrated-assessment",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "GCAM",
+    "integrated-assessment-model",
+    "scenario-analysis",
+    "policy-cost-analysis",
+    "SSP2"
+  ],
+  "main_contribution_tags": [
+    "system-boundary-expansion",
+    "sectoral-coverage",
+    "counterintuitive-result",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000014",
+  "fetched_at": "2026-05-11"
+}

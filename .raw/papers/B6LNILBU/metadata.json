@@ -1,0 +1,63 @@
+{
+  "key": "B6LNILBU",
+  "title": "Quantifying the cost savings of global solar photovoltaic supply chains",
+  "authors": [
+    "John Paul Helveston",
+    "Gang He",
+    "Michael R. Davidson"
+  ],
+  "journal": "Nature",
+  "volume": "612",
+  "issue": "7938",
+  "pages": "83-87",
+  "year": 2022,
+  "doi": "10.1038/s41586-022-05316-6",
+  "url": "https://www.nature.com/articles/s41586-022-05316-6",
+  "item_type": "journalArticle",
+  "tags": [
+    "Climate-change policy",
+    "Energy policy",
+    "Sustainability"
+  ],
+  "collections_count": 2,
+  "child_attachments": [
+    {
+      "key": "9R5FUCD8",
+      "type": "main_pdf",
+      "filename": "Helveston et al. - 2022 - Quantifying the cost savings of global solar photovoltaic supply chains.pdf",
+      "content_type": "application/pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/9R5FUCD8/Helveston et al. - 2022 - Quantifying the cost savings of global solar photovoltaic supply chains.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "solar-pv",
+    "global-supply-chains",
+    "renewable-energy-integration",
+    "learning-curves",
+    "energy-policy-cost",
+    "clean-energy-trade"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "data-driven",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "two-factor-learning-model",
+    "counterfactual-scenario-analysis",
+    "learning-curve-simulation",
+    "monte-carlo-uncertainty"
+  ],
+  "main_contribution_tags": [
+    "data-novelty",
+    "counterintuitive-result",
+    "policy-relevance",
+    "mechanism-clarification"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000017",
+  "fetched_at": "2026-05-11T11:12:42-0500",
+  "metadata_source_note": "Zotero MCP metadata and children calls returned user-cancelled. Local Zotero API localhost access was sandbox-blocked. Metadata, child attachment and full text were resolved read-only from Zotero SQLite plus Zotero storage full-text cache."
+}

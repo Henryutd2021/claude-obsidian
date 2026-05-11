@@ -1,0 +1,28 @@
+{
+  "zotero_key": "UIWZD5EE",
+  "address": "c-000015",
+  "wiki_page": "wiki/papers/2021-NCC-h2-efuels-potential-risks.md",
+  "wiki_page_size_kb": 36,
+  "stub_dir": ".raw/papers/UIWZD5EE/",
+  "stub_count": 7,
+  "frontmatter_complete": true,
+  "section_count": 18,
+  "banned_words_check": "passed",
+  "em_dash_check": "passed",
+  "three_label_discipline": "applied",
+  "permanent_notes_count": 5,
+  "writing_lessons_count": 5,
+  "research_design_lessons_count": 5,
+  "future_questions_count": 5,
+  "fulltext_source": "unknown",
+  "warnings": [
+    "Zotero MCP metadata and children calls returned user-cancelled, and local Zotero HTTP access was sandbox-blocked.",
+    "The local Zotero SQLite item table did not contain UIWZD5EE; the TPL manifest identified the item but reported pdf_present=false and si_present=false.",
+    "Analysis used fallback sources: publisher page https://www.nature.com/articles/s41558-021-01032-7 plus an author-uploaded preprint page https://www.researchgate.net/publication/351376346_Potential_and_risks_of_hydrogen-based_e-fuels_in_climate_change_mitigation.",
+    "Main PDF attachment key is unresolved because no Zotero child attachment was available.",
+    "Preexisting codex logs in .raw/papers/UIWZD5EE/ make total directory size exceed the lightweight-stub target; the seven required stubs total about 9.1 KB."
+  ],
+  "deviations_from_contract": [
+    "Zotero MCP resolution and main-PDF fulltext retrieval were unavailable, so the page was completed through the documented publisher/preprint fallback instead of a Zotero main PDF."
+  ]
+}

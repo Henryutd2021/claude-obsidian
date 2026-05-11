@@ -1,0 +1,60 @@
+{
+  "key": "UIWZD5EE",
+  "title": "Potential and risks of hydrogen-based e-fuels in climate change mitigation",
+  "authors": [
+    "Falko Ueckerdt",
+    "Christian Bauer",
+    "Alois Dirnaichner",
+    "Jordan Everall",
+    "Romain Sacchi",
+    "Gunnar Luderer"
+  ],
+  "journal": "Nature Climate Change",
+  "journal_abbreviation": "Nat. Clim. Chang.",
+  "volume": "11",
+  "issue": "5",
+  "pages": "384-393",
+  "year": 2021,
+  "doi": "10.1038/s41558-021-01032-7",
+  "url": "https://www.nature.com/articles/s41558-021-01032-7",
+  "item_type": "journalArticle",
+  "tags": [],
+  "collections_count": 1,
+  "collections": [
+    "Top Paper Lab"
+  ],
+  "child_attachments": [],
+  "child_notes": [],
+  "topic_tags": [
+    "hydrogen",
+    "e-fuels",
+    "direct-electrification",
+    "climate-mitigation",
+    "renewable-energy-integration",
+    "energy-policy",
+    "marginal-abatement-cost"
+  ],
+  "paper_type_tags": [
+    "perspective",
+    "review",
+    "TEA",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "literature-synthesis",
+    "LCA",
+    "levelized-cost-analysis",
+    "marginal-abatement-cost-curve",
+    "merit-order"
+  ],
+  "main_contribution_tags": [
+    "policy-relevance",
+    "mechanism-clarification",
+    "sectoral-coverage",
+    "counterintuitive-result"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000015",
+  "fetched_at": "2026-05-11",
+  "resolution_note": "Zotero MCP calls for metadata and children returned user-cancelled in this sandbox. The local Zotero SQLite item table did not contain UIWZD5EE. The TPL manifest row identified this candidate and reported pdf_present=false and si_present=false. Metadata was resolved from the Nature article page and the TPL manifest; analysis used publisher preview text plus an author-uploaded preprint as fallback."
+}

@@ -1,0 +1,41 @@
+{
+  "key": "KRT75D4W",
+  "title": "Probabilistic feasibility space of scaling up green hydrogen supply",
+  "authors": [
+    "Adrian Odenweller",
+    "Falko Ueckerdt",
+    "Gregory F. Nemet",
+    "Miha Jensterle",
+    "Gunnar Luderer"
+  ],
+  "journal": "Nature Energy",
+  "volume": "7",
+  "issue": "9",
+  "pages": "854-865",
+  "year": 2022,
+  "doi": "10.1038/s41560-022-01097-4",
+  "url": "https://www.nature.com/articles/s41560-022-01097-4",
+  "item_type": "journalArticle",
+  "tags": ["Done", "Future, Policy, Markets", "📊"],
+  "collections_count": 2,
+  "collections": ["Hydrogen", "Top Paper Lab"],
+  "child_attachments": [
+    {
+      "key": "C24TPL5Q",
+      "type": "application/pdf",
+      "filename": "Odenweller et al. - 2022 - Probabilistic feasibility space of scaling up gree.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/C24TPL5Q/Odenweller et al. - 2022 - Probabilistic feasibility space of scaling up gree.pdf"
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": ["green-hydrogen", "electrolysis-scale-up", "technology-diffusion", "policy-targets", "europe", "global-energy-transition"],
+  "paper_type_tags": ["modeling", "scenario-analysis", "policy-analysis"],
+  "method_type_tags": ["adapted-logistic-diffusion", "Monte-Carlo-uncertainty", "historical-analogue-benchmarking", "demand-pull-scenario"],
+  "main_contribution_tags": ["method-novelty", "policy-relevance", "counterintuitive-result"],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000018",
+  "main_pdf_attachment_key": "C24TPL5Q",
+  "fulltext_source": "main-pdf-cache",
+  "fetched_at": "2026-05-11T11:12:33-05:00",
+  "resolution_note": "MCP metadata call returned user cancelled; metadata resolved from local Zotero SQLite and main PDF full text from Zotero .zotero-ft-cache."
+}

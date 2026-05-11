@@ -1,0 +1,82 @@
+{
+  "key": "VMSZ42JG",
+  "title": "Decarbonization pathways for the residential sector in the United States",
+  "authors": [
+    "Peter Berrill",
+    "Eric J. H. Wilson",
+    "Janet L. Reyna",
+    "Anthony D. Fontanini",
+    "Edgar G. Hertwich"
+  ],
+  "journal": "Nature Climate Change",
+  "journal_abbreviation": "Nat. Clim. Chang.",
+  "volume": "12",
+  "issue": "8",
+  "pages": "712-718",
+  "year": 2022,
+  "doi": "10.1038/s41558-022-01429-y",
+  "url": "https://www.nature.com/articles/s41558-022-01429-y",
+  "item_type": "journalArticle",
+  "zotero_citation_key": "Berrill.etalDecarbonizationPathways2022",
+  "zotero_tags": [
+    "Climate-change mitigation",
+    "Climate-change policy",
+    "Energy efficiency",
+    "Energy modelling",
+    "Projection and prediction"
+  ],
+  "collections_count": 2,
+  "collections": [
+    "Decarbonization",
+    "Top Paper Lab"
+  ],
+  "child_attachments": [
+    {
+      "key": "UDF7CJ47",
+      "title": "Full Text PDF",
+      "content_type": "application/pdf",
+      "link_mode": 1,
+      "path": "storage:Berrill et al. - 2022 - Decarbonization pathways for the residential sector in the United States.pdf",
+      "storage_path": "/Users/henry/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Date/storage/UDF7CJ47/Berrill et al. - 2022 - Decarbonization pathways for the residential sector in the United States.pdf",
+      "url": "https://www.nature.com/articles/s41558-022-01429-y.pdf",
+      "main_pdf": true
+    }
+  ],
+  "child_notes": [],
+  "topic_tags": [
+    "building-decarbonization",
+    "residential-energy",
+    "united-states",
+    "electrification",
+    "renovation",
+    "embodied-emissions",
+    "scenario-analysis",
+    "energy-policy"
+  ],
+  "paper_type_tags": [
+    "modeling",
+    "scenario-analysis",
+    "policy-analysis"
+  ],
+  "method_type_tags": [
+    "ResStock",
+    "OpenStudio-EnergyPlus",
+    "housing-stock-scenario-modeling",
+    "LCA",
+    "enviro-economic-assessment"
+  ],
+  "main_contribution_tags": [
+    "system-boundary-expansion",
+    "counterintuitive-result",
+    "policy-relevance",
+    "sectoral-coverage"
+  ],
+  "relevance_to_my_research": "high",
+  "tpl_address": "c-000016",
+  "fetched_at": "2026-05-11",
+  "resolution_notes": [
+    "Zotero local API was unavailable in this sandbox with Operation not permitted.",
+    "Metadata and attachment resolution used Zotero SQLite immutable read-only mode plus the Zotero full-text cache.",
+    "The only child attachment found for the parent item is the main PDF, not a peer review file."
+  ]
+}
