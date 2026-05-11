@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-04-08
+updated: 2026-05-11
 tags:
   - meta
   - log
@@ -9,19 +9,35 @@ status: evergreen
 related:
   - "[[index]]"
   - "[[hot]]"
-  - "[[overview]]"
-  - "[[sources/_index]]"
 ---
 
 # Operation Log
 
-Navigation: [[index]] | [[hot]] | [[overview]]
+Navigation: [[index]] | [[hot]]
 
 Append-only. New entries go at the TOP. Never edit past entries.
 
 Entry format: `## [YYYY-MM-DD] operation | Title`
 
 Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
+
+---
+
+## [2026-05-11] retheme | Vault forked to Top Paper Lab
+
+- Type: structural rebrand + new constitution
+- Action: forked from public `claude-obsidian` v1.6.0 plugin vault into personal Top Paper Lab.
+- Plugin scaffold removed from active root: `.claude-plugin/` → `wiki/_meta/dropped-plugin-scaffold/.claude-plugin/`. Upstream public plugin continues at <https://github.com/AgriciDaniel/claude-obsidian>; this vault no longer participates in plugin distribution.
+- Wiki re-skeletonized to 4 folders: `papers/` (per-paper analyses), `patterns/` (cross-paper synthesis), `playbook/` (personal writing principles), `projects/` (Henry's own manuscripts). All four start empty.
+- Pre-fork content moved to `wiki/_meta/`: `canvases/`, `comparisons/`, `concepts/`, `entities/`, `folds/`, `meta/`, `questions/`, `sources/`, `getting-started.md`, `overview.md`. Snapshot of old `hot.md` and `index.md` stored as `wiki/_meta/old-hot.md` and `wiki/_meta/old-index.md`.
+- `index.md` and `hot.md` rewritten for TPL identity and scope (energy-systems / renewable integration / green hydrogen / TEA).
+- `CLAUDE.md` rewritten as TPL constitution (Source-of-truth hierarchy, Evidence/Inference/Lesson labels, anti-fluff rule, ingest workflow orchestrating `pre-review-brief` + `research-blueprint`, cross-page-update rule that activates at paper 10, lint workflow with TPL-specific checks).
+- `.gitignore` extended to exclude `.raw/papers/**/main.pdf`, `.raw/papers/**/supplementary/**`, `.raw/papers/**/source-data/**`. Text metadata files (`metadata.json`, `data-availability.md`, etc.) remain tracked.
+- 3 new templates added under `_templates/`: `paper-analysis.md`, `pattern-page.md`, `project-page.md`.
+- `wiki/papers.base` Obsidian Bases dashboard added.
+- `.raw/zotero_manifest/` scaffold created.
+- DragonScale machinery untouched: `make test` still expected green. Vault counter still at 3.
+- Next: Henry organizes Zotero `Top Paper Lab` collection; Claude Code builds manifest via Zotero MCP; Henry picks first seed paper.
 
 ---
 
