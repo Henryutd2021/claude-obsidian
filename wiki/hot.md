@@ -17,11 +17,25 @@ Navigation: [[index]] · [[log]] · [[Wiki Map]]
 
 ## Last Updated
 
-**2026-05-11**: First paper ingested. [[papers/2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, *Nature Energy*]] (Zotero `PIQKGJNB`, address `c-000003`). 8 new files (1 analysis page + 7 `.raw/papers/PIQKGJNB/` stubs). Address counter 3 -> 4. `scripts/allocate-address.sh` patched for macOS (mkdir-based lock fallback when GNU `flock` is unavailable). Vault rebrand from earlier today still in effect; pre-fork content archived under `wiki/_meta/`.
+**2026-05-11**: Three papers now ingested. Codex-cli delegation pattern proven (gpt-5.5 + xhigh via `_templates/codex-ingest-contract.md`): papers 2 and 3 composed by codex on first valid run, both pass all contract checks (18 sections, banned-words, em-dash, 3-label, 5+5+5+5 KB outputs). Address counter 3 -> 6. Toolchain: `scripts/codex-ingest-paper.sh` orchestrates per-paper codex calls; my session keeps single-writer address allocation + index/log/hot/manifest integration.
 
 ## Most recent ingest
 
-[[papers/2022-NE-china-hta-clean-hydrogen]] — Yang, Nielsen, Song, McElroy. *Nature Energy* 7, 955-965 (2022). Archetype: modeling-optimization + policy-relevant. Headline: integrated TIMES-class least-cost optimization, 4 scenarios, 780+ technological processes, 2020-2060; clean hydrogen reaches 65.7 Mt/yr by 2060 and avoids US$1.72T cumulative investment vs no-hydrogen net-zero. Top transferable craft: two-stage gap construction (field-level + case-level), three-unit headline number framing (USD + GDP% + Mt), break-even sensitivity reporting (+87% H2-cost to tie ZERO-NH), figures sequenced one-per-reviewer-concern.
+Batch of 2 via codex (2026-05-11 09:53-09:56):
+1. [[papers/2024-NE-h2-additionality-time-matching]] — Giovanniello, Cybulsky, Schittekatte, Mallapragada. *Nature Energy* (2024-01). Address `c-000004`. Archetype: **policy dispute resolved by boundary diagnosis**. DOLPHYN capacity-expansion across ERCOT + FRCC. Reconciles Ricks 2023 (hourly needed) vs Zeyen 2023 (annual fine) by exposing the hidden additionality counterfactual (compete vs non-compete). Phased US 45V PTC recommendation: annual now, hourly post-2030, eventually no time-matching.
+2. [[papers/2023-N-china-pv-wind-3844-plants]] — Wang, Wang, Tanaka, Ciais et al. (19 authors). *Nature* 619:761-767 (2023-07). Address `c-000005`. Archetype: **method-instantiation-as-object** (3,844-plant national map). Plant-by-plant geospatial LCOE optimization with UHV + storage + load flexibility + endogenous learning. 9 -> 15 PWh/yr lift; abatement cost US$97 -> US$6/tCO2. Co-benefit angle (Gini reduction in poorest regions) is the Nature-elevation move vs Joule/Applied Energy alternatives.
+
+## Cross-paper anchors emerging
+
+- **Paper 1 (Yang 2022 NE) vs Paper 3 (Wang 2023 N)** = methodological contrast: TIMES-VEDA black-box workhorse model with 780+ processes vs plant-by-plant geospatial optimization at 3,844 sites. Both win at top-tier on boundary-expansion + headline monetization, but the "method as object" visual move only works at Wang's resolution.
+- **Paper 2 (Giovanniello 2024 NE) vs paper-5-candidate (Zeyen 2023 NComm, T3YPX6LR)** = direct citation tension. Paper 2 explicitly diagnoses Zeyen's framework as "non-compete" and explains why annual matching looks safe under it. Co-ingesting T3YPX6LR would create a same-batch primary-vs-meta pair.
+
+## Codex delegation state
+
+- Contract: `_templates/codex-ingest-contract.md`
+- Wrapper: `scripts/codex-ingest-paper.sh <KEY> <ADDR> [SLUG]`
+- Sandbox: `workspace-write`. Known limitation: Zotero MCP fails in this sandbox; codex falls back to local Zotero DB or publisher HTML automatically.
+- Cost per paper: ~230k tokens at xhigh reasoning, 8-12 minutes wall-clock
 
 ## What this vault is now
 
