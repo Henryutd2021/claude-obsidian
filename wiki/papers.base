@@ -1,0 +1,91 @@
+filters:
+  and:
+    - file.inFolder("wiki/papers")
+    - file.ext == "md"
+formulas:
+  age_days: (now() - file.mtime).days
+properties:
+  zotero_key:
+    displayName: Zotero
+  journal:
+    displayName: Journal
+  year:
+    displayName: Year
+  paper_type:
+    displayName: Type
+  main_contribution:
+    displayName: Contribution
+  method_type:
+    displayName: Method
+  topic:
+    displayName: Topic
+  relevance_to_my_research:
+    displayName: Relevance
+  ingest_status:
+    displayName: Status
+  address:
+    displayName: Addr
+  formula.age_days:
+    displayName: Days Since Edit
+views:
+  - type: table
+    name: All papers
+    order:
+      - file.name
+      - journal
+      - year
+      - paper_type
+      - main_contribution
+      - relevance_to_my_research
+      - ingest_status
+    limit: 200
+  - type: card
+    name: By contribution type
+    groupBy:
+      property: main_contribution
+      direction: ASC
+    order:
+      - file.name
+      - journal
+      - year
+  - type: table
+    name: Nature Energy + Joule + NC
+    filters:
+      and:
+        - or:
+            - journal == "Nature Energy"
+            - journal == "Joule"
+            - journal == "Nature Communications"
+    order:
+      - file.name
+      - journal
+      - year
+      - main_contribution
+      - relevance_to_my_research
+  - type: table
+    name: Applied Energy (control group)
+    filters:
+      and:
+        - journal == "Applied Energy"
+    order:
+      - file.name
+      - year
+      - main_contribution
+  - type: list
+    name: Drafts (need review)
+    filters:
+      and:
+        - ingest_status == "draft"
+    order:
+      - file.name
+      - formula.age_days
+  - type: list
+    name: High-relevance backlog
+    filters:
+      and:
+        - relevance_to_my_research == "high"
+        - ingest_status != "reviewed"
+    order:
+      - file.name
+      - journal
+      - year
