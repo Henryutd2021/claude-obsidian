@@ -2,15 +2,15 @@
 
 | Key | Type | Filename | Zotero storage path | Status |
 |---|---|---|---|---|
-| N/A | N/A | N/A | N/A | No child attachments were visible for this item in the readable local Zotero database. |
+| `5UKTL4KK` | application/pdf | `Che et al. - 2025 - Assess space-based solar power for European-scale power system decarbonization.pdf` | `~/Zotero/storage/5UKTL4KK/` | present (Submitted Version / author manuscript) |
 
-## What is missing from Zotero
+## What is still missing from Zotero
 
-- Main PDF: missing from the accessible Zotero child-attachment table.
-- Supplementary information: missing from the accessible Zotero child-attachment table.
-- Source data archive: not attached in Zotero. Evidence: the article page points to Zenodo DOI `10.5281/zenodo.15065847`.
-- Code repository: not attached in Zotero. Evidence: the article page and verified GitHub page point to `https://github.com/xinyang-che/SBSP-PyPSA-Eur`.
+- Supplementary information: not attached. Publisher SI exists at the ScienceDirect article page.
+- Source data archive: not attached. Pointer in CA: Zenodo DOI `10.5281/zenodo.15065847`.
+- Code repository: not attached. Pointer in CA: `https://github.com/xinyang-che/SBSP-PyPSA-Eur`.
 
-## Ingest note
+## Notes
 
-MCP calls to `zotero_get_item_metadata`, `zotero_get_item_children`, and direct local API access were unavailable in this sandbox run. The item was resolved through Zotero's local SQLite database in read-only immutable mode.
+- The attached PDF is labeled "Submitted Version" in Zotero, which typically means the author manuscript prior to publisher copyediting. For 2025-J-space-based-solar-europe analysis the figure numbers, abstract, and results should be the same as the published version; cosmetic differences (typesetting, final page numbers, late-copyedit phrasing) may differ. Cross-check the published version on ScienceDirect when wording precision matters.
+- Attachment added by Henry after the initial codex ingest (which ran without any Zotero PDF child and used publisher HTML excerpts instead). Future ingest passes can now call `zotero_get_item_fulltext` on key `5UKTL4KK` directly to get the manuscript text.
