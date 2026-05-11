@@ -1,103 +1,81 @@
 ---
 type: meta
-title: "Wiki Index"
-updated: 2026-05-09
+title: "Top Paper Lab — Index"
+updated: 2026-05-11
 tags:
   - meta
   - index
 status: evergreen
 related:
-  - "[[overview]]"
-  - "[[log]]"
   - "[[hot]]"
-  - "[[dashboard]]"
+  - "[[log]]"
+  - "[[papers.base]]"
   - "[[Wiki Map]]"
-  - "[[concepts/_index]]"
-  - "[[entities/_index]]"
-  - "[[sources/_index]]"
-  - "[[LLM Wiki Pattern]]"
-  - "[[Hot Cache]]"
-  - "[[Compounding Knowledge]]"
-  - "[[Andrej Karpathy]]"
 ---
 
-# Wiki Index
+# Top Paper Lab — Index
 
-Last updated: 2026-05-09 | Total pages: 46 | Sources ingested: 1
+Personal Karpathy-style wiki for reverse-engineering top-tier energy papers (Nature Energy / Joule / Nature Communications / EES / Science Advances / PNAS), with Applied Energy / Renewable Energy as a control group. The lab compounds per-paper analyses into cross-paper patterns and a personal high-impact-paper writing playbook.
 
-Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
+Last reset: **2026-05-11** (rebrand from `claude-obsidian` plugin vault to personal Top Paper Lab). Pre-2026-05-11 vault content is archived under `wiki/_meta/`.
+
+Navigation: [[hot]] · [[log]] · [[Wiki Map]] · [[_meta/old-index|Pre-fork archive]]
 
 ---
 
-## Concepts
+## Wiki layout (4 folders)
 
-- [[LLM Wiki Pattern]] — the pattern for building persistent, compounding knowledge bases using LLMs (status: mature)
-- [[Hot Cache]] — ~500-word session context file, updated after every ingest and session (status: mature)
-- [[Compounding Knowledge]] — why wiki knowledge grows more valuable over time, unlike RAG (status: mature)
-- [[cherry-picks]] — prioritized feature backlog from ecosystem research; 13 features to add to claude-obsidian (status: current)
-- [[SVG Diagram Style Guide]] — canonical visual style for all diagrams: Space Grotesk, #0A0A0A dark theme, #E07850 accent, full design tokens (status: evergreen)
-- [[Pro Hub Challenge]] — community challenge pattern for building claude-seo/claude-blog extensions; first challenge produced 6 submissions, 5 integrated in v1.9.0 (status: evergreen)
-- [[Semantic Topic Clustering]] — SERP-based keyword grouping replacing paid tools; hub-spoke architecture with interactive visualization (status: evergreen)
-- [[Search Experience Optimization]] — "read SERPs backwards" methodology for page-type mismatch detection and persona scoring (status: evergreen)
-- [[SEO Drift Monitoring]] — "git for SEO" baseline/diff/track with 17 comparison rules and SQLite persistence (status: evergreen)
-- [[DragonScale Memory]] — memory-layer spec inspired by the Heighway dragon curve; fold operator, deterministic page addresses, semantic tiling, boundary-first autoresearch (status: shipped v0.4, all four mechanisms opt-in)
-- [[Persistent Wiki Artifact]]: durable Markdown page as the LLM's memory object, distinct from ephemeral chat turns (status: developing)
-- [[Source-First Synthesis]]: provenance discipline; raw sources stay immutable while the wiki layer is synthesized and cited (status: developing)
-- [[Query-Time Retrieval]]: wiki query path synthesizes with citations; complementary to Obsidian's in-vault search (status: developing)
+| Folder | Holds | Grows when |
+|---|---|---|
+| [[papers]] | One Markdown file per paper analyzed (deep 16-section reverse-engineering report) | Each `/wiki-ingest` adds one |
+| [[patterns]] | Cross-paper synthesis pages (contribution archetypes, Intro / Methods / Figures / Discussion patterns, journal profiles, reviewer perspectives, research gaps) | Auto-synthesis runs at paper 10, then each ingest may update a pattern page |
+| [[playbook]] | Henry's transferable writing principles (Intro template, main-figure design, case-study justification, contribution decision tree, pre-submission checklist) | Distillation pass every ~20 ingests |
+| [[projects]] | Henry's own paper drafts; per-paper working files | Henry starts a new manuscript |
+
+Subfolders inside `patterns/` and `playbook/` are created lazily as content demands. Do not pre-scaffold empty taxonomy.
 
 ---
 
-## Entities
+## Domains in scope (Henry's research focus)
 
-- [[Andrej Karpathy]] — AI researcher, creator of the LLM Wiki pattern, former Tesla AI director (status: developing)
-- [[Ar9av-obsidian-wiki]] — multi-agent compatible LLM Wiki plugin; delta tracking manifest (status: current)
-- [[Nexus-claudesidian-mcp]] — native Obsidian plugin + MCP bridge; workspace memory, task management (status: current)
-- [[ballred-obsidian-claude-pkm]] — goal cascade PKM; auto-commit hooks, /adopt command (status: current)
-- [[rvk7895-llm-knowledge-bases]] — 3-depth query system, Marp slides, parallel deep research (status: current)
-- [[kepano-obsidian-skills]] — official skills from Obsidian creator; defuddle, obsidian-bases (status: current)
-- [[Claudian-YishenTu]] — native Obsidian plugin embedding Claude Code; plan mode, @mention (status: current)
-- [[Claude SEO]] — Tier 4 Claude Code skill for SEO analysis; 23 skills, 17 agents, 30 scripts at v1.9.0 (status: evergreen)
+- Renewable energy integration
+- Wind-solar-hydrogen integrated systems
+- Green hydrogen techno-economic analysis
+- Energy system optimization
+- Building energy saving and emission reduction
+- Energy policy and cost analysis
 
 ---
 
-## Sources
+## Operations available
 
-- [[claude-obsidian-ecosystem-research]] — 2026-04-08 | web research across 16+ repos | 8 wiki pages created
+| Skill / command | Use |
+|---|---|
+| `/wiki-ingest <zotero-key or path>` | Orchestrates `pre-review-brief` + `research-blueprint` to produce a paper analysis under [[papers]] |
+| `/wiki-query <question>` | Reads `hot.md` → `index.md` → `papers.base` → drills into pattern pages; saves valuable Q&A back into [[playbook]] |
+| `/wiki-lint` | TPL-specific checks: weak/empty lessons, paper-vs-paper contradictions, crowded gaps, orphan patterns, missing Zotero links |
+| `/wiki-fold` | Rolls up `log.md` entries — triggers first auto-synthesis at log size 2^k = 8 |
+| `/autoresearch <topic>` (or no topic) | Boundary-first frontier surfacing; fills under-covered patterns from web/Zotero |
+| `/save` | File this conversation as a [[playbook]] page |
+| `/canvas` | Visual map of paper relationships |
+| `mcp__zotero__*` | Read/write Zotero metadata, PDF locations, tags, collections |
 
----
-
-## Questions
-
-- [[How does the LLM Wiki pattern work]] — how the pattern works and why it outperforms RAG at human scale (status: developing)
-
----
-
-## Comparisons
-
-- [[Wiki vs RAG]] — when to use a wiki knowledge base versus RAG; verdict: wiki wins at <1000 pages
-- [[claude-obsidian-ecosystem]] — feature matrix of 16+ Claude+Obsidian projects; where claude-obsidian wins and gaps
-
----
-
-## Decisions
-
-- [[2026-04-14-community-cta-rollout]] - Skool community CTA footer added to 6 skill repos with per-tool frequency rules (status: active)
-- [[2026-04-15-slides-and-release-session]] - Claude SEO v1.9.0 slides (15-slide HTML deck) + GitHub release v1.9.0 with PDF asset (status: complete)
-- [[2026-04-15-release-report-session]] - Claude SEO v1.9.0 Release Report PDF: dark theme, 13 pages, WeasyPrint layout fixes, Challenge v2 added (status: complete)
-- [[2026-04-14-claude-seo-v190-session]] - Claude SEO v1.9.0 Pro Hub Challenge integration: 5 submissions, 4 new skills, 4 review rounds, cybersecurity audit (status: complete)
-- [[2026-04-24-v1.6.0-release-session]] - claude-obsidian v1.6.0 release: DragonScale Phase 4 (boundary-first autoresearch) shipped; all four mechanisms now opt-in (status: evergreen)
+ARS plugin skills wired in:
+- `pre-review-brief` — per-paper deep analysis core
+- `research-blueprint` — venue/journal structural fingerprint
+- `academic-paper-reviewer` — critical-perspective pass (Devil's Advocate among the simulated reviewers)
+- `ars-lit-review` — cross-paper annotated bibliography (used at synthesis time)
+- `nature-citation` / `nature-figure` / `nature-polishing` / `nature-response` / `nature-data` — Henry's own drafting side (under [[projects]])
 
 ---
 
-## DragonScale Artifacts
+## Current state
 
-- [[DragonScale Memory]] - memory-layer spec; the four shipped opt-in mechanisms
-- [[fold-k3-from-2026-04-23-to-2026-04-24-n8]] - first real fold (Mechanism 1), 8 children spanning 2026-04-23 to 2026-04-24
-- [[tiling-report-2026-04-24]] - first real tiling report (Mechanism 3), 0 errors, 15 review-band pairs
-- [[boundary-frontier-2026-04-24]] - first real boundary-frontier snapshot (Mechanism 4)
+- Pre-fork content under [[_meta/old-index|wiki/_meta/]]: 46 pages, mostly LLM-Wiki / DragonScale / SEO ecosystem research — kept for self-reference, not active material.
+- No papers ingested yet. First step: build the Zotero manifest, then ingest the first seed paper (see [[hot]]).
 
 ---
 
-## Domains
+## Dashboard
 
-<!-- Add domain entries here after scaffold -->
+[[papers.base]] — Obsidian Bases view of all ingested papers (journal, year, paper_type, main_contribution, status).
