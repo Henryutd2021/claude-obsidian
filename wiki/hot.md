@@ -121,6 +121,15 @@ We crossed the paper-10 pattern-update gate per CLAUDE.md. Patterns can now begi
 - **Meta-analysis as primary contribution**: Klaaßen & Steffen 2023 NCC. 1 paper so far — `patterns/archetypes/meta-analysis-primary` premature.
 - **Plant-level / city-level resolution**: Wang 2023 N (utility-scale 3,844 plants), Zhang 2023 NC (rooftop in 354 cities). 2 papers — `patterns/methods/plant-level-or-city-level-spatial` ready.
 
+### New batch-4 cross-paper anchors (SMR + firm-clean-baseload + DC cluster)
+
+- **`patterns/methods/dual-product-MILP-tea`** — Vanatta 2023 J (heat-only vs heat+power for SMRs) is the foundational paper. **1 paper, premature** until a similar dual-product TEA paper joins (heat+H2 or heat+cooling).
+- **`patterns/archetypes/firm-clean-flexible-baseload`** — Duan 2022 NE (flexible nuclear + TES) and Ricks 2024 NE (flexible EGS) share the same archetype. **2 supporting papers, ready for stub.** Both show flexibility transforms which rival assets get displaced.
+- **`patterns/methods/multi-period-deployment-with-endogenous-learning`** — Vanatta 2025 NE adds factory learning to the 2023 J framework; pairs with Zeyen 2023 NC (endogenous learning in PyPSA-Eur-Sec). **2 supporting papers, ready for stub.**
+- **`patterns/methods/provenance-audit-as-contribution`** — Mytton & Ashtine 2022 J is the seed; potentially pairs with Liu 2015 N (inventory correction) and Klaaßen 2023 NCC (scenario harmonization). **3 supporting papers if we accept the analogy**, but Mytton's audit-of-estimates is a tighter archetype than the broader correction/harmonization pattern.
+- **`patterns/evidence/field-trial-vs-model`** — Colangelo 2026 NE alone for now. **1 paper, premature.** Watch for additional empirical-data papers.
+- **`patterns/data-center/load-shape-and-flexibility`** — Zheng 2020 J, Colangelo 2026 NE, Mytton 2022 J together cover (a) macroscale counterfactual, (b) field-trial flexibility, (c) estimate provenance. **3 supporting papers, ready for stub.** Highly relevant for Henry's SMR-DC paper.
+
 ### New batch-3 cross-paper anchors
 
 The 5 batch-3 papers significantly reinforce existing clusters and seed several new ones. Every batch-3 page auto-generated its `Related papers in this lab` section (contract V2 is now well-validated):
