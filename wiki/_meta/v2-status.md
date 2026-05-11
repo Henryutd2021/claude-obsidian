@@ -20,7 +20,15 @@ This page is a session-handoff snapshot. **Read this first when continuing work 
 
 ## One-paragraph state
 
-TPL was rearchitected on 2026-05-11 from a single-track 22-paper top-journal lab to a **two-layer corpus** (L1 top-journal exemplars / L2 applied flagships) organized along **8 subdomains** with explicit **bridges** for cross-subdomain connectivity. Phases 1-3 (partial) are complete. 22 L1 papers, 0 L2 papers (Phase 2 pilot not yet triggered). All scaffolding, vocab, generators, contracts, and runners are in place. Three skill SKILL.md files need v2 updates and are the highest-priority unfinished item.
+TPL was rearchitected on 2026-05-11 from a single-track 22-paper top-journal lab to a **two-layer corpus** (L1 top-journal exemplars / L2 applied flagships) organized along **8 subdomains** with explicit **bridges** for cross-subdomain connectivity. Phases 1-3 (partial) are complete. 22 L1 papers, 0 L2 papers (Phase 2 pilot not yet triggered). All scaffolding, vocab, generators, contracts, runners, AND the 3 v2-aware SKILL.md files are in place. Highest-priority unfinished item is now Path B (L2 pilot) or Path C (Henry drafts SMR-DC).
+
+## Just completed (2026-05-11, late session)
+
+Three skill SKILL.md files now v2-aware (single-session pass):
+
+- `skills/wiki-ingest/SKILL.md` — appended "TPL Mode: Top Paper Lab v2 paper-package ingest" section. Covers vault detection, paper classification (journal_role + ingest_depth + subdomain), address allocation, runner dispatch (L1 vs L2 with depth + primary-subdomain args), receipt verification, manifest CSV update, index/hot/log integration, hub+bridge regeneration, paper-10 synthesis gate, no-pollution rule, orchestrator/codex division of labor.
+- `skills/wiki-lint/SKILL.md` — appended "TPL v2 Lint Checks" section. 12 new checks: frontmatter vocab, folder placement, no-pollution rule, routing-matrix audit, page-size band, orphan bridges <3 papers, banned-word scan, three-label discipline, em-dash style, stale bank rows, over-analyzed L2 (promotion candidates), crowded research-gap entries. Lint report has a new TPL v2 section with errors / warnings / informational / stats.
+- `skills/wiki-query/SKILL.md` — appended "TPL Mode: Top Paper Lab v2 layer-aware routing" section. Out-of-scope guard, 5-intent question classification (writing craft / methods+parameters / comparison / subdomain / bridge), layer-routed read order, `papers.base` view mapping, frontmatter-aware filtering, citation discipline (Evidence/Inference/Lesson), anti-fluff re-statement, where-to-file answers per shape, post-paper-10 pattern-materialization gate, cross-project consult instructions.
 
 ## What's working
 
