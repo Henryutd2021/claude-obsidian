@@ -2,7 +2,6 @@
 type: meta
 title: "Top Paper Lab — Index"
 updated: 2026-05-11
-
 tags:
   - meta
   - index
