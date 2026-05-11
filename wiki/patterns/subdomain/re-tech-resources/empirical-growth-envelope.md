@@ -98,7 +98,7 @@ For Henry's wind-solar-hydrogen TEA: the SMR build rate and the electrolyzer bui
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- For Henry's manuscripts: any deployment claim should be paired with empirical feasibility envelope. This is the single fastest way to upgrade Applied Energy-level deployment papers to NE-level. -->
+*For Henry's manuscripts: any deployment claim should be paired with empirical feasibility envelope. This is the single fastest way to upgrade Applied Energy-level deployment papers to NE-level.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

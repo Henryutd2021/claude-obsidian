@@ -120,7 +120,7 @@ For Henry's SMR-DC paper: Fig. 1 mechanism (SMR ↔ DC ↔ grid). Fig. 2 geograp
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits here survive regenerator. Useful note: paste Rule 1 table next to Henry's draft figures and force each figure to claim ONE function. -->
+*Hand-edits here survive regenerator. Useful note: paste Rule 1 table next to Henry's draft figures and force each figure to claim ONE function.*
 <!-- HENRY-NOTE-END -->
 
 ## Related

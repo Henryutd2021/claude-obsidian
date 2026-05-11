@@ -86,7 +86,7 @@ For Henry's SMR-DC paper: the policy lever is the data center developer's siting
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- For the SMR-DC waste-heat-ORC paper: model at facility-pair (SMR ↔ DC). Look for the 100-200 candidate sites in the ERCOT / SPP geographies where Vanatta 2023 J already did the SMR side. -->
+*For the SMR-DC waste-heat-ORC paper: model at facility-pair (SMR ↔ DC). Look for the 100-200 candidate sites in the ERCOT / SPP geographies where Vanatta 2023 J already did the SMR side.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

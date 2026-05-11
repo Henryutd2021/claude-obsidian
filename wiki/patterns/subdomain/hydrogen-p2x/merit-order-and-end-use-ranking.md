@@ -79,7 +79,7 @@ For Henry's wind-solar-hydrogen system: the end-use question is critical when ju
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- For Henry's manuscripts: he should never propose "wind-solar-hydrogen for X" without checking X's rank in this merit-order. If X is shipping/aviation/industrial-heat, the merit-order argument helps. If X is light-duty transport or residential heating, the same merit-order argument hurts. -->
+*For Henry's manuscripts: he should never propose "wind-solar-hydrogen for X" without checking X's rank in this merit-order. If X is shipping/aviation/industrial-heat, the merit-order argument helps. If X is light-duty transport or residential heating, the same merit-order argument hurts.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

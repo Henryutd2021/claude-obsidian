@@ -136,7 +136,7 @@ P5 — "We find {Z} co-location pairs are economic under the customer-
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits here survive regenerator. Useful note: when Henry drafts an Intro, paste this skeleton into the draft as the first move. -->
+*Hand-edits here survive regenerator. Useful note: when Henry drafts an Intro, paste this skeleton into the draft as the first move.*
 <!-- HENRY-NOTE-END -->
 
 ## Related

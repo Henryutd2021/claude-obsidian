@@ -88,7 +88,7 @@ For Henry's wind-solar-hydrogen TEA: run with-co-located-electrolyzer vs without
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- For SMR-DC: the obvious option-value pair is "with-SMR-co-located vs grid-supplied-DC". The non-obvious option-value pair is "with-waste-heat-ORC vs heat-discarded" — that one is probably the real headline number. -->
+*For SMR-DC: the obvious option-value pair is "with-SMR-co-located vs grid-supplied-DC". The non-obvious option-value pair is "with-waste-heat-ORC vs heat-discarded" — that one is probably the real headline number.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

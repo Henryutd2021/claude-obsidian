@@ -78,7 +78,7 @@ If a project doesn't fit this template, the project is probably not making an ad
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits in this block survive any regenerator. Useful note: for Henry's own SMR-DC paper, the equivalent counterfactual question is "does the data center load demand new SMR build, or shift existing demand?" — this is the directly analogous framing choice. -->
+*Hand-edits in this block survive any regenerator. Useful note: for Henry's own SMR-DC paper, the equivalent counterfactual question is "does the data center load demand new SMR build, or shift existing demand?" — this is the directly analogous framing choice.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

@@ -101,7 +101,7 @@ So the SMR-DC paper has primary contribution = system-boundary expansion, second
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- Hand-edits here survive any regenerator. When drafting, paste the decision tree into the draft notes and force a single primary class. Avoid making "we did 4 things" claims - reviewers want one contribution. -->
+*Hand-edits here survive any regenerator. When drafting, paste the decision tree into the draft notes and force a single primary class. Avoid making "we did 4 things" claims - reviewers want one contribution.*
 <!-- HENRY-NOTE-END -->
 
 ## Related

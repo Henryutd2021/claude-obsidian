@@ -91,7 +91,7 @@ For Henry's SMR-DC paper: the SMR is the firm-flexible asset; the data center is
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- For SMR-DC: this archetype is directly applicable. The novelty for Henry is the demand side - a data center is a flexible-load that pairs naturally with a flexible-firm-clean-supply. The pair is a single system asset class that current grid models don't capture well. -->
+*For SMR-DC: this archetype is directly applicable. The novelty for Henry is the demand side - a data center is a flexible-load that pairs naturally with a flexible-firm-clean-supply. The pair is a single system asset class that current grid models don't capture well.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns

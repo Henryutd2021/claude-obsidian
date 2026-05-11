@@ -83,7 +83,7 @@ For an SMR-DC paper that makes DC-load claims:
 ## Henry's stance
 
 <!-- HENRY-NOTE-START -->
-<!-- Direct relevance to Henry's SMR-DC paper. The three pillars are a checklist - if Henry submits an SMR-DC paper to NE / Joule that lacks one of the pillars or fails to cite it, reviewers will flag immediately. -->
+*Direct relevance to Henry's SMR-DC paper. The three pillars are a checklist - if Henry submits an SMR-DC paper to NE / Joule that lacks one of the pillars or fails to cite it, reviewers will flag immediately.*
 <!-- HENRY-NOTE-END -->
 
 ## Related patterns
