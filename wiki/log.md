@@ -13,7 +13,7 @@ related:
 
 # Operation Log
 
-Navigation: [[index]] | [[hot]]
+Navigation: [[index]] | [[hot]] | [[usage|How to use this vault]]
 
 Append-only. New entries go at the TOP. Never edit past entries.
 
