@@ -292,3 +292,27 @@ Lesson: Add a feasibility benchmark beside the optimal path, such as historical 
 
 **One-line takeaway**:
 Lesson: When learning-by-doing can change investment timing, make learning endogenous or explicitly quantify the bias from not doing so.
+
+---
+
+## Pass-2 follow-up (deferred)
+
+> Run after Pass-1 has been reviewed. Implicit, easy-to-miss lessons for a PhD researcher: research-design temperament, writing-craft micro-moves, result-curation logic, figure-curation logic. Should not duplicate Pass-1.
+
+To trigger: `/wiki-query "Pass-2 follow-up on [[2023-NC-endogenous-learning-green-h2-europe]]: implicit lessons not yet captured."`
+
+## Cross-references
+
+- Zotero: `T3YPX6LR` (main PDF attachment per Zotero children list)
+- Paper package: [[../../.raw/papers/T3YPX6LR/asset-status]]
+- Data availability stub: [[../../.raw/papers/T3YPX6LR/data-availability]]
+- Code availability stub: [[../../.raw/papers/T3YPX6LR/code-availability]]
+- Related papers in this lab: [[2024-NE-h2-additionality-time-matching|Giovanniello et al. 2024, Nature Energy]] (direct citation tension on additionality framework, see contradiction callout below); [[2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]] (cost-trajectory methodology contrast, see note below).
+- Pattern pages it will inform after paper 10: `patterns/methods/additionality-counterfactuals`, `patterns/methods/cost-trajectory-treatment`, `patterns/methods/sector-coupling`, `patterns/regions/europe-h2-strategy`.
+- Playbook pages it will inform after paper 20: `playbook/endogenous-vs-exogenous-cost`, `playbook/sector-coupling-decision`.
+
+> [!contradiction] Methodological conflict with [[2024-NE-h2-additionality-time-matching|Giovanniello et al. 2024, Nature Energy]]
+> Zeyen et al. (Evidence) find that annual time-matching for grid-connected electrolytic H2 production gives limited associated emissions, and that hourly matching raises H2 cost without proportional emissions benefits. Giovanniello et al. (Inference, high confidence) argue this result comes from Zeyen's implicit "non-compete" additionality framework (H2 resources optimized after non-H2 grid investment), which underestimates annual-matching emissions when H2 demand is large. Both findings are internally consistent. The reconciliation is empirical: which framework is the operative counterfactual depends on the grid context.
+
+> [!note] Cost-trajectory contrast with [[2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]]
+> Yang uses exogenous cost trajectories from IRENA / BNEF / IEA. Zeyen endogenizes learning curves inside a sector-coupled optimization. Different choices, both defensible. Same-batch ingest enables a future `patterns/methods/cost-trajectory-treatment` page once 4+ supporting papers are in the lab.
