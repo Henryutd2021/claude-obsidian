@@ -43,13 +43,11 @@ PDFs / SI / source-data files **stay in Zotero's storage** (`~/Zotero/storage/{I
 
 ## Next actions (in order)
 
-1. **Henry**: open Zotero desktop app → right-click `My Library` → New Collection → name it `Top Paper Lab`. (Should take ~10 seconds.)
-2. **Claude Code** (next session): re-query `zotero_search_collections "Top Paper Lab"` → get real key → bulk `zotero_manage_collections add_to=[KEY]` with the 142 known item keys (stored in `.raw/zotero_manifest/top_paper_lab_manifest.csv`).
-3. **Claude Code**: write `.raw/zotero_manifest/top_paper_lab_manifest.csv` with one row per paper (no `pdf_present` column — PDFs are always in Zotero; the relevant flag is `zotero_pdf_attached`).
-4. **Henry**: pick the first seed paper (Nature Energy or Joule, most relevant to wind-solar-hydrogen / TEA).
-5. **Claude Code**: scaffold `.raw/papers/{ZOTERO_KEY}/` with the 7 stub files; extract DA / CA from the publisher page via `defuddle` + Zotero MCP attachments; populate `asset-status.md`.
-6. **Claude Code**: run `/wiki-ingest .raw/papers/{ZOTERO_KEY}/` — orchestrates `pre-review-brief` + `research-blueprint` + `academic-paper-reviewer` (quick assessment) → emits `wiki/papers/{year}-{journal-short}-{slug}.md`.
-7. **Henry**: review the output. Iterate on `CLAUDE.md` if anything reads fluffy. Then 4 more pilots (different journals, different archetypes; include 1 from the comparison-tier later).
+1. **Henry** (in Zotero UI): remove `ZNUP7SNR` (Nature Food) and `GF9LAAMT` (Nature Reviews Earth & Environment) from the `Top Paper Lab` collection so it stays 7-journal-strict. MCP remove calls are phantom — must be done in the UI. (~5 seconds.)
+2. **Henry**: pick the first seed paper. Recommended: most-relevant Nature Energy or Joule paper on wind-solar-hydrogen / TEA. Note the Zotero key (8 chars).
+3. **Claude Code** (next session): scaffold `.raw/papers/{ZOTERO_KEY}/` with 7 stub files (`metadata.json`, `zotero-attachments.md`, `data-availability.md`, `code-availability.md`, `repository-links.md`, `article-page.md`, `asset-status.md`). Read metadata via `mcp__zotero__zotero_get_item_metadata`; list PDF/SI paths via `zotero_get_item_children`; defuddle the publisher landing page; extract DA/CA statements.
+4. **Claude Code**: run `/wiki-ingest .raw/papers/{ZOTERO_KEY}/` — orchestrates `pre-review-brief` + `research-blueprint <journal>` + `academic-paper-reviewer` (quick-assessment) over the Zotero PDF (pulled via `mcp__zotero__zotero_get_item_fulltext`) → emits `wiki/papers/{year}-{journal-short}-{slug}.md` per `_templates/paper-analysis.md`.
+5. **Henry**: review the output. If anything reads fluffy or unsupported, iterate on `CLAUDE.md` anti-fluff word list before paper 2. Then 4 more pilots (different journals, different archetypes; include 1 from a non-7-journal control like Applied Energy or Renewable Energy later for the quality-jump diagnosis).
 
 ## Constraints (from TPL constitution)
 
