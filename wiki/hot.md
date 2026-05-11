@@ -56,11 +56,31 @@ Archetype spread (10 archetypes across 11 papers):
 
 ## Cross-paper anchors emerging (seeds for paper-10 pattern synthesis)
 
-- **Paper 1 (Yang 2022 NE) vs Paper 3 (Wang 2023 N)** = methodological contrast inside top-tier energy modeling: TIMES-VEDA black-box workhorse with 780+ processes vs plant-by-plant geospatial optimization at 3,844 sites. Both win on boundary expansion + headline monetization. Wang's "method-as-object" visual only works at plant-level resolution.
-- **Paper 2 (Giovanniello 2024 NE) vs Paper 5 (Zeyen 2023 NC)** = direct citation tension. Paper 2 explicitly diagnoses Zeyen's framework as "non-compete" additionality (contracted H2 resources optimized *after* non-H2 grid investment), which is why Zeyen's annual matching looks safe. Co-ingest gives a same-batch primary-vs-meta pair, exactly the kind of seed needed for `patterns/methods/additionality-counterfactuals`.
-- **Paper 2 (Giovanniello, US) vs Paper 5 (Zeyen, Europe)** = same problem (electrolyser time-matching) on two grids, two model classes (DOLPHYN vs sector-coupled IAM with endogenous learning), reaching incompatible policy advice. Anchor for `patterns/regions/us-vs-europe-h2-policy`.
-- **Paper 1 (Yang, China H2) vs Paper 5 (Zeyen, Europe H2)** = same fuel, opposite case design (single-country vs continental-coupled, exogenous costs vs endogenous learning). Anchor for `patterns/methods/cost-trajectory-treatment`.
-- **Paper 4 (Che 2025 Joule SBSP) vs Paper 6 (Kikstra 2021 NE COVID)** = both use exogenous shock as the analytical lever (one technological, one demand-side). Anchor for `patterns/methods/exogenous-shock-as-scenario`.
+We crossed the paper-10 pattern-update gate per CLAUDE.md. Patterns can now begin to emerge, but the discipline is still bottom-up: a pattern page is only created when at least 2 papers genuinely inform it (CLAUDE.md "orphan pattern" lint check).
+
+### Already supported by 2+ papers (ready for pattern stub)
+
+- **`patterns/methods/additionality-counterfactuals`**: Giovanniello 2024 NE (paper 2) explicitly diagnoses Zeyen 2023 NC (paper 5) framework as "non-compete" additionality. 2 supporting papers — both have reciprocal `[!contradiction]` callouts already.
+- **`patterns/methods/plant-vs-aggregate-resolution`**: Yang 2022 NE (paper 1, TIMES-VEDA 780+ processes), Wang 2023 N (paper 3, 3,844 individual plant sites), Zhang 2023 NC (paper 10, 354-city rooftop-level), Cherp 2021 NE (paper 11, 60-country growth-curve fitting). 4 supporting papers spanning 4 resolution levels.
+- **`patterns/methods/exogenous-shock-as-scenario`**: Che 2025 J (paper 4, technological), Kikstra 2021 NE (paper 6, demand-side), Zheng 2020 J (paper 9, spatial load-migration). 3 supporting papers.
+- **`patterns/methods/cost-trajectory-treatment`**: Yang 2022 NE (exogenous IRENA/BNEF), Zeyen 2023 NC (endogenous learning curves), plus implicit treatment in Wang 2023 N, Che 2025 J. 4 supporting papers.
+- **`patterns/methods/national-vs-continental-case`**: Yang/Wang/Zhang on China (paper 1, 3, 10), Cherp on 60 countries (paper 11), Zeyen on Europe (paper 5), Klaaßen on Europe (paper 8). National-case vs continental-coupled tension.
+
+### Emerging archetype clusters
+
+- **Demand-side as the lever**: Zheng 2020 J (load migration), Kikstra 2021 NE (COVID demand), Giovanniello 2024 NE (H2 time-matching is also a demand-side design choice). 3 papers — `patterns/archetypes/demand-side-mitigation`.
+- **Data correction / inventory revision**: Liu 2015 N. 1 paper so far; needs at least 1 more for pattern stub (Olivier/EDGAR/PRIMAP comparator papers are likely candidates from the manifest).
+- **Meta-analysis as primary contribution**: Klaaßen & Steffen 2023 NCC. 1 paper so far — `patterns/archetypes/meta-analysis-primary` premature.
+- **Plant-level / city-level resolution**: Wang 2023 N (utility-scale 3,844 plants), Zhang 2023 NC (rooftop in 354 cities). 2 papers — `patterns/methods/plant-level-or-city-level-spatial` ready.
+
+### Codex-detected anchors (batch 2, contract V2 worked)
+
+UELISBYS (Zheng 2020 J) is the first paper where codex itself emitted explicit cross-paper Cross-references during generation:
+- linked to Che 2025 J on "threshold-based system TEA"
+- linked to Kikstra 2021 NE on "demand-side load-change framing"
+- linked to Giovanniello 2024 NE on "hourly grid-emissions + flexible H2 policy"
+
+This proves contract V2 fixed the batch-1 problem (codex pages without cross-references). Future batches should not require manual retrofitting of the Cross-references section.
 
 ## Codex delegation state
 
