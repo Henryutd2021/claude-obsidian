@@ -76,9 +76,14 @@ ARS plugin skills wired in:
 
 ## Papers ingested
 
+Ordered by ingest sequence (address order):
+
 1. [[papers/2022-NE-china-hta-clean-hydrogen|Yang et al. 2022, Nature Energy]] — *Breaking the hard-to-abate bottleneck in China's path to carbon neutrality with clean hydrogen*. Zotero `PIQKGJNB`. Address `c-000003`. Archetype: modeling-optimization + policy-relevant. Headline: US$1.72T avoided cumulative investment under ZERO-H vs ZERO-NH, 65.7 Mt H2/yr by 2060.
 2. [[papers/2024-NE-h2-additionality-time-matching|Giovanniello et al. 2024, Nature Energy]] — *The influence of additionality and time-matching requirements on the emissions from grid-connected hydrogen production*. Zotero `8IMLJZAH`. Address `c-000004`. Archetype: policy dispute resolved by boundary diagnosis (DOLPHYN capacity-expansion). Headline: compete vs non-compete additionality framework reconciles Ricks 2023 vs Zeyen 2023 conflict; phased policy = annual matching now, hourly phase-in post-2030.
 3. [[papers/2023-N-china-pv-wind-3844-plants|Wang et al. 2023, Nature]] — *Accelerating the energy transition towards photovoltaic and wind in China*. Zotero `T5W8LVA9`. Address `c-000005`. Archetype: plant-by-plant geospatial optimization at national scale. Headline: 9 -> 15 PWh/yr by 2060; mean abatement cost US$97 -> US$6/tCO2 across 3,844 utility-scale plants.
+4. [[papers/2025-J-space-based-solar-europe|Che et al. 2025, Joule]] — *Assess space-based solar power for European-scale power system decarbonization*. Zotero `M9HYZCZE`. Address `c-000006`. Archetype: emerging-tech TEA + threshold mapping (PyPSA-Eur). Headline: SBSP becomes decision-relevant when cost + availability cross system-cost thresholds tied to long-duration storage and H2 economics.
+5. [[papers/2023-NC-endogenous-learning-green-h2-europe|Zeyen et al. 2023, Nature Communications]] — *Endogenous learning for green hydrogen in a sector-coupled energy model for Europe*. Zotero `T3YPX6LR`. Address `c-000007`. Archetype: methodological endogeneization (learning curves built into sector-coupled optimization). **Same-batch anchor**: paper 2 (Giovanniello 2024 NE) explicitly diagnoses Zeyen's framework as "non-compete" additionality.
+6. [[papers/2021-NE-kikstra-covid-energy-demand-scenarios|Kikstra et al. 2021, Nature Energy]] — *Climate mitigation scenarios with persistent COVID-19-related energy demand changes*. Zotero `QDU6TZYF`. Address `c-000008`. Archetype: demand-side shock as scenario lever in integrated-assessment models. Headline: persistent COVID-style demand reductions can ease mitigation cost trajectories even without supply-side changes.
 
 ---
 
