@@ -357,6 +357,14 @@ To trigger: `/wiki-query "Pass-2 follow-up on [[2022-NE-china-hta-clean-hydrogen
 - Paper package: [[../../.raw/papers/PIQKGJNB/asset-status]]
 - Data availability stub: [[../../.raw/papers/PIQKGJNB/data-availability]]
 - Code availability stub: [[../../.raw/papers/PIQKGJNB/code-availability]]
-- Related papers in this lab: *(none yet; this is paper #1)*
-- Pattern pages it will inform after paper 10: `patterns/introduction/two-stage-gap-construction`, `patterns/figures/six-reviewer-concern-sequence`, `patterns/sensitivity/break-even-perturbation`, `patterns/scenarios/2x2-factorial`, `patterns/journals/nature-energy-profile`
-- Playbook pages it will inform after paper 20: `playbook/headline-number-multi-unit-framing`, `playbook/intro-template-8-paragraph`
+- Related papers in this lab:
+    - [[2023-N-china-pv-wind-3844-plants|Wang et al. 2023, Nature]] (same case: China energy-system optimization; opposite resolution: aggregated TIMES-class vs plant-by-plant geospatial; see method-resolution note below).
+    - [[2023-NC-endogenous-learning-green-h2-europe|Zeyen et al. 2023, Nature Communications]] (same fuel: green hydrogen; opposite cost-trajectory treatment: exogenous vs endogenous learning; see methodological note below).
+- Pattern pages it will inform after paper 10: `patterns/introduction/two-stage-gap-construction`, `patterns/figures/six-reviewer-concern-sequence`, `patterns/sensitivity/break-even-perturbation`, `patterns/scenarios/2x2-factorial`, `patterns/journals/nature-energy-profile`, `patterns/methods/cost-trajectory-treatment`, `patterns/methods/plant-vs-aggregate-resolution`.
+- Playbook pages it will inform after paper 20: `playbook/headline-number-multi-unit-framing`, `playbook/intro-template-8-paragraph`.
+
+> [!note] Method-resolution contrast with [[2023-N-china-pv-wind-3844-plants|Wang et al. 2023, Nature]]
+> Same case (China energy-system optimization for 2060 carbon neutrality), opposite resolution. Yang uses TIMES-VEDA with 780+ aggregated technology processes across all HTA sectors. Wang places 3,844 individual utility-scale PV and wind plants and optimizes each one's location, capacity, build decade, and storage choice. Yang's contribution lives in cross-sector boundary breadth; Wang's lives in spatial granularity. Both cleared the top-tier bar with the same overall move (workhorse method + boundary expansion + headline monetization) but at different resolutions.
+
+> [!note] Cost-trajectory contrast with [[2023-NC-endogenous-learning-green-h2-europe|Zeyen et al. 2023, Nature Communications]]
+> Same fuel (green hydrogen), opposite cost-trajectory treatment. Yang takes IRENA, BNEF, IEA, Hydrogen Council cost trajectories as exogenous inputs and stress-tests with a +87% break-even perturbation. Zeyen endogenizes learning curves inside a sector-coupled optimization, letting the optimizer choose investment timing under learning-by-doing. The Zeyen move removes one external degree of freedom but adds computational cost (about 21 hours, 30 GB RAM per Zeyen's reported setup). Both choices are defensible; they answer different research questions about why a result holds.
