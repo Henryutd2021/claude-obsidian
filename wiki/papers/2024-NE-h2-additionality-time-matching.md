@@ -289,3 +289,24 @@ Lesson: For paper writing, use a "policy rule over time" conclusion when the bes
 
 **One-line takeaway**:
 Evidence: The paper teaches that a policy rule such as hourly time matching cannot be judged without its counterfactual additionality boundary and policy context. Lesson: Make hidden baselines visible before optimizing H2 systems.
+
+---
+
+## Pass-2 follow-up (deferred)
+
+> Run after Pass-1 has been reviewed. Implicit, easy-to-miss lessons for a PhD researcher: research-design temperament, writing-craft micro-moves, result-curation logic, figure-curation logic. Should not duplicate Pass-1.
+
+To trigger: `/wiki-query "Pass-2 follow-up on [[2024-NE-h2-additionality-time-matching]]: implicit lessons not yet captured."`
+
+## Cross-references
+
+- Zotero: `8IMLJZAH` (main PDF attachment `2YD6VCF2`)
+- Paper package: [[../../.raw/papers/8IMLJZAH/asset-status]]
+- Data availability stub: [[../../.raw/papers/8IMLJZAH/data-availability]]
+- Code availability stub: [[../../.raw/papers/8IMLJZAH/code-availability]]
+- Related papers in this lab: [[2023-NC-endogenous-learning-green-h2-europe|Zeyen et al. 2023, Nature Communications]] (this paper explicitly diagnoses Zeyen's modeling framework as "non-compete" additionality; see contradiction callout below).
+- Pattern pages it will inform after paper 10: `patterns/methods/additionality-counterfactuals`, `patterns/regions/us-vs-europe-h2-policy`, `patterns/figures/conceptual-boundary-first`, `patterns/policy/phased-rules`.
+- Playbook pages it will inform after paper 20: `playbook/boundary-diagnosis-pattern`, `playbook/policy-relevant-tea-design`.
+
+> [!contradiction] Methodological conflict with [[2023-NC-endogenous-learning-green-h2-europe|Zeyen et al. 2023]]
+> Giovanniello et al. (Inference, high confidence) argue that Zeyen's sector-coupled formulation implements a "non-compete" additionality counterfactual (H2 resources optimized *after* non-H2 grid investment), which underestimates annual-matching emissions when H2 demand is large relative to grid expansion. Zeyen's findings ("annual matching generally leads to limited associated emissions") follow from that hidden baseline. Both conclusions are internally consistent. The reconciliation is that policy advice depends on which additionality boundary is the operative one for a given grid; Giovanniello recommends phasing.
