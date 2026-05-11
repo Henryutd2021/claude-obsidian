@@ -62,7 +62,6 @@ Untitled.base
 # Track our committed dashboards (Bases dashboards shipped with the vault)
 !wiki/dashboard.base
 !wiki/papers.base
-!wiki/_meta/test-minimal.base
 
 # Scratch canvases and personal vault files
 Banana Images.canvas
